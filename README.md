@@ -1,0 +1,1 @@
+# asolani-digital-edition
