@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gli Asolani – TEI Sample (Q, 1505, 1553)</title>
+        <respStmt>
+          <resp>Transcription and TEI encoding</resp>
+          <name>Francesca</name>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Course project (GitHub Pages)</publisher>
+        <availability>
+          <licence>CC BY 4.0</licence>
+        </availability>
+      </publicationStmt>
+
+      <sourceDesc>
+        <p>Sample encoding based on the scanned pages and on Dilemmi’s critical edition.</p>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <projectDesc>
+        <p>
+          Sample digital scholarly edition presenting three autonomous versions (Q, 1505, 1553),
+          transcribed from the incipit of Book I up to the second poetic section.
+          The 1505 dedicatory letter is encoded as a separate paratextual unit.
+        </p>
+      </projectDesc>
+
+      <editorialDecl>
+        <p>
+          The texts are aligned by macro-textual units (Prose 1 → Verses 1 → Prose 2 → Verses 2).
+          A selective negative critical apparatus may be used to record significant divergences.
+        </p>
+      </editorialDecl>
+    </encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <language ident="it">Italian (primary text)</language>
+        <language ident="en">English (editorial documentation)</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+
+      <listWit>
+        <witness xml:id="Q">Autograph witness Q (Querini Stampalia)</witness>
+        <witness xml:id="C">Printed edition 1505 (text 1)</witness>
+        <witness xml:id="T16">Printed edition 1553 (text 16)</witness>
+        <witness xml:id="T10">Printed edition 1530 (text 10, used as ancillary witness)</witness>
+        <witness xml:id="M">Autograph fragments M (not transcribed in this sample)</witness>
+      </listWit>
+
+      <!-- 1505 paratext -->
+      <div type="paratext" xml:id="C_dedication">
+        <head>1505 – Dedicatory letter</head>
+        <pb n="1505-DED-1"/>
+        <p>PLACEHOLDER – paste here the selected portion of the dedicatory letter.</p>
+      </div>
+
+      <!-- Q -->
+      <div type="version" xml:id="Q_text">
+        <head>Q – Book I</head>
+        <pb n="Q-1"/>
+        <p xml:id="Q_prose1">PLACEHOLDER – prose from the incipit up to the first poetic section.</p>
+
+        <lg type="poem" xml:id="Q_lg1">
+          <head>Verses 1</head>
+          <l n="1">PLACEHOLDER</l>
+        </lg>
+
+        <p xml:id="Q_prose2">PLACEHOLDER – prose up to the second poetic section.</p>
+
+        <lg type="poem" xml:id="Q_lg2">
+          <head>Verses 2</head>
+          <l n="1">PLACEHOLDER</l>
+        </lg>
+      </div>
+
+      <!-- 1505 -->
+      <div type="version" xml:id="C_text">
+        <head>1505 – Book I</head>
+        <pb n="1505-1"/>
+        <p xml:id="C_prose1">PLACEHOLDER – prose from the incipit up to the first poetic section.</p>
+
+        <lg type="poem" xml:id="C_lg1">
+          <head>Verses 1</head>
+          <l n="1">PLACEHOLDER</l>
+        </lg>
+
+        <p xml:id="C_prose2">PLACEHOLDER – prose up to the second poetic section.</p>
+
+        <lg type="poem" xml:id="C_lg2">
+          <head>Verses 2</head>
+          <l n="1">PLACEHOLDER</l>
+        </lg>
+      </div>
+
+      <!-- 1553 -->
+      <div type="version" xml:id="T16_text">
+        <head>1553 – Book I</head>
+        <pb n="1553-1"/>
+        <p xml:id="T16_prose1">PLACEHOLDER – prose from the incipit up to the first poetic section.</p>
+
+        <lg type="poem" xml:id="T16_lg1">
+          <head>Verses 1</head>
+          <l n="1">PLACEHOLDER</l>
+        </lg>
+
+        <p xml:id="T16_prose2">PLACEHOLDER – prose up to the second poetic section.</p>
+
+        <lg type="poem" xml:id="T16_lg2">
+          <head>Verses 2</head>
+          <l n="1">PLACEHOLDER</l>
+        </lg>
+      </div>
+
+    </body>
+  </text>
+</TEI>
