@@ -69,18 +69,342 @@
       <div type="version" xml:id="Q_text">
         <head>Q – Book I</head>
         <pb n="Q-1"/>
-        <p xml:id="Q_prose1">PLACEHOLDER – prose from the incipit up to the first poetic section.</p>
+        <p xml:id="Q_prose1">Gli otij, madonna..., delle lettre sempre da me con somma vaghezza
+         desiderati et cercati, et ne' miei primi anni assai di leggiero lunga stagione 
+         posseduti et sollecitati, et ultimatamente per le sopravenute mie cure
+         interrotti et intralasciati, hora alla fine riconcedutimisi et ripresi, occasione
+         mi porgono di ragionare in quella maniera che io posso con voi.</p>
+       
+       <gap reason="omitted" unit="paragraph"/>
+
+         <p xml:id="Q_prose2">
+            Asolo adunque, madonna ..., vago et piacevole castello posto ne 
+            gli estremi gioghi delle nostre alpi sopra 'l Trivigiano, è hora (sì come
+            dovete sapere) | arnese della Reina di Cipri, la quale per la morte del re Giacco
+            suo marito, non guari con lui dimorata, rimasa vedova et sanza figliuoli,
+            poi che così hebbe con somma sodisfattione de' suoi popoli quasi
+            tutta la sua giovanezza trappassata, raccommandato il governo del regno
+            alla Signoria nostra, in Vinegia se ne tornò, dove era nata, per rivedere
+            e suoi parenti et appo loro nella sua patria più riposatamente menarne
+            gli altri anni della sua vita. 
+        </p>
+
+          <p xml:id="Q_prose3">
+            Dove venuta et lietamente ricevuta da' suoi,
+            fu dalla Signoria nostra honorata di bellissimi et preciosi doni, tra' quali 
+            hebbe questo castello, del quale io dico, et per sito del luoco et per natura
+            del paese et per salubrità d'aria amenissimo et piacevolissimo sopra 
+            modo. 
+        </p>
+
+        <p xml:id="Q_prose4">
+            Quivi essendo la Reina per diporto questo settembre passato (sì
+            come suole spesso la state), avenne che ella maritò una delle sue damigielle, 
+            la quale, perciò che bellissima giovane era et perchè da piccola
+            fanciulla se l'havea allevata, ella più che alcuna dell'altre amava et 
+            havea cara.
+        </p>
+
+        <p xml:id="Q_prose5">
+            Il perchè fece fare l'apparechhio delle nozze bellissimo, et, convitando
+            de' luochi circonvicini chiunque più honorato huomo era con le 
+            lor donne, et da Vinegia altresì, in | suoni et canti et balli et sollennissimi
+            conviti molti giorni ne menò festeggiando con sommo dilettamento
+            et maraviglia d'ogniuno.
+        </p>
+
+        <p xml:id="Q_prose6">
+            Ma prima che queste nozze incominciassono 
+            alquanti giorni avanti, (come avengono le venture) tre gentili huomini 
+            della nostra cità, et tra essi per sangue et per amistà di stretto et dolce 
+            legame congiunti, insieme ad una loro villa non guari lontana dal castello
+            dove la Reina dimorava (sì come quella stagione faciamo) con le lor donne 
+            giovani et vaghe et belle ciascuna, et di quegli costumi che in honesta 
+            donna sono più cari ornate quanto alcune dell'altre, o più forse, che si 
+            sapesse già buon tempo di queste contrade, lasciata la città, tutti festosi 
+            et sollazzevoli n'andarono.
+        </p>
+
+        <p xml:id="Q_prose7">
+            Et quivi ritrovati tre loro carissimi compagni, 
+            e quali in otio delle Muse si stavano similmente in una villetta vicina 
+            la loro, uccellando, cacciando, diportandosi, prendevano insieme que' piaceri 
+            che quella stagione a' gentili huomini suol dare.
+        </p>
+
+        <p xml:id="Q_prose8">
+            Né guari quivi così 
+            dimorarono quella bella brigata, che'lla Reina, intendendo di loro, sopravenutole 
+            il tempo del festeggiare per le nuove nozze che della sua damigiella 
+            fatte havea, mandò a' gentili huomini un suo, che | piacesse loro, 
+            insieme con le lor donne et co' loro compagni, di venire per alcun dì
+            ad honorare la sua novella sposa. E quali prestamente così feciono. 
+        </p>
+
+        <p xml:id="Q_prose9">
+            Et saliti con esse sopra e portanti cavalli et co' tre compagni altresì, et ad
+            Asolo venuti, perciò che per alcuna bisogna era loro uopo di ritrovarsi 
+            que' giorni in Vinegia, fatta loro scusa con la Reina et a llei et a' compagni 
+            accommandate le lor donne, a cavallo risaliti, se ne tornarono pe' fatti loro.
+        </p>
+
+        <p xml:id="Q_prose10">
+            Le donne lietamente dalla Reina et da molt'altre ricevute, che
+            a quello venute erano che loro vennero, et quivi dimorando, molto di spasso 
+            pigliavano nelle feste et molto ne davano altrui co' loro giovani insieme 
+            assai accorti et accostumati tutt'a tre, et di be' motti et di giuochi honesti 
+            et di soavi ragionamenti pieni, et per questo da tutte le donne chiamati sovente et disiderati.
+        </p>
+
+        <p xml:id="Q_prose11">
+            Quantunque Perottino (che uno di loro così
+            volle che io in questi fogli lo chiamasse, non molto dal suo primiero nome 
+            deviando) poco et rado parlasse, nè fusse chi riso in bocca gli havesse 
+            solo una volta in tutte quelle feste veduto. 
+        </p>
+
+        <p xml:id="Q_prose12">
+            Et molto da ogniuno
+            ispesse volte si furava; né mai, se non quanto e suoi compagni lo chiamassero 
+            o di | bisogna le fusse, con gli altri si ritrovava nelle feste, come 
+            quello che ll'animo sempre havea in tristo pensiero; né quivi venuto sarebbe, 
+            se egli da' suoi compagni, che questo maestrevolmente fecero, perché 
+            egli tra gli allegri dimorando si rallegrasse, astretto et sospinto non
+            fusse stato al venire.
+        </p>
+
+        <p xml:id="Q_prose13">
+            Né pure solamente Perottino così ha voluto che io 
+            il suo vero nome altrimenti in queste carte non tocchi, ma le tre donne 
+            et gli altri giovani altresì, da' quali io queste cose ho havute, et con loro 
+            assai sovente dimoro, (che se ne sia la cagione) m'hanno dolcemente pregato 
+            che io faccia medesimamente de' nomi loro; credo io per tôrre occasione 
+            alle sciocche menti de' volgari di pensar cosa che all'honestissima 
+            et interissima vita loro meno che convenevole sia.
+        </p>
+
+        <p xml:id="Q_prose14">
+            Perciò che sanno bene che questi sermoni possono in mano de gli huomini pervenire, de' quali 
+            non pochi sogliono esser coloro per aventura che lle cose sane le più volte 
+            rimirano con occhio non sano. 
+            </p>
+        
+        <p xml:id="Q_prose15">
+            Il che farò io, sì come debbo, sollecito
+            di compiacergli; et dove il nomargli mi verrà nella penna, con semplici
+            et finte voci mi passerò in guisa, che non più saranno di quello, che 
+            essi vogliono essere, conosciuti.
+        </p>
+
+    <!-- iii -->
+        <p xml:id="Q_prose16">
+            Hora nelle nozze ritornandomi, solea la Reina doppo 'l desinare, 
+            che sempre magnifico era et maraviglioso molto et da diversi giuochi 
+            d'huomini che ci soglion far ridere et da suoni di vari stormenti et canti 
+            hora di fanciulle et quando d'huomini rallegrato, con le sue damigielle 
+            ritrarsi nelle sue camere, et quivi o dormire o, ciò che più le piacea di
+            fare facendo, la parte più calda del giorno separatamente passarsi, et così 
+            concedere che ll'altre donne di loro facessono a llor modo, per infino a ttanto
+            che venuto là dal vespro tempo fusse da festeggiare; nel quale
+            tutte le donne et gentili uomini et suoi cortigiani si raunavano nell'ampissime
+            sale del palagio, dove si danzava gaiamente et tutte quelle cose 
+            si faceano che a festa di reina si convenia di fare, per infino che tempo 
+            fusse da por le tavole.
+        </p>
+
+        <p xml:id="Q_prose17">
+            Andando adunque così alcun giorno le nuove nozze, 
+            et levatasi un dì, finito '1 mangiare et e suoi spassi forniti, dall'altre 
+            donne la Reina, come solea, et nelle sue camere raccoltasi, et ciascuno 
+            similmente partendo, rimase per aventura ultime, le tre donne co' loro 
+            giovani per le sale si spatiavano ragionando, et quinci, da' piedi et dalle
+            parole portate, ad un | poggetto di marmo pervennono, il quale da una 
+            parte delle sale più rimota sopra ad un bellissimo giardino del palagio
+            riguardava. 
+        </p>
+
+        <p xml:id="Q_prose18">
+            Dove come giunsono, maravigliatesi della bellezza del 
+            giardino, poi che di lui hebbero molte cose parlato, hor questa hor quella 
+            parte riguardando, Gismondo, che il più festevole era de' suoi compagni 
+            et volentieri sempre le donne in dolce festa et in honesto giuoco tenea, 
+            a loro rivoltosi così disse:
+        </p>
+
+        <!-- discorso diretto -->
+        <p xml:id="Q_prose19">
+            <q>— Care giovani, il dormire doppo 'l cibo in quest'hora del dì, quantunque 
+            in alcuna stagion dell'anno non sia buono, pure la state, perciò 
+            che longissimi sono e giorni et le notti più brievi, come quello che cosa 
+            piacevole è, da gli occhi nostri più volentieri ricevuto, alquanto meno 
+            sanza fallo ci nuoce. Ma questo mese incomincia egli a perdere molto della 
+            sua dolcezza passata et oltre a ccio a farsi di dì in dì più dannoso 
+            et più grave. Per che (dove voi questa volta il mio consiglio voleste pigliare)
+            io direi che fusse vie bene fatto, lasciando il sonno nelle camere drieto 
+            le pigre cortine delle nostre letta giacere, che noi passassimo nel giardino,
+            et quivi nel rezzo et nel fresco dell'herbe ripostisi, o novellando | o 
+            di cose dilettevoli ragionando, ingannare questa parte del giorno incresciosa,
+            per infino che ll'hora del festeggiare venuta nelle sale ci richiamasse 
+            insieme con gli altri ad honorare la nostra novella sposa. - </q>
+        </p>
+
+        <p xml:id="Q_prose20">
+            Alle donne, le quali non meno l'ombre de gli alberi et gli accorti 
+            ragionamenti de'giovani che 'l sonno delle coltre regali et le favole dell'altre 
+            donne dilettavano, piacque il consiglio di Gismondo. Per che, discese, 
+            tutte liete et festose co' loro giovani n'andarono nel giardino. 
+        </p>
+
+    <!-- iv -->
+
+        <p xml:id="Q_prose21">
+            Era questo giardino vago molto et di maravigliosa bellezza. Ma per 
+            non raccontare ogni parte di lui, che sarebbe troppo lungo, egli, oltre 
+            ad un bellissimo pergolato, che largo et ombroso pel mezzo in croce lo 
+            dipartiva, una medesima via dava a gli entranti di qua et di là, et lungo 
+            le latora di lui ne la distendea; la quale, assai spatiosa et lunga et tutta di vivo 
+            selice soprastrata, chiudea dall'una parte, solo che dove facea porta nel 
+            pergolato, una siepe di verdissimi et minutissimi bossi, humile non tanto 
+            che con mano sanza chinarsi il sommo di lei non si potesse toccare, spessissima 
+            et, ugualmente in ogni parte di sé (quantunque longissima fusse) 
+            gli occhi et la | vista pascendo, dilettevole a riguardare. 
+        </p>
+
+        <p xml:id="Q_prose22">
+            Dall'altra honorati allori, lungo 'l muro assai nel cielo crescendo, della più alta parte 
+            di loro mezzo arco faceano, in maniera folti et castigati, che niuna lor 
+            foglia fuori del commandato ordine parea che ardisse di si mostrare; né 
+            altro del muro si vedea, che dall'una delle latora del giardino e marmi 
+            bianchissimi di due finestre, che ne gli estremi di loro erano, large et 
+            aperte, et dalle quali (perciò che il muro grossissimo era) in ciascun lato 
+            sedendo si potea gittar la vista sopra 'l piano il quale esse signoreggiavano. 
+          </p>
+
+        <p xml:id="Q_prose23">
+            Per questa adunque così bella via dall'una parte entrate nel giardino 
+            le vaghe donne co' loro giovani caminando tutte diffese dal sole (come 
+            che egli assai alto si fusse nel cielo), et questa cosa et quell'altra considerando, 
+            pervennono in un pratello che 'l giardin terminava, di sì fresche 
+            herbe et così minute pieno, che tutto un dolce smeraldo parea, se non
+            che alquante varietà di vaghetti fiori lo dipingneano; nello stremo del 
+            quale faceano gli allori, sanza legge et in maggior quantità cresciuti, due 
+            selvette pari et nere per l'ombre et piene d'una soletaria riverenza; et 
+            nel mezzo di loro più a | drento davano luoco tra esse ad una bellissima 
+            fonte, nel sasso vivo del monte, che da quella parte serrava il giardino, 
+            maestrevolmente cavata, nella quale una vena di liquido et limpidissimo 
+            cristallo, che del monte usciva, baldanzosamente cadendo et di lei, che 
+            guari alta non era dal terreno, in un canaletto di marmo, che 'l pratello 
+            dividea, descendendo, soavemente si facea sentire et, nel canale ricevuta,
+            quasi tutta coperta dall'herbe, mormorando s'affrettava di correre nel giardino.
+        </p>
+
+    <!-- iv -->
+
+        <p xml:id="Q_prose24">
+            Piacque questo luoco maravigliosamente alle belle donne, il quale 
+            poi che molto da ciascuna di loro fu lodato, madonna Berenice, che 
+            la men giovane era de l'altre due et da esse honorata quasi come lor capo 
+            et, oltre a cciò, vie più ardita che esse non erano, verso Gismondo riguardando:
+        </p>
+
+        <!-- discorso diretto -->
+        <p xml:id="Q_prose25">
+            <q>— Deh —</q> disse <q>— come mal facemmo, Gismondo, a non ci essere quivi 
+            tutti questi dì passati venute, ché meglio in cotesto giardino che nelle 
+            nostre camere haremmo questo di tempo, che sanza la sposa et la Reina 
+            ci corre, trappassato. Hora (poi che noi la tua mercé vi siamo) vedi dove 
+            a te paia che si siedi, perciò che l'andare hora altre parti del giardino
+            riguardando il sole ci vieta, che in|vidiosamente (come tu vedi) se le riguarda lui. —</q>
+        </p>
+
+        <!-- discorso diretto -->
+        <p xml:id="Q_prose26">
+            A cui Gismondo:
+            <q>— Madonna, —</q> rispose <q>— dove a voi così piaccia, a me parrebbe che 
+            questa fonte non si dovesse rifiutare, perciò che l'herbetta è quivi più 
+            lieta che altrove et più dipinta di fiori. Poi quest'alberi ci terranno sì
+            il sole, che, per potere che egli habbia, hoggi non ci ritroverrà egli giamai.</q>
+        </p>
+
+
+        <!-- discorso diretto -->
+        <p xml:id="Q_prose27">
+            <q>— Dunque —</q> disse madonna Berenice <q>— sedianci costì, dove a te 
+            piace, che vi cci hai guidate. Et perciò che lo starci quivi, sì come tu dicesti, 
+            non c'incresca, col mormorio dell'acque che c'invitano a ragionare 
+            et con l'horrore di quest'ombre che ci ascoltano, disponti tu a dire di 
+            quello che a te più giova che si ragioni, perciò che et noi volentieri sempre 
+            t'ascoltiamo et, poi che sì bello et vago luoco gli hai dato, meritamente 
+            in te cade hoggi la signoria de' nostri sermoni. —</q>
+        </p>
+
+        <p xml:id="Q_prose28">
+            Dette queste parole da madonna Berenice, et da ciascuna dell'altre 
+            due invitato Gismondo al favellare, esso lietamente così disse:
+        </p>
+
+        <!-- discorso diretto -->
+        <p xml:id="Q_prose29">
+            <q>- Amabili donne, poscia che voi hoggi questa maggioranza mi date, 
+            et io la mia prenderò. —</q>
+        </p>
+
+        <p xml:id="Q_prose30">
+            Et poi che, fatta di loro corona, a sedere in grembo dell'herbetta si 
+            fûr posti, chi vicino la bella fonte et | chi a piè de gli ombrosi allori di 
+            qua et di là del picciol rio, Gismondo, accortamente rassettatosi et pel 
+            viso d'intorno piacevolmente le belle donne riguardate, in questa guisa incominciò:
+        </p>
+
+        <!-- discorso diretto -->
+        <p xml:id="Q_prose31">
+            <q>- Vaghe et festose donne, ciascuno di noi ha hoggi udite quelle due fanciulle, 
+            che dinanzi alla Reina, prima che si levassono le tavole, assai vezzosamente 
+            l'una all'altra rispondendo cantarono di molte canzoni, tra le 
+            quali se io mi ricorderò le due prime, che allhora, perciò che molto mi 
+            piacquono, agevolmente appresi, assai bello et spatioso campo haremo 
+            hoggi da favellare. Elle per aventura son queste. Perciò che venute le fanciulle
+            dinanci la Reina, poi che riverentemente la salutarono, levatesi,
+            et col suono del liuto, che quel loro maestro drietro le lor spalle assai 
+            acconciamente toccava, accordatasi la maggioretta, così incominciò a dire:</q>
+        </p>
+
+
 
         <lg type="poem" xml:id="Q_lg1">
           <head>Verses 1</head>
-          <l n="1">PLACEHOLDER</l>
+          <l n="1">Amor, perchè m'insegni andar al foco,</l>
+          <l n="2">Dov' el mio cor si strugge,</l>
+          <l n="3">Seguendo chi mi fugge,</l>
+          <l n="4">Amando chi 'l mio mal si torna in gioco?</l>
+          <l n="5"> Credea trovar ne l'amorosa tresca</l>
+          <l n="6">Più dolce ogni fatica:</l>
+          <l n="7">Ahi, del mio ben nemica</l>
+          <l n="8">Che 'l piacer manca e 'l tormento rinfresca.</l>
+          <l n="9"> Donne, che non sentiste anchor d'Amore,</l>
+          <l n="10">Quanto beate sete;</l>
+          <l n="11">Se voi non v'accorgete,</l>
+          <l n="12">Mirate quanto è grave el mio dolore.</l>
         </lg>
 
-        <p xml:id="Q_prose2">PLACEHOLDER – prose up to the second poetic section.</p>
+        <p xml:id="Q_prose32">Detta questa canzona dalla primiera, la minore, doppo una brieve sonata
+        del loro maestro, così cantando le rispose:
+        </p>
 
         <lg type="poem" xml:id="Q_lg2">
           <head>Verses 2</head>
-          <l n="1">PLACEHOLDER</l>
+          <l n="1"> Amor, d'ogni mia pena i' ti ringratio,</l>
+          <l n="2">Sì dolce è 'I tuo martire:</l>
+          <l n="3">Ogni d'altro gioire,</l>
+          <l n="4">Signor, è doglia, et festa ogni tuo stratio.</l>
+          <l n="5"> Ben mi credetti già, che grave peso</l>
+          <l n="6">Fusse, Amor, la tua salma:</l>
+          <l n="7">O cieca et misera alma,</l>
+          <l n="8">Che t'ingannava? Amor, non eri inteso.</l>
+          <l n="9"> Venite meco, donne inamorate,</l>
+          <l n="10">D'Amor alto cantando,</l>
+          <l n="11">Ché morir serve amando</l>
+          <l n="12">Me' v'è, che viver sciolte in libertate.</l>
         </lg>
       </div>
 
@@ -88,38 +412,317 @@
       <div type="version" xml:id="C_text">
         <head>1505 – Book I</head>
         <pb n="1505-1"/>
-        <p xml:id="C_prose1">PLACEHOLDER – prose from the incipit up to the first poetic section.</p>
+        <p xml:id="C_prose1">Suole essere a' naviganti caro, qualhora da oscuro et fortunevole
+        nembo sospinti errano et travagliano la lor via, col segno della indiana
+        pietra ritrovare la tramontana, in modo che, quale vento soffi conoscendo,
+        non sia lor tolto il potere et vela et governo là, dove essi di giugnere
+        procacciano o almeno dove più la loro salvezza veggono, drizzare; et a 
+        quegli che per straniera contrada caminano è dolce, quando, a parte venuti
+        dove parimente molte vie faccian capo, in quale più tosto debbano
+        mettersi non scorgendo, stanno in sul piè dubitosi et sospesi, incontrare
+        chi loro la diritta insegni, sì che essi possano a l'albergo senza errore,
+        o forse prima che la notte gli sopragiunga, pervenire.</p>
+
+        <gap reason="omitted" unit="paragraph"/>
+
+        <p xml:id="C_prose2">Asolo adunque, vago et piacevole castello posto ne gli stremi gioghi
+        delle nostre alpi sopra 'l Trivigiano, è (sì come ogniuno dee sapere) arnese
+        della Reina di Cipri, con la cui famiglia, hoggi di molto nella nostra
+        città honorata et illustre, è la mia non solamente d'amistà et di riverenza,
+        che essa la porta, congiunta, ma anchora di parentado. Dove essendo ella
+        questo settembre passato a' suoi diporti andata, avenne che ella quivi maritò 
+        una delle sue damigelle, la quale, perciò che bella et costumata et gentile 
+        fanciulla la vedea molto, assai teneramente era da lei amata et havuta cara.
+        </p>
+
+         <p xml:id="C_prose3">Il perchè fecevi l'apparecchio delle nozze ordinare bello et grande, et,
+         invitato delle vicine contrade chiunque più honorato huomo era con le lor
+         donne, et da Vinegia similmente, in suoni et canti et balli et solennissimi 
+         conviti l'un giorno doppo l'altro ne menava festeggiando con sommo piacere 
+         di ciascuno. 
+        </p>
+
+        <p xml:id="C_prose4"> Erano quivi tra gli altri, che invitati dalla Reina vennero
+            a quelle feste, tre gentili huomini della nostra città, giovani et d'alto cuore,
+            e quali, da' loro primi anni ne gli otii delle Muse allevati et in essi tuttavia
+            dimoranti per lo più tempo, oltre gli ornamenti delle lettre il pregio d'ogni 
+            bella loda haveano, che a nobili donzelli s'appartenesse d'havere.
+        </p>
+
+        <p xml:id="C_prose5"> Costoro per aventura, come che a tutte le donne che in que' conviti si trovarono,
+            sì per la chiarezza del sangue loro et sì anchora molto più per la viva fama de'
+          loro studi et del loro valore fusser cari, et per questo chiamati 
+          sovente da ciascuna et disiderati, essi nondimeno pure con tre di loro
+          similmente belle et vaghe giovani et di gentili costumi ornate, perciò che prossimani 
+          erano loro per sangue et lunga dimestichezza con esse et co' loro
+          mariti haveano, più ispesso et più sicuramente si davano che con altre, volentieri 
+          sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.
+        </p>
+
+        <p xml:id="C_prose6"> Quantunque Perottino, (che così nomare un di loro m'è piaciuto
+            in questi sermoni) poco et rado parlasse, nè fusse chi riso in bocca gli
+            havesse solo una volta in tutte quelle feste veduto. 
+        </p>
+
+         <p xml:id="C_prose7"> Il quale etiandio
+            molto da ogniuno spesse volte si furava, sì come quello che l'animo
+            sempre havea in tristo pensiero; nè quivi venuto sarebbe, se da' suoi compagni,
+            che questo maestrevolmente fecero, acciò che egli tra gli allegri dimorando
+            si rallegrasse, astretto  et sospinto a venirvi non fusse stato. 
+         </p>
+
+         <p xml:id="C_prose8"> Nè pure solamente Perottino ho io con infinita voce in questa guisa nomato,
+            ma le tre donne et gli altri giovani anchora; non per altro rispetto, se 
+            non per tôrre alle vane et sciocche menti de' volgari occasione, gli loro veri nomi non
+            appalesando, di pensar cosa in parte alcuna meno che convenevole alla loro 
+            honestissima et interissima vita. 
+         </p>
+
+          <p xml:id="C_prose9"> Con ciò sia cosa che questi parlari, d'uno in altro
+          passando, a brieve andare possono in contezza de gli huomini pervenire,
+          de' quali non pochi sogliono esser coloro che le cose sane le più volte
+          rimirano con occhio non sano.
+         </p>
+
+        <!-- iii -->
+
+         <p xml:id="C_prose10"> Ma tornando alle nozze della Reina, mentre che elle così andavano
+         com'io dissi, un giorno tra gli altri nella fine del desinare, che sempre
+         era splendido et meraviglioso et da diversi giuochi d'huomini che 
+         ci soglion far ridere et da suoni di vari stormenti et da canti hora d'una 
+         maniera et quando d'altra rallegrato, due vaghe fanciulle per mano tenendosi
+         et con alegro sembiante al capo delle tavole, dove la Reina sedea, 
+         venute, riverentemente la salutarono; et poi che l'hebbero salutata, amendue 
+         levatesi, la maggiore, un bellissimo liuto che nell'una mano tenea
+         con dolce atto al petto recandosi et assai maestrevolmente toccandolo, 
+         doppo alquanto spatio col piacevole suono di quello la soave voce di lei 
+         accordando, così incominciò a dire:
+        </p>
+
+
 
         <lg type="poem" xml:id="C_lg1">
           <head>Verses 1</head>
-          <l n="1">PLACEHOLDER</l>
+          <l n="1"> Io vissi pargoletta in festa e 'n gioco,</l>
+          <l n="2">De' miei pensier, di mia sorte contenta:</l>
+          <l n="3">Hor sì m'afflige Amor et mi tormenta,</l>
+          <l n="4">C'homai da tormentar gli avanza poco.</l>
+          <l n="5"> Harei giurato haver gioiosa vita,</l>
+          <l n="6">Da prima intrando, Amor, a la tua corte;</l>
+          <l n="7">Ma io n'aspetto dolorsa morte:</l>
+          <l n="8">O mia credenza, come m'hai fallita</l>
+          <l n="9"> Mentre ad Amor non si commise anchora,</l>
+          <l n="10">Vide Colcho Medea lieta et secura;</l>
+          <l n="11">Poi ch'arse per Iason, acerba et dura</l>
+          <l n="12">Fu la sua vita infin a l'ultìm'hora.</l>
         </lg>
 
-        <p xml:id="C_prose2">PLACEHOLDER – prose up to the second poetic section.</p>
+        <p xml:id="C_prose11">Detta dalla giovane cantatrice questa canzona, la minore, doppo un
+        brieve traccorso di suono della sua compagna che già nelle primiere note
+        ritornava, al tenore di quelle altresì come ella la lingua dolcemente
+        isnodando, in questa guisa le rispose:</p>
 
         <lg type="poem" xml:id="C_lg2">
           <head>Verses 2</head>
-          <l n="1">PLACEHOLDER</l>
+          <l n="1">Io vissi pargoletta in doglia e 'n pianto,</l>
+          <l n="2">De le mie scorte et di me stessa in ira:</l>
+          <l n="3">Hor sì dolci pensieri Amor mi spira,</l>
+          <l n="4">Ch'altro meco non sta che riso et canto.</l>
+          <l n="5"> Harei giurato, Amor, ch'a te gir dietro</l>
+          <l n="6">Fosse proprio un andar con nave in scoglio;</l>
+          <l n="7">Così, là 'nd'io temea penoso orgoglio,</l>
+          <l n="8">Pace et riposo a le mie pene impetro.</l>
+          <l n="9"> Fin che menò sua vita senza Amore,</l>
+          <l n="10">Andromeda hebbe sempre affanno et noia;</l>
+          <l n="11">Poi ch'a Perseo si diè, diletto et gioia</l>
+          <l n="12">Seguilla viva, et morta eterno honore.</l>
         </lg>
+
+        <p xml:id="C_prose12">Poi che le due fanciulle hebbero fornite le lor canzoni, alle quai udire
+            ciascuno chetissimo et attentissimo era stato, volendo esse partire per
+            dar forse a gli altri sollazzi luogo, la Reina, fatta chiamare una sua damigiella,
+            la quale, bellissima sopra modo et per giudicio d'ogniuno che la 
+            vide più d'assai che altra che in quelle nozze v'havesse, sempre quando
+            ella separatamente mangiava di darle bere la serviva, le impose che alle
+            canzoni delle fanciulle alcuna n'aggiugnesse delle sue. Il perchè ella, presa
+            una sua vivola di maraviglioso suono, tuttavia non sanza rossore veggendosi 
+            in così palese luoco dover cantare, il che fare non era usata, questa 
+            canzonetta cantò con tanta vaghezza et con maniere così nuove di melodia,
+            che alla dolce fiamma, che le sue note ne' cuori de gli ascoltanti lasciarono, 
+            quelle delle due fanciulle furono freddi et spenti carboni:
+            </p>
+
+        <lg type="poem" xml:id="C_lg3">
+          <head>Verses 3</head>
+          <l n="1">Più del tuo vivo raggio,</l>
+          <l n="2">Dritto camino et saggio,</l>
+          <l n="3">Prenderia nostra vita, che no 'l prende,</l>
+          <l n="4">Et tornerian con la prima beltade</l>
+          <l n="5">Gli anni de l'oro et la felice etade.</l>
+        </lg>
+
       </div>
 
       <!-- 1553 -->
       <div type="version" xml:id="T16_text">
         <head>1553 – Book I</head>
         <pb n="1553-1"/>
-        <p xml:id="T16_prose1">PLACEHOLDER – prose from the incipit up to the first poetic section.</p>
+        <p xml:id="T16_prose1">Suole a' faticosi navicanti esser caro, quando la notte, da oscuro
+         et tempestoso nembo assaliti et sospinti, nè stella scorgono, nè cosa alcuna
+         appar loro che regga la lor via, col segno della indiana pietra ritrovare
+         la tramontana, in guisa che, quale vento soffi et percuota conoscendo,
+         non sia lor tolto il potere et vela et governo là, dove essi di giugnere procacciano
+         o almeno dove più la loro salute veggono, drizzare; et piace
+         a quelli che per contrada non usata caminano, qualhora essi, a parte venuti
+         dove molte vie faccian capo, in qual più tosto sia da mettersi non
+         scorgendo, stanno in sul piè dubitosi et sospesi, incontrare chi loro la
+         diritta insegni, sì che essi possano all'albergo senza errore, o forse prima
+         che la notte gli sopragiunga, pervenire.  </p>
 
+         <gap reason="omitted" unit="paragraph"/>
+
+         <p xml:id="T16_prose2"> Asolo aduqnue, vago et piacevole castello posto ne gli stremi gioghi
+         delle nostre alpi sopra il Trivigiano, è, sì come ogniuno dee sapere, 
+         di madonna la Reina di Cipri, con la cui famiglia, la quale è detta Cornelia, 
+         molto nella nostra città honorata et illustre, è la mia non solamente 
+         d'amistà et di dimestichezza congiunta, ma anchora di parentado. Dove
+         essendo ella questo settembre passato a' suoi diporti andata, avvenne che
+         ella quivi maritò una delle sue damigelle, la quale, perciò che bella et 
+         costumata et gentile era molto et perciò che da bambina cresciuta se l'havea, 
+         assai teneramente era da llei amata et havuta cara.
+        </p>
+
+        <p xml:id="T16_prose3"> Per che vi fece 
+        l'apparecchio delle nozze ordinare bello et grande, et, invitatovi delle
+        vicine contrade qualunque più honorato huomo v'era con le lor donne,
+        et da Vinegia similmente, in suoni et canti et balli et solennissimi conviti
+        l'un giorno appresso all'altro ne menava festeggiando con sommo piacer
+        di ciascuno.
+        </p>
+
+        <p xml:id="T16_prose4"> Erano quivi tra gli altri, che invitati dalla Reina vennero
+            a quelle feste, tre gentili huomini della nostra città, giovani et d'alto cuore,
+            i quali, da' loro primi anni ne gli studi delle lettere usati et in essi tuttavia
+            dimoranti per lo più tempo, oltre a'cciò il pregio d'ogni bel costume
+            haveano, che a nobili cavalieri s'appartenesse d'havere.
+        </p>
+
+        <p xml:id="T16_prose5"> Costor per aventura, come che a tutte le donne che in que' conviti si trovarono, sì per 
+          la chiarezza del sangue loro et sì anchora molto più per la viva fama de'
+          loro studi et del lor valore fosser cari, essi nondimeno pure con tre di
+          loro belle et vaghe giovani et di gentili costumi ornate, [perciò che prossimani 
+          eran loro per sangue et lunga dimestichezza con esse et co' lor
+          mariti haveano, i quali tutti e tre di què dì a Vinegia tornati erano per
+          loro bisogne], più spesso et più sicuramente si davano che con altre, volentieri 
+          sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.
+        </p>
+
+        <p xml:id="T16_prose6"> Quantunque Perottino, che così nominare un di loro m'è piaciuto
+            in questi sermoni, poco et rado parlasse, nè fosse chi riso in bocca gli
+            havesse solamente una volta in tutte quelle feste veduto. 
+        </p>
+
+         <p xml:id="T16_prose7"> Il quale etiandio
+            molto da ogniuno spesse volte si furava, sì come colui che l'animo
+            sempre havea in tristo pensiero; nè quivi venuto sarebbe, se da' suoi compagni,
+            che questo studiosamente fecero, acciò che egli tra gli allegri dimorando
+            si rallegrasse, astretto  et sospinto al venirvi non fosse stato. 
+         </p>
+
+         <p xml:id="T16_prose8"> Nè pure solamente Perottino ho io con infinita voce in questa guisa nomato,
+            ma le tre donne et gli altri giovani anchora; non per altro rispetto, se 
+            non per la tôrre alle vane menti de' volgari occasione, i loro veri nomi non
+            palesando, di pensar cosa in parte alcuna meno che convenevole alla loro 
+            honestissima vita. 
+         </p>
+
+          <p xml:id="T16_prose9"> Con ciò sia cosa che questi parlari, d'uno in altro
+          passando, a brieve andare possono in contezza de gli huomini pervenire,
+          de' i quali non pochi sogliono esser coloro che le cose sane le più volte
+          rimirano con occhio non sano.
+         </p>
+
+        <!-- iii -->
+
+         <p xml:id="T16_prose10"> Ma alle nozze della Reina tornando, mentre che elle così andavano
+         come io dissi, un giorno tra gli altri nella fine del desinare, che sempre
+         era splendido et da diversi giuochi d'huomini che si soglion far ridere
+         et da suoni di vari strumenti et da canti hora d'una maniera et quando
+         d'altra rallegrato, due vaghe fanciulle per mano tenendosi, con lieto sembiante
+         al capo delle tavole, là dove la Reina sedea, venute, riverentemente
+         la salutarono; et poi che l'hebbero salutata, amendue levatesi, la maggiore,
+         un bellissimo liuto che nell'una mano teneva al petto recandosi 
+         et assai maestrevolmente toccandolo, dopo alquanto spatio col piacevole
+         suono di quello la soave voce di lei accordando et dolcissimamente cantando, così disse:
+        </p>
+    
         <lg type="poem" xml:id="T16_lg1">
           <head>Verses 1</head>
-          <l n="1">PLACEHOLDER</l>
+          <l n="1"> Io vissi pargoletta in festa e 'n gioco,</l>
+          <l n="2">De' miei pensier, di mia sorte contenta:</l>
+          <l n="3">Hor sì m'afflige Amor et mi tormenta,</l>
+          <l n="4">C'homai da tormentar gli avanza poco.</l>
+          <l n="5"> Credetti, lassa, haver gioiosa vita</l>
+          <l n="6">Da prima entrando, Amor, a la tua corte;</l>
+          <l n="7">Et già n'aspetto dolorsa morte:</l>
+          <l n="8">O mia credenza, come m'hai fallita</l>
+          <l n="9"> Mentre ad Amor non si commise anchora,</l>
+          <l n="10">Vide Colcho Medea lieta et secura;</l>
+          <l n="11">Poi ch'arse per Iason, acerba et dura</l>
+          <l n="12">Fu la sua vita infin a l'ultim'hora.</l>
         </lg>
 
-        <p xml:id="T16_prose2">PLACEHOLDER – prose up to the second poetic section.</p>
+        <p xml:id="T16_prose11">Detta dalla giovane cantatrice questa canzona, la minore, dopo un
+        brieve corso di suono della sua compagna che nelle prime note già
+        ritornava, al tenor di quelle altresì come ella la lingua dolcemente
+        isnodando, in questa guisa le rispose:</p>
 
         <lg type="poem" xml:id="T16_lg2">
           <head>Verses 2</head>
-          <l n="1">PLACEHOLDER</l>
+          <l n="1">Io vissi pargoletta in doglia e 'n pianto,</l>
+          <l n="2">De le mie scorte et di me stessa in ira:</l>
+          <l n="3">Hor sì dolci pensieri Amor mi spira,</l>
+          <l n="4">Ch'altro meco non è che riso et canto.</l>
+          <l n="5"> Harei giurato, Amor, ch'a te gir dietro</l>
+          <l n="6">Fosse proprio un andar con nave a scoglio;</l>
+          <l n="7">Così, là 'nd'io temea danno et cordoglio,</l>
+          <l n="8">Utile scampo a le mie pene impetro.</l>
+          <l n="9"> Infin quel dì, che pria la punse Amore,</l>
+          <l n="10">Andromeda hebbe sempre affanno et noia;</l>
+          <l n="11">Poi ch'a Perseo si diè, diletto et gioia</l>
+          <l n="12">Seguilla viva, et morta eterno honore.</l>
         </lg>
+
+        <p xml:id="T16_prose12">Poi che le due fanciulle hebber fornite di cantare, alle 
+            quali udire ciascuno chetissimo et attentissimo era stato, volendo esse partire per
+            dar forse a gli altri sollazzi luogo, la Reina, fatta chiamare una sua damigiella,
+            la quale, bellissima sopra modo et per giudicio d'ogniun che la 
+            vide più d'assai che altra che in quelle nozze v'havesse, sempre quando
+            ella separatamente mangiava di darle bere la serviva, le impose che alle
+            canzoni delle fanciulle alcuna n'aggiugnesse delle sue. Per che ella, presa
+            una sua vivola di maraviglioso suono, tuttavia non sanza rossore veggendosi 
+            in così palese luogo dover cantare, il che fare non era usata, questa 
+            canzonetta cantò con tanta piacevolezza et con maniere così nuove di melodia,
+            che alla dolce fiamma, che le sue note ne' cuori de gli ascoltanti lasciarono, 
+            quelle delle due fanciulle furono spenti et freddi carboni:
+        </p>
+
+        <lg type="poem" xml:id="T16_lg3">
+          <head>Verses 3</head>
+          <l n="1"> Amor, la tua virtute </l>
+          <l n="2">Non è dal mondo [et] da la gente intesa,</l>
+          <l n="3">Che, da viltate offesa,</l>
+          <l n="4">Segue suo danno et fuge sua salute</l>
+          <l n="5">Ma se fosser tra noi ben conosciute</l>
+          <l n="6">L'opre tue, come là dove risplende</l>
+          <l n="7">Più [del tuo] raggio puro</l>
+          <l n="8">[Camin dritto] et securo</l>
+          <l n="9">Prenderia nostra vita, che no 'l prende,</l>
+          <l n="10">Et tornerian con la prima beltade</l>
+          <l n="11">Gli anni de l'oro et la felice etade.</l>
+        </lg>
+
+
       </div>
 
     </body>
