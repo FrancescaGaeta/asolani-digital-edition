@@ -3,17 +3,21 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Gli Asolani – TEI Sample (Q, 1505, 1553)</title>
+        <title>The Asolani by Pietro Bembo: A Digital Scholarly Edition based on Giorgio Dilemmi's Critical Edition</title>
         <respStmt>
-          <resp>Transcription and TEI encoding</resp>
-          <name>Francesca</name>
+          <resp>Transcription and TEI encoding by</resp>
+          <name>Francesca Gaeta</name>
         </respStmt>
       </titleStmt>
 
       <publicationStmt>
-        <publisher>Course project (GitHub Pages)</publisher>
+        <publisher>Francesca Gaeta</publisher>
+        <pubPlace>Bologna / GitHub Pages</pubPlace>
+        <date>2026</date>
+        <idno type="URL">https://github.com/FrancescaGaeta/asolani-digital-edition</idno>
         <availability>
-          <licence>CC BY 4.0</licence>
+          <p>Project developed for educational purposes as part of the Digital Scholarly Editing course.</p>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
         </availability>
       </publicationStmt>
 
