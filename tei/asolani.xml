@@ -16,31 +16,38 @@
         <date>2026</date>
         <idno type="URL">https://github.com/FrancescaGaeta/asolani-digital-edition</idno>
         <availability>
-          <p>Project developed for educational purposes as part of the Digital Scholarly Editing course.</p>
+          <p>Project developed as part of the Digital Scholarly Editing course.</p>
           <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
         </availability>
       </publicationStmt>
 
       <sourceDesc>
-        <p>Sample encoding based on the scanned pages and on Dilemmi’s critical edition.</p>
+        <bibl>
+          <author>Pietro Bembo</author>
+          <title>Gli Asolani</title>
+          <editor>Giorgio Dilemmi</editor>
+          <pubPlace>Firenze</pubPlace>
+          <publisher>Presso l'Accademia della Crusca</publisher>
+          <date>1991</date>
+          <note>Critical edition edited by Giorgio Dilemmi</note>
+          <note type="content">The critical edition includes the redactions of manuscript Q and the printed editions of 1505 and 1553</note>
+          <note type="encoding">The digital text is based on the 1553 redaction.</note>
+        </bibl>
       </sourceDesc>
     </fileDesc>
 
     <encodingDesc>
       <projectDesc>
-        <p>
-          Sample digital scholarly edition presenting three autonomous versions (Q, 1505, 1553),
-          transcribed from the incipit of Book I up to the second poetic section.
-          The 1505 dedicatory letter is encoded as a separate paratextual unit.
-        </p>
+        <p>This project consists of the creation of a digital edition of <title> Gli Asolani</title> by Pietro Bembo, based on the critial edition of Giorgio Dilemmi (1991).</p>
       </projectDesc>
-
       <editorialDecl>
-        <p>
-          The texts are aligned by macro-textual units (Prose 1 → Verses 1 → Prose 2 → Verses 2).
-          A selective negative critical apparatus may be used to record significant divergences.
-        </p>
+        <p>The text has been transcribed from the reference critical edition, retaining the spelling and punctuation of the 1553 redaction, which serves as the basis for the digital text.</p>
+        <p>The work focuses on the collation of the redactions of manuscript Q and the printed editions of 1505 and 1553. The critical apparatus from the reference edition has not been reproduced; instead, a direct comparison between the three witnesses has been carried out.</p>
+        <p>No normalizing interventions have been carried out: the transcription faithfully reproduces the linguistic and formal characteristics of the base text. Words divided at line breaks in the source have been silently recombined without further intervention.</p>
       </editorialDecl>
+      <tagsDecl>
+        <p>The encoding was carried out in compliance with the TEI P5 guidelines.</p>
+      </tagsDecl>
     </encodingDesc>
 
     <profileDesc>
@@ -48,6 +55,18 @@
         <language ident="it">Italian (primary text)</language>
         <language ident="en">English (editorial documentation)</language>
       </langUsage>
+      <particDesc>
+        <listPerson>
+          <person xml:id="caterina" sameAs="http://viaf.org/viaf/52489508">
+            <persName>Caterina Cornaro</persName>
+            <note>Queen of Cyprus</note>
+          </person>
+          <person xml:id="perottino">
+            <persName>Perottino</persName>
+            <note>unhappy lover of the Asolani</note>
+          </person>
+        </listPerson>
+      </particDesc>
     </profileDesc>
   </teiHeader>
 
@@ -56,18 +75,2140 @@
 
       <listWit>
         <witness xml:id="Q">Autograph witness Q (Querini Stampalia)</witness>
-        <witness xml:id="C">Printed edition 1505 (text 1)</witness>
+        <witness xml:id="T1">Printed edition 1505 (text 1)</witness>
         <witness xml:id="T16">Printed edition 1553 (text 16)</witness>
-        <witness xml:id="T10">Printed edition 1530 (text 10, used as ancillary witness)</witness>
+        <witness xml:id="T10">Printed edition 1530 (text 10, used as ancillary witness, not transcribed in this sample)</witness>
         <witness xml:id="M">Autograph fragments M (not transcribed in this sample)</witness>
       </listWit>
 
       <!-- 1505 paratext -->
-      <div type="paratext" xml:id="C_dedication">
+      <div type="paratext" xml:id="T1_dedication">
         <head>1505 – Dedicatory letter</head>
         <pb n="1505-DED-1"/>
         <p>PLACEHOLDER – paste here the selected portion of the dedicatory letter.</p>
       </div>
+
+
+
+      <!--TESTO CRITICO-->
+      <!--TESTO CRITICO-->
+      <!--TESTO CRITICO-->
+      <!--TESTO CRITICO-->
+
+      <div type="sequence" n="1">
+        <p n="1" xml:id="s1_p1">
+
+          <!-- INCIPIT SOLO Q (non parallelo) -->
+          <seg type="divergent" wit="#Q">
+            Gli otij, madonna..., delle lettre sempre da me con somma vaghezza
+            desiderati et cercati, et ne' miei primi anni assai di leggiero lunga stagione
+            posseduti et sollecitati, et ultimatamente per le sopravenute mie cure
+            interrotti et intralasciati, hora alla fine riconcedutimisi et ripresi,
+            occasione mi porgono di ragionare in quella maniera che io posso con voi.
+          </seg>
+
+          <!-- INCIPIT PARALLEL0 T16 / T1 -->
+          <app>
+            <lem wit="#T16">Suole a' faticosi navicanti esser caro,</lem>
+            <rdg wit="#T1">Suole essere a' naviganti caro</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quando la notte, da oscuro et tempestoso nembo assaliti et sospinti, nè stella scorgono, nè cosa alcuna appar loro che regga la lor via,</lem>
+            <rdg wit="#T1">qualhora da oscuro et fortunevole nembo sospinti errano et travagliano la lor via,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+          <lem wit="#T16">col segno della indiana pietra ritrovare la tramontana,</lem>
+            <rdg wit="#T1">col segno della indiana pietra ritrovare la tramontana,</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">in guisa che, quale vento soffi et percuota conoscendo, non sia lor tolto il potere et vela et governo là, dove essi di giugnere procacciano</lem>
+            <rdg wit="#T1">in modo che, quale vento soffi conoscendo, non sia lor tolto il potere et vela et governo là dove essi di giugnere procacciano</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">o almeno dove più la loro salute veggono, drizzare;</lem>
+            <rdg wit="#T1">o almeno dove più la loro salvezza veggono, drizzare</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et piace a quelli che per contrada non usata caminano,</lem>
+            <rdg wit="#T1">et a quegli che per straniera contrada caminano è dolce</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">qualhora essi, a parte venuti dove molte vie faccian capo, in qual più tosto sia da mettersi non scorgendo,</lem>
+            <rdg wit="#T1">quando, a parte venuti dove parimente molte vie faccian capo, in quale più tosto debbano mettersi non scorgendo</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">stanno in sul piè dubitosi et sospesi,</lem>
+            <rdg wit="#T1">stanno in sul piè dubitosi et sospesi</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">incontrare chi loro la diritta insegni,</lem>
+            <rdg wit="#T1">incontrare chi loro la diritta insegni</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">sì che essi possano all'albergo senza errore, o forse prima che la notte gli sopragiunga, pervenire.</lem>
+            <rdg wit="#T1">sì che essi possano a l'albergo senza errore, o forse prima che la notte gli sopragiunga, pervenire.</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+        </p>
+      
+
+        <p n="2" xml:id="s1_p2">
+
+          <!-- TESTO PARALLEL0 T16 / T1 -->
+          <app>
+            <lem wit="#T16">Per la qual cosa avisando io,</lem>
+            <rdg wit="#T1">Il perché istimando io,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">da quello che si vede avenire tutto dì,</lem>
+            <rdg wit="#T1">per quello che si vede avvenire tutto dì,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">pochissimi essere quegli huomini, a' quali nel peregrinaggio di questa nostra vita mortale,</lem>
+            <rdg wit="#T1">pochissimi essere quegli huomini, a' quali nel peregrinaggio di questa nostra vita mortale,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">hora dalla turba delle passioni soffiato et hora dalle tante et così al vero somiglianti apparenze d'openioni fatto incerto,</lem>
+            <rdg wit="#T1">hora dalla turba delle passioni soffiato et hora dalle tante et così al vero somiglianti apparenze d'openioni fatto incerto,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quasi per lo continuo et di calamita et di scorta non faccia mestiero,</lem>
+            <rdg wit="#T1">quasi per lo continovo et di calamita et di scorta non faccia mestiero,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">ho sempre giudicato gratioso ufficio per coloro adoperarsi,</lem>
+            <rdg wit="#T1">ho sempre giudicato gratioso ufficio per coloro usarsi,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">i quali, delle cose o da essi avenute o da altri apparate o per se medesimi ritrovate trattando,</lem>
+            <rdg wit="#T1">e quali, delle cose o da essi avenute o da altri apparate o per se medesimi ritrovate trattando,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">a gli altri huomini dimostrano come si possa in qualche parte di questo periglioso corso et di questa strada,</lem>
+            <rdg wit="#T1">a gli altri huomini dimostrano come si possa in qualche parte di questa perigliosa strada et corso,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">a smarrire così agevole, non errare.</lem>
+            <rdg wit="#T1">non errare.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+        </p>
+      
+
+        <p n="3" xml:id="s1_p3">
+        
+        <app>
+            <lem wit="#T16">Perciò che quale più gratiosa cosa può essere che il giovare altrui?</lem>
+            <rdg wit="#T1">Perciò che quale più gratiosa cosa può essere che il giovare altrui?</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">O pure che si può qua giù fare, che ad huom più si convenga,</lem>
+            <rdg wit="#T1">O pure che si può qua giù fare più convenevole a chi è huomo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che essere a molti huomini di lor bene cagione?</lem>
+            <rdg wit="#T1">che essere a molti huomini di lor bene cagione?</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">Et poi, se è lodevole per sé,</lem>
+            <rdg wit="#T1">Et poi, se è lodevole per sé</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che è in ogni maniera lodevolissimo,</lem>
+            <rdg wit="#T1">(che è in ogni maniera lodevolissimo)</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">un huom solo senza fallimento saper vivere non inteso et non veduto da persona,</lem>
+            <rdg wit="#T1">un huom solo sanza fallimento saper vivere non inteso et non veduto da persona,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quanto più è da credere che lodar si debba un altro,</lem>
+            <rdg wit="#T1">quanto più è da credere che lodare si debba un altro,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">il quale et sa esso la sua vita senza fallo scorgere</lem>
+            <rdg wit="#T1">il quale et sa esso la sua vita sanza fallo scorgere</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et oltre a·cciò insegna et dona modo ad infiniti altri huomini,</lem>
+            <rdg wit="#T1">et insegna et dona modo a infiniti altri huomini,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che ci vivono, di non fallire?</lem>
+            <rdg wit="#T1">che vivono, di non fallire?</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16"><gap reason="absent"/></lem>
+            <rdg wit="#T1">ché pensare che alcuno,insegnante altrui la via di pervenire ad una parte,non la sappia egli,ragionevolmente non si puote</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+        </p>
+      
+
+
+        <p n="4" xml:id="s1_p4">
+
+        <app>
+            <lem wit="#T16">Ma perciò che tra le molte cagioni,</lem>
+            <rdg wit="#T1">Ma perciò che tra le cagioni,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">le quali il nostro tranquillo navicar ci turbano et il sentiero del buon vivere ci rendono sospetto et dubbioso,</lem>
+            <rdg wit="#T1">che il nostro tranquillo navigar ci sturbano et la calla del buon vivere ci rendono sospetta et dubbiosa,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">suole con le primiere essere il non saper noi le più volte quale amore buono sia et qual reo,</lem>
+            <rdg wit="#T1">suole per la primiera essere il non sapere noi le più volte quale buono amore sia et quale reo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">il che non saputo fa che noi,</lem>
+            <rdg wit="#T1">il che non saputo fa che noi,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">le cose che fuggire si devrebbono amando et quelle che sono da seguire non amando,</lem>
+            <rdg wit="#T1">le cose che fuggire si devrebbono amando et quell'altre che sono da essere seguitate non amando,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et tal volta o meno o più del convenevole hora schifandole et hora cercandole,</lem>
+            <rdg wit="#T1">et tale volta o meno o più del convenevole hora schifandole et hora cercandole,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">travagliati et smarriti viviamo,</lem>
+            <rdg wit="#T1">travagliati et smarriti viviamo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">ho voluto alcuni ragionamenti raccogliere,</lem>
+            <rdg wit="#T1">ho voluto alcuni ragionamenti raccogliere,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che in una brigata di tre nostre valorose donne et in parte di madonna la <persName ref="#caterina">Reina di Cipri</persName>,</lem>
+            <rdg wit="#T1">che in una brigata di tre nostre valorose donne et in parte di madonna la <persName ref="#caterina">Reina di Cipri</persName>,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">pochi dì sono,</lem>
+            <rdg wit="#T1">pochi dì sono,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">tre nostri aveduti et intendenti giovani fecero d'Amore,</lem>
+            <rdg wit="#T1">tre nostri aveduti et intendenti giovani fecero d'Amore,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">assai diversamente questionandone in tre giornate,</lem>
+            <rdg wit="#T1">assai ampia et diversamente questionandone in tre giornate,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">a·ffine che il giovamento et pro che essi hanno a me renduto,</lem>
+            <rdg wit="#T1">a·ffine che il giovamento et pro che essi hanno a me renduto,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">da·lloro che fatti gli hanno sentendogli, che nel vero non è stato poco,</lem>
+            <rdg wit="#T1">da loro che gli hanno fatti sentendogli, (et nel vero non è stato poco)</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">possano etiandio rendere a qualunque altro,</lem>
+            <rdg wit="#T1">possano etiandio rendere a chiunque altro,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">così hora da me raccolti, piacesse di sentirgli.</lem>
+            <rdg wit="#T1">così hora da me raccolti, piacesse di sentirgli.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="5" xml:id="s1_p5">
+
+          <app>
+            <lem wit="#T16">Alla qual cosa fare,</lem>
+            <rdg wit="#T1">Alla qual cosa fare</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">come che in ciascuna età stia bene l'udire et leggere le giovevoli cose et spetialmente questa,</lem>
+            <rdg wit="#T1">(come che in ciascuna età stia bene l'udire et leggere le giovenevoli cose et sopra l'altre questa,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">perciò che non amare come che sia in niuna stagione non si può,</lem>
+            <rdg wit="#T1">perciò che non amare come che sia in nessuna stagione non si puote,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quando si vede che da natura insieme col vivere a tutti gli huomini è dato che ciascuno alcuna cosa sempre ami,</lem>
+            <rdg wit="#T1">quando si vede che da natura insieme col vivere a tutti gli huomini è dato che ciascuno alcuna cosa sempre ami et sempre disii)</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">pure io, che giovane sono,</lem>
+            <rdg wit="#T1">pure io, che giovane sono,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">i giovani huomini et le giovani donne conforto et invito maggiormente.</lem>
+            <rdg wit="#T1">gli giovani huomini et le giovani donne conforto et invito maggiormente.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="6" xml:id="s1_p6">
+
+          <app>
+            <lem wit="#T16">Perciò che a molti et a molte di loro per aventura agevolmete averrà che,</lem>
+            <rdg wit="#T1">Perciò che a molti et a molte di loro per aventura (se io non m'inganno) agevolmete avverrà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">udito quello che io mi profero di scriverne,</lem>
+            <rdg wit="#T1">udito quello che io mi profero di scriverne,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">essi prima d'Amore potranno far giudicio che egli di loro s'habbia fatto pruova.</lem>
+            <rdg wit="#T1">essi prima d'Amore potranno far giudicio che egli di loro s'habbia fatto pruova.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="7" xml:id="s1_p7">
+
+          <app>
+            <lem wit="#T16">Il che, quanto esser debba lor caro,</lem>
+            <rdg wit="#T1">Il che, quanto esser debba lor caro,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">nè io hora dirò,</lem>
+            <rdg wit="#T1">nè io hora dirò,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et essi meglio potranno ne gli altri loro più maturi anni giudicare.</lem>
+            <rdg wit="#T1">et essi meglio potranno ne gli altri loro più maturi anni giudicare.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="8" xml:id="s1_p8">
+
+          <app>
+            <lem wit="#T16">Ma di vero, sì come nel più delle cose l'uso è ottimo et certissimo maestro,</lem>
+            <rdg wit="#T1">Ma di vero, sì come nel più delle cose l'uso è ottimo et certissimo maestro,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">così in alcune,</lem>
+            <rdg wit="#T1">così in alcune,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et in quelle massimamente che possono non meno di noia essere che di diletto cagione,</lem>
+            <rdg wit="#T1">et in quelle massimamente che possono non meno di noia essere che di sollazzo cagione,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">sì come mostra che questo sia, l'ascoltarle o leggerle in altrui,</lem>
+            <rdg wit="#T1">come mostra che questi sia, l'ascoltarle o leggerle in altrui,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">prima che a pruova di loro si venga,</lem>
+            <rdg wit="#T1">prima che a pruova di loro si venga,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">senza fallo molte volte a molti huomini di molto giovamento è stato.</lem>
+            <rdg wit="#T1">sanza fallo molte volte a molti huomini di molto giovamento è stato.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="9" xml:id="s1_p9">
+
+          <app>
+            <lem wit="#T16">Per la qual cosa bellissimo ritrovamento delle genti è da dir che sieno le lettere et la scrittura,</lem>
+            <rdg wit="#T1">Per la qual cosa bellissimo ritrovamento delle genti è da dire che sieno le lettre istate,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">nella qual noi molte cose passate,</lem>
+            <rdg wit="#T1">nelle quali noi molte cose passate,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che non potrebbono altramente essere alla nostra notitia pervenute,</lem>
+            <rdg wit="#T1">che non potrebbono altrimenti essere alla nostra notitia pervenute,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">tutte quasi in uno specchio riguardando et quello di loro che faccia per noi raccogliendo,</lem>
+            <rdg wit="#T1">tutte quasi in un specchio riguardando et quello di loro che faccia per noi raccogliendo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">da gli altrui essempi ammaestrati ad entrare nelli non prima</lem>
+            <rdg wit="#T1">da gli altrui essempi ammaestrati ad entrare ne gli non prima</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">o solcati pelaghi o camminati sentieri della vita,</lem>
+            <rdg wit="#T1">o solcati pelaghi o caminati sentieri della vita,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quasi provati et nocchieri et viandanti,</lem>
+            <rdg wit="#T1">quasi approvati et nocchieri et viandanti,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">più sicuramente ci mettiamo.</lem>
+            <rdg wit="#T1">più sicuramente ci mettia[m]o.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="10" xml:id="s1_p10">
+
+          <app>
+            <lem wit="#T16">Senza che infinito piacere ci porgono le diverse lettioni,</lem>
+            <rdg wit="#T1">Sanza che infinito piacere ci porgono le diverse lettioni,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">delle quali gli animi d'alquanti huomini,</lem>
+            <rdg wit="#T1">delle quali gli animi d'alquanti huomini,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">non altramente che faccia di cibo il corpo,</lem>
+            <rdg wit="#T1">non altrimenti che il corpo di cibo ,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">si pascono assai sovente et prendono insieme da esse dilettevolissimo nodrimento.</lem>
+            <rdg wit="#T1">si pascono assai sovente et prendono insieme da esse dilettevolissimo nodrimento.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="11" xml:id="s1_p11">
+
+          <app>
+            <lem wit="#T16">Ma lasciando questo da parte stare et alle ragionate cose d'Amore, che io dissi, venendo,</lem>
+            <rdg wit="#T1">Ma lasciando questo da parte stare et alle ragionate cose d'Amore, che io dissi, venendo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">acciò che meglio si possa ogni lor parte scorgere tale,</lem>
+            <rdg wit="#T1">acciò che meglio si possa ogni loro parte scorgere tale,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quale appunto ciascuna fu ragionata,</lem>
+            <rdg wit="#T1">quale appunto ciascuna fu ragionata,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">stimo che ben fatto sia che,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">prima che io passi di loro più avanti,</lem>
+            <rdg wit="#T1">prima che io passi di loro più innanzi,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">come il ragionare havesse luogo si faccia chiaro.</lem>
+            <rdg wit="#T1">come il ragionare havesse luoco si faccia chiaro.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      </div>
+
+
+
+      <!-- SEQUENZA 2 -->
+      <div type="sequence" n="2">
+        
+        <p n="1" xml:id="s2_p1">
+
+          <app>
+            <lem wit="#T16 #T1">[ii]  Asolo aduqnue,</lem>
+            <rdg wit="#Q">[ii]  Asolo aduqnue, madonna ...,</rdg>
+          </app>
+          vago et piacevole castello posto ne gli 
+          <app>
+            <lem wit="#T16 #T1">stremi</lem>
+            <rdg wit="#Q">estremi</rdg>
+          </app>
+          gioghi delle nostre alpi sopra
+          <app>
+            <lem wit="#T16">il</lem>
+            <rdg wit="#T1 #Q">'l</rdg>
+          </app>
+          Trivigiano,
+          <app>
+            <lem wit="#T16">è, sì come ogniuno dee sapere,</lem>
+            <rdg wit="#T1">è (sì come ogniuno dee sapere)</rdg>
+            <rdg wit="#Q">è hora (sì come dovete sapere)</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">di madonna la <persName ref="#caterina">Reina di Cipri</persName>, con la cui famiglia, la quale è detta Cornelia,</lem>
+            <rdg wit="#T1">arnese della <persName ref="#caterina">Reina di Cipri</persName>, con la cui famiglia, </rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">molto nella nostra città honorata et illustre,</lem>
+            <rdg wit="#T1">hoggi di molto nella nostra città honorata et illustre,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">è la mia non solamente d'amistà</lem>
+            <rdg wit="#T1">è la mia non solamente d'amistà</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et di dimestichezza congiunta,</lem>
+            <rdg wit="#T1">et di riverenza, che essa le porta, congiunta,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">ma anchora di parentado.</lem>
+            <rdg wit="#T1">ma anchora di parentado.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        
+        </p>
+
+
+        <p n="2" xml:id="s2_p2">
+          <app>
+            <lem wit="#T16">Dove essendo ella questo settembre passato a' suoi diporti andata,</lem>
+            <rdg wit="#T1">Dove essendo ella questo settembre passato a' suoi diporti andata,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">avvenne che ella quivi maritò una delle sue damigelle,</lem>
+            <rdg wit="#T1">avvenne che ella quivi maritò una delle sue damigelle,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">la quale, perciò che bella et costumata et gentile era molto</lem>
+            <rdg wit="#T1">la quale, perciò che bella et costumata et gentile fanciulla la vedea molto,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et perciò che da bambina cresciuta se l'havea,</lem>
+            <rdg wit="#T1"><gap reason="absent"/></rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">assai teneramente era da llei amata et havuta cara.</lem>
+            <rdg wit="#T1">assai teneramente era da lei amata et havuta cara.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+
+
+        <p n="3" xml:id="s2_p3">
+
+          <app>
+            <lem wit="#T16">Per che vi fece l'apparecchio delle nozze ordinare bello et grande,</lem>
+            <rdg wit="#T1">Il perche fecevi l'apparecchio delle nozze ordinare bello et grande,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et, invitatovi delle vicine contrade qualunque più honorato huomo v'era con le lor donne,</lem>
+            <rdg wit="#T1">et, invitato delle vicine contrade chiunque più honorato huomo era con le lor donne,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et da Vinegia similmente,</lem>
+            <rdg wit="#T1">et da Vinegia similmente,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">in suoni et canti et balli et solennissimi conviti l'un giorno appresso all'altro</lem>
+            <rdg wit="#T1">in suoni et canti et balli et solennissimi conviti l'un giorno doppo l'altro</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">ne menava festeggiando con sommo piacer di ciascuno.</lem>
+            <rdg wit="#T1">ne menava festeggiando con sommo piacere di ciascuno.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        
+        </p>
+
+        <p n="4" xml:id="s2_p4">
+          <app>
+            <lem wit="#T16">Erano quivi tra gli altri,</lem>
+            <rdg wit="#T1">Erano quivi tra gli altri,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che invitati dalla Reina vennero a quelle feste,</lem>
+            <rdg wit="#T1">che invitati dalla Reina vennero a quelle feste,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">tre gentili huomini della nostra città,</lem>
+            <rdg wit="#T1">tre gentili huomini della nostra città,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">giovani et d'alto cuore, i quali,</lem>
+            <rdg wit="#T1">giovani et d'alto cuore, e quali,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">da' loro primi anni ne gli studi delle lettere usati</lem>
+            <rdg wit="#T1">da' loro primi anni ne gli otii delle Muse allevati</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et in essi tuttavia dimoranti per lo più tempo,</lem>
+            <rdg wit="#T1">et in essi tuttavia dimoranti per lo più tempo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">oltre a'cciò il pregio d'ogni bel costume haveano,</lem>
+            <rdg wit="#T1">oltre gli ornamenti delle lettre il pregio d'ogni bella loda haveano,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che a nobili cavalieri s'appartenesse d'havere.</lem>
+            <rdg wit="#T1">che a nobili donzelli s'appartenesse d'havere.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+
+
+        <p n="5" xml:id="s2_p5">
+          <app>
+            <lem wit="#T16">Costor per aventura,</lem>
+            <rdg wit="#T1">Costoro per aventura,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">come che a tutte le donne che in que' conviti si trovarono,</lem>
+            <rdg wit="#T1">come che a tutte le donne che in que' conviti si trovarono,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">sì per la chiarezza del sangue loro et sì anchora molto più per la viva fama de' loro studi</lem>
+            <rdg wit="#T1">sì per la chiarezza del sangue loro et sì anchora molto più per la viva fama de' loro studi</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et del lor valore fosser cari,</lem>
+            <rdg wit="#T1">et del loro valore fusser cari,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16"><gap reason="absent"/></lem>
+            <rdg wit="#T1">et per questo chiamati sovente da ciascuna et disiderati,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">essi nondimeno pure con tre di loro belle et vaghe giovani et di gentili costumi ornate,</lem>
+            <rdg wit="#T1">essi nondimeno pure con tre di loro similmente belle et vaghe giovani et di gentili costumi ornate,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">[perciò che prossimani eran loro per sangue et lunga dimestichezza con esse et co' lor mariti haveano,</lem>
+            <rdg wit="#T1">perciò che prossimani erano loro per sangue et lunga dimestichezza con esse et co' loro mariti haveano,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">i quali tutti e tre di què dì a Vinegia tornati erano per loro bisogne],</lem>
+            <rdg wit="#T1"><gap reason="absent"/>,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">più spesso et più sicuramente si davano che con altre,</lem>
+            <rdg wit="#T1">più ispesso et più sicuramente si davano che con altre,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">volentieri sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.</lem>
+            <rdg wit="#T1">volentieri sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+
+
+        <p n="6" xml:id="s2_p6">
+          <app>
+            <lem wit="#T16">Quantunque <person xml:id="perottino">Perottino</person>,</lem>
+            <rdg wit="#T1">Quantunque <person xml:id="perottino">Perottino</person></rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che così nominare un di loro m'è piaciuto in questi sermoni,</lem>
+            <rdg wit="#T1">(che così nomare un di loro m'è piaciuto in questi sermoni)</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">poco et rado parlasse,</lem>
+            <rdg wit="#T1">poco et rado parlasse,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">nè fosse chi riso in bocca gli havesse solamente una volta in tutte quelle feste veduto.</lem>
+            <rdg wit="#T1">nè fusse chi riso in bocca gli havesse solo una volta in tutte quelle feste veduto.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+
+        <p n="7" xml:id="s2_p7">
+          <app>
+            <lem wit="#T16">Il quale etiandio molto da ogniuno spesse volte si furava,</lem>
+            <rdg wit="#T1">Il quale etiandio molto da ogniuno spesse volte si furava,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">sì come colui che l'animo sempre havea in tristo pensiero;</lem>
+            <rdg wit="#T1">sì come quello che l'animo sempre havea in tristo pensiero;</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">nè quivi venuto sarebbe,</lem>
+            <rdg wit="#T1">nè quivi venuto sarebbe,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">se da' suoi compagni,</lem>
+            <rdg wit="#T1">se da' suoi compagni,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che questo studiosamente fecero,</lem>
+            <rdg wit="#T1">che questo maestrevolmente fecero,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">acciò che egli tra gli allegri dimorando si rallegrasse,</lem>
+            <rdg wit="#T1">acciò che egli tra gli allegri dimorando si rallegrasse,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">astretto et sospinto al venirvi non fosse stato.</lem>
+            <rdg wit="#T1">astretto et sospinto a venirvi non fusse stato.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+
+        </p>
+
+
+        <p n="8" xml:id="s2_p8">
+          <app>
+            <lem wit="#T16">Nè pure solamente <person xml:id="perottino">Perottino</person> ho io con infinita voce in questa guisa nomato,</lem>
+            <rdg wit="#T1">Nè pure solamente <person xml:id="perottino">Perottino</person> ho io con infinita voce in questa guisa nomato,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">ma le tre donne et gli altri giovani anchora;</lem>
+            <rdg wit="#T1">ma le tre donne et gli altri giovani anchora;</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">non per altro rispetto,</lem>
+            <rdg wit="#T1">non per altro rispetto,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">se non per la tôrre alle vane menti de' volgari occasione,</lem>
+            <rdg wit="#T1">se non per tôrre alle vane et sciocche menti de' volgari occasione,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">i loro veri nomi non palesando,</lem>
+            <rdg wit="#T1">gli loro veri nomi non appalesando,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">di pensar cosa in parte alcuna meno che convenevole</lem>
+            <rdg wit="#T1">di pensar cosa in parte alcuna meno che convenevole</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">alla loro honestissima vita.</lem>
+            <rdg wit="#T1">alla loro honestissima et interissima vita.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+
+
+        <p n="9" xml:id="s2_p9">
+
+          <app>
+            <lem wit="#T16">Con ciò sia cosa che questi parlari,</lem>
+            <rdg wit="#T1">Con ciò sia cosa che questi parlari,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">d'uno in altro passando,</lem>
+            <rdg wit="#T1">d'uno in altro passando,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">a brieve andare possono in contezza de gli huomini pervenire,</lem>
+            <rdg wit="#T1">a brieve andare possono in contezza de gli huomini pervenire,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">de' i quali non pochi sogliono esser coloro che</lem>
+            <rdg wit="#T1">de' quali non pochi sogliono esser coloro che</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">le cose sane le più volte rimirano con occhio non sano.</lem>
+            <rdg wit="#T1">le cose sane le più volte rimirano con occhio non sano.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      </div>
+
+
+
+      <!--SEQUENZA 3-->
+      <div type="sequence" n="3">
+        <p n="1" xml:id="s3_p1">
+
+          <app>
+            <lem wit="#T16">[iii]  Ma alle nozze della <person xml:id="caterina">Reina</person> tornando,</lem>
+            <rdg wit="#T1">[iii]  Ma tornando alle nozze della <person xml:id="caterina">Reina</person>,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">mentre che elle così andavano come io dissi,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">un giorno tra gli altri nella fine del desinare,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che sempre era splendido et da diversi giuochi d'huomini che si soglion far ridere</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et da suoni di vari strumenti et da canti hora d'una maniera et quando d'altra rallegrato,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">due vaghe fanciulle per mano tenendosi, con lieto sembiante al capo delle tavole,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">là dove la Reina sedea, venute, riverentemente la salutarono; </lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et poi che l'hebbero salutata, amendue levatesi,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">la maggiore, un bellissimo liuto che nell'una mano teneva al petto recandosi et assai maestrevolmente toccandolo,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">dopo alquanto spatio col piacevole suono di quello la soave voce di lei accordando et dolcissimamente cantando,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">così disse:</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          
+        </p>
+
+
+
+
+
+
+
+
+
+
+        <!--WITNESSES-->
+        <!--WITNESSES-->
+        <!--WITNESSES-->
+        
+        <div type="sequence" n="1">
+        <p n="1" xml:id="s1_p1">
+
+          <!-- INCIPIT SOLO Q (non parallelo) -->
+          <seg type="divergent" wit="#Q">
+            Gli otij, madonna..., delle lettre sempre da me con somma vaghezza
+            desiderati et cercati, et ne' miei primi anni assai di leggiero lunga stagione
+            posseduti et sollecitati, et ultimatamente per le sopravenute mie cure
+            interrotti et intralasciati, hora alla fine riconcedutimisi et ripresi,
+            occasione mi porgono di ragionare in quella maniera che io posso con voi.
+          </seg>
+
+          <!-- INCIPIT PARALLEL0 T16 / T1 -->
+          <app>
+            <lem wit="#T16">Suole a' faticosi navicanti esser caro,</lem>
+            <rdg wit="#T1">Suole essere a' naviganti caro</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quando la notte, da oscuro et tempestoso nembo assaliti et sospinti, nè stella scorgono, nè cosa alcuna appar loro che regga la lor via,</lem>
+            <rdg wit="#T1">qualhora da oscuro et fortunevole nembo sospinti errano et travagliano la lor via,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+          <lem wit="#T16">col segno della indiana pietra ritrovare la tramontana,</lem>
+            <rdg wit="#T1">col segno della indiana pietra ritrovare la tramontana,</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">in guisa che, quale vento soffi et percuota conoscendo, non sia lor tolto il potere et vela et governo là, dove essi di giugnere procacciano</lem>
+            <rdg wit="#T1">in modo che, quale vento soffi conoscendo, non sia lor tolto il potere et vela et governo là dove essi di giugnere procacciano</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">o almeno dove più la loro salute veggono, drizzare;</lem>
+            <rdg wit="#T1">o almeno dove più la loro salvezza veggono, drizzare</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et piace a quelli che per contrada non usata caminano,</lem>
+            <rdg wit="#T1">et a quegli che per straniera contrada caminano è dolce</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">qualhora essi, a parte venuti dove molte vie faccian capo, in qual più tosto sia da mettersi non scorgendo,</lem>
+            <rdg wit="#T1">quando, a parte venuti dove parimente molte vie faccian capo, in quale più tosto debbano mettersi non scorgendo</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">stanno in sul piè dubitosi et sospesi,</lem>
+            <rdg wit="#T1">stanno in sul piè dubitosi et sospesi</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">incontrare chi loro la diritta insegni,</lem>
+            <rdg wit="#T1">incontrare chi loro la diritta insegni</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">sì che essi possano all'albergo senza errore, o forse prima che la notte gli sopragiunga, pervenire.</lem>
+            <rdg wit="#T1">sì che essi possano a l'albergo senza errore, o forse prima che la notte gli sopragiunga, pervenire.</rdg>
+            <rdg wit="#Q"><gap reason="not_applicable"/></rdg>
+          </app>
+        </p>
+      
+
+        <p n="2" xml:id="s1_p2">
+
+          <!-- TESTO PARALLEL0 T16 / T1 -->
+          <app>
+            <lem wit="#T16">Per la qual cosa avisando io,</lem>
+            <rdg wit="#T1">Il perché istimando io,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">da quello che si vede avenire tutto dì,</lem>
+            <rdg wit="#T1">per quello che si vede avvenire tutto dì,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">pochissimi essere quegli huomini, a' quali nel peregrinaggio di questa nostra vita mortale,</lem>
+            <rdg wit="#T1">pochissimi essere quegli huomini, a' quali nel peregrinaggio di questa nostra vita mortale,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">hora dalla turba delle passioni soffiato et hora dalle tante et così al vero somiglianti apparenze d'openioni fatto incerto,</lem>
+            <rdg wit="#T1">hora dalla turba delle passioni soffiato et hora dalle tante et così al vero somiglianti apparenze d'openioni fatto incerto,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quasi per lo continuo et di calamita et di scorta non faccia mestiero,</lem>
+            <rdg wit="#T1">quasi per lo continovo et di calamita et di scorta non faccia mestiero,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">ho sempre giudicato gratioso ufficio per coloro adoperarsi,</lem>
+            <rdg wit="#T1">ho sempre giudicato gratioso ufficio per coloro usarsi,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">i quali, delle cose o da essi avenute o da altri apparate o per se medesimi ritrovate trattando,</lem>
+            <rdg wit="#T1">e quali, delle cose o da essi avenute o da altri apparate o per se medesimi ritrovate trattando,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">a gli altri huomini dimostrano come si possa in qualche parte di questo periglioso corso et di questa strada,</lem>
+            <rdg wit="#T1">a gli altri huomini dimostrano come si possa in qualche parte di questa perigliosa strada et corso,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">a smarrire così agevole, non errare.</lem>
+            <rdg wit="#T1">non errare.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+        </p>
+      
+
+        <p n="3" xml:id="s1_p3">
+        
+        <app>
+            <lem wit="#T16">Perciò che quale più gratiosa cosa può essere che il giovare altrui?</lem>
+            <rdg wit="#T1">Perciò che quale più gratiosa cosa può essere che il giovare altrui?</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">O pure che si può qua giù fare, che ad huom più si convenga,</lem>
+            <rdg wit="#T1">O pure che si può qua giù fare più convenevole a chi è huomo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che essere a molti huomini di lor bene cagione?</lem>
+            <rdg wit="#T1">che essere a molti huomini di lor bene cagione?</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">Et poi, se è lodevole per sé,</lem>
+            <rdg wit="#T1">Et poi, se è lodevole per sé</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che è in ogni maniera lodevolissimo,</lem>
+            <rdg wit="#T1">(che è in ogni maniera lodevolissimo)</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">un huom solo senza fallimento saper vivere non inteso et non veduto da persona,</lem>
+            <rdg wit="#T1">un huom solo sanza fallimento saper vivere non inteso et non veduto da persona,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quanto più è da credere che lodar si debba un altro,</lem>
+            <rdg wit="#T1">quanto più è da credere che lodare si debba un altro,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">il quale et sa esso la sua vita senza fallo scorgere</lem>
+            <rdg wit="#T1">il quale et sa esso la sua vita sanza fallo scorgere</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et oltre a·cciò insegna et dona modo ad infiniti altri huomini,</lem>
+            <rdg wit="#T1">et insegna et dona modo a infiniti altri huomini,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che ci vivono, di non fallire?</lem>
+            <rdg wit="#T1">che vivono, di non fallire?</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16"><gap reason="absent"/></lem>
+            <rdg wit="#T1">ché pensare che alcuno,insegnante altrui la via di pervenire ad una parte,non la sappia egli,ragionevolmente non si puote</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+        </p>
+      
+
+
+        <p n="4" xml:id="s1_p4">
+
+        <app>
+            <lem wit="#T16">Ma perciò che tra le molte cagioni,</lem>
+            <rdg wit="#T1">Ma perciò che tra le cagioni,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">le quali il nostro tranquillo navicar ci turbano et il sentiero del buon vivere ci rendono sospetto et dubbioso,</lem>
+            <rdg wit="#T1">che il nostro tranquillo navigar ci sturbano et la calla del buon vivere ci rendono sospetta et dubbiosa,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">suole con le primiere essere il non saper noi le più volte quale amore buono sia et qual reo,</lem>
+            <rdg wit="#T1">suole per la primiera essere il non sapere noi le più volte quale buono amore sia et quale reo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">il che non saputo fa che noi,</lem>
+            <rdg wit="#T1">il che non saputo fa che noi,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">le cose che fuggire si devrebbono amando et quelle che sono da seguire non amando,</lem>
+            <rdg wit="#T1">le cose che fuggire si devrebbono amando et quell'altre che sono da essere seguitate non amando,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et tal volta o meno o più del convenevole hora schifandole et hora cercandole,</lem>
+            <rdg wit="#T1">et tale volta o meno o più del convenevole hora schifandole et hora cercandole,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">travagliati et smarriti viviamo,</lem>
+            <rdg wit="#T1">travagliati et smarriti viviamo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">ho voluto alcuni ragionamenti raccogliere,</lem>
+            <rdg wit="#T1">ho voluto alcuni ragionamenti raccogliere,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che in una brigata di tre nostre valorose donne et in parte di madonna la <persName ref="#caterina">Reina di Cipri</persName>,</lem>
+            <rdg wit="#T1">che in una brigata di tre nostre valorose donne et in parte di madonna la <persName ref="#caterina">Reina di Cipri</persName>,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">pochi dì sono,</lem>
+            <rdg wit="#T1">pochi dì sono,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">tre nostri aveduti et intendenti giovani fecero d'Amore,</lem>
+            <rdg wit="#T1">tre nostri aveduti et intendenti giovani fecero d'Amore,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">assai diversamente questionandone in tre giornate,</lem>
+            <rdg wit="#T1">assai ampia et diversamente questionandone in tre giornate,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">a·ffine che il giovamento et pro che essi hanno a me renduto,</lem>
+            <rdg wit="#T1">a·ffine che il giovamento et pro che essi hanno a me renduto,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">da·lloro che fatti gli hanno sentendogli, che nel vero non è stato poco,</lem>
+            <rdg wit="#T1">da loro che gli hanno fatti sentendogli, (et nel vero non è stato poco)</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">possano etiandio rendere a qualunque altro,</lem>
+            <rdg wit="#T1">possano etiandio rendere a chiunque altro,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">così hora da me raccolti, piacesse di sentirgli.</lem>
+            <rdg wit="#T1">così hora da me raccolti, piacesse di sentirgli.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="5" xml:id="s1_p5">
+
+          <app>
+            <lem wit="#T16">Alla qual cosa fare,</lem>
+            <rdg wit="#T1">Alla qual cosa fare</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">come che in ciascuna età stia bene l'udire et leggere le giovevoli cose et spetialmente questa,</lem>
+            <rdg wit="#T1">(come che in ciascuna età stia bene l'udire et leggere le giovenevoli cose et sopra l'altre questa,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">perciò che non amare come che sia in niuna stagione non si può,</lem>
+            <rdg wit="#T1">perciò che non amare come che sia in nessuna stagione non si puote,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quando si vede che da natura insieme col vivere a tutti gli huomini è dato che ciascuno alcuna cosa sempre ami,</lem>
+            <rdg wit="#T1">quando si vede che da natura insieme col vivere a tutti gli huomini è dato che ciascuno alcuna cosa sempre ami et sempre disii)</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">pure io, che giovane sono,</lem>
+            <rdg wit="#T1">pure io, che giovane sono,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">i giovani huomini et le giovani donne conforto et invito maggiormente.</lem>
+            <rdg wit="#T1">gli giovani huomini et le giovani donne conforto et invito maggiormente.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="6" xml:id="s1_p6">
+
+          <app>
+            <lem wit="#T16">Perciò che a molti et a molte di loro per aventura agevolmete averrà che,</lem>
+            <rdg wit="#T1">Perciò che a molti et a molte di loro per aventura (se io non m'inganno) agevolmete avverrà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">udito quello che io mi profero di scriverne,</lem>
+            <rdg wit="#T1">udito quello che io mi profero di scriverne,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">essi prima d'Amore potranno far giudicio che egli di loro s'habbia fatto pruova.</lem>
+            <rdg wit="#T1">essi prima d'Amore potranno far giudicio che egli di loro s'habbia fatto pruova.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="7" xml:id="s1_p7">
+
+          <app>
+            <lem wit="#T16">Il che, quanto esser debba lor caro,</lem>
+            <rdg wit="#T1">Il che, quanto esser debba lor caro,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">nè io hora dirò,</lem>
+            <rdg wit="#T1">nè io hora dirò,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et essi meglio potranno ne gli altri loro più maturi anni giudicare.</lem>
+            <rdg wit="#T1">et essi meglio potranno ne gli altri loro più maturi anni giudicare.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="8" xml:id="s1_p8">
+
+          <app>
+            <lem wit="#T16">Ma di vero, sì come nel più delle cose l'uso è ottimo et certissimo maestro,</lem>
+            <rdg wit="#T1">Ma di vero, sì come nel più delle cose l'uso è ottimo et certissimo maestro,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">così in alcune,</lem>
+            <rdg wit="#T1">così in alcune,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et in quelle massimamente che possono non meno di noia essere che di diletto cagione,</lem>
+            <rdg wit="#T1">et in quelle massimamente che possono non meno di noia essere che di sollazzo cagione,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">sì come mostra che questo sia, l'ascoltarle o leggerle in altrui,</lem>
+            <rdg wit="#T1">come mostra che questi sia, l'ascoltarle o leggerle in altrui,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">prima che a pruova di loro si venga,</lem>
+            <rdg wit="#T1">prima che a pruova di loro si venga,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">senza fallo molte volte a molti huomini di molto giovamento è stato.</lem>
+            <rdg wit="#T1">sanza fallo molte volte a molti huomini di molto giovamento è stato.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="9" xml:id="s1_p9">
+
+          <app>
+            <lem wit="#T16">Per la qual cosa bellissimo ritrovamento delle genti è da dir che sieno le lettere et la scrittura,</lem>
+            <rdg wit="#T1">Per la qual cosa bellissimo ritrovamento delle genti è da dire che sieno le lettre istate,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">nella qual noi molte cose passate,</lem>
+            <rdg wit="#T1">nelle quali noi molte cose passate,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che non potrebbono altramente essere alla nostra notitia pervenute,</lem>
+            <rdg wit="#T1">che non potrebbono altrimenti essere alla nostra notitia pervenute,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">tutte quasi in uno specchio riguardando et quello di loro che faccia per noi raccogliendo,</lem>
+            <rdg wit="#T1">tutte quasi in un specchio riguardando et quello di loro che faccia per noi raccogliendo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">da gli altrui essempi ammaestrati ad entrare nelli non prima</lem>
+            <rdg wit="#T1">da gli altrui essempi ammaestrati ad entrare ne gli non prima</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">o solcati pelaghi o camminati sentieri della vita,</lem>
+            <rdg wit="#T1">o solcati pelaghi o caminati sentieri della vita,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quasi provati et nocchieri et viandanti,</lem>
+            <rdg wit="#T1">quasi approvati et nocchieri et viandanti,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">più sicuramente ci mettiamo.</lem>
+            <rdg wit="#T1">più sicuramente ci mettia[m]o.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="10" xml:id="s1_p10">
+
+          <app>
+            <lem wit="#T16">Senza che infinito piacere ci porgono le diverse lettioni,</lem>
+            <rdg wit="#T1">Sanza che infinito piacere ci porgono le diverse lettioni,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">delle quali gli animi d'alquanti huomini,</lem>
+            <rdg wit="#T1">delle quali gli animi d'alquanti huomini,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">non altramente che faccia di cibo il corpo,</lem>
+            <rdg wit="#T1">non altrimenti che il corpo di cibo ,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">si pascono assai sovente et prendono insieme da esse dilettevolissimo nodrimento.</lem>
+            <rdg wit="#T1">si pascono assai sovente et prendono insieme da esse dilettevolissimo nodrimento.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      
+
+
+        <p n="11" xml:id="s1_p11">
+
+          <app>
+            <lem wit="#T16">Ma lasciando questo da parte stare et alle ragionate cose d'Amore, che io dissi, venendo,</lem>
+            <rdg wit="#T1">Ma lasciando questo da parte stare et alle ragionate cose d'Amore, che io dissi, venendo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">acciò che meglio si possa ogni lor parte scorgere tale,</lem>
+            <rdg wit="#T1">acciò che meglio si possa ogni loro parte scorgere tale,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">quale appunto ciascuna fu ragionata,</lem>
+            <rdg wit="#T1">quale appunto ciascuna fu ragionata,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">stimo che ben fatto sia che,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">prima che io passi di loro più avanti,</lem>
+            <rdg wit="#T1">prima che io passi di loro più innanzi,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">come il ragionare havesse luogo si faccia chiaro.</lem>
+            <rdg wit="#T1">come il ragionare havesse luoco si faccia chiaro.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      </div>
+
+
+
+      <!-- SEQUENZA 2 -->
+      <div type="sequence" n="2">
+        
+        <p n="1" xml:id="s2_p1">
+
+          <app>
+            <lem wit="#T16 #T1">[ii]  Asolo aduqnue,</lem>
+            <rdg wit="#Q">[ii]  Asolo aduqnue, madonna ...,</rdg>
+          </app>
+          vago et piacevole castello posto ne gli 
+          <app>
+            <lem wit="#T16 #T1">stremi</lem>
+            <rdg wit="#Q">estremi</rdg>
+          </app>
+          gioghi delle nostre alpi sopra
+          <app>
+            <lem wit="#T16">il</lem>
+            <rdg wit="#T1 #Q">'l</rdg>
+          </app>
+          Trivigiano,
+          <app>
+            <lem wit="#T16">è, sì come ogniuno dee sapere,</lem>
+            <rdg wit="#T1">è (sì come ogniuno dee sapere)</rdg>
+            <rdg wit="#Q">è hora (sì come dovete sapere)</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">di madonna la <persName ref="#caterina">Reina di Cipri</persName>, con la cui famiglia, la quale è detta Cornelia,</lem>
+            <rdg wit="#T1">arnese della <persName ref="#caterina">Reina di Cipri</persName>, con la cui famiglia, </rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">molto nella nostra città honorata et illustre,</lem>
+            <rdg wit="#T1">hoggi di molto nella nostra città honorata et illustre,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">è la mia non solamente d'amistà</lem>
+            <rdg wit="#T1">è la mia non solamente d'amistà</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et di dimestichezza congiunta,</lem>
+            <rdg wit="#T1">et di riverenza, che essa le porta, congiunta,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">ma anchora di parentado.</lem>
+            <rdg wit="#T1">ma anchora di parentado.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        
+        </p>
+
+
+        <p n="2" xml:id="s2_p2">
+          <app>
+            <lem wit="#T16">Dove essendo ella questo settembre passato a' suoi diporti andata,</lem>
+            <rdg wit="#T1">Dove essendo ella questo settembre passato a' suoi diporti andata,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">avvenne che ella quivi maritò una delle sue damigelle,</lem>
+            <rdg wit="#T1">avvenne che ella quivi maritò una delle sue damigelle,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">la quale, perciò che bella et costumata et gentile era molto</lem>
+            <rdg wit="#T1">la quale, perciò che bella et costumata et gentile fanciulla la vedea molto,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et perciò che da bambina cresciuta se l'havea,</lem>
+            <rdg wit="#T1"><gap reason="absent"/></rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">assai teneramente era da llei amata et havuta cara.</lem>
+            <rdg wit="#T1">assai teneramente era da lei amata et havuta cara.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+
+
+        <p n="3" xml:id="s2_p3">
+
+          <app>
+            <lem wit="#T16">Per che vi fece l'apparecchio delle nozze ordinare bello et grande,</lem>
+            <rdg wit="#T1">Il perche fecevi l'apparecchio delle nozze ordinare bello et grande,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et, invitatovi delle vicine contrade qualunque più honorato huomo v'era con le lor donne,</lem>
+            <rdg wit="#T1">et, invitato delle vicine contrade chiunque più honorato huomo era con le lor donne,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et da Vinegia similmente,</lem>
+            <rdg wit="#T1">et da Vinegia similmente,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">in suoni et canti et balli et solennissimi conviti l'un giorno appresso all'altro</lem>
+            <rdg wit="#T1">in suoni et canti et balli et solennissimi conviti l'un giorno doppo l'altro</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">ne menava festeggiando con sommo piacer di ciascuno.</lem>
+            <rdg wit="#T1">ne menava festeggiando con sommo piacere di ciascuno.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        
+        </p>
+
+        <p n="4" xml:id="s2_p4">
+          <app>
+            <lem wit="#T16">Erano quivi tra gli altri,</lem>
+            <rdg wit="#T1">Erano quivi tra gli altri,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che invitati dalla Reina vennero a quelle feste,</lem>
+            <rdg wit="#T1">che invitati dalla Reina vennero a quelle feste,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">tre gentili huomini della nostra città,</lem>
+            <rdg wit="#T1">tre gentili huomini della nostra città,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">giovani et d'alto cuore, i quali,</lem>
+            <rdg wit="#T1">giovani et d'alto cuore, e quali,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">da' loro primi anni ne gli studi delle lettere usati</lem>
+            <rdg wit="#T1">da' loro primi anni ne gli otii delle Muse allevati</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et in essi tuttavia dimoranti per lo più tempo,</lem>
+            <rdg wit="#T1">et in essi tuttavia dimoranti per lo più tempo,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">oltre a'cciò il pregio d'ogni bel costume haveano,</lem>
+            <rdg wit="#T1">oltre gli ornamenti delle lettre il pregio d'ogni bella loda haveano,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che a nobili cavalieri s'appartenesse d'havere.</lem>
+            <rdg wit="#T1">che a nobili donzelli s'appartenesse d'havere.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+
+
+        <p n="5" xml:id="s2_p5">
+          <app>
+            <lem wit="#T16">Costor per aventura,</lem>
+            <rdg wit="#T1">Costoro per aventura,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">come che a tutte le donne che in que' conviti si trovarono,</lem>
+            <rdg wit="#T1">come che a tutte le donne che in que' conviti si trovarono,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">sì per la chiarezza del sangue loro et sì anchora molto più per la viva fama de' loro studi</lem>
+            <rdg wit="#T1">sì per la chiarezza del sangue loro et sì anchora molto più per la viva fama de' loro studi</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et del lor valore fosser cari,</lem>
+            <rdg wit="#T1">et del loro valore fusser cari,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16"><gap reason="absent"/></lem>
+            <rdg wit="#T1">et per questo chiamati sovente da ciascuna et disiderati,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">essi nondimeno pure con tre di loro belle et vaghe giovani et di gentili costumi ornate,</lem>
+            <rdg wit="#T1">essi nondimeno pure con tre di loro similmente belle et vaghe giovani et di gentili costumi ornate,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">[perciò che prossimani eran loro per sangue et lunga dimestichezza con esse et co' lor mariti haveano,</lem>
+            <rdg wit="#T1">perciò che prossimani erano loro per sangue et lunga dimestichezza con esse et co' loro mariti haveano,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">i quali tutti e tre di què dì a Vinegia tornati erano per loro bisogne],</lem>
+            <rdg wit="#T1"><gap reason="absent"/>,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">più spesso et più sicuramente si davano che con altre,</lem>
+            <rdg wit="#T1">più ispesso et più sicuramente si davano che con altre,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">volentieri sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.</lem>
+            <rdg wit="#T1">volentieri sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+
+
+        <p n="6" xml:id="s2_p6">
+          <app>
+            <lem wit="#T16">Quantunque <person xml:id="perottino">Perottino</person>,</lem>
+            <rdg wit="#T1">Quantunque <person xml:id="perottino">Perottino</person></rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che così nominare un di loro m'è piaciuto in questi sermoni,</lem>
+            <rdg wit="#T1">(che così nomare un di loro m'è piaciuto in questi sermoni)</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">poco et rado parlasse,</lem>
+            <rdg wit="#T1">poco et rado parlasse,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">nè fosse chi riso in bocca gli havesse solamente una volta in tutte quelle feste veduto.</lem>
+            <rdg wit="#T1">nè fusse chi riso in bocca gli havesse solo una volta in tutte quelle feste veduto.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+
+        <p n="7" xml:id="s2_p7">
+          <app>
+            <lem wit="#T16">Il quale etiandio molto da ogniuno spesse volte si furava,</lem>
+            <rdg wit="#T1">Il quale etiandio molto da ogniuno spesse volte si furava,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">sì come colui che l'animo sempre havea in tristo pensiero;</lem>
+            <rdg wit="#T1">sì come quello che l'animo sempre havea in tristo pensiero;</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">nè quivi venuto sarebbe,</lem>
+            <rdg wit="#T1">nè quivi venuto sarebbe,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">se da' suoi compagni,</lem>
+            <rdg wit="#T1">se da' suoi compagni,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che questo studiosamente fecero,</lem>
+            <rdg wit="#T1">che questo maestrevolmente fecero,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">acciò che egli tra gli allegri dimorando si rallegrasse,</lem>
+            <rdg wit="#T1">acciò che egli tra gli allegri dimorando si rallegrasse,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">astretto et sospinto al venirvi non fosse stato.</lem>
+            <rdg wit="#T1">astretto et sospinto a venirvi non fusse stato.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+
+        </p>
+
+
+        <p n="8" xml:id="s2_p8">
+          <app>
+            <lem wit="#T16">Nè pure solamente <person xml:id="perottino">Perottino</person> ho io con infinita voce in questa guisa nomato,</lem>
+            <rdg wit="#T1">Nè pure solamente <person xml:id="perottino">Perottino</person> ho io con infinita voce in questa guisa nomato,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">ma le tre donne et gli altri giovani anchora;</lem>
+            <rdg wit="#T1">ma le tre donne et gli altri giovani anchora;</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">non per altro rispetto,</lem>
+            <rdg wit="#T1">non per altro rispetto,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">se non per la tôrre alle vane menti de' volgari occasione,</lem>
+            <rdg wit="#T1">se non per tôrre alle vane et sciocche menti de' volgari occasione,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">i loro veri nomi non palesando,</lem>
+            <rdg wit="#T1">gli loro veri nomi non appalesando,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">di pensar cosa in parte alcuna meno che convenevole</lem>
+            <rdg wit="#T1">di pensar cosa in parte alcuna meno che convenevole</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">alla loro honestissima vita.</lem>
+            <rdg wit="#T1">alla loro honestissima et interissima vita.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+
+
+        <p n="9" xml:id="s2_p9">
+
+          <app>
+            <lem wit="#T16">Con ciò sia cosa che questi parlari,</lem>
+            <rdg wit="#T1">Con ciò sia cosa che questi parlari,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">d'uno in altro passando,</lem>
+            <rdg wit="#T1">d'uno in altro passando,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">a brieve andare possono in contezza de gli huomini pervenire,</lem>
+            <rdg wit="#T1">a brieve andare possono in contezza de gli huomini pervenire,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">de' i quali non pochi sogliono esser coloro che</lem>
+            <rdg wit="#T1">de' quali non pochi sogliono esser coloro che</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">le cose sane le più volte rimirano con occhio non sano.</lem>
+            <rdg wit="#T1">le cose sane le più volte rimirano con occhio non sano.</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+        </p>
+      </div>
+
+
+
+      <!--SEQUENZA 3-->
+      <div type="sequence" n="3">
+        <p n="1" xml:id="s3_p1">
+
+          <app>
+            <lem wit="#T16">[iii]  Ma alle nozze della <person xml:id="caterina">Reina</person> tornando,</lem>
+            <rdg wit="#T1">[iii]  Ma tornando alle nozze della <person xml:id="caterina">Reina</person>,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">mentre che elle così andavano come io dissi,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">un giorno tra gli altri nella fine del desinare,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che sempre era splendido et da diversi giuochi d'huomini che si soglion far ridere</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et da suoni di vari strumenti et da canti hora d'una maniera et quando d'altra rallegrato,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">due vaghe fanciulle per mano tenendosi, con lieto sembiante al capo delle tavole,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">là dove la Reina sedea, venute, riverentemente la salutarono; </lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et poi che l'hebbero salutata, amendue levatesi,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">la maggiore, un bellissimo liuto che nell'una mano teneva al petto recandosi et assai maestrevolmente toccandolo,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">dopo alquanto spatio col piacevole suono di quello la soave voce di lei accordando et dolcissimamente cantando,</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">così disse:</lem>
+            <rdg wit="#T1">bene sarà che,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          
+        </p>
+
+
+
+
+
+      </div>
+
+    
+
+
+
+
+
+
+
+      <!--TESTI INTERI-->
+      <!--TESTI INTERI-->
+      <!--TESTI INTERI-->
+      <!--TESTI INTERI-->
+
 
       <!-- Q -->
       <div type="version" xml:id="Q_text">
@@ -433,7 +2574,8 @@
         delle nostre alpi sopra 'l Trivigiano, è (sì come ogniuno dee sapere) arnese
         della Reina di Cipri, con la cui famiglia, hoggi di molto nella nostra
         città honorata et illustre, è la mia non solamente d'amistà et di riverenza,
-        che essa la porta, congiunta, ma anchora di parentado. Dove essendo ella
+        che essa la porta, congiunta, ma anchora di parentado.
+         Dove essendo ella
         questo settembre passato a' suoi diporti andata, avenne che ella quivi maritò 
         una delle sue damigelle, la quale, perciò che bella et costumata et gentile 
         fanciulla la vedea molto, assai teneramente era da lei amata et havuta cara.
@@ -659,6 +2801,14 @@
          et assai maestrevolmente toccandolo, dopo alquanto spatio col piacevole
          suono di quello la soave voce di lei accordando et dolcissimamente cantando, così disse:
         </p>
+
+
+
+
+
+
+
+        <!-- INTERROTTO QUI -->
     
         <lg type="poem" xml:id="T16_lg1">
           <head>Verses 1</head>
