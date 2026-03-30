@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Texts – The Asolani Digital Edition</title>
+
+  <!-- Elegant classical fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,215 +30,243 @@
   </div>
 </header>
 
-<main>
+<main class="texts-page">
 
-  <section class="page-hero ancient-hero">
-    <div class="hero-paper">
-      <p class="eyebrow">Texts and context</p>
+  <!-- INTRO -->
+  <section class="texts-hero">
+    <div class="texts-hero-paper">
+      <p class="hero-kicker">Texts and Context</p>
       <h1>From Author to Critical Edition</h1>
-      <p class="hero-intro">
-        This section reconstructs the literary, historical, and philological framework of the
-        project, moving from Pietro Bembo as author to <em>Gli Asolani</em> as work, and finally
-        to Giorgio Dilemmi’s critical edition as the scholarly basis of the digital edition.
+      <p class="hero-subtitle">
+        The literary, historical, and philological framework of the project.
       </p>
-      <ul class="subnav">
-        <li><a href="#author">Author</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#work">The Asolani</a></li>
-        <li><a href="#editions">Princeps editions</a></li>
-        <li><a href="#critical">Critical edition</a></li>
-      </ul>
     </div>
   </section>
 
   <!-- AUTHOR -->
-  <section class="immersive-section" id="author">
-    <div class="section-intro">
-      <p class="section-kicker">The author</p>
-      <h2>Pietro Bembo</h2>
-    </div>
-
-    <div class="two-column-feature">
-      <div class="feature-media paper-frame">
-        <!-- Sostituisci con una tua immagine se vuoi -->
-        <img src="assets/images/bembo-portrait.jpg" alt="Portrait of Pietro Bembo">
-        <p class="caption">
-          Portrait placeholder. You can replace this with the image used in your presentation.
-        </p>
+  <section class="text-sequence seq-1" id="author">
+    <div class="seq-inner">
+      <div class="seq-heading">
+        <span class="seq-number">1.</span>
+        <div>
+          <p class="seq-kicker">Understanding the author</p>
+          <h2>Pietro Bembo</h2>
+        </div>
       </div>
 
-      <div class="feature-text panel">
-        <h3>Life and cultural role</h3>
-        <p>
-          Pietro Bembo (1470–1547) was a Venetian scholar, poet, literary theorist, and cardinal.
-          He moved among major cultural centres such as Venice, Messina, Ferrara, Urbino, Rome,
-          and Padua. In the early sixteenth century, he played a decisive role in the so-called
-          Italian language question by proposing Petrarch as the model for poetry and Boccaccio
-          for prose. He then supported this linguistic proposal through an editorial programme,
-          also associated with Aldo Manuzio, that helped make Trecento classics widely available. 
-        </p>
+      <div class="seq-grid two-col image-left">
+        <figure class="small-figure bembo-figure">
+          <img src="assets/images/bembo-portrait.jpg" alt="Portrait of Pietro Bembo">
+          <figcaption>
+            Vecellio Tiziano, <em>Ritratto del cardinale Pietro Bembo</em>, c. 1538–1542.
+          </figcaption>
+        </figure>
+
+        <article class="text-panel">
+          <div class="panel-label">Life</div>
+          <ul class="clean-bullets">
+            <li><strong>1470–1547</strong></li>
+            <li>Bembo was a Venetian scholar, poet, literary theorist, and cardinal.</li>
+            <li>He moved among major cultural centres such as Venice, Messina, Ferrara, Urbino, Rome, and Padua.</li>
+            <li>He played a decisive role in the early sixteenth-century Italian language question by proposing Petrarch as a model for poetry and Boccaccio for prose.</li>
+            <li>He sustained this linguistic vision through a broader editorial programme that made Trecento classics more widely available.</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- TIMELINE -->
-  <section class="immersive-section" id="timeline">
-    <div class="section-intro">
-      <p class="section-kicker">His works</p>
-      <h2>Timeline of his editorial programme in volgare language</h2>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item top">
-        <span class="year">1501</span>
-        <div class="timeline-card">Bembo published Dante’s <em>Commedia</em> with the title <em>Terze Rime</em>.</div>
+  <section class="text-sequence seq-2" id="timeline">
+    <div class="seq-inner">
+      <div class="seq-heading centered">
+        <p class="seq-kicker">His works</p>
+        <h2>Timeline of his editorial programme in volgare language</h2>
       </div>
 
-      <div class="timeline-item bottom">
-        <span class="year">1502</span>
-        <div class="timeline-card">Bembo published Petrarch’s <em>Canzoniere</em> in an affordable edition.</div>
-      </div>
+      <div class="timeline-readable">
 
-      <div class="timeline-item top">
-        <span class="year">1505</span>
-        <div class="timeline-card">Bembo published the first edition of <em>Gli Asolani</em>, a dialogue written following Boccaccio’s model.</div>
-      </div>
+        <div class="timeline-row top-row">
+          <div class="timeline-card pos-1">
+            <div class="bubble">
+              Bembo published Dante’s <em>Commedia</em> with the title <em>Terze Rime</em>.
+            </div>
+            <div class="stem"></div>
+            <div class="year-tag">1501</div>
+          </div>
 
-      <div class="timeline-item bottom">
-        <span class="year">1525</span>
-        <div class="timeline-card">Bembo published the first edition of <em>Prose della volgar lingua</em>, the grammatical work that formulates his linguistic proposal.</div>
-      </div>
+          <div class="timeline-card pos-4">
+            <div class="bubble">
+              Bembo published the first edition of <em>Prose della volgar lingua</em>, a grammar book illustrating his linguistic proposal.
+            </div>
+            <div class="stem"></div>
+            <div class="year-tag">1525</div>
+          </div>
 
-      <div class="timeline-item top">
-        <span class="year">1530</span>
-        <div class="timeline-card">Bembo published the <em>Rime</em>, following Petrarch’s model.</div>
-      </div>
+          <div class="timeline-card pos-6">
+            <div class="bubble">
+              Bembo republished his works, adapting them linguistically to his own project.
+            </div>
+            <div class="stem"></div>
+            <div class="year-tag">1530–47</div>
+          </div>
+        </div>
 
-      <div class="timeline-item bottom">
-        <span class="year">1530–47</span>
-        <div class="timeline-card">Bembo republished his works, adapting them linguistically to his own editorial and literary project.</div>
+        <div class="timeline-axis"></div>
+
+        <div class="timeline-row bottom-row">
+          <div class="timeline-card pos-2">
+            <div class="year-tag">1502</div>
+            <div class="stem"></div>
+            <div class="bubble">
+              Bembo published Petrarch’s <em>Canzoniere</em> in an affordable edition.
+            </div>
+          </div>
+
+          <div class="timeline-card pos-3">
+            <div class="year-tag">1505</div>
+            <div class="stem"></div>
+            <div class="bubble">
+              Bembo published the first edition of <em>Gli Asolani</em>, a dialogue written following Boccaccio’s model.
+            </div>
+          </div>
+
+          <div class="timeline-card pos-5">
+            <div class="year-tag">1530</div>
+            <div class="stem"></div>
+            <div class="bubble">
+              Bembo published the <em>Rime</em>, following Petrarch’s model.
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- WORK -->
-  <section class="immersive-section" id="work">
-    <div class="section-intro">
-      <p class="section-kicker">The work</p>
-      <h2><em>Gli Asolani</em></h2>
-    </div>
-
-    <div class="work-layout">
-      <article class="panel work-block">
-        <h3>The work</h3>
-        <p>
-          <em>Gli Asolani</em> is a treatise in three books, written in dialogue form between
-          1497 and 1502. It discusses the nature of love in a text structured as a
-          <em>prosimetro</em>, that is, a mixture of prose and verse. The work is framed by a
-          narrative setting clearly modelled on Boccaccio’s <em>Decameron</em>: three days of
-          celebrations in the gardens of the court of Caterina Cornaro, queen of Cyprus, at Asolo.
-        </p>
-      </article>
-
-      <div class="work-image paper-oval">
-        <img src="assets/images/asolo-castle.jpg" alt="Asolo or a representative image of the setting">
+  <section class="text-sequence seq-3" id="work">
+    <div class="seq-inner">
+      <div class="seq-heading">
+        <span class="seq-number">2.</span>
+        <div>
+          <p class="seq-kicker">Understanding the original work</p>
+          <h2>Gli Asolani</h2>
+        </div>
       </div>
 
-      <article class="panel work-block">
-        <h3>The content</h3>
-        <ul class="fancy-list">
-          <li><strong>Book I – Perottino:</strong> the unhappy lover speaks of the pain of love.</li>
-          <li><strong>Book II – Gismondo:</strong> the happy lover presents the positive dimension of love.</li>
-          <li><strong>Book III – Lavinello:</strong> he refutes the previous arguments and supports a Platonic theory of love, while also articulating a Christian ascetic movement toward divine beauty.</li>
-        </ul>
-      </article>
+      <div class="seq-grid three-col-balanced">
+        <article class="text-panel">
+          <div class="panel-label">The work</div>
+          <p>
+            <em>Gli Asolani</em> is a treatise in three books, written in dialogue form between
+            1497 and 1502. It discusses the nature of love in a structure combining prose and verse
+            (<em>prosimetro</em>) and framed by a narrative setting clearly modelled on Boccaccio’s
+            <em>Decameron</em>.
+          </p>
+          <p>
+            The action unfolds over three days of celebrations in the gardens of the court of
+            Caterina Cornaro, queen of Cyprus, at Asolo.
+          </p>
+        </article>
+
+        <figure class="center-oval-image">
+          <img src="assets/images/asolo-castle.jpg" alt="Representative image of Asolo">
+        </figure>
+
+        <article class="text-panel">
+          <div class="panel-label">The content</div>
+          <ul class="clean-bullets">
+            <li><strong>Book I – Perottino:</strong> the unhappy lover speaks of the pain of love.</li>
+            <li><strong>Book II – Gismondo:</strong> the happy lover illustrates the positive dimension of love.</li>
+            <li><strong>Book III – Lavinello:</strong> he refutes the previous arguments and develops a Platonic theory of love, later turned toward an ascetic and transcendent vision of divine beauty.</li>
+          </ul>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- PRINCEPS -->
-  <section class="immersive-section" id="editions">
-    <div class="section-intro">
-      <p class="section-kicker">Textual history</p>
-      <h2>Princeps editions</h2>
-    </div>
+  <section class="text-sequence seq-4" id="editions">
+    <div class="seq-inner">
+      <div class="seq-heading centered">
+        <p class="seq-kicker">Textual history</p>
+        <h2>Princepes editiones</h2>
+      </div>
 
-    <div class="grid-2 edition-cards">
-      <article class="panel edition-card">
-        <div class="edition-year">1505</div>
-        <h3>First printed edition</h3>
-        <ul class="fancy-list">
-          <li>Dedicated to Lucrezia Borgia.</li>
-          <li>Represents the earlier printed form of the text.</li>
-        </ul>
-      </article>
+      <div class="book-panels">
+        <article class="book-block">
+          <div class="book-shape">
+            <div class="book-year">1505</div>
+          </div>
+          <div class="text-panel compact-panel">
+            <ul class="clean-bullets">
+              <li>Dedicated to Lucrezia Borgia.</li>
+            </ul>
+          </div>
+        </article>
 
-      <article class="panel edition-card">
-        <div class="edition-year">1530</div>
-        <h3>Revised printed edition</h3>
-        <ul class="fancy-list">
-          <li>Removal of the dedication.</li>
-          <li>Rewritten according to the linguistic proposal formulated in <em>Prose della volgar lingua</em>.</li>
-        </ul>
-      </article>
+        <article class="book-block">
+          <div class="book-shape">
+            <div class="book-year">1530</div>
+          </div>
+          <div class="text-panel compact-panel">
+            <ul class="clean-bullets">
+              <li>Removal of the dedication.</li>
+              <li>Rewritten according to the linguistic proposal of <em>Prose della volgar lingua</em>.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- CRITICAL EDITION -->
-  <section class="immersive-section" id="critical">
-    <div class="section-intro">
-      <p class="section-kicker">Philological basis</p>
-      <h2>The critical edition</h2>
-    </div>
-
-    <div class="two-column-feature">
-      <div class="feature-media paper-frame tall-book">
-        <!-- Sostituisci con una tua immagine -->
-        <img src="assets/images/dilemmi-cover.jpg" alt="Cover of Dilemmi's critical edition">
-        <p class="caption">Cover placeholder for Giorgio Dilemmi’s critical edition.</p>
+  <section class="text-sequence seq-5" id="critical">
+    <div class="seq-inner">
+      <div class="seq-heading">
+        <span class="seq-number">3.</span>
+        <div>
+          <p class="seq-kicker">Analysing the paper critical edition</p>
+          <h2>The critical edition</h2>
+        </div>
       </div>
 
-      <div class="feature-text panel">
-        <h3>Giorgio Dilemmi, 1991</h3>
-        <p>
-          Giorgio Dilemmi’s critical edition reconstructs the manuscript and editorial history
-          of <em>Gli Asolani</em>. In the introduction, it discusses the historical and cultural
-          context, the structure and content of the work, the different perspectives expressed
-          by the characters, the author’s sources and literary influences, the compositional
-          process, and the changes between editions, while also explaining the editorial criteria
-          of the negative apparatus.
-        </p>
+      <div class="seq-grid two-col image-left">
+        <figure class="small-figure critical-figure">
+          <img src="assets/images/dilemmi-cover.jpg" alt="Cover of Giorgio Dilemmi's critical edition">
+        </figure>
 
-        <h3>Main witnesses considered</h3>
-        <ul class="fancy-list">
-          <li>Manuscript Querini Stampalia (Q)</li>
-          <li>1505 edition (1)</li>
-          <li>1553 edition (16)</li>
-        </ul>
+        <article class="text-panel">
+          <div class="panel-label">Giorgio Dilemmi, 1991</div>
+          <ul class="clean-bullets">
+            <li>Manuscript and editorial history of <em>Gli Asolani</em>.</li>
+            <li>In the introduction: historical and cultural context; structure and content of the work; perspectives of the characters; literary influences; compositional process; changes between editions; editorial criteria and negative apparatus.</li>
+            <li>Main witnesses considered in the project: Manuscript Querini Stampalia (Q), 1505 edition (1), and 1553 edition (16).</li>
+          </ul>
+        </article>
       </div>
-    </div>
 
-    <div class="grid-2 manuscript-print-grid">
-      <article class="panel">
-        <h3>The manuscripts</h3>
-        <ul class="fancy-list">
-          <li>Codice Fondo Campori Appendice 280 (= γ.I.5.43), Modena, Biblioteca Estense</li>
-          <li>Codice Chigiano L.VIII.304, Roma, Biblioteca Apostolica Vaticana</li>
-          <li>Codice Marciano Italiano Cl. XI.25 (= 6671), Venezia, Biblioteca Nazionale Marciana</li>
-          <li>Codice Cl. VI.4 (= 1043), Venezia, Biblioteca Querini Stampalia (Q)</li>
-        </ul>
-      </article>
+      <div class="seq-grid two-col equal-panels">
+        <article class="text-panel">
+          <div class="panel-label">The manuscripts</div>
+          <ul class="clean-bullets">
+            <li>Fondo Campori Appendice 280 (= γ.I.5.43), Modena</li>
+            <li>Chigiano L.VIII.304, Vatican Library</li>
+            <li>Marciano Italiano Cl. XI.25 (= 6671), Venice</li>
+            <li>Querini Stampalia Cl. VI.4 (= 1043), witness Q</li>
+          </ul>
+        </article>
 
-      <article class="panel">
-        <h3>The prints</h3>
-        <p>
-          Dilemmi reports many different editions, but the most important for this project are:
-        </p>
-        <ul class="fancy-list">
-          <li>1505 (1)</li>
-          <li>1530 (10)</li>
-          <li>1553 (16), posthumous edition</li>
-        </ul>
-      </article>
+        <article class="text-panel">
+          <div class="panel-label">The prints</div>
+          <ul class="clean-bullets">
+            <li>1505 (1)</li>
+            <li>1530 (10)</li>
+            <li>1553 (16), posthumous edition</li>
+          </ul>
+        </article>
+      </div>
     </div>
   </section>
 
