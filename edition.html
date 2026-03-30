@@ -2,40 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Edition and Markup – Asolani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edition – The Asolani Digital Edition</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Edition and Markup</h1>
 
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">Context</a> |
-    <a href="edition.html">Edition</a> |
-    <a href="tei/asolani.xml">TEI XML</a>
-  </nav>
+<header>
+  <div class="navbar">
+    <a class="site-title" href="index.html">The Asolani – Digital Edition</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="texts.html">Texts</a></li>
+        <li><a href="digital.html">Digital</a></li>
+        <li><a class="active" href="edition.html">Edition</a></li>
+        <li><a href="synoptic.html">Synoptic View</a></li>
+        <li><a href="tei/asolani.xml">TEI XML</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <h2>Text selection</h2>
-  <p>
-    For each version, the text is transcribed from the incipit of Book I
-    up to the second poetic section.
-    The dedicatory letter in the 1505 edition is treated as a separate paratextual section
-    and is not included in the parallel comparison.
-  </p>
+<main>
+  <section class="hero">
+    <h1>Edition and prototypes</h1>
+    <p>
+      This section gathers the main working environments of the project:
+      the edition based on the 1553 text and the synoptic comparison of the three witnesses.
+    </p>
+  </section>
 
-  <h2>Parallel comparison</h2>
-  <p>
-    The three versions (Q, 1505, 1553) are presented as autonomous texts.
-    They are aligned by macro-textual units (Prose 1 → Verses 1 → Prose 2 → Verses 2)
-    in order to enable a parallel comparison without conflating the textual traditions.
-  </p>
+  <section class="section">
+    <h2>Main edition</h2>
+    <div class="panel">
+      <p>
+        The main digital edition is based on the 1553 witness, which functions as the
+        central reading text. Variants from Q and 1505 are encoded in the TEI source and
+        can be represented through the dedicated interface.
+      </p>
+      <div class="note">
+        Replace the path below with the correct location of your EVT output.
+      </div>
+      <a class="button" href="evt/index.html">Open EVT edition</a>
+    </div>
+  </section>
 
-  <h2>Critical apparatus</h2>
-  <p>
-    A selective negative critical apparatus is used to document significant textual variants
-    between the versions, without attempting to reconstruct a single archetypal text.
-  </p>
+  <section class="section">
+    <h2>Synoptic comparison</h2>
+    <div class="panel">
+      <p>
+        The synoptic prototype allows the three witnesses to be read side by side.
+        Comparable segments are aligned, while structural divergences are preserved and
+        made visible rather than normalised.
+      </p>
+      <a class="button" href="synoptic.html">Open synoptic prototype</a>
+    </div>
+  </section>
+</main>
 
-  <p><a href="index.html">← Back to Home</a></p>
+<footer>
+  <p>Francesca Gaeta · The Asolani Digital Edition · 2026</p>
+</footer>
+
 </body>
 </html>
