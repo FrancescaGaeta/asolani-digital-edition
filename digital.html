@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital – The Asolani Digital Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a class="site-title" href="index.html">The Asolani – Digital Edition</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="texts.html">Texts</a></li>
+        <li><a class="active" href="digital.html">Digital</a></li>
+        <li><a href="edition.html">Edition</a></li>
+        <li><a href="synoptic.html">Synoptic View</a></li>
+        <li><a href="tei/asolani.xml">TEI XML</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Digital Section</h1>
+    <p>
+      This section explains the digital modelling of the edition: TEI markup,
+      implementation strategy, and working prototypes.
+    </p>
+
+    <ul class="subnav">
+      <li><a href="#markup">Markup</a></li>
+      <li><a href="#implementation">Implementation</a></li>
+      <li><a href="#prototypes">Prototypes</a></li>
+    </ul>
+  </section>
+
+  <section class="section" id="markup">
+    <h2>Markup</h2>
+    <div class="panel">
+      <p>
+        The project is encoded in TEI P5. The XML file records the textual witnesses,
+        the structure of prose and verse sections, and the system of variation among
+        manuscript Q, the 1505 edition, and the 1553 redaction.
+      </p>
+      <p>
+        The markup distinguishes between two editorial goals: first, a reading text based
+        on the 1553 witness; second, a comparative representation of the three witnesses
+        as autonomous textual forms.
+      </p>
+      <a class="button-secondary" href="tei/asolani.xml">Open the TEI XML file</a>
+    </div>
+  </section>
+
+  <section class="section" id="implementation">
+    <h2>Implementation choices</h2>
+    <div class="panel">
+      <p>
+        The project combines different presentation modes. The main edition is centred on
+        the 1553 text and its variants, while the synoptic view displays the three
+        witnesses in parallel.
+      </p>
+      <p>
+        This follows a logic similar to the kind of custom DSE model shown in the Bembo
+        mockup you linked, where the interface separates reading mode, comparison mode,
+        and outputs derived from the XML/TEI source. The same mockup also explains that
+        prototype HTML views may be manually built first and later generated automatically
+        from TEI through XSLT and JavaScript. :contentReference[oaicite:1]{index=1}
+      </p>
+      <div class="note">
+        For your project, this means: one TEI source, multiple views, and working prototypes
+        embedded in the website.
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="prototypes">
+    <h2>Working prototypes</h2>
+    <div class="grid-3">
+      <article class="card">
+        <h3>Main reading interface</h3>
+        <p>
+          Prototype or final interface centred on the 1553 text.
+        </p>
+        <a class="button" href="edition.html">Open Edition</a>
+      </article>
+
+      <article class="card">
+        <h3>Synoptic comparison</h3>
+        <p>
+          Prototype for the parallel reading of Q, 1505, and 1553.
+        </p>
+        <a class="button" href="synoptic.html">Open Synoptic View</a>
+      </article>
+
+      <article class="card">
+        <h3>XML/TEI source</h3>
+        <p>
+          Scholarly source file of the project.
+        </p>
+        <a class="button" href="tei/asolani.xml">Open XML</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Francesca Gaeta · The Asolani Digital Edition · 2026</p>
+</footer>
+
+</body>
+</html>
