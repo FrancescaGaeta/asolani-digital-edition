@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+  
+        <fileDesc>
+            <titleStmt>
+                <title>The Asolani by Pietro Bembo: A Digital Scholarly Edition based on Giorgio Dilemmi's Critical Edition</title>
+                <respStmt>
+                <resp>Transcription and TEI encoding by</resp>
+                <name>Francesca Gaeta</name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Francesca Gaeta</publisher>
+                <pubPlace>Bologna / GitHub Pages</pubPlace>
+                <date>2026</date>
+                <idno type="URL">https://github.com/FrancescaGaeta/asolani-digital-edition</idno>
+                <availability>
+                <p>Project developed as part of the Digital Scholarly Editing course.</p>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <bibl>
+                <author>Pietro Bembo</author>
+                <title>Gli Asolani</title>
+                <editor>Giorgio Dilemmi</editor>
+                <pubPlace>Firenze</pubPlace>
+                <publisher>Presso l'Accademia della Crusca</publisher>
+                <date>1991</date>
+                <note>Critical edition edited by Giorgio Dilemmi</note>
+                <note type="content">The critical edition includes the redactions of manuscript Q and the printed editions of 1505 and 1553</note>
+                <note type="encoding">The digital text is based on the 1553 redaction.</note>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <projectDesc>
+                <p>This project consists of the creation of a digital edition of <title> Gli Asolani</title> by Pietro Bembo, based on the critial edition of Giorgio Dilemmi (1991).</p>
+            </projectDesc>
+            <editorialDecl>
+                <p>The text has been transcribed from the reference critical edition, retaining the spelling and punctuation of the 1553 redaction, which serves as the basis for the digital text.</p>
+                <p>The work focuses on the collation of the redactions of manuscript Q and the printed editions of 1505 and 1553. The critical apparatus from the reference edition has not been reproduced; instead, a direct comparison between the three witnesses has been carried out.</p>
+                <p>No normalizing interventions have been carried out: the transcription faithfully reproduces the linguistic and formal characteristics of the base text. Words divided at line breaks in the source have been silently recombined without further intervention.</p>
+            </editorialDecl>
+            <tagsDecl>
+                <p>The encoding was carried out in compliance with the TEI P5 guidelines.</p>
+            </tagsDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <langUsage>
+                <language ident="it">Italian (primary text)</language>
+                <language ident="en">English (editorial documentation)</language>
+            </langUsage>
+
+            <settingDesc>
+                <listPlace>
+                <place xml:id="vinegia" sameAs="http://viaf.org/viaf/136651400">
+                    <placeName>Vinegia</placeName>
+                </place>
+                <place xml:id="asolo" sameAs="http://viaf.org/viaf/137212919">
+                    <placeName>Asolo</placeName>
+                </place>
+                </listPlace>
+            </settingDesc>  
+
+            <particDesc>
+                <listPerson>
+                <person xml:id="caterina" sameAs="http://viaf.org/viaf/52489508">
+                    <persName>Caterina Cornaro</persName>
+                    <note>Queen of Cyprus</note>
+                </person>
+                <person xml:id="perottino">
+                    <persName>Perottino</persName>
+                    <note>unhappy lover of the Asolani</note>
+                </person>
+                <person xml:id="giacco">
+                    <persName>Giacco</persName>
+                    <note>King Giacco</note>
+                </person>
+                <person xml:id="cornelia">
+                    <persName>Cornelia</persName>
+                </person>
+                </listPerson>
+            </particDesc>
+
+        </profileDesc>
+    </teiHeader>
+
+    <text>
+
+        <body>
+            <listWit>
+                <witness xml:id="Q">Autograph witness Q (Querini Stampalia)</witness>
+                <witness xml:id="T1">Printed edition 1505 (text 1)</witness>
+                <witness xml:id="T16">Printed edition 1553 (text 16)</witness>
+                <witness xml:id="T10">Printed edition 1530 (text 10, used as ancillary witness, not transcribed in this sample)</witness>
+                <witness xml:id="M">Autograph fragments M (not transcribed in this sample)</witness>
+            </listWit>
+
+
+        <!-- SEQUENZA 2 -->
+        <div type="sequence" n="2">
+            
+            <p n="1" xml:id="s2_p1">
+
+            <app>
+                <lem wit="#T16 #T1"><placeName ref="#asolo">Asolo</placeName> aduqnue,</lem>
+                <rdg wit="#Q"><placeName ref="#asolo">Asolo</placeName> aduqnue, madonna ...,</rdg>
+            </app>
+            vago et piacevole castello posto ne gli 
+            <app>
+                <lem wit="#T16 #T1">stremi</lem>
+                <rdg wit="#Q">estremi</rdg>
+            </app>
+            gioghi delle nostre alpi sopra
+            <app>
+                <lem wit="#T16">il</lem>
+                <rdg wit="#T1 #Q">'l</rdg>
+            </app>
+            Trivigiano,
+            <app>
+                <lem wit="#T16">è, sì come ogniuno dee sapere,</lem>
+                <rdg wit="#T1">è (sì come ogniuno dee sapere)</rdg>
+                <rdg wit="#Q">è hora (sì come dovete sapere) | </rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16">di madonna la <persName ref="#caterina">Reina di Cipri</persName>,</lem>
+                <rdg wit="#T1 #Q">arnese della <persName ref="#caterina">Reina di Cipri</persName>,</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16">con la cui famiglia, la quale è detta <persName ref="#cornelia">Cornelia</persName>,</lem>
+                <rdg wit="#T1">con la cui famiglia,</rdg>
+                <rdg wit="#Q">la quale</rdg>
+            </app>
+
+
+            <app>
+                <lem wit="#T16 #T1"><gap reason="omitted"/></lem>
+                <rdg wit="#Q"> per la morte del <persName ref="#giacco">re Giacco</persName> suo marito, non guari con lui dimorata,
+                rimasa vedova et sanza figliuoli, poi che così hebbe con somma soddisfattione de' suoi popoli 
+                quasi tutta la sua giovanezza trappassata, raccommandato il governo del regno alla Signoria nostra,
+                in <placeName ref="#vinegia">Vinegia</placeName> se ne tornò, dove era nata, per rivedere e suoi parenti et appo loro nella sua patria
+                più riposatamente menarne gli altri anni della sua vita. </rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16">molto</lem>
+                <rdg wit="#T1">hoggi di molto</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16">nella nostra città honorata et illustre, è la mia non solamente d'amistà</lem>
+                <rdg wit="#T1">nella nostra città honorata et illustre, è la mia non solamente d'amistà</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16">et di dimestichezza congiunta,</lem>
+                <rdg wit="#T1">et di riverenza, che essa le porta, congiunta,</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16">ma anchora di parentado.</lem>
+                <rdg wit="#T1">ma anchora di parentado.</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16 #T1"><gap reason="omitted"/></lem>
+                <rdg wit="#Q">Dove venuta et lietamente ricevuta da' suoi, fu dalla Signoria nostra honorata
+                di bellissimi et preciosi doni, tra' quali hebbe questo castello, del quale io dico,
+                et per sito del luoco et per natura del paese et per salubrità d'aria amenissimo et piacevolissimo sopra modo.</rdg>
+            </app>
+
+            </p>
+
+        <!--Riprendo da qui-->
+            <p n="2" xml:id="s2_p2">
+            <app>
+                <lem wit="#T16 #T1">Dove essendo ella questo settembre passato a' suoi diporti andata,</lem>
+                <rdg wit="#Q">Quivi essendo la Reina per diporto questo settembre passato</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+                <rdg wit="#Q">(sì come suole spesso la state),</rdg>
+            </app>
+            avvenne che ella
+            <app>
+                <lem wit="#T16 #T1">quivi maritò</lem>
+                <rdg wit="#Q">maritò </rdg>
+            </app>
+            una delle sue damigielle, la quale, perciò che
+            <app>
+                <lem wit="#T16">bella et costumata et gentile era molto</lem>
+                <rdg wit="#T1">bella et costumata et gentile fanciulla la vedea molto,</rdg>
+                <rdg wit="#Q">bellissima giovane era </rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16">et perciò che da bambina cresciuta se l'havea,</lem>
+                <rdg wit="#T1"><gap reason="absent"/></rdg>
+                <rdg wit="#Q">et perchè da piccola fanciulla se l'havea allevata,</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16">assai teneramente era da llei amata et havuta cara.</lem>
+                <rdg wit="#T1">assai teneramente era da lei amata et havuta cara.</rdg>
+                <rdg wit="#Q">ella più che alcuna dell'altre amava et havea cara.</rdg>
+            </app>
+
+            </p>
+
+
+            <p n="3" xml:id="s2_p3">
+
+            <app>
+                <lem wit="#T16">Per che vi fece</lem>
+                <rdg wit="#T1">Il perche fecevi</rdg>
+                <rdg wit="#Q">Il perchè fece fare</rdg>
+            </app>
+            l'apparecchio delle nozze
+            <app>
+                <lem wit="#T16 #T1">ordinare bello et grande,</lem>
+                <rdg wit="#Q">bellissimo,</rdg>
+            </app>
+            et,
+            <app>
+                <lem wit="#T16">invitatovi delle vicine contrade qualunque</lem>
+                <rdg wit="#T1">invitato delle vicine contrade chiunque</rdg>
+                <rdg wit="#Q">convitando de' luochi circonvicini chiunque</rdg>
+            </app>
+            più honorato huomo
+            <app>
+                <lem wit="#T16">v'era con le lor donne,</lem>
+                <rdg wit="#T1 #Q">era con le lor donne,</rdg>
+            </app>
+            et da Vinegia 
+            <app>
+                <lem wit="#T16 #T1">similmente,</lem>
+                <rdg wit="#Q">altresì,</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16 #T1">in suoni</lem>
+                <rdg wit="#Q">in | suoni</rdg>
+            </app>
+            et canti et balli et solennissimi conviti
+            <app>
+                <lem wit="#T16">l'un giorno appresso all'altro</lem>
+                <rdg wit="#T1">l'un giorno doppo l'altro</rdg>
+                <rdg wit="#Q">molti giorni</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16 #T1">ne menava</lem>
+                <rdg wit="#Q">ne menò</rdg>
+            </app>
+            festeggiando con sommo
+            <app>
+                <lem wit="#T16">piacer di ciascuno.</lem>
+                <rdg wit="#T1">piacere di ciascuno.</rdg>
+                <rdg wit="#Q">dilettamento et maraviglia d'ogniuno.</rdg>
+            </app>
+
+            </p>
+
+
+            <p n="4" xml:id="s2_p4">
+            <app>
+                <lem wit="#T16 #T1">Erano quivi tra gli altri, che invitati dalla Reina vennero a quelle feste,</lem>
+                <rdg wit="#Q">Ma prima che queste nozze incominciassono, alquanti giorni avanti, (come avengono le venture)</rdg>
+            </app>
+            tre gentili huomini della nostra 
+            <app>
+                <lem wit="#T16 #T1">città,</lem>
+                <rdg wit="#Q">cità,</rdg>
+            </app>
+            </p>
+        </div>
+      </body>
+    </text>
+</TEI>
