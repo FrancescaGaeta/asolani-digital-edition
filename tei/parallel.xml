@@ -24,16 +24,23 @@
 
             <sourceDesc>
                 <bibl>
-                <author>Pietro Bembo</author>
-                <title>Gli Asolani</title>
-                <editor>Giorgio Dilemmi</editor>
-                <pubPlace>Firenze</pubPlace>
-                <publisher>Presso l'Accademia della Crusca</publisher>
-                <date>1991</date>
-                <note>Critical edition edited by Giorgio Dilemmi</note>
-                <note type="content">The critical edition includes the redactions of manuscript Q and the printed editions of 1505 and 1553</note>
-                <note type="encoding">The digital text is based on the 1553 redaction.</note>
+                    <author>Pietro Bembo</author>
+                    <title>Gli Asolani</title>
+                    <editor>Giorgio Dilemmi</editor>
+                    <pubPlace>Firenze</pubPlace>
+                    <publisher>Presso l'Accademia della Crusca</publisher>
+                    <date>1991</date>
+                    <note>Critical edition edited by Giorgio Dilemmi</note>
+                    <note type="content">The critical edition includes the redactions of manuscript Q and the printed editions of 1505 and 1553</note>
+                    <note type="encoding">The digital text is based on the 1553 redaction.</note>
                 </bibl>
+                <listWit>
+                    <witness xml:id="Q">Autograph witness Q (Querini Stampalia)</witness>
+                    <witness xml:id="T1">Printed edition 1505 (text 1)</witness>
+                    <witness xml:id="T16">Printed edition 1553 (text 16)</witness>
+                    <witness xml:id="T10">Printed edition 1530 (text 10, used as ancillary witness, not transcribed in this sample)</witness>
+                    <witness xml:id="M">Autograph fragments M (not transcribed in this sample)</witness>
+                </listWit>
             </sourceDesc>
         </fileDesc>
 
@@ -94,13 +101,6 @@
     <text>
 
         <body>
-            <listWit>
-                <witness xml:id="Q">Autograph witness Q (Querini Stampalia)</witness>
-                <witness xml:id="T1">Printed edition 1505 (text 1)</witness>
-                <witness xml:id="T16">Printed edition 1553 (text 16)</witness>
-                <witness xml:id="T10">Printed edition 1530 (text 10, used as ancillary witness, not transcribed in this sample)</witness>
-                <witness xml:id="M">Autograph fragments M (not transcribed in this sample)</witness>
-            </listWit>
 
 
         <!-- SEQUENZA 2 -->
@@ -109,7 +109,8 @@
             <p n="1" xml:id="s2_p1">
 
             <app>
-                <lem wit="#T16 #T1"><placeName ref="#asolo">Asolo</placeName> aduqnue,</lem>
+                <lem wit="#T16"><placeName ref="#asolo">Asolo</placeName> aduqnue,</lem>
+                <rdg wit="#T1"><placeName ref="#asolo">Asolo</placeName> aduqnue,</rdg>
                 <rdg wit="#Q"><placeName ref="#asolo">Asolo</placeName> aduqnue, madonna ...,</rdg>
             </app>
             vago et piacevole castello posto ne gli 
@@ -179,7 +180,6 @@
 
             </p>
 
-        <!--Riprendo da qui-->
             <p n="2" xml:id="s2_p2">
             <app>
                 <lem wit="#T16 #T1">Dove essendo ella questo settembre passato a' suoi diporti andata,</lem>
@@ -240,7 +240,7 @@
                 <lem wit="#T16">v'era con le lor donne,</lem>
                 <rdg wit="#T1 #Q">era con le lor donne,</rdg>
             </app>
-            et da Vinegia 
+            et da <placeName ref="#vinegia">Vinegia</placeName>
             <app>
                 <lem wit="#T16 #T1">similmente,</lem>
                 <rdg wit="#Q">altresì,</rdg>
@@ -281,7 +281,322 @@
                 <lem wit="#T16 #T1">città,</lem>
                 <rdg wit="#Q">cità,</rdg>
             </app>
-            </p>
+
+            <app>
+                <lem wit="#T16 #T1">giovani et d'alto cuore, i quali,</lem>
+                <rdg wit="#Q"><gap reason="omission"/></rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16 #T1">da' loro primi anni ne gli</lem>
+                <rdg wit="#Q"><gap reason="omission"/></rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16 #T1"><gap reason="omission"/></lem>
+                <rdg wit="#Q">et tra essi per sangue et per amistà di stretto et dolce legame congiunti,
+                insieme ad una loro vila non guari lontana dal castello dove la <persName ref="caterina">Reina</persName> dimorava
+                (sì come quella stagione faciamo) con le lor donne giovani et vaghe et belle ciascuna,
+                et di quegli costumi che in honesta donna sono più cari ornate quanto alcune dell'altre,
+                o più forse, che si sapesse già buon tempo di queste contrade, lasciata la città,
+                tutti festosi et sollazzevoli n'andarono.</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16 #T1"><gap reason="omission"/></lem>
+                <rdg wit="#Q">Et quivi ritrovati tre loro carissimi compagni, e quali</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16">studi delle lettere usati</lem>
+                <rdg wit="#T1">otii delle Muse allevati</rdg>
+                <rdg wit="#Q">in otio delle Muse</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16 #T1">et in essi tuttavia dimoranti per lo più tempo,</lem>
+                <rdg wit="#Q">si stavano similmente in una villetta vicina la loro,</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16">oltre a'cciò il pregio d'ogni bel costume haveano,</lem>
+                <rdg wit="#T1">oltre gli ornamenti delle lettre il pregio d'ogni bella loda haveano,</rdg>
+                <rdg wit="#Q">uccellando, cacciando, diportandosi, prendevano insieme que' piaceri</rdg>
+            </app>
+
+            <app>
+                <lem wit="#T16">che a nobili cavalieri s'appartenesse d'havere.</lem>
+                <rdg wit="#T1">che a nobili donzelli s'appartenesse d'havere.</rdg>
+                <rdg wit="#Q">che quella stagione a'gentili huomini suol dare.</rdg>
+            </app>
+
+        </p>
+
+
+        <p n="5" xml:id="s2_p5">
+          <app>
+            <lem wit="#T16 #T1">Costor per aventura,</lem>
+            <rdg wit="#Q"><gap reason="absent"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">come che a tutte le donne che in que' conviti si trovarono,</lem>
+            <rdg wit="#Q"><gap reason="absent"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">sì per la chiarezza del sangue loro et sì anchora molto più per la viva fama de' loro studi</lem>
+            <rdg wit="#Q"><gap reason="absent"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">et del lor valore</lem>
+            <rdg wit="#Q"><gap reason="absent"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">fosser cari,</lem>
+            <rdg wit="#T1">fusser cari,</rdg>
+            <rdg wit="#Q"><gap reason="absent"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16"><gap reason="absent"/></lem>
+            <rdg wit="#T1">et per questo chiamati sovente da ciascuna et disiderati,</rdg>
+            <rdg wit="#Q"><gap reason="absent"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">essi nondimeno pure con tre di loro</lem>
+            <rdg wit="#Q"><gap reason="absent"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">belle</lem>
+            <rdg wit="#T1">similmente belle</rdg>
+            <rdg wit="#Q"><gap reason="absent"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">et vaghe giovani et di gentili costumi ornate,</lem>
+            <rdg wit="#Q"><gap reason="absent"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <rdg wit="#Q">Né guari quivi così 
+            dimorarono quella bella brigata, che'lla <persName ref="caterina">Reina</persName>, intendendo di loro, sopravenutole 
+            il tempo del festeggiare per le nuove nozze che della sua damigiella 
+            fatte havea, mandò a' gentili huomini un suo, che | piacesse loro, 
+            insieme con le lor donne et co' loro compagni, di venire per alcun dì
+            ad honorare la sua novella sposa. E quali prestamente così feciono. </rdg>
+          </app>
+
+
+          <app>
+            <lem wit="#T16">[perciò che prossimani eran loro per sangue et lunga dimestichezza con esse et co' lor mariti haveano,</lem>
+            <rdg wit="#T1">perciò che prossimani erano loro per sangue et lunga dimestichezza con esse et co' loro mariti haveano,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <rdg wit="#Q">Et saliti con esse sopra e portanti cavalli et co' tre compagni altresì, et ad
+            Asolo venuti, perciò</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">i quali tutti e tre di què dì a <placeName ref="#vinegia">Vinegia</placeName> tornati erano per loro bisogne],</lem>
+            <rdg wit="#T1"><gap reason="absent"/>,</rdg>
+            <rdg wit="#Q">che per alcuna bisogna era loro uopo di ritrovarsi que' giorni in <placeName ref="#vinegia">Vinegia</placeName> ,</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">più spesso et più sicuramente si davano che con altre,</lem>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">volentieri sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.</lem>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <rdg wit="#Q">fatta loro scusa con la Reina et a·llei et a' compagni 
+            accommandate le lor donne, a cavallo risaliti, se ne tornarono pe' fatti loro. </rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <rdg wit="#Q">Le donne lietamente dalla Reina et da molt'altre ricevute, che
+            a quello venute erano che loro vennero, et quivi dimorando, molto di spasso 
+            pigliavano nelle feste et molto ne davano altrui co' loro giovani insieme 
+            assai accorti et accostumati tutt'a tre, et di be' motti et di giuochi honesti 
+            et di soavi ragionamenti pieni, et per questo da tutte le donne chiamati sovente et disiderati.</rdg>
+          </app>
+
+        </p>
+
+        <p n="6" xml:id="s2_p6">
+            Quantunque <person ref="#perottino">Perottino</person>
+
+          <app>
+            <lem wit="#T16">che così nominare un di loro m'è piaciuto in questi sermoni,</lem>
+            <rdg wit="#T1">(che così nomare un di loro m'è piaciuto in questi sermoni)</rdg>
+            <rdg wit="#Q">(che uno di loro così volle che io in questi fogli lo chiamasse, non molto dal suo primiero nome deviando)</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <rdg wit="#Q">non molto dal suo primiero nome deviando)</rdg>
+          </app>
+          poco et rado parlasse,né
+
+          <app>
+            <lem wit="#T16">fosse</lem>
+            <rdg wit="#T1 #Q">fusse</rdg>
+          </app>
+          chi riso in bocca gli havesse
+          <app>
+            <lem wit="#T16">solamente una volta in tutte quelle feste veduto.</lem>
+            <rdg wit="#T1 #Q">solo una volta in tutte quelle feste veduto.</rdg>
+          </app>
+
+        </p>
+
+        <p n="7" xml:id="s2_p7">
+          <app>
+            <lem wit="#T16 #T1">Il quale etiandio molto da ogniuno spesse volte si furava,</lem>
+            <rdg wit="#Q">Et molto da ogniuno ispesse volte si furava;</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <rdg wit="#Q">né mai, se non quanto e suoi compagni lo chiamassero o di | bisogna le fusse, con gli altri si ritrovava nelle feste,</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">sì come colui che l'animo sempre havea in tristo pensiero;</lem>
+            <rdg wit="#Q">come quello che ll'animo sempre havea in tristo pensiero;</rdg>
+          </app>
+          nè quivi venuto sarebbe,
+
+          <app>
+            <lem wit="#T16 #T1">se</lem>
+            <rdg wit="#Q">se egli</rdg>
+          </app>
+          da' suoi compagni, che questo 
+
+          <app>
+            <lem wit="#T16">studiosamente</lem>
+            <rdg wit="#T1 #Q">maestrevolmente</rdg>
+          </app>
+          fecero,
+
+          <app>
+            <lem wit="#T16 #T1">acciò che</lem>
+            <rdg wit="#Q">perché</rdg>
+          </app>
+          egli tra gli allegri dimorando si rallegrasse, astretto et sospinto 
+
+          <app>
+            <lem wit="#T16">al venirvi non fosse stato.</lem>
+            <rdg wit="#T1">a venirvi non fusse stato.</rdg>
+            <rdg wit="#Q">non fusse stato al venire.</rdg>
+          </app>
+        </p>
+
+        <p n="8" xml:id="s2_p8">
+            Nè pure solamente <person ref="#perottino">Perottino</person>
+          <app>
+            <lem wit="#T16 #T1">ho io con infinita voce in questa guisa nomato,</lem>
+            <rdg wit="#Q">così ha voluto che io il suo vero nome altrimenti in queste carte non tocchi, </rdg>
+          </app>
+          ma le tre donne et gli altri giovani 
+
+          <app>
+            <lem wit="#T16 #T1">anchora;</lem>
+            <rdg wit="#Q">altresì</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">non per altro rispetto,</lem>
+            <rdg wit="#Q"><gap reason="absent"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <rdg wit="#Q">da' quali io queste cose ho havute, et con loro 
+            assai sovente dimoro, (che se ne sia la cagione) m'hanno dolcemente pregato 
+            che io faccia medesimamente de' nomi loro;</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">se non per la tôrre alle vane menti de' volgari occasione,</lem>
+            <rdg wit="#T1">se non per tôrre alle vane et sciocche menti de' volgari occasione,</rdg>
+            <rdg wit="#Q">credo io per tôrre occasione alle sciocche menti de' volgari</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">i loro veri nomi non palesando,</lem>
+            <rdg wit="#T1">gli loro veri nomi non appalesando,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+          di pensar cosa
+
+          <app>
+            <lem wit="#T16">in parte alcuna meno che convenevole alla loro honestissima vita.</lem>
+            <rdg wit="#T1">in parte alcuna meno che convenevole alla loro honestissima et interissima vita.</rdg>
+            <rdg wit="#Q">che all'honestissima et interissima vita loro meno che convenevole sia.</rdg>
+          </app>
+
+        </p>
+
+
+        <p n="9" xml:id="s2_p9">
+
+          <app>
+            <lem wit="#T16 #T1">Con ciò sia cosa che questi parlari,</lem>
+            <rdg wit="#Q">Perciò che sanno bene che questi sermoni</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">d'uno in altro passando,</lem>
+            <rdg wit="#Q"><gap reason="absent"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">a brieve andare possono in contezza de gli huomini pervenire,</lem>
+            <rdg wit="#Q">possono in mano de gli huomini pervenire,</rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">de' i quali</lem>
+            <rdg wit="#T1">de' quali</rdg>
+          </app>
+          non pochi sogliono esser coloro
+
+          <app>
+            <lem wit="#T16 #T1">che le cose sane</lem>
+            <rdg wit="#Q">per aventura che lle cose sane</rdg>
+          </app>
+          le più volte rimirano con occhio non sano.
+
+          <app>
+            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <rdg wit="#Q">Il che farò io, sì come debbo, sollecito
+            di compiacergli; et dove il nomargli mi verrà nella penna, con semplici
+            et finte voci mi passerò in guisa, che non più saranno di quello, che 
+            essi vogliono essere, conosciuti.</rdg>
+          </app>
+
+        </p>
+    
+
+
+
+    
         </div>
       </body>
     </text>
