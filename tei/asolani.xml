@@ -2684,7 +2684,7 @@
 
         <!-- iii -->
 
-         <p xml:id="C_prose10"> Ma tornando alle nozze della Reina, mentre che elle così andavano
+         <p xml:id="1_prose10"> Ma tornando alle nozze della Reina, mentre che elle così andavano
          com'io dissi, un giorno tra gli altri nella fine del desinare, che sempre
          era splendido et meraviglioso et da diversi giuochi d'huomini che 
          ci soglion far ridere et da suoni di vari stormenti et da canti hora d'una 
@@ -2699,7 +2699,7 @@
 
 
 
-        <lg type="poem" xml:id="C_lg1">
+        <lg type="poem" xml:id="1_lg1">
           <head>Verses 1</head>
           <l n="1"> Io vissi pargoletta in festa e 'n gioco,</l>
           <l n="2">De' miei pensier, di mia sorte contenta:</l>
@@ -2715,12 +2715,12 @@
           <l n="12">Fu la sua vita infin a l'ultìm'hora.</l>
         </lg>
 
-        <p xml:id="C_prose11">Detta dalla giovane cantatrice questa canzona, la minore, doppo un
+        <p xml:id="1_prose11">Detta dalla giovane cantatrice questa canzona, la minore, doppo un
         brieve traccorso di suono della sua compagna che già nelle primiere note
         ritornava, al tenore di quelle altresì come ella la lingua dolcemente
         isnodando, in questa guisa le rispose:</p>
 
-        <lg type="poem" xml:id="C_lg2">
+        <lg type="poem" xml:id="1_lg2">
           <head>Verses 2</head>
           <l n="1">Io vissi pargoletta in doglia e 'n pianto,</l>
           <l n="2">De le mie scorte et di me stessa in ira:</l>
@@ -2736,7 +2736,7 @@
           <l n="12">Seguilla viva, et morta eterno honore.</l>
         </lg>
 
-        <p xml:id="C_prose12">Poi che le due fanciulle hebbero fornite le lor canzoni, alle quai udire
+        <p xml:id="1_prose12">Poi che le due fanciulle hebbero fornite le lor canzoni, alle quai udire
             ciascuno chetissimo et attentissimo era stato, volendo esse partire per
             dar forse a gli altri sollazzi luogo, la Reina, fatta chiamare una sua damigiella,
             la quale, bellissima sopra modo et per giudicio d'ogniuno che la 
@@ -2750,7 +2750,7 @@
             quelle delle due fanciulle furono freddi et spenti carboni:
             </p>
 
-        <lg type="poem" xml:id="C_lg3">
+        <lg type="poem" xml:id="1_lg3">
           <head>Verses 3</head>
           <l n="1">Più del tuo vivo raggio,</l>
           <l n="2">Dritto camino et saggio,</l>

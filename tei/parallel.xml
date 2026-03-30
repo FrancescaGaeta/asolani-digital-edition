@@ -100,7 +100,7 @@
 
     <text>
 
-        <body>
+      <body>
 
 
         <!-- SEQUENZA 2 -->
@@ -109,13 +109,14 @@
             <p n="1" xml:id="s2_p1">
 
             <app>
-                <lem wit="#T16"><placeName ref="#asolo">Asolo</placeName> aduqnue,</lem>
-                <rdg wit="#T1"><placeName ref="#asolo">Asolo</placeName> aduqnue,</rdg>
-                <rdg wit="#Q"><placeName ref="#asolo">Asolo</placeName> aduqnue, madonna ...,</rdg>
+                <lem wit="#T16"><placeName ref="#asolo">Asolo </placeName> aduqnue,</lem>
+                <rdg wit="#T1"><placeName ref="#asolo">Asolo </placeName> aduqnue,</rdg>
+                <rdg wit="#Q"><placeName ref="#asolo">Asolo </placeName> aduqnue, madonna ...,</rdg>
             </app>
             vago et piacevole castello posto ne gli 
             <app>
-                <lem wit="#T16 #T1">stremi</lem>
+                <lem wit="#T16">stremi</lem>
+                <rdg wit="#T1">stremi</rdg>
                 <rdg wit="#Q">estremi</rdg>
             </app>
             gioghi delle nostre alpi sopra
@@ -594,10 +595,253 @@
         </p>
     
 
-
-
-    
         </div>
+
+
+
+
+
+        <!--SEQUENZA 3-->
+      <div type="sequence" n="3">
+        <p n="0" xml:id="s3_p0">
+
+            <app>
+                <rdg wit="#Q">
+                    Hora nelle nozze ritornandomi, solea la Reina doppo 'l desinare, 
+                    che sempre magnifico era et maraviglioso molto et da diversi giuochi 
+                    d'huomini che ci soglion far ridere et da suoni di vari stormenti et canti 
+                    hora di fanciulle et quando d'huomini rallegrato, con le sue damigielle 
+                    ritrarsi nelle sue camere, et quivi o dormire o, ciò che più le piacea di
+                    fare facendo, la parte più calda del giorno separatamente passarsi, et così 
+                    concedere che ll'altre donne di loro facessono a llor modo, per infino a ttanto
+                    che venuto là dal vespro tempo fusse da festeggiare; nel quale
+                    tutte le donne et gentili uomini et suoi cortigiani si raunavano nell'ampissime
+                    sale del palagio, dove si danzava gaiamente et tutte quelle cose 
+                    si faceano che a festa di reina si convenia di fare, per infino che tempo 
+                    fusse da por le tavole.
+
+                    Andando adunque così alcun giorno le nuove nozze, 
+                    et levatasi un dì, finito 'l mangiare et e suoi spassi forniti, dall'altre 
+                    donne la Reina, come solea, et nelle sue camere raccoltasi, et ciascuno 
+                    similmente partendo, rimase per aventura ultime, le tre donne co' loro 
+                    giovani per le sale si spatiavano ragionando, et quinci, da' piedi et dalle
+                    parole portate, ad un poggetto di marmo pervennono, il quale da una 
+                    parte delle sale più rimota sopra ad un bellissimo giardino del palagio
+                    riguardava.
+
+                    Dove come giunsono, maravigliatesi della bellezza del 
+                    giardino, poi che di lui hebbero molte cose parlato, hor questa hor quella 
+                    parte riguardando, Gismondo, che il più festevole era de' suoi compagni 
+                    et volentieri sempre le donne in dolce festa et in honesto giuoco tenea, 
+                    a loro rivoltosi così disse:
+
+                    — Care giovani, il dormire doppo 'l cibo in quest'hora del dì, quantunque 
+                    in alcuna stagion dell'anno non sia buono, pure la state, perciò 
+                    che longissimi sono e giorni et le notti più brievi, come quello che cosa 
+                    piacevole è, da gli occhi nostri più volentieri ricevuto, alquanto meno 
+                    sanza fallo ci nuoce. Ma questo mese incomincia egli a perdere molto della 
+                    sua dolcezza passata et oltre a ccio a farsi di dì in dì più dannoso 
+                    et più grave. Per che (dove voi questa volta il mio consiglio voleste pigliare)
+                    io direi che fusse vie bene fatto, lasciando il sonno nelle camere drieto 
+                    le pigre cortine delle nostre letta giacere, che noi passassimo nel giardino,
+                    et quivi nel rezzo et nel fresco dell'herbe ripostisi, o novellando o 
+                    di cose dilettevoli ragionando, ingannare questa parte del giorno incresciosa,
+                    per infino che ll'hora del festeggiare venuta nelle sale ci richiamasse 
+                    insieme con gli altri ad honorare la nostra novella sposa. —
+
+                    Alle donne, le quali non meno l'ombre de gli alberi et gli accorti 
+                    ragionamenti de' giovani che 'l sonno delle coltre regali et le favole dell'altre 
+                    donne dilettavano, piacque il consiglio di Gismondo. Per che, discese, 
+                    tutte liete et festose co' loro giovani n'andarono nel giardino.
+
+                    Era questo giardino vago molto et di maravigliosa bellezza. Ma per 
+                    non raccontare ogni parte di lui, che sarebbe troppo lungo, egli, oltre 
+                    ad un bellissimo pergolato, che largo et ombroso pel mezzo in croce lo 
+                    dipartiva, una medesima via dava a gli entranti di qua et di là, et lungo 
+                    le latora di lui ne la distendea; la quale, assai spatiosa et lunga et tutta di vivo 
+                    selice soprastrata, chiudea dall'una parte, solo che dove facea porta nel 
+                    pergolato, una siepe di verdissimi et minutissimi bossi, humile non tanto 
+                    che con mano sanza chinarsi il sommo di lei non si potesse toccare, spessissima 
+                    et, ugualmente in ogni parte di sé (quantunque longissima fusse) 
+                    gli occhi et la vista pascendo, dilettevole a riguardare.
+
+                    Dall'altra honorati allori, lungo 'l muro assai nel cielo crescendo, della più alta parte 
+                    di loro mezzo arco faceano, in maniera folti et castigati, che niuna lor 
+                    foglia fuori del commandato ordine parea che ardisse di si mostrare; né 
+                    altro del muro si vedea, che dall'una delle latora del giardino e marmi 
+                    bianchissimi di due finestre, che ne gli estremi di loro erano, large et 
+                    aperte, et dalle quali (perciò che il muro grossissimo era) in ciascun lato 
+                    sedendo si potea gittar la vista sopra 'l piano il quale esse signoreggiavano.
+
+                    Per questa adunque così bella via dall'una parte entrate nel giardino 
+                    le vaghe donne co' loro giovani caminando tutte diffese dal sole (come 
+                    che egli assai alto si fusse nel cielo), et questa cosa et quell'altra considerando, 
+                    pervennono in un pratello che 'l giardin terminava, di sì fresche 
+                    herbe et così minute pieno, che tutto un dolce smeraldo parea, se non
+                    che alquante varietà di vaghetti fiori lo dipingneano; nello stremo del 
+                    quale faceano gli allori, sanza legge et in maggior quantità cresciuti, due 
+                    selvette pari et nere per l'ombre et piene d'una soletaria riverenza; et 
+                    nel mezzo di loro più a drento davano luoco tra esse ad una bellissima 
+                    fonte, nel sasso vivo del monte, che da quella parte serrava il giardino, 
+                    maestrevolmente cavata, nella quale una vena di liquido et limpidissimo 
+                    cristallo, che del monte usciva, baldanzosamente cadendo et di lei, che 
+                    guari alta non era dal terreno, in un canaletto di marmo, che 'l pratello 
+                    dividea, descendendo, soavemente si facea sentire et, nel canale ricevuta,
+                    quasi tutta coperta dall'herbe, mormorando s'affrettava di correre nel giardino.
+
+                    Piacque questo luoco maravigliosamente alle belle donne, il quale 
+                    poi che molto da ciascuna di loro fu lodato, madonna Berenice, che 
+                    la men giovane era de l'altre due et da esse honorata quasi come lor capo 
+                    et, oltre a cciò, vie più ardita che esse non erano, verso Gismondo riguardando:
+
+                    — Deh — disse — come mal facemmo, Gismondo, a non ci essere quivi 
+                    tutti questi dì passati venute...
+
+                    A cui Gismondo rispose — Madonna, dove a voi così piaccia...
+
+                    — Dunque — disse madonna Berenice — sedianci costì...
+
+                    Dette queste parole... Gismondo così disse:
+
+                    — Amabili donne, poscia che voi hoggi questa maggioranza mi date...
+                </rdg>
+
+                <rdg wit="#T1"><gap reason="notParallel"/></rdg>
+                <rdg wit="#T16"><gap reason="notParallel"/></rdg>
+                </app>
+            </p>
+
+
+         <p n="1" xml:id="s3_p1">
+          <app>
+            <lem wit="#T16"> Ma alle nozze della <person ref="#caterina">Reina</person> tornando,</lem>
+            <rdg wit="#T1"> Ma tornando alle nozze della <person ref="#caterina">Reina</person>,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">mentre che elle così andavano come io dissi,</lem>
+            <rdg wit="#T1">mentre che elle così andavano com'io dissi,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16 #T1">un giorno tra gli altri nella fine del desinare,</lem>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">che sempre era splendido et da diversi giuochi d'huomini che si soglion far ridere</lem>
+            <rdg wit="#T1">che sempre
+         era splendido et meraviglioso et da diversi giuochi d'huomini che 
+         ci soglion far ridere </rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et da suoni di vari strumenti et da canti hora d'una maniera et quando d'altra rallegrato,</lem>
+            <rdg wit="#T1">et da suoni di vari stormenti et da canti hora d'una 
+         maniera et quando d'altra rallegrato,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">due vaghe fanciulle per mano tenendosi, con lieto sembiante al capo delle tavole,</lem>
+            <rdg wit="#T1">due vaghe fanciulle per mano tenendosi
+         et con alegro sembiante al capo delle tavole,</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">là dove la Reina sedea, venute, riverentemente la salutarono; </lem>
+            <rdg wit="#T1">dove la Reina sedea, 
+         venute, riverentemente la salutarono; </rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">et poi che l'hebbero salutata, amendue levatesi,</lem>
+            <rdg wit="#T1">et poi che l'hebbero salutata, amendue 
+         levatesi, </rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">la maggiore, un bellissimo liuto che nell'una mano teneva al petto recandosi et assai maestrevolmente toccandolo,</lem>
+            <rdg wit="#T1">la maggiore, un bellissimo liuto che nell'una mano tenea
+         con dolce atto al petto recandosi et assai maestrevolmente toccandolo, </rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">dopo alquanto spatio col piacevole suono di quello la soave voce di lei accordando et dolcissimamente cantando,</lem>
+            <rdg wit="#T1">doppo alquanto spatio col piacevole suono di quello la soave voce di lei 
+         accordando, </rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          <app>
+            <lem wit="#T16">così disse:</lem>
+            <rdg wit="#T1">così incominciò a dire:</rdg>
+            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+          </app>
+
+          
+        </p>
+        </div>
+
+
+        <div type="sequence" n="3" xml:id="seq3">
+
+  <head>Sequence 3</head>
+
+  
+
+  <!-- BLOCCO 2: RIALLINEAMENTO -->
+  <p n="2" xml:id="seq3_realign">
+    <app>
+      <rdg wit="#Q">
+        Vaghe et festose donne, ciascuno di noi ha hoggi udite quelle due fanciulle...
+      </rdg>
+      <rdg wit="#T1">
+        Ma tornando alle nozze della Reina... due vaghe fanciulle...
+      </rdg>
+      <lem wit="#T16">
+        Ma alle nozze della Reina tornando... due vaghe fanciulle...
+      </lem>
+    </app>
+  </p>
+
+  <!-- POESIA 1 -->
+  <lg type="poem">
+    <app>
+      <rdg wit="#Q">[Q_lg1 completo]</rdg>
+      <rdg wit="#T1">[1_lg1 completo]</rdg>
+      <lem wit="#T16">[T16_lg1 completo]</lem>
+    </app>
+  </lg>
+
+  <!-- TRANSIZIONE -->
+  <p>
+    <app>
+      <rdg wit="#Q">Detta questa canzona...</rdg>
+      <rdg wit="#T1">Detta dalla giovane cantatrice...</rdg>
+      <lem wit="#T16">Detta dalla giovane cantatrice...</lem>
+    </app>
+  </p>
+
+  <!-- POESIA 2 -->
+  <lg type="poem">
+    <app>
+      <rdg wit="#Q">[Q_lg2 completo]</rdg>
+      <rdg wit="#T1">[1_lg2 completo]</rdg>
+      <lem wit="#T16">[T16_lg2 completo]</lem>
+    </app>
+  </lg>
+
+</div>
+
+</div>
       </body>
     </text>
 </TEI>
