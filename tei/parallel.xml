@@ -173,7 +173,7 @@
             </app>
 
             <app>
-                <lem wit="#T16 #T1"><gap reason="omitted"/></lem>
+                <lem wit="#T16 #T1">∅</lem>
                 <rdg wit="#Q">Dove venuta et lietamente ricevuta da' suoi, fu dalla Signoria nostra honorata
                 di bellissimi et preciosi doni, tra' quali hebbe questo castello, del quale io dico,
                 et per sito del luoco et per natura del paese et per salubrità d'aria amenissimo et piacevolissimo sopra modo.</rdg>
@@ -188,7 +188,7 @@
             </app>
 
             <app>
-                <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+                <lem wit="#T16 #T1">∅</lem>
                 <rdg wit="#Q">(sì come suole spesso la state),</rdg>
             </app>
             avvenne che ella
@@ -294,7 +294,7 @@
             </app>
 
             <app>
-                <lem wit="#T16 #T1"><gap reason="omission"/></lem>
+                <lem wit="#T16 #T1">∅</lem>
                 <rdg wit="#Q">et tra essi per sangue et per amistà di stretto et dolce legame congiunti,
                 insieme ad una loro vila non guari lontana dal castello dove la <persName ref="caterina">Reina</persName> dimorava
                 (sì come quella stagione faciamo) con le lor donne giovani et vaghe et belle ciascuna,
@@ -304,7 +304,7 @@
             </app>
 
             <app>
-                <lem wit="#T16 #T1"><gap reason="omission"/></lem>
+                <lem wit="#T16 #T1">∅</lem>
                 <rdg wit="#Q">Et quivi ritrovati tre loro carissimi compagni, e quali</rdg>
             </app>
 
@@ -337,54 +337,54 @@
         <p n="5" xml:id="s2_p5">
           <app>
             <lem wit="#T16 #T1">Costor per aventura,</lem>
-            <rdg wit="#Q"><gap reason="absent"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
             <lem wit="#T16 #T1">come che a tutte le donne che in que' conviti si trovarono,</lem>
-            <rdg wit="#Q"><gap reason="absent"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
             <lem wit="#T16 #T1">sì per la chiarezza del sangue loro et sì anchora molto più per la viva fama de' loro studi</lem>
-            <rdg wit="#Q"><gap reason="absent"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
             <lem wit="#T16 #T1">et del lor valore</lem>
-            <rdg wit="#Q"><gap reason="absent"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
             <lem wit="#T16">fosser cari,</lem>
             <rdg wit="#T1">fusser cari,</rdg>
-            <rdg wit="#Q"><gap reason="absent"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
             <lem wit="#T16"><gap reason="absent"/></lem>
             <rdg wit="#T1">et per questo chiamati sovente da ciascuna et disiderati,</rdg>
-            <rdg wit="#Q"><gap reason="absent"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
             <lem wit="#T16 #T1">essi nondimeno pure con tre di loro</lem>
-            <rdg wit="#Q"><gap reason="absent"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
             <lem wit="#T16">belle</lem>
             <rdg wit="#T1">similmente belle</rdg>
-            <rdg wit="#Q"><gap reason="absent"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
             <lem wit="#T16 #T1">et vaghe giovani et di gentili costumi ornate,</lem>
-            <rdg wit="#Q"><gap reason="absent"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
-            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <lem wit="#T16 #T1">∅</lem>
             <rdg wit="#Q">Né guari quivi così 
             dimorarono quella bella brigata, che'lla <persName ref="caterina">Reina</persName>, intendendo di loro, sopravenutole 
             il tempo del festeggiare per le nuove nozze che della sua damigiella 
@@ -397,11 +397,11 @@
           <app>
             <lem wit="#T16">[perciò che prossimani eran loro per sangue et lunga dimestichezza con esse et co' lor mariti haveano,</lem>
             <rdg wit="#T1">perciò che prossimani erano loro per sangue et lunga dimestichezza con esse et co' loro mariti haveano,</rdg>
-            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
-            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <lem wit="#T16 #T1">∅</lem>
             <rdg wit="#Q">Et saliti con esse sopra e portanti cavalli et co' tre compagni altresì, et ad
             Asolo venuti, perciò</rdg>
           </app>
@@ -414,22 +414,22 @@
 
           <app>
             <lem wit="#T16 #T1">più spesso et più sicuramente si davano che con altre,</lem>
-            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
             <lem wit="#T16 #T1">volentieri sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.</lem>
-            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
-            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <lem wit="#T16 #T1">∅</lem>
             <rdg wit="#Q">fatta loro scusa con la Reina et a·llei et a' compagni 
             accommandate le lor donne, a cavallo risaliti, se ne tornarono pe' fatti loro. </rdg>
           </app>
 
           <app>
-            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <lem wit="#T16 #T1">∅</lem>
             <rdg wit="#Q">Le donne lietamente dalla Reina et da molt'altre ricevute, che
             a quello venute erano che loro vennero, et quivi dimorando, molto di spasso 
             pigliavano nelle feste et molto ne davano altrui co' loro giovani insieme 
@@ -449,7 +449,7 @@
           </app>
 
           <app>
-            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <lem wit="#T16 #T1">∅</lem>
             <rdg wit="#Q">non molto dal suo primiero nome deviando)</rdg>
           </app>
           poco et rado parlasse,né
@@ -473,7 +473,7 @@
           </app>
 
           <app>
-            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <lem wit="#T16 #T1">∅</lem>
             <rdg wit="#Q">né mai, se non quanto e suoi compagni lo chiamassero o di | bisogna le fusse, con gli altri si ritrovava nelle feste,</rdg>
           </app>
 
@@ -523,11 +523,11 @@
 
           <app>
             <lem wit="#T16 #T1">non per altro rispetto,</lem>
-            <rdg wit="#Q"><gap reason="absent"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
-            <lem wit="#T16 #T1"><gap reason="absent"/></lem>
+            <lem wit="#T16 #T1">∅</lem>
             <rdg wit="#Q">da' quali io queste cose ho havute, et con loro 
             assai sovente dimoro, (che se ne sia la cagione) m'hanno dolcemente pregato 
             che io faccia medesimamente de' nomi loro;</rdg>
@@ -542,7 +542,7 @@
           <app>
             <lem wit="#T16">i loro veri nomi non palesando,</lem>
             <rdg wit="#T1">gli loro veri nomi non appalesando,</rdg>
-            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
           di pensar cosa
 
@@ -564,7 +564,7 @@
 
           <app>
             <lem wit="#T16 #T1">d'uno in altro passando,</lem>
-            <rdg wit="#Q"><gap reason="absent"/></rdg>
+            <rdg wit="#Q">∅</rdg>
           </app>
 
           <app>
