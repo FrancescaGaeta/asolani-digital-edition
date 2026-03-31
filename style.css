@@ -77,7 +77,8 @@ h1, h2, h3, h4,
 .enter-button,
 .book-year,
 .timeline-badge,
-.sequence-number {
+.sequence-number,
+.section-banner-kicker {
   font-family: "Cormorant Garamond", Georgia, serif;
 }
 
@@ -286,16 +287,6 @@ main {
   padding: 2rem 1.25rem 4rem;
 }
 
-.section {
-  margin-top: 3rem;
-}
-
-.section h2 {
-  color: var(--salmon-strong);
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
-}
-
 .grid-2,
 .grid-3 {
   display: grid;
@@ -310,6 +301,16 @@ main {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.align-stretch {
+  align-items: stretch;
+}
+
+.full-height {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .button,
 .button-secondary,
 .enter-button {
@@ -319,7 +320,7 @@ main {
 }
 
 /* =========================
-   HOME / FRONTESPIZIO
+   HOME
    ========================= */
 
 .home-frontispiece {
@@ -541,8 +542,8 @@ main {
   text-align: center;
 }
 
-.sequence-number,
-.seq-number {
+.seq-number,
+.sequence-number {
   font-size: clamp(4rem, 8vw, 6.2rem);
   line-height: 1;
   color: var(--salmon-strong);
@@ -624,7 +625,44 @@ main {
   color: var(--salmon-strong);
 }
 
-/* figures */
+/* =========================
+   SECTION BANNERS
+   ========================= */
+
+.section-banner {
+  max-width: 760px;
+  margin: 1rem auto 1.5rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  background:
+    linear-gradient(180deg, rgba(247,232,198,0.96), rgba(225,196,142,0.94));
+  border: 1px solid rgba(111, 67, 38, 0.25);
+  box-shadow: 0 14px 28px rgba(72, 41, 19, 0.14);
+  color: var(--ink);
+  clip-path: polygon(3% 0%, 97% 0%, 100% 20%, 97% 100%, 3% 100%, 0% 80%);
+}
+
+.section-banner-kicker {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--salmon-strong);
+}
+
+.section-banner h2 {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--brown-deep);
+  line-height: 1.05;
+}
+
+/* =========================
+   FIGURES
+   ========================= */
+
 .small-figure {
   margin: 0;
   width: 100%;
@@ -684,11 +722,12 @@ main {
 .timeline-v2 {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1.1rem;
+  grid-template-columns: repeat(6, minmax(220px, 1fr));
+  gap: 1.6rem;
   margin-top: 3rem;
-  padding: 3.5rem 0;
+  padding: 4rem 0 3rem;
   align-items: center;
+  overflow-x: auto;
 }
 
 .timeline-line {
@@ -698,7 +737,12 @@ main {
   top: 50%;
   height: 4px;
   transform: translateY(-50%);
-  background: linear-gradient(90deg, rgba(123,80,57,0.20), var(--brown), rgba(123,80,57,0.20));
+  background: linear-gradient(
+    90deg,
+    rgba(123,80,57,0.18),
+    var(--brown),
+    rgba(123,80,57,0.18)
+  );
   border-radius: 999px;
 }
 
@@ -707,30 +751,34 @@ main {
   z-index: 2;
   display: grid;
   justify-items: center;
+  min-width: 220px;
 }
 
 .timeline-box {
   width: 100%;
-  max-width: 215px;
-  min-height: 178px;
-  padding: 1rem 1rem 1.1rem;
-  font-size: 0.95rem;
-  line-height: 1.52;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 280px;
+  min-height: 170px;
+  padding: 1.35rem 1.25rem 1.2rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  text-align: left;
+  display: block;
+  color: var(--ink);
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .timeline-badge {
   display: inline-block;
-  padding: 0.4rem 0.82rem;
+  padding: 0.45rem 0.95rem;
   background: linear-gradient(180deg, var(--salmon) 0%, var(--salmon-dark) 100%);
   color: #fff8f6;
-  font-size: 1.06rem;
-  letter-spacing: 0.05em;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
   border-radius: 999px;
   box-shadow: 0 8px 18px rgba(221,90,88,0.18);
+  white-space: nowrap;
 }
 
 .timeline-dot {
@@ -759,17 +807,24 @@ main {
   margin-top: 0.9rem;
 }
 
-/* books */
+/* =========================
+   BOOKS
+   ========================= */
+
 .book-panels {
   display: flex;
   justify-content: center;
   gap: 3.5rem;
   max-width: 980px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .book-block {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
 .book-shape {
@@ -805,7 +860,10 @@ main {
   line-height: 1;
 }
 
-/* footer */
+/* =========================
+   FOOTER
+   ========================= */
+
 footer {
   max-width: var(--maxw);
   margin: 0 auto;
@@ -820,7 +878,7 @@ footer {
 
 @media (max-width: 1180px) {
   .timeline-v2 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
     row-gap: 2rem;
   }
 }
@@ -842,8 +900,14 @@ footer {
   }
 
   .small-figure,
-  .center-oval-image {
+  .center-oval-image,
+  .critical-figure,
+  .bembo-figure {
     margin: 0 auto;
+  }
+
+  .book-block {
+    width: 100%;
   }
 }
 
@@ -914,5 +978,9 @@ footer {
   .home-overview {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .section-banner {
+    padding: 1.2rem 1rem;
   }
 }
