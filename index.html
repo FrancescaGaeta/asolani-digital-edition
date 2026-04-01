@@ -5,13 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Asolani – Digital Scholarly Edition</title>
 
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -33,9 +29,9 @@
   </div>
 </header>
 
-<main class="home-frontispiece">
+<main class="home-page">
 
-  <section class="frontispiece">
+  <section class="hero-home">
     <div class="ambient-layer" aria-hidden="true">
       <span class="mote mote-1"></span>
       <span class="mote mote-2"></span>
@@ -45,35 +41,82 @@
       <span class="mote mote-6"></span>
     </div>
 
-    <div class="frontispiece-frame antique-paper reveal reveal-1">
-      <p class="frontispiece-kicker">Pietro Bembo</p>
-      <h1>GLI ASOLANI</h1>
-      <p class="frontispiece-subtitle">A Digital Scholarly Edition</p>
+    <div class="hero-home-grid">
+      <div class="hero-home-copy reveal reveal-1">
+        <p class="hero-home-kicker">Pietro Bembo</p>
+        <h1>Gli Asolani</h1>
+        <p class="hero-home-subtitle">A Digital Scholarly Edition</p>
 
-      <div class="ornament" aria-hidden="true">
-        <span></span>
-        <span class="diamond"></span>
-        <span></span>
+        <div class="ornament" aria-hidden="true">
+          <span></span>
+          <span class="diamond"></span>
+          <span></span>
+        </div>
+
+        <p class="hero-home-text">
+          A digital edition devoted to the textual, philological, and material history of
+          <em>Gli Asolani</em>, through the comparison of manuscript and printed witnesses.
+        </p>
+
+        <div class="hero-home-actions">
+          <a class="enter-button" href="texts.html">Enter the edition</a>
+        </div>
       </div>
 
-      <p class="frontispiece-meta">
-        Based on Giorgio Dilemmi’s critical edition
-      </p>
+      <div class="hero-home-visual reveal reveal-2">
+        <div class="hero-illustration antique-paper">
+          <div class="hero-illustration-inner">
+            <div class="hero-medallion">
+              <div class="hero-medallion-ring"></div>
+              <div class="hero-medallion-center">
+                <span class="hero-medallion-small">Asolo · Bembo · Love</span>
+              </div>
+            </div>
 
-      <a class="enter-button" href="texts.html">Enter the edition</a>
+            <div class="hero-arch"></div>
+            <div class="hero-book"></div>
+            <div class="hero-laurel hero-laurel-left"></div>
+            <div class="hero-laurel hero-laurel-right"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="home-overview">
-    <div class="home-overview-box antique-paper reveal reveal-2">
-      <h2>The project</h2>
+  <section class="home-intro">
+    <div class="home-intro-box antique-paper reveal reveal-2">
+      <p class="home-intro-kicker">The project</p>
+      <h2>A philological and digital path through the text</h2>
       <p>
-        This digital scholarly edition explores <em>Gli Asolani</em> through the comparison
-        of manuscript Q, the 1505 printed edition, and the 1553 redaction.
+        This edition investigates <em>Gli Asolani</em> through the relationship between witness Q,
+        the 1505 princeps, and the later redactions. It combines textual scholarship,
+        TEI encoding, and digital visualisation.
       </p>
+    </div>
+  </section>
+
+  <section class="home-cards">
+    <div class="home-card antique-paper reveal reveal-1">
+      <p class="home-card-kicker">Texts</p>
+      <h3>Author, work, and critical edition</h3>
       <p>
-        The website is organised into a textual section devoted to author, work, and critical edition,
-        and a digital section devoted to TEI markup, implementation choices, and working prototypes.
+        A guided path through Pietro Bembo, the structure of the work, and the modern critical edition.
+      </p>
+    </div>
+
+    <div class="home-card antique-paper reveal reveal-2">
+      <p class="home-card-kicker">Digital</p>
+      <h3>TEI encoding and editorial choices</h3>
+      <p>
+        Documentation of the markup model, the edition architecture, and the digital implementation.
+      </p>
+    </div>
+
+    <div class="home-card antique-paper reveal reveal-3">
+      <p class="home-card-kicker">Synoptic view</p>
+      <h3>Parallel reading of the witnesses</h3>
+      <p>
+        A visual comparison of the witnesses and their textual divergences across the tradition.
       </p>
     </div>
   </section>
