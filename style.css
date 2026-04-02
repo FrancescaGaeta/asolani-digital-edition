@@ -440,3 +440,199 @@ footer {
     align-items: flex-start;
   }
 }
+
+/* =========================
+   TEXTS PAGE – PPT STYLE
+   ========================= */
+
+.texts-grid-page {
+  max-width: none;
+  padding: 0 1.5rem 4rem;
+}
+
+.texts-grid-hero {
+  padding: 3.2rem 0 2rem;
+  text-align: center;
+}
+
+.texts-grid-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.texts-grid-title-line {
+  width: min(460px, 80%);
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.texts-grid-title-line span {
+  flex: 1;
+  height: 1px;
+  background: rgba(111,67,38,0.22);
+}
+
+.texts-grid-title-line .dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background: var(--accent-strong);
+  border-radius: 50%;
+}
+
+.texts-grid-hero h1 {
+  margin: 0;
+  font-family: "Bodoni Moda", Georgia, serif;
+  color: var(--accent-dark);
+  font-size: clamp(3.8rem, 8vw, 5.5rem);
+  line-height: 0.95;
+}
+
+.texts-card-grid {
+  max-width: var(--maxw);
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 1.4rem;
+  align-items: stretch;
+}
+
+.texts-card {
+  position: relative;
+  min-height: 310px;
+  z-index: 1;
+  display: flex;
+}
+
+.texts-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/images/pergamena_box_card.svg") no-repeat center/100% 100%;
+  z-index: -1;
+}
+
+.texts-card-inner {
+  padding: 2rem 1.8rem 1.7rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.texts-card h2 {
+  margin: 0 0 0.8rem;
+  font-family: "Bodoni Moda", Georgia, serif;
+  color: var(--accent-dark);
+  font-size: 2rem;
+  line-height: 1.04;
+}
+
+.texts-card p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  flex: 1;
+}
+
+.texts-card-image {
+  min-height: 310px;
+}
+
+.texts-card-inner-image {
+  padding: 0.9rem;
+  justify-content: center;
+}
+
+.texts-card-inner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  filter: saturate(0.96) contrast(1.02);
+}
+
+.mini-button {
+  align-self: flex-start;
+  margin-top: 1.2rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.55rem 1rem;
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: #fffaf8;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  box-shadow: 0 8px 18px rgba(187, 89, 85, 0.14);
+}
+
+.mini-button:hover {
+  transform: translateY(-1px);
+}
+
+.texts-long-section {
+  max-width: var(--maxw);
+  margin: 0 auto 1.8rem;
+}
+
+.texts-long-box {
+  position: relative;
+  padding: 2rem 2rem 1.7rem;
+  z-index: 1;
+}
+
+.texts-long-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/images/pergamena_box_large.svg") no-repeat center/100% 100%;
+  z-index: -1;
+}
+
+.texts-long-box h3 {
+  margin: 0 0 0.8rem;
+  font-family: "Bodoni Moda", Georgia, serif;
+  color: var(--accent-dark);
+  font-size: 2.1rem;
+}
+
+.texts-long-box p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 1100px) {
+  .texts-card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .texts-grid-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .texts-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .texts-card {
+    min-height: 280px;
+  }
+
+  .texts-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .texts-long-box {
+    padding: 1.8rem 1.4rem 1.5rem;
+  }
+
+  .texts-long-box h3 {
+    font-size: 1.85rem;
+  }
+}
