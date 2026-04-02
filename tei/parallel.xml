@@ -124,55 +124,62 @@
                     <rdg wit="#T1">∅</rdg>
                     <rdg wit="#Q">∅</rdg>
                 </app>
-                col segno della indiana pietra ritrovare la tramontana
+                col segno della indiana pietra ritrovare la tramontana,
+                <app>
+                    <lem wit="#T16">in guisa che, </lem>
+                    <rdg wit="#T1">in modo che,</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                quale vento soffi et percuota 
 
                 <app>
-                    <lem wit="#T16">col segno della indiana pietra ritrovare
-         la tramontana,</lem>
-                    <rdg wit="#T1">stremi</rdg>
+                    <lem wit="#T16">et percuota</lem>
+                    <rdg wit="#T1">∅</rdg>
                     <rdg wit="#Q">estremi</rdg>
+                </app>
+                conoscendo,
+
+                <app>
+                    <lem wit="#T16">∅</lem>
+                    <rdg wit="#T1">non sia lor tolto il potere et vela et governo là,</rdg>
+                    <rdg wit="#Q">∅</rdg>
+                </app>
+                dove essi di giugnere procacciano o almeno dove più la loro salute veggono, drizzare; et
+
+
+                <app>
+                    <lem wit="#T16">piace a quelli che per contrada non usata caminano,</lem>
+                    <rdg wit="#T1">a quegli che per straniera contrada caminano è dolce,</rdg>
+                    <rdg wit="#Q">∅</rdg>
                 </app>
 
                 <app>
-                    <lem wit="#T16">in guisa che, quale vento soffi et percuota conoscendo,</lem>
-                    <rdg wit="#T1">stremi</rdg>
-                    <rdg wit="#Q">estremi</rdg>
+                    <lem wit="#T16">qualhora essi,</lem>
+                    <rdg wit="#T1">quando,</rdg>
+                    <rdg wit="#Q">∅</rdg>
                 </app>
+                a parte venuti dove
 
                 <app>
-                    <lem wit="#T16">non sia lor tolto il potere et vela et governo là, </lem>
-                    <rdg wit="#T1">stremi</rdg>
-                    <rdg wit="#Q">estremi</rdg>
+                    <lem wit="#T16">molte</lem>
+                    <rdg wit="#T1">parimente molte</rdg>
+                    <rdg wit="#Q">∅</rdg>
                 </app>
+                vie faccian capo, in
+                <app>
+                    <lem wit="#T16">qual più tosto sia da</lem>
+                    <rdg wit="#T1">quale più tosto debbano</rdg>
+                    <rdg wit="#Q">∅</rdg>
+                </app>
+                mettersi non scorgendo, stanno in sul piè dubitosi et sospesi, 
+                incontrare chi loro la diritta insegni, sì che essi possano
 
                 <app>
-                    <lem wit="#T16">dove essi di giugnere procacciano
-         o almeno dove più la loro salute veggono, drizzare; </lem>
-                    <rdg wit="#T1">stremi</rdg>
+                    <lem wit="#T16">all'albergo senza errore, </lem>
+                    <rdg wit="#T1">a l'albergo sanza errore,</rdg>
                     <rdg wit="#Q">estremi</rdg>
                 </app>
-
-                <app>
-                    <lem wit="#T16">et piace a quelli che per contrada non usata caminano,</lem>
-                    <rdg wit="#T1">stremi</rdg>
-                    <rdg wit="#Q">estremi</rdg>
-                </app>
-
-                <app>
-                    <lem wit="#T16">qualhora essi, a parte venuti
-         dove molte vie faccian capo, in qual più tosto sia da mettersi non
-         scorgendo, stanno in sul piè dubitosi et sospesi,</lem>
-                    <rdg wit="#T1">stremi</rdg>
-                    <rdg wit="#Q">estremi</rdg>
-                </app>
-
-                <app>
-                    <lem wit="#T16">incontrare chi loro la
-         diritta insegni, sì che essi possano all'albergo senza errore, o forse prima
-         che la notte gli sopragiunga, pervenire. </lem>
-                    <rdg wit="#T1">stremi</rdg>
-                    <rdg wit="#Q">estremi</rdg>
-                </app>
+                o forse prima che la notte gli sopragiunga, pervenire.
 
 
             </p>
@@ -182,32 +189,419 @@
             
             <p n="2" xml:id="s1_p2">
                 <app>
-                    <lem wit="#T16">stremi</lem>
-                    <rdg wit="#T1">stremi</rdg>
+                    <lem wit="#T16">Per la qual cosa avisando io, da</lem>
+                    <rdg wit="#T1">Il perché istimando io, per</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                quello che si vede avenire tutto dì, pochissimi essere quegli huomini,
+                a' quali nel peregrinaggio di questa nostra vita mortale,
+                hora dalla turba delle passiomi soffiato et hora dalle tante et così al vero somiglianti apparenze 
+
+                <app>
+                    <lem wit="#T16">d'openioni</lem>
+                    <rdg wit="#T1">d'oppenioni</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                fatto incerto, quasi per lo
+
+                <app>
+                    <lem wit="#T16">continuo</lem>
+                    <rdg wit="#T1">continovo</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                et di calamita et di scorta non faccia mestiero,
+                ho sempre giudicato gratioso ufficio per coloro
+
+                <app>
+                    <lem wit="#T16">adoperarsi, i</lem>
+                    <rdg wit="#T1"> usarsi, e</rdg>
                     <rdg wit="#Q">estremi</rdg>
                 </app>
 
                 <app>
-                    <lem wit="#T16">stremi</lem>
-                    <rdg wit="#T1">stremi</rdg>
+                    <lem wit="#T16">i quali,</lem>
+                    <rdg wit="#T1">e quali, </rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                 delle cose o ad essi avenute o da altri apparate o per se medesimi ritrovate trattando,
+                 a gli altri huomini dimostrano come si possa in qualche parte di 
+
+                <app>
+                    <lem wit="#T16">questo periglioso corso et di questa starda, a smarrire così agevole,</lem>
+                    <rdg wit="#T1">questa perigliosa strada et corso</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                non errare. 
+
+
+            </p>
+        </div>
+
+        <div type="sequence" n="1">
+            
+            <p n="3" xml:id="s1_p3">
+            Perciò che quale più gratiosa cosa può essere che il giovare altrui?
+            O pure che si può qua giù 
+
+                <app>
+                    <lem wit="#T16">fare, che ad huom più si convenga,</lem>
+                    <rdg wit="#T1">fare più convenevole a chi è huomo,</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+            che essere a molti huomini di lor bene cagione?
+            Et poi, se è lodevole per sé 
+
+                <app>
+                    <lem wit="#T16">che è in ogni maniera lodevolissimo,</lem>
+                    <rdg wit="#T1">(che è in ogni maniera lodevolissimo)</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                un huom solo 
+                <app>
+                    <lem wit="#T16">senza</lem>
+                    <rdg wit="#T1">sanza</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                fallimento saper vivere non inteso et non veduto da persona,
+                quanto più è da credere che 
+
+                <app>
+                    <lem wit="#T16">lodar</lem>
+                    <rdg wit="#T1">lodare</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                si debba un altro, il quale et sa esso la sua vita 
+
+                <app>
+                    <lem wit="#T16">senza</lem>
+                    <rdg wit="#T1">sanza</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                fallo scorgere et
+                
+
+                <app>
+                    <lem wit="#T16">oltre a·cciò insegna</lem>
+                    <rdg wit="#T1">insegna</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                et dona modo a infiniti altri huomini, che vivono, di non fallire?
+
+                <app>
+                    <lem wit="#T16">∅</lem>
+                    <rdg wit="#T1">ché pensare che alcuno, insegnante altrui la via di pervenire ad una parte, </rdg>
                     <rdg wit="#Q">estremi</rdg>
                 </app>
 
                 <app>
-                    <lem wit="#T16">stremi</lem>
-                    <rdg wit="#T1">stremi</rdg>
-                    <rdg wit="#Q">estremi</rdg>
-                </app>
-
-                <app>
-                    <lem wit="#T16">stremi</lem>
-                    <rdg wit="#T1">stremi</rdg>
+                    <lem wit="#T16">∅</lem>
+                    <rdg wit="#T1">non la sappia egli, ragionevolmente non si puote.</rdg>
                     <rdg wit="#Q">estremi</rdg>
                 </app>
 
 
             </p>
         </div>
+
+        <div type="sequence" n="1">
+            
+            <p n="4" xml:id="s1_p4">
+                Ma perciò che tra 
+                <app>
+                    <lem wit="#T16">le molte cagioni, le quali</lem>
+                    <rdg wit="#T1">cagioni, che </rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                il nostro tranquillo 
+                <app>
+                    <lem wit="#T16">navicar ci turbano et il sentiero</lem>
+                    <rdg wit="#T1">navigar ci sturbano et la calla</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                del buon vivere ci rendono 
+                 <app>
+                    <lem wit="#T16">sospetto et dubbioso,suole con le primiere</lem>
+                    <rdg wit="#T1">sospetta et dubbiosa, suole per la primiera</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                essere il non sapere noi le più volte quale 
+
+                <app>
+                    <lem wit="#T16">amore buono sia et qual</lem>
+                    <rdg wit="#T1">buono amore sia et quale</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                reo, il che non saputo fa che noi, le cose che fuggire si 
+
+                <app>
+                    <lem wit="#T16">devrebbono</lem>
+                    <rdg wit="#T1">dovrebbono</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                amando et 
+                <app>
+                    <lem wit="#T16">quelle che sono da seguire</lem>
+                    <rdg wit="#T1">quell'altre che sono da essere seguitate</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                non amando, et
+
+                <app>
+                    <lem wit="#T16">tal</lem>
+                    <rdg wit="#T1">tale</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                volta o meno o più del convenevole hora schifandole et hora cercandole, travagliati et smarriti viviamo,
+                ho voluto alcuni ragionamenti raccogliere, che in una brigata di tre
+                nostre valorose donne et in parte di madonna la <persName ref="caterina">Reina di Cipri,</persName>
+                pochi dì sono, tre nostri aveduti et intendenti giovani fecero d'Amore, assai 
+                <app>
+                    <lem wit="#T16">diversamente</lem>
+                    <rdg wit="#T1">ampia et diversamente</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                questionandone in tre giornate,
+                a·ffine che il giovamento et pro che essi hanno a me renduto,
+
+                <app>
+                    <lem wit="#T16">da a·lloro che fatti gli hanno</lem>
+                    <rdg wit="#T1">da loro che gli hanno fatti</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                sentendogli,
+                
+
+
+                <app>
+                    <lem wit="#T16">che nel vero non è stato poco,</lem>
+                    <rdg wit="#T1">(et nel vero non è stato poco) possano etiandio rendere a chiunque altro,
+        così hora da me raccolti, piacesse di sentirgli.</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                possano etiandio rendere a 
+                <app>
+                    <lem wit="#T16">qualunque </lem>
+                    <rdg wit="#T1">chiunque</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                altro, così hora da me raccolti, piacesse di sentirgli.
+
+
+            </p>
+        </div>
+
+        <div type="sequence" n="1">
+            
+            <p n="5" xml:id="s1_5">
+            Alla qual cosa 
+                <app>
+                    <lem wit="#T16">fare, come</lem>
+                    <rdg wit="#T1">fare (come</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                che in ciascuna età stia bene l'udire et leggere le giovevoli cose et
+
+                 <app>
+                    <lem wit="#T16">spetialmente</lem>
+                    <rdg wit="#T1">sopra l'altre</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                questa, perciò che non amare come che sia in 
+
+                <app>
+                    <lem wit="#T16">niuna stagione non si può,</lem>
+                    <rdg wit="#T1">nessuna stagione si puote,</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                quando si vede che da natura insieme col vivere a tutti gli huomini è dato
+        che ciascuno alcuna cosa sempre ami 
+
+                <app>
+                    <lem wit="#T16">∅</lem>
+                    <rdg wit="#T1">et sempre disii)</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                pure io, che giovane sono,
+
+                <app>
+                    <lem wit="#T16">i</lem>
+                    <rdg wit="#T1">gli</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                giovani huomini et le giovani donne conforto et invito maggiormente.
+
+
+            </p>
+        </div>
+
+         <div type="sequence" n="1">
+            
+            <p n="6" xml:id="s1_6">
+                
+                Perciò che a molti et a molte di loro per aventura 
+                <app>
+                    <lem wit="#T16">∅</lem>
+                    <rdg wit="#T1">(se io non m'inganno)</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                agevolmente avverrà che, udito quello che io mi profero di scriverne,
+                essi prima d'Amore potranno far giudicio che egli di loro s'habbia fatto pruova.
+
+
+            </p>
+        </div>
+
+        <div type="sequence" n="1">
+            
+            <p n="7" xml:id="s1_7">
+                
+                Il che, quanto 
+                <app>
+                    <lem wit="#T16">esser debba</lem>
+                    <rdg wit="#T1">debba essere</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                lor caro, né io hora dirò,
+                et essi meglio potranno ne gli altri loro più maturi anni giudicare.
+                Ma di vero, sì come nel più delle cose l'uso è ottimo et certissimo maestro,
+                così in alcune, et in quelle massimamente che possono non meno di noia essere che di
+
+                <app>
+                    <lem wit="#T16">diletto cagione, sì</lem>
+                    <rdg wit="#T1">sollazzo cagione,</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                come mostra che 
+
+                <app>
+                    <lem wit="#T16">questa sia, </lem>
+                    <rdg wit="#T1">questi sia, </rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                l'ascoltarle o leggerle in altrui, prima che a pruova di loro si venga, 
+
+                <app>
+                    <lem wit="#T16">senza</lem>
+                    <rdg wit="#T1">sanza</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                fallo molte volte a molti huomini di molto giovamento è stato.
+
+
+            </p>
+        </div>
+
+
+        <div type="sequence" n="1">
+            
+            <p n="8" xml:id="s1_8">
+                
+                Per la qual cosa bellissimo ritrovamento delle genti è da dire che sieno le 
+                <app>
+                    <lem wit="#T16">lettere et la scrittura, nella qual</lem>
+                    <rdg wit="#T1">lettre istate, nelle quali</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                noi molte cose passate, che non potrebbono 
+
+                <app>
+                    <lem wit="#T16">altramente</lem>
+                    <rdg wit="#T1">altrimenti</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                essere alla nostra notitia pervenute, tutte quasi in 
+
+                <app>
+                    <lem wit="#T16">uno</lem>
+                    <rdg wit="#T1">un</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                specchio riguardando et quello loro di loro che faccia per noi raccogliendo,
+                da gli altrui essempi ammaestrati ad entrare 
+                <app>
+                    <lem wit="#T16">nelli</lem>
+                    <rdg wit="#T1">ne gli</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                non prima o solcati pelaghi o caminati sentieri della vita, quasi
+
+                <app>
+                    <lem wit="#T16">provati</lem>
+                    <rdg wit="#T1">approvati</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                et nocchieri et viandanti, più sicuramente ci 
+                <app>
+                    <lem wit="#T16">mettiamo.</lem>
+                    <rdg wit="#T1">mettia[m]o.</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+
+            </p>
+        </div>
+        
+        <div type="sequence" n="1">
+            
+            <p n="9" xml:id="s1_9">
+                
+
+                <app>
+                    <lem wit="#T16">Senza</lem>
+                    <rdg wit="#T1">Sanza</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                che infinito piacere ci porgono le diverse lettioni, delle quali gli animi d'alquanti huomini, non
+
+                <app>
+                    <lem wit="#T16">altramente che faccia di cibo il corpo,</lem>
+                    <rdg wit="#T1">altrimenti che il corpo di cibo,</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                si pascono assai sovente et prendono insieme da esse dilettevolissimo nodrimento.
+
+
+            </p>
+        </div>
+
+
+
+        <div type="sequence" n="1">
+            
+            <p n="10" xml:id="s1_10">
+                Ma lasciando questo da parte stare et alle ragionate cose d'Amore, 
+                che io dissi, venendo, acciò che meglio si possa ogni 
+                
+                <app>
+                    <lem wit="#T16">lor </lem>
+                    <rdg wit="#T1">loro</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                parte scorgere tale, quale appunto ciascuna fu ragionata,
+
+                <app>
+                    <lem wit="#T16">stimo che ben fatto sia che,</lem>
+                    <rdg wit="#T1"> bene sarà che,</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                 prima che io passi di loro 
+
+                <app>
+                    <lem wit="#T16">più avanti,</lem>
+                    <rdg wit="#T1">innanzi,</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                come il ragionare havesse 
+                 <app>
+                    <lem wit="#T16">luogo</lem>
+                    <rdg wit="#T1">luoco</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+                si faccia chiaro.
+
+            </p>
+        </div>
+
 
 
         <!-- SEQUENZA 2 -->
