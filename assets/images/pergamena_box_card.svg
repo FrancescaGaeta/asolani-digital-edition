@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <defs>
+    <linearGradient id="paper" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8f1e6"/>
+      <stop offset="100%" stop-color="#eddcc2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#5c4035" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="900" height="520" fill="none"/>
+  <g filter="url(#shadow)">
+    <path d="M42 58
+             C70 44, 118 60, 176 50
+             C246 38, 320 68, 394 52
+             C470 36, 560 66, 646 48
+             C732 30, 812 58, 852 82
+             C874 118, 860 162, 866 220
+             C874 286, 856 338, 868 402
+             C876 452, 850 478, 806 482
+             C748 488, 680 470, 612 484
+             C532 500, 446 472, 360 488
+             C276 504, 188 470, 120 484
+             C76 492, 44 466, 34 430
+             C24 382, 44 336, 28 274
+             C12 210, 28 154, 24 110
+             C24 88, 30 70, 42 58 Z"
+          fill="url(#paper)" stroke="rgba(120,91,66,0.18)" stroke-width="2"/>
+  </g>
+  <ellipse cx="118" cy="104" rx="56" ry="44" fill="#9f7d63" opacity="0.10"/>
+  <ellipse cx="780" cy="396" rx="62" ry="50" fill="#9f7d63" opacity="0.08"/>
+  <rect x="88" y="92" width="724" height="330" fill="none" stroke="rgba(120,91,66,0.12)" stroke-width="2"/>
+</svg>

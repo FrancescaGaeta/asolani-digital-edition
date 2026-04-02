@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="paper" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8f1e6"/>
+      <stop offset="100%" stop-color="#eddcc2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#5c4035" flood-opacity="0.11"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="none"/>
+
+  <g filter="url(#shadow)">
+    <path d="M60 80
+             C85 60, 140 78, 190 68
+             C250 56, 320 86, 400 70
+             C490 52, 610 90, 700 68
+             C800 44, 930 88, 1035 74
+             C1090 66, 1128 90, 1140 118
+             C1150 160, 1120 208, 1134 270
+             C1148 334, 1118 406, 1136 484
+             C1156 572, 1120 654, 1110 700
+             C1088 736, 1010 714, 930 728
+             C850 744, 754 714, 660 730
+             C560 748, 448 710, 352 730
+             C266 748, 190 712, 128 722
+             C82 730, 54 694, 48 650
+             C38 590, 68 532, 50 466
+             C30 392, 62 320, 44 246
+             C28 180, 34 112, 60 80 Z"
+          fill="url(#paper)" stroke="rgba(120,91,66,0.18)" stroke-width="2"/>
+  </g>
+
+  <g opacity="0.55">
+    <radialGradient id="stain1"><stop offset="0%" stop-color="#9f7d63" stop-opacity="0.18"/><stop offset="100%" stop-color="#9f7d63" stop-opacity="0"/></radialGradient>
+    <radialGradient id="stain2"><stop offset="0%" stop-color="#9f7d63" stop-opacity="0.12"/><stop offset="100%" stop-color="#9f7d63" stop-opacity="0"/></radialGradient>
+    <ellipse cx="160" cy="140" rx="80" ry="70" fill="url(#stain1)"/>
+    <ellipse cx="1020" cy="170" rx="70" ry="60" fill="url(#stain2)"/>
+    <ellipse cx="210" cy="640" rx="85" ry="70" fill="url(#stain2)"/>
+    <ellipse cx="980" cy="620" rx="90" ry="70" fill="url(#stain1)"/>
+  </g>
+
+  <rect x="110" y="130" width="980" height="540" rx="0" ry="0" fill="none" stroke="rgba(120,91,66,0.12)" stroke-width="2"/>
+</svg>
