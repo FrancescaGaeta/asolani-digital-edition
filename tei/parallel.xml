@@ -15,7 +15,7 @@
                 <publisher>Francesca Gaeta</publisher>
                 <pubPlace>Bologna / GitHub Pages</pubPlace>
                 <date>2026</date>
-                <idno type="URL">https://github.com/FrancescaGaeta/asolani-digital-edition</idno>
+                <idno type="URL">https://francescagaeta.github.io/asolani-digital-edition/index.html</idno>
                 <availability>
                 <p>Project developed as part of the Digital Scholarly Editing course.</p>
                 <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
@@ -31,7 +31,7 @@
                     <publisher>Presso l'Accademia della Crusca</publisher>
                     <date>1991</date>
                     <note>Critical edition edited by Giorgio Dilemmi</note>
-                    <note type="content">The critical edition includes the redactions of manuscript Q and the printed editions of 1505 and 1553</note>
+                    <note type="content">The critical edition includes the redactions of manuscript Q and the printed editions of 1505 (1) and 1553 (16).</note>
                     <note type="encoding">The digital text is based on the 1553 redaction.</note>
                 </bibl>
                 <listWit>
@@ -101,6 +101,113 @@
     <text>
 
       <body>
+
+        <!-- SEQUENZA 1 -->
+        <div type="sequence" n="1">
+            
+            <p n="1" xml:id="s1_p1">
+                Suole
+                <app>
+                    <lem wit="#T16">a' faticosi navicanti esser caro,</lem>
+                    <rdg wit="#T1">essere a' naviganti caro,</rdg>
+                    <rdg wit="#Q">∅</rdg>
+                </app>
+
+                <app>
+                    <lem wit="#T16">quando la notte, da oscuro et tempestoso nembo assaliti et sospinti,</lem>
+                    <rdg wit="#T1">qualhora da oscuro et fortunevole nembo sospinti errano et travagliano la lor via,</rdg>
+                    <rdg wit="#Q">∅</rdg>
+                </app>
+
+                <app>
+                    <lem wit="#T16">nè stella scorgono, nè cosa alcuna appar loro che regga la lor via, </lem>
+                    <rdg wit="#T1">∅</rdg>
+                    <rdg wit="#Q">∅</rdg>
+                </app>
+                col segno della indiana pietra ritrovare la tramontana
+
+                <app>
+                    <lem wit="#T16">col segno della indiana pietra ritrovare
+         la tramontana,</lem>
+                    <rdg wit="#T1">stremi</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+                <app>
+                    <lem wit="#T16">in guisa che, quale vento soffi et percuota conoscendo,</lem>
+                    <rdg wit="#T1">stremi</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+                <app>
+                    <lem wit="#T16">non sia lor tolto il potere et vela et governo là, </lem>
+                    <rdg wit="#T1">stremi</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+                <app>
+                    <lem wit="#T16">dove essi di giugnere procacciano
+         o almeno dove più la loro salute veggono, drizzare; </lem>
+                    <rdg wit="#T1">stremi</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+                <app>
+                    <lem wit="#T16">et piace a quelli che per contrada non usata caminano,</lem>
+                    <rdg wit="#T1">stremi</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+                <app>
+                    <lem wit="#T16">qualhora essi, a parte venuti
+         dove molte vie faccian capo, in qual più tosto sia da mettersi non
+         scorgendo, stanno in sul piè dubitosi et sospesi,</lem>
+                    <rdg wit="#T1">stremi</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+                <app>
+                    <lem wit="#T16">incontrare chi loro la
+         diritta insegni, sì che essi possano all'albergo senza errore, o forse prima
+         che la notte gli sopragiunga, pervenire. </lem>
+                    <rdg wit="#T1">stremi</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+
+            </p>
+        </div>
+
+        <div type="sequence" n="1">
+            
+            <p n="2" xml:id="s1_p2">
+                <app>
+                    <lem wit="#T16">stremi</lem>
+                    <rdg wit="#T1">stremi</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+                <app>
+                    <lem wit="#T16">stremi</lem>
+                    <rdg wit="#T1">stremi</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+                <app>
+                    <lem wit="#T16">stremi</lem>
+                    <rdg wit="#T1">stremi</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+                <app>
+                    <lem wit="#T16">stremi</lem>
+                    <rdg wit="#T1">stremi</rdg>
+                    <rdg wit="#Q">estremi</rdg>
+                </app>
+
+
+            </p>
+        </div>
 
 
         <!-- SEQUENZA 2 -->
