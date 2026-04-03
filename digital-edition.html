@@ -43,9 +43,9 @@
     <h2>Markup criteria</h2>
     <div class="panel">
       <p>
-        The project is encoded in TEI P5. The XML records the structure of the text,
-        the witnesses involved, and the system of variation among manuscript Q, the 1505 edition,
-        and the 1553 redaction.
+        The encoding of the text has been carried out following the principles of TEI P5, adopting a parallel segmentation approach in order to allow a direct and systematic comparison among the three witnesses (Q, 1505, 1553). The segmentation operates on two levels: a macro-level, corresponding to the division into narrative sequences (<div type="sequence">), and a micro-level, corresponding to the alignment of smaller textual units (paragraphs, sentences, and, where necessary, sub-sentential segments) within <app> elements. Each <app> groups the corresponding readings (<rdg>) of the witnesses, ensuring the closest possible semantic and structural alignment, even in cases of partial correspondence or expansion. Particular attention has been paid to maintaining a consistent alignment across witnesses, especially where one version presents additions or omissions, in which cases empty readings or non-parallel segments have been explicitly marked.
+
+The structure of the XML reflects both the logical articulation of the text and its philological stratification: the main text is organized into sequences, while paratextual elements (such as titles and the dedicatory letter) are encoded in dedicated divisions (e.g. <div type="dedication">). No normalization has been applied: the transcription strictly reproduces the text as presented in Giorgio Dilemmi’s critical edition, preserving original spelling, punctuation, capitalization, and typographical features. All elements present in the source have been faithfully retained, including special symbols such as “|” and “·”. The only editorial intervention consists in the silent recomposition of words divided at line breaks in the source, in order to improve readability and ensure textual continuity within the digital environment.
       </p>
       <a class="button-secondary" href="tei/asolani.xml">Open the TEI XML file</a>
     </div>
