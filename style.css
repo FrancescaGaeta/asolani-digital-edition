@@ -70,7 +70,10 @@ a:hover {
   color: var(--accent-dark);
 }
 
-/* animations */
+/* =========================
+   ANIMATIONS
+   ========================= */
+
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -99,7 +102,10 @@ a:hover {
   50% { transform: translateY(-2px); }
 }
 
-/* header */
+/* =========================
+   HEADER
+   ========================= */
+
 header {
   position: sticky;
   top: 0;
@@ -305,7 +311,8 @@ nav a.active {
   filter: saturate(0.96) contrast(1.02);
 }
 
-/* home cards */
+/* HOME CARDS */
+
 .home-cards {
   max-width: var(--maxw);
   margin: 0 auto;
@@ -318,7 +325,7 @@ nav a.active {
 
 .home-card {
   position: relative;
-  padding: 2.3rem 2rem;
+  padding: 2.8rem 2.4rem 2.5rem;
   min-height: 320px;
   z-index: 1;
   display: flex;
@@ -343,7 +350,7 @@ nav a.active {
 }
 
 .home-card h3 {
-  margin: 0 0 0.8rem;
+  margin: 0 0 0.85rem;
   color: var(--accent-dark);
   font-size: 1.42rem;
   line-height: 1.12;
@@ -353,18 +360,9 @@ nav a.active {
 .home-card p {
   margin: 0;
   color: var(--ink);
-  font-size: 0.97rem;
-  line-height: 1.62;
+  font-size: 0.96rem;
+  line-height: 1.58;
   max-width: 100%;
-}
-
-/* footer */
-footer {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 1.5rem 1.25rem 2.2rem;
-  text-align: center;
-  color: var(--muted);
 }
 
 /* =========================
@@ -497,10 +495,11 @@ footer {
   text-transform: uppercase;
 }
 
-/* paper box */
+/* PAPER BOXES */
+
 .paper-box {
   position: relative;
-  padding: 2.2rem 1.9rem;
+  padding: 2.8rem 2.8rem 2.4rem 3.8rem;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -512,8 +511,8 @@ footer {
 .paper-box::before {
   content: "";
   position: absolute;
-  inset: -8px;
-  background: url("assets/images/pergamena_box_card.png") no-repeat center / 110% 110%;
+  inset: 0;
+  background: url("assets/images/pergamena_box_card.png") no-repeat center / 100% 100%;
   z-index: -1;
 }
 
@@ -537,8 +536,8 @@ footer {
 .paper-box p,
 .paper-box li {
   margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.55;
+  font-size: 0.96rem;
+  line-height: 1.58;
 }
 
 .paper-box p + p {
@@ -547,15 +546,15 @@ footer {
 
 .paper-box ul {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 1.25rem;
 }
 
 .paper-box li + li {
-  margin-top: 0.65rem;
+  margin-top: 0.6rem;
 }
 
 .paper-box--compact {
-  padding: 1.9rem 1.6rem;
+  padding: 2rem 1.8rem;
   min-height: 250px;
 }
 
@@ -564,7 +563,7 @@ footer {
 }
 
 .paper-box--wide {
-  min-height: 430px;
+  min-height: 520px;
 }
 
 .paper-box--work {
@@ -574,18 +573,19 @@ footer {
 .panel-tag {
   display: inline-block;
   align-self: flex-start;
-  margin-bottom: 1rem;
-  padding: 0.4rem 0.9rem;
+  margin-bottom: 1.2rem;
+  padding: 0.38rem 0.9rem;
   background: rgba(207,106,99,0.10);
-  border: 1px solid rgba(207,106,99,0.25);
+  border: 1px solid rgba(207,106,99,0.22);
   color: var(--accent-dark);
-  font-size: 0.9rem;
-  letter-spacing: 0.06em;
+  font-size: 0.84rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  border-radius: 20px;
+  border-radius: 999px;
 }
 
-/* author section */
+/* AUTHOR */
+
 .author-layout {
   display: grid;
   grid-template-columns: 320px 1fr;
@@ -594,6 +594,15 @@ footer {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem 0 4rem;
+}
+
+.author-copy .paper-box {
+  padding: 3rem 3rem 2.6rem 4.4rem;
+  min-height: 520px;
+}
+
+.author-copy .paper-box ul {
+  padding-left: 1.35rem;
 }
 
 .author-figure img {
@@ -613,12 +622,13 @@ footer {
   margin-bottom: 0.8rem;
 }
 
-/* timeline - power point inspired */
+/* TIMELINE */
+
 .timeline-block {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0;
-  max-width: 1380px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 1rem 0 4rem;
 }
@@ -644,7 +654,7 @@ footer {
 
 .timeline-row {
   position: relative;
-  height: 340px;
+  height: 360px;
 }
 
 .timeline-row.top-row {
@@ -657,15 +667,15 @@ footer {
 
 .timeline-card {
   position: absolute;
-  width: 210px;
+  width: 228px;
   text-align: center;
 }
 
 .timeline-bubble {
-  width: 225px;
-  min-height: 225px;
+  width: 228px;
+  min-height: 228px;
   margin: 0 auto;
-  padding: 1.25rem 1.15rem;
+  padding: 1.3rem 1.2rem;
   border-radius: 50%;
   background: linear-gradient(180deg, #f7efdf 0%, #ead8ba 100%);
   border: 3px solid rgba(139, 97, 72, 0.28);
@@ -720,7 +730,8 @@ footer {
 .pos-5 { left: 64%; }
 .pos-6 { left: 80%; }
 
-/* work section */
+/* WORK SECTION */
+
 .work-layout {
   display: grid;
   grid-template-columns: 1fr 360px 1fr;
@@ -754,7 +765,8 @@ footer {
   border-radius: 50%;
 }
 
-/* books */
+/* BOOKS */
+
 .books-section {
   max-width: 1100px;
   margin: 0 auto;
@@ -801,7 +813,8 @@ footer {
   line-height: 1.1;
 }
 
-/* critical */
+/* CRITICAL */
+
 .critical-layout {
   display: grid;
   grid-template-columns: 320px 1fr;
@@ -825,7 +838,20 @@ footer {
   margin-top: 1.5rem;
 }
 
-/* responsive */
+/* FOOTER */
+
+footer {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.2rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
 @media (max-width: 1280px) {
   .timeline-readable {
     min-height: auto;
@@ -849,10 +875,10 @@ footer {
   }
 
   .timeline-bubble {
-  width: 100%;
-  max-width: 390px;
-  min-height: 250px;
-}
+    width: 100%;
+    max-width: 390px;
+    min-height: 250px;
+  }
 
   .timeline-stem {
     display: none;
@@ -947,9 +973,12 @@ footer {
     min-height: 220px;
   }
 
+  .paper-box,
+  .author-copy .paper-box,
   .paper-box--wide,
   .paper-box--work {
     min-height: auto;
+    padding: 2rem 1.7rem;
   }
 
   .critical-layout,
@@ -979,6 +1008,7 @@ footer {
 
   .home-card {
     padding: 2.3rem 1.9rem;
+    min-height: 280px;
   }
 
   .home-card h3 {
