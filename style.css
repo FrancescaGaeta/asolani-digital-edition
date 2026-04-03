@@ -499,21 +499,34 @@ nav a.active {
 
 .paper-box {
   position: relative;
-  padding: 2.8rem 2.8rem 2.4rem 3.8rem;
+  padding: 3rem 3rem 2.6rem 5rem;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   color: var(--ink);
-  min-height: 340px;
+  min-height: 520px;
 }
 
 .paper-box::before {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: 14px 18px 14px 42px;
   background: url("assets/images/pergamena_box_card.png") no-repeat center / 100% 100%;
   z-index: -1;
+}
+
+.author-copy .paper-box {
+  padding: 3.2rem 3.2rem 2.8rem 5.2rem;
+  min-height: 560px;
+}
+
+.author-copy .paper-box ul {
+  padding-left: 1.4rem;
+}
+
+.panel-tag {
+  margin-left: 0.4rem;
 }
 
 .paper-box::after {
