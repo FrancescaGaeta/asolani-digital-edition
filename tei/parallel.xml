@@ -93,6 +93,13 @@
                 <person xml:id="cornelia">
                     <persName>Cornelia</persName>
                 </person>
+                <person xml:id="berenice">
+                    <persName>Berenice</persName>
+                </person>
+                <person xml:id="gismondo">
+                    <persName>Gismondo</persName>
+                    <note>happy lover of the Asolani</note>
+                </person>
                 </listPerson>
             </particDesc>
 
@@ -175,7 +182,7 @@
 
             <rdg wit="#T16">
                 <head type="title">
-                DE GLI ASOLANI DI MESSER PIETRO BEMBO 
+                DE GLI ASOLANI DI MESSER PIETRO BEMBO<lb/>
                 NE' QUALI SI RAGIONA D'AMORE
                 </head>
                 <head type="book">LIBRO PRIMO</head>
@@ -668,14 +675,12 @@
             <p n="1" xml:id="s2_p1">
 
             <app>
-                <lem wit="#T16"><placeName ref="#asolo">Asolo </placeName> aduqnue,</lem>
-                <rdg wit="#T1"><placeName ref="#asolo">Asolo </placeName> aduqnue,</rdg>
+                <lem wit="#T16 #T1"><placeName ref="#asolo">Asolo </placeName> aduqnue,</lem>
                 <rdg wit="#Q"><placeName ref="#asolo">Asolo </placeName> aduqnue, madonna ...,</rdg>
             </app>
             vago et piacevole castello posto ne gli 
             <app>
-                <lem wit="#T16">stremi</lem>
-                <rdg wit="#T1">stremi</rdg>
+                <lem wit="#T16 #T1">stremi</lem>
                 <rdg wit="#Q">estremi</rdg>
             </app>
             gioghi delle nostre alpi sopra
@@ -703,7 +708,7 @@
 
 
             <app>
-                <lem wit="#T16 #T1"><gap reason="omitted"/></lem>
+                <lem wit="#T16 #T1"/>
                 <rdg wit="#Q"> per la morte del <persName ref="#giacco">re Giacco</persName> suo marito, non guari con lui dimorata,
                 rimasa vedova et sanza figliuoli, poi che così hebbe con somma soddisfattione de' suoi popoli 
                 quasi tutta la sua giovanezza trappassata, raccommandato il governo del regno alla Signoria nostra,
@@ -714,25 +719,28 @@
             <app>
                 <lem wit="#T16">molto</lem>
                 <rdg wit="#T1">hoggi di molto</rdg>
+                <rdg wit="#Q"/>
             </app>
 
             <app>
-                <lem wit="#T16">nella nostra città honorata et illustre, è la mia non solamente d'amistà</lem>
-                <rdg wit="#T1">nella nostra città honorata et illustre, è la mia non solamente d'amistà</rdg>
+                <lem wit="#T16 #T1">nella nostra città honorata et illustre, è la mia non solamente d'amistà</lem>
+                <rdg wit="#Q"/>
             </app>
 
             <app>
                 <lem wit="#T16">et di dimestichezza congiunta,</lem>
                 <rdg wit="#T1">et di riverenza, che essa le porta, congiunta,</rdg>
+                <rdg wit="#Q"/>
             </app>
 
             <app>
                 <lem wit="#T16">ma anchora di parentado.</lem>
                 <rdg wit="#T1">ma anchora di parentado.</rdg>
+                <rdg wit="#Q"/>
             </app>
 
             <app>
-                <lem wit="#T16 #T1">∅</lem>
+                <lem wit="#T16 #T1"/>
                 <rdg wit="#Q">Dove venuta et lietamente ricevuta da' suoi, fu dalla Signoria nostra honorata
                 di bellissimi et preciosi doni, tra' quali hebbe questo castello, del quale io dico,
                 et per sito del luoco et per natura del paese et per salubrità d'aria amenissimo et piacevolissimo sopra modo.</rdg>
@@ -747,7 +755,7 @@
             </app>
 
             <app>
-                <lem wit="#T16 #T1">∅</lem>
+                <lem wit="#T16 #T1"/>
                 <rdg wit="#Q">(sì come suole spesso la state),</rdg>
             </app>
             avvenne che ella
@@ -764,12 +772,12 @@
 
             <app>
                 <lem wit="#T16">et perciò che da bambina cresciuta se l'havea,</lem>
-                <rdg wit="#T1"><gap reason="absent"/></rdg>
+                <rdg wit="#T1"/>
                 <rdg wit="#Q">et perchè da piccola fanciulla se l'havea allevata,</rdg>
             </app>
 
             <app>
-                <lem wit="#T16">assai teneramente era da llei amata et havuta cara.</lem>
+                <lem wit="#T16">assai teneramente era da·llei amata et havuta cara.</lem>
                 <rdg wit="#T1">assai teneramente era da lei amata et havuta cara.</rdg>
                 <rdg wit="#Q">ella più che alcuna dell'altre amava et havea cara.</rdg>
             </app>
@@ -810,11 +818,11 @@
                 <lem wit="#T16 #T1">in suoni</lem>
                 <rdg wit="#Q">in | suoni</rdg>
             </app>
-            et canti et balli et solennissimi conviti
+            et canti et balli et
             <app>
-                <lem wit="#T16">l'un giorno appresso all'altro</lem>
-                <rdg wit="#T1">l'un giorno doppo l'altro</rdg>
-                <rdg wit="#Q">molti giorni</rdg>
+                <lem wit="#T16">solennissimi conviti l'un giorno appresso all'altro</lem>
+                <rdg wit="#T1">solennissimi conviti l'un giorno doppo l'altro</rdg>
+                <rdg wit="#Q">sollennissimi conviti molti giorni</rdg>
             </app>
 
             <app>
@@ -833,8 +841,8 @@
 
             <p n="4" xml:id="s2_p4">
             <app>
-                <lem wit="#T16 #T1">Erano quivi tra gli altri, che invitati dalla Reina vennero a quelle feste,</lem>
-                <rdg wit="#Q">Ma prima che queste nozze incominciassono, alquanti giorni avanti, (come avengono le venture)</rdg>
+                <lem wit="#T16 #T1">Erano quivi tra gli altri, che invitati dalla <persName ref="#caterina">Reina</persName> vennero a quelle feste,</lem>
+                <rdg wit="#Q">Ma prima che queste nozze incominciassono alquanti giorni avanti, (come avengono le venture)</rdg>
             </app>
             tre gentili huomini della nostra 
             <app>
@@ -843,19 +851,20 @@
             </app>
 
             <app>
-                <lem wit="#T16 #T1">giovani et d'alto cuore, i quali,</lem>
-                <rdg wit="#Q"><gap reason="omission"/></rdg>
+                <lem wit="#T16">giovani et d'alto cuore, i quali,</lem>
+                <rdg wit="#T1">giovani et d'alto cuore, e quali,</rdg>
+                <rdg wit="#Q"/>
             </app>
 
             <app>
                 <lem wit="#T16 #T1">da' loro primi anni ne gli</lem>
-                <rdg wit="#Q"><gap reason="omission"/></rdg>
+                <rdg wit="#Q"/>
             </app>
 
             <app>
-                <lem wit="#T16 #T1">∅</lem>
+                <lem wit="#T16 #T1"/>
                 <rdg wit="#Q">et tra essi per sangue et per amistà di stretto et dolce legame congiunti,
-                insieme ad una loro vila non guari lontana dal castello dove la <persName ref="caterina">Reina</persName> dimorava
+                insieme ad una loro villa non guari lontana dal castello dove la <persName ref="caterina">Reina</persName> dimorava
                 (sì come quella stagione faciamo) con le lor donne giovani et vaghe et belle ciascuna,
                 et di quegli costumi che in honesta donna sono più cari ornate quanto alcune dell'altre,
                 o più forse, che si sapesse già buon tempo di queste contrade, lasciata la città,
@@ -863,7 +872,7 @@
             </app>
 
             <app>
-                <lem wit="#T16 #T1">∅</lem>
+                <lem wit="#T16 #T1"/>
                 <rdg wit="#Q">Et quivi ritrovati tre loro carissimi compagni, e quali</rdg>
             </app>
 
@@ -879,7 +888,7 @@
             </app>
 
             <app>
-                <lem wit="#T16">oltre a'cciò il pregio d'ogni bel costume haveano,</lem>
+                <lem wit="#T16">oltre a·cciò il pregio d'ogni bel costume haveano,</lem>
                 <rdg wit="#T1">oltre gli ornamenti delle lettre il pregio d'ogni bella loda haveano,</rdg>
                 <rdg wit="#Q">uccellando, cacciando, diportandosi, prendevano insieme que' piaceri</rdg>
             </app>
@@ -895,57 +904,59 @@
 
         <p n="5" xml:id="s2_p5">
           <app>
-            <lem wit="#T16 #T1">Costor per aventura,</lem>
-            <rdg wit="#Q">∅</rdg>
+            <lem wit="#T16">Costor per aventura,</lem>
+            <rdg wit="#T1">Costoro per aventura,</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
             <lem wit="#T16 #T1">come che a tutte le donne che in que' conviti si trovarono,</lem>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
             <lem wit="#T16 #T1">sì per la chiarezza del sangue loro et sì anchora molto più per la viva fama de' loro studi</lem>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
-            <lem wit="#T16 #T1">et del lor valore</lem>
-            <rdg wit="#Q">∅</rdg>
+            <lem wit="#T16">et del lor valore</lem>
+            <rdg wit="#T1">et del loro valore</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
             <lem wit="#T16">fosser cari,</lem>
             <rdg wit="#T1">fusser cari,</rdg>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
-            <lem wit="#T16"><gap reason="absent"/></lem>
+            <lem wit="#T16"/>
             <rdg wit="#T1">et per questo chiamati sovente da ciascuna et disiderati,</rdg>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
             <lem wit="#T16 #T1">essi nondimeno pure con tre di loro</lem>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
             <lem wit="#T16">belle</lem>
             <rdg wit="#T1">similmente belle</rdg>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
             <lem wit="#T16 #T1">et vaghe giovani et di gentili costumi ornate,</lem>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
-            <lem wit="#T16 #T1">∅</lem>
+            <lem wit="#T16 #T1"/>
             <rdg wit="#Q">Né guari quivi così 
-            dimorarono quella bella brigata, che'lla <persName ref="caterina">Reina</persName>, intendendo di loro, sopravenutole 
+            dimorarono quella bella brigata, che·lla <persName ref="#caterina">Reina</persName>, intendendo di loro, sopravenutole 
             il tempo del festeggiare per le nuove nozze che della sua damigiella 
             fatte havea, mandò a' gentili huomini un suo, che | piacesse loro, 
             insieme con le lor donne et co' loro compagni, di venire per alcun dì
@@ -956,39 +967,40 @@
           <app>
             <lem wit="#T16">[perciò che prossimani eran loro per sangue et lunga dimestichezza con esse et co' lor mariti haveano,</lem>
             <rdg wit="#T1">perciò che prossimani erano loro per sangue et lunga dimestichezza con esse et co' loro mariti haveano,</rdg>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
-            <lem wit="#T16 #T1">∅</lem>
+            <lem wit="#T16 #T1"/>
             <rdg wit="#Q">Et saliti con esse sopra e portanti cavalli et co' tre compagni altresì, et ad
             Asolo venuti, perciò</rdg>
           </app>
 
           <app>
-            <lem wit="#T16">i quali tutti e tre di què dì a <placeName ref="#vinegia">Vinegia</placeName> tornati erano per loro bisogne],</lem>
-            <rdg wit="#T1"><gap reason="absent"/>,</rdg>
+            <lem wit="#T16">i quali tutti e tre di que' dì a <placeName ref="#vinegia">Vinegia</placeName> tornati erano per loro bisogne],</lem>
+            <rdg wit="#T1"/>
             <rdg wit="#Q">che per alcuna bisogna era loro uopo di ritrovarsi que' giorni in <placeName ref="#vinegia">Vinegia</placeName> ,</rdg>
           </app>
 
           <app>
-            <lem wit="#T16 #T1">più spesso et più sicuramente si davano che con altre,</lem>
-            <rdg wit="#Q">∅</rdg>
+            <lem wit="#T16">più spesso et più sicuramente si davano che con altre,</lem>
+            <rdg wit="#T1">più ispesso et più sicuramente si davano che con altre,</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
             <lem wit="#T16 #T1">volentieri sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.</lem>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
-            <lem wit="#T16 #T1">∅</lem>
-            <rdg wit="#Q">fatta loro scusa con la Reina et a·llei et a' compagni 
+            <lem wit="#T16 #T1"/>
+            <rdg wit="#Q">fatta loro scusa con la <persName ref="#caterina">Reina</persName> et a·llei et a' compagni 
             accommandate le lor donne, a cavallo risaliti, se ne tornarono pe' fatti loro. </rdg>
           </app>
 
           <app>
-            <lem wit="#T16 #T1">∅</lem>
+            <lem wit="#T16 #T1"/>
             <rdg wit="#Q">Le donne lietamente dalla Reina et da molt'altre ricevute, che
             a quello venute erano che loro vennero, et quivi dimorando, molto di spasso 
             pigliavano nelle feste et molto ne davano altrui co' loro giovani insieme 
@@ -999,19 +1011,14 @@
         </p>
 
         <p n="6" xml:id="s2_p6">
-            Quantunque <person ref="#perottino">Perottino</person>
+            Quantunque <persName ref="#perottino">Perottino</persName>
 
           <app>
             <lem wit="#T16">che così nominare un di loro m'è piaciuto in questi sermoni,</lem>
             <rdg wit="#T1">(che così nomare un di loro m'è piaciuto in questi sermoni)</rdg>
             <rdg wit="#Q">(che uno di loro così volle che io in questi fogli lo chiamasse, non molto dal suo primiero nome deviando)</rdg>
           </app>
-
-          <app>
-            <lem wit="#T16 #T1">∅</lem>
-            <rdg wit="#Q">non molto dal suo primiero nome deviando)</rdg>
-          </app>
-          poco et rado parlasse,né
+          poco et rado parlasse, né
 
           <app>
             <lem wit="#T16">fosse</lem>
@@ -1032,15 +1039,16 @@
           </app>
 
           <app>
-            <lem wit="#T16 #T1">∅</lem>
+            <lem wit="#T16 #T1"/>
             <rdg wit="#Q">né mai, se non quanto e suoi compagni lo chiamassero o di | bisogna le fusse, con gli altri si ritrovava nelle feste,</rdg>
           </app>
 
           <app>
-            <lem wit="#T16 #T1">sì come colui che l'animo sempre havea in tristo pensiero;</lem>
-            <rdg wit="#Q">come quello che ll'animo sempre havea in tristo pensiero;</rdg>
+            <lem wit="#T16">sì come colui che l'animo</lem>
+            <rdg wit="#T1">sì come quello che l'animo</rdg>
+            <rdg wit="#Q">come quello che·ll'animo</rdg>
           </app>
-          nè quivi venuto sarebbe,
+          sempre havea in tristo pensiero; né quivi venuto sarebbe,
 
           <app>
             <lem wit="#T16 #T1">se</lem>
@@ -1068,7 +1076,7 @@
         </p>
 
         <p n="8" xml:id="s2_p8">
-            Nè pure solamente <person ref="#perottino">Perottino</person>
+            Né pure solamente <persName ref="#perottino">Perottino</persName>
           <app>
             <lem wit="#T16 #T1">ho io con infinita voce in questa guisa nomato,</lem>
             <rdg wit="#Q">così ha voluto che io il suo vero nome altrimenti in queste carte non tocchi, </rdg>
@@ -1077,16 +1085,16 @@
 
           <app>
             <lem wit="#T16 #T1">anchora;</lem>
-            <rdg wit="#Q">altresì</rdg>
+            <rdg wit="#Q">altresì,</rdg>
           </app>
 
           <app>
             <lem wit="#T16 #T1">non per altro rispetto,</lem>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
-            <lem wit="#T16 #T1">∅</lem>
+            <lem wit="#T16 #T1"/>
             <rdg wit="#Q">da' quali io queste cose ho havute, et con loro 
             assai sovente dimoro, (che se ne sia la cagione) m'hanno dolcemente pregato 
             che io faccia medesimamente de' nomi loro;</rdg>
@@ -1101,7 +1109,7 @@
           <app>
             <lem wit="#T16">i loro veri nomi non palesando,</lem>
             <rdg wit="#T1">gli loro veri nomi non appalesando,</rdg>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
           di pensar cosa
 
@@ -1123,23 +1131,18 @@
 
           <app>
             <lem wit="#T16 #T1">d'uno in altro passando,</lem>
-            <rdg wit="#Q">∅</rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
             <lem wit="#T16 #T1">a brieve andare possono in contezza de gli huomini pervenire,</lem>
             <rdg wit="#Q">possono in mano de gli huomini pervenire,</rdg>
           </app>
-
-          <app>
-            <lem wit="#T16">de' i quali</lem>
-            <rdg wit="#T1">de' quali</rdg>
-          </app>
-          non pochi sogliono esser coloro
+          de' quali non pochi sogliono esser coloro
 
           <app>
             <lem wit="#T16 #T1">che le cose sane</lem>
-            <rdg wit="#Q">per aventura che lle cose sane</rdg>
+            <rdg wit="#Q">per aventura che·lle cose sane</rdg>
           </app>
           le più volte rimirano con occhio non sano.
 
@@ -1162,57 +1165,56 @@
 
         <!--SEQUENZA 3-->
       <div type="sequence" n="3" xml:id="seq3">
-        <app xml:id="seq3_macro_1">
-                <rdg wit="#Q">
-                    <p n="0" xml:id="q_s3_p0">Hora nelle nozze ritornandomi, solea la Reina doppo 'l desinare, 
+        <div type="version" corresp="#Q">
+                    <p n="1" xml:id="q_s3_p1">Hora nelle nozze ritornandomi, solea la <persName ref="#caterina">Reina</persName> doppo 'l desinare, 
                     che sempre magnifico era et maraviglioso molto et da diversi giuochi 
                     d'huomini che ci soglion far ridere et da suoni di vari stormenti et canti 
                     hora di fanciulle et quando d'huomini rallegrato, con le sue damigielle 
                     ritrarsi nelle sue camere, et quivi o dormire o, ciò che più le piacea di
                     fare facendo, la parte più calda del giorno separatamente passarsi, et così 
-                    concedere che ll'altre donne di loro facessono a llor modo, per infino a ttanto
+                    concedere che·ll'altre donne di loro facessono a·llor modo, per infino a·ttanto
                     che venuto là dal vespro tempo fusse da festeggiare; nel quale
-                    tutte le donne et gentili uomini et suoi cortigiani si raunavano nell'ampissime
+                    tutte le donne et gentili huomini et suoi cortigiani si raunavano nell'ampissime
                     sale del palagio, dove si danzava gaiamente et tutte quelle cose 
                     si faceano che a festa di reina si convenia di fare, per infino che tempo 
                     fusse da por le tavole.</p>
 
-                    <p n="1" xml:id="q_s3_p1">Andando adunque così alcun giorno le nuove nozze, 
+                    <p n="2" xml:id="q_s3_p2">Andando adunque così alcun giorno le nuove nozze, 
                     et levatasi un dì, finito 'l mangiare et e suoi spassi forniti, dall'altre 
-                    donne la Reina, come solea, et nelle sue camere raccoltasi, et ciascuno 
+                    donne la <persName ref="#caterina">Reina</persName>, come solea, et nelle sue camere raccoltasi, et ciascuno 
                     similmente partendo, rimase per aventura ultime, le tre donne co' loro 
                     giovani per le sale si spatiavano ragionando, et quinci, da' piedi et dalle
-                    parole portate, ad un poggetto di marmo pervennono, il quale da una 
+                    parole portate, ad un | poggetto di marmo pervennono, il quale da una 
                     parte delle sale più rimota sopra ad un bellissimo giardino del palagio
                     riguardava.</p>
 
-                    <p n="2" xml:id="q_s3_p2">Dove come giunsono, maravigliatesi della bellezza del 
+                    <p n="3" xml:id="q_s3_p3">Dove come giunsono, maravigliatesi della bellezza del 
                     giardino, poi che di lui hebbero molte cose parlato, hor questa hor quella 
-                    parte riguardando, Gismondo, che il più festevole era de' suoi compagni 
+                    parte riguardando, <persName ref="#gismondo">Gismondo</persName>, che il più festevole era de' suoi compagni 
                     et volentieri sempre le donne in dolce festa et in honesto giuoco tenea, 
                     a loro rivoltosi così disse:</p>
 
-                    <p n="3" xml:id="q_s3_p3"> — Care giovani, il dormire doppo 'l cibo in quest'hora del dì, quantunque 
+                    <p n="4" xml:id="q_s3_p4"> — Care giovani, il dormire doppo 'l cibo in quest'hora del dì, quantunque 
                     in alcuna stagion dell'anno non sia buono, pure la state, perciò 
                     che longissimi sono e giorni et le notti più brievi, come quello che cosa 
                     piacevole è, da gli occhi nostri più volentieri ricevuto, alquanto meno 
                     sanza fallo ci nuoce. Ma questo mese incomincia egli a perdere molto della 
-                    sua dolcezza passata et oltre a ccio a farsi di dì in dì più dannoso 
+                    sua dolcezza passata et oltre a·cciò a farsi di dì in dì più dannoso 
                     et più grave. Per che (dove voi questa volta il mio consiglio voleste pigliare)
                     io direi che fusse vie bene fatto, lasciando il sonno nelle camere drieto 
                     le pigre cortine delle nostre letta giacere, che noi passassimo nel giardino,
-                    et quivi nel rezzo et nel fresco dell'herbe ripostisi, o novellando o 
+                    et quivi nel rezzo et nel fresco dell'herbe ripostisi, o novellando | o 
                     di cose dilettevoli ragionando, ingannare questa parte del giorno incresciosa,
-                    per infino che ll'hora del festeggiare venuta nelle sale ci richiamasse 
+                    per infino che·ll'hora del festeggiare venuta nelle sale ci richiamasse 
                     insieme con gli altri ad honorare la nostra novella sposa. —</p>
 
-                    <p n="4" xml:id="q_s3_p4">Alle donne, le quali non meno l'ombre de gli alberi et gli accorti 
+                    <p n="5" xml:id="q_s3_p5">Alle donne, le quali non meno l'ombre de gli alberi et gli accorti 
                     ragionamenti de' giovani che 'l sonno delle coltre regali et le favole dell'altre 
-                    donne dilettavano, piacque il consiglio di Gismondo. Per che, discese, 
+                    donne dilettavano, piacque il consiglio di <persName ref="#gismondo">Gismondo</persName>. Per che, discese, 
                     tutte liete et festose co' loro giovani n'andarono nel giardino. </p>
 
 
-                    <p n="5" xml:id="q_s3_p5">Era questo giardino vago molto et di maravigliosa bellezza. Ma per 
+                    <p n="6" xml:id="q_s3_p6">Era questo giardino vago molto et di maravigliosa bellezza. Ma per 
                     non raccontare ogni parte di lui, che sarebbe troppo lungo, egli, oltre 
                     ad un bellissimo pergolato, che largo et ombroso pel mezzo in croce lo 
                     dipartiva, una medesima via dava a gli entranti di qua et di là, et lungo 
@@ -1221,10 +1223,11 @@
                     pergolato, una siepe di verdissimi et minutissimi bossi, humile non tanto 
                     che con mano sanza chinarsi il sommo di lei non si potesse toccare, spessissima 
                     et, ugualmente in ogni parte di sé (quantunque longissima fusse) 
-                    gli occhi et la vista pascendo, dilettevole a riguardare.</p>
+                    gli occhi et la | vista pascendo, dilettevole a riguardare.</p>
 
 
-                    <p n="6" xml:id="q_s3_p6">Dall'altra honorati allori, lungo 'l muro assai nel cielo crescendo, della più alta parte 
+                    <p n="7" xml:id="q_s3_p7">Dall'altra honorati allori, 
+                    lungo 'l muro assai nel cielo crescendo, della più alta parte 
                     di loro mezzo arco faceano, in maniera folti et castigati, che niuna lor 
                     foglia fuori del commandato ordine parea che ardisse di si mostrare; né 
                     altro del muro si vedea, che dall'una delle latora del giardino e marmi 
@@ -1233,7 +1236,7 @@
                     sedendo si potea gittar la vista sopra 'l piano il quale esse signoreggiavano.</p>
 
 
-                    <p n="7" xml:id="q_s3_p7">Per questa adunque così bella via dall'una parte entrate nel giardino 
+                    <p n="8" xml:id="q_s3_p8">Per questa adunque così bella via dall'una parte entrate nel giardino 
                     le vaghe donne co' loro giovani caminando tutte diffese dal sole (come 
                     che egli assai alto si fusse nel cielo), et questa cosa et quell'altra considerando, 
                     pervennono in un pratello che 'l giardin terminava, di sì fresche 
@@ -1241,7 +1244,7 @@
                     che alquante varietà di vaghetti fiori lo dipingneano; nello stremo del 
                     quale faceano gli allori, sanza legge et in maggior quantità cresciuti, due 
                     selvette pari et nere per l'ombre et piene d'una soletaria riverenza; et 
-                    nel mezzo di loro più a drento davano luoco tra esse ad una bellissima 
+                    nel mezzo di loro più a | drento davano luoco tra esse ad una bellissima 
                     fonte, nel sasso vivo del monte, che da quella parte serrava il giardino, 
                     maestrevolmente cavata, nella quale una vena di liquido et limpidissimo 
                     cristallo, che del monte usciva, baldanzosamente cadendo et di lei, che 
@@ -1250,45 +1253,44 @@
                     quasi tutta coperta dall'herbe, mormorando s'affrettava di correre nel giardino.</p>
 
 
-                    <p n="8" xml:id="q_s3_p8">Piacque questo luoco maravigliosamente alle belle donne, il quale 
-                    poi che molto da ciascuna di loro fu lodato, madonna Berenice, che 
+                    <p n="9" xml:id="q_s3_p9">Piacque questo luoco maravigliosamente alle belle donne, il quale 
+                    poi che molto da ciascuna di loro fu lodato, madonna <persName ref="#berenice">Berenice</persName>, che 
                     la men giovane era de l'altre due et da esse honorata quasi come lor capo 
-                    et, oltre a cciò, vie più ardita che esse non erano, verso Gismondo riguardando:</p>
+                    et, oltre a·cciò, vie più ardita che esse non erano, verso <persName ref="#gismondo">Gismondo</persName> riguardando:</p>
 
-                    <p n="9" xml:id="q_s3_p9"><q>— Deh —</q> disse <q>— come mal facemmo, Gismondo, a non ci essere quivi 
+                    <p n="11" xml:id="q_s3_p10"><q>— Deh —</q> disse <q>— come mal facemmo, <persName ref="#gismondo">Gismondo</persName>, a non ci essere quivi 
                         tutti questi dì passati venute, ché meglio in cotesto giardino che nelle 
-                        nostre camere haremmo questo di tempo, che sanza la sposa et la Reina 
+                        nostre camere haremmo questo di tempo, che sanza la sposa et la <persName ref="#caterina">Reina</persName>
                         ci corre, trappassato. Hora (poi che noi la tua mercé vi siamo) vedi dove 
                         a te paia che si siedi, perciò che l'andare hora altre parti del giardino
                         riguardando il sole ci vieta, che in|vidiosamente (come tu vedi) se le riguarda lui. —</q>
-                        A cui Gismondo:
-                        <q>— Madonna, —</q> rispose <q>— dove a voi così piaccia, a me parrebbe che 
+                        A cui <persName ref="#gismondo">Gismondo</persName>:
+                        <q>— <persName ref="#berenice">Madonna</persName>, —</q> rispose <q>— dove a voi così piaccia, a me parrebbe che 
                         questa fonte non si dovesse rifiutare, perciò che l'herbetta è quivi più 
                         lieta che altrove et più dipinta di fiori. Poi quest'alberi ci terranno sì
                         il sole, che, per potere che egli habbia, hoggi non ci ritroverrà egli giamai.</q>
-                        <q>— Dunque —</q> disse madonna Berenice <q>— sedianci costì, dove a te 
-                        piace, che vi cci hai guidate. Et perciò che lo starci quivi, sì come tu dicesti, 
+                        <q>— Dunque —</q> disse madonna <persName ref="#berenice">Berenice</persName> <q>— sedianci costì, dove a te 
+                        piace, che vi·cci hai guidate. Et perciò che lo starci quivi, sì come tu dicesti, 
                         non c'incresca, col mormorio dell'acque che c'invitano a ragionare 
                         et con l'horrore di quest'ombre che ci ascoltano, disponti tu a dire di 
                         quello che a te più giova che si ragioni, perciò che et noi volentieri sempre 
                         t'ascoltiamo et, poi che sì bello et vago luoco gli hai dato, meritamente 
                         in te cade hoggi la signoria de' nostri sermoni. —</q>
-                        Dette queste parole da madonna Berenice, et da ciascuna dell'altre 
-                        due invitato Gismondo al favellare, esso lietamente così disse:
+                        Dette queste parole da madonna <persName ref="#berenice">Berenice</persName>, et da ciascuna dell'altre 
+                        due invitato <persName ref="#gismondo">Gismondo</persName> al favellare, esso lietamente così disse:
                         <q>- Amabili donne, poscia che voi hoggi questa maggioranza mi date, 
                         et io la mia prenderò. —</q> </p>
 
-                    <p n="10" xml:id="q_s3_p10">Et poi che, fatta di loro corona, a sedere in grembo dell'herbetta si 
+                    <p n="12" xml:id="q_s3_p12">Et poi che, fatta di loro corona, a sedere in grembo dell'herbetta si 
                     fûr posti, chi vicino la bella fonte et | chi a piè de gli ombrosi allori di 
-                    qua et di là del picciol rio, Gismondo, accortamente rassettatosi et pel 
+                    qua et di là del picciol rio, <persName ref="#gismondo">Gismondo</persName>, accortamente rassettatosi et pel 
                     viso d'intorno piacevolmente le belle donne riguardate, in questa guisa incominciò: 
                     - Vaghe et festose donne, ciascuno di noi ha hoggi udite quelle due fanciulle, 
                     che dinanzi alla Reina, prima che si levassono le tavole, assai vezzosamente 
                     l'una all'altra rispondendo cantarono di molte canzoni, tra le 
                     quali se io mi ricorderò le due prime, che allhora, perciò che molto mi 
                     piacquono, agevolmente appresi, assai bello et spatioso campo haremo 
-                    hoggi da favellare. Elle per aventura son queste. Perciò che venute le fanciulle
-                    dinanci la Reina, </p>
+                    hoggi da favellare. Elle per aventura son queste. Perciò che ...</p>
 
 
                     </rdg>
@@ -1299,19 +1301,20 @@
             <rdg wit="#T1 #T16">
             <p n="1" xml:id="s3_print_p1">
                 <app>
-                    <lem wit="#T16"> Ma alle nozze della <person ref="#caterina">Reina</person> tornando,</lem>
-                    <rdg wit="#T1"> Ma tornando alle nozze della <person ref="#caterina">Reina</person>,</rdg>
+                    <lem wit="#T16"> Ma alle nozze della <persName ref="#caterina">Reina</persName> tornando,</lem>
+                    <rdg wit="#T1"> Ma tornando alle nozze della <persName ref="#caterina">Reina</persName>,</rdg>
                 </app>
+                mentre che elle così andavano
 
                 <app>
-                    <lem wit="#T16">mentre che elle così andavano come io dissi,</lem>
-                    <rdg wit="#T1">mentre che elle così andavano com'io dissi,</rdg>
+                    <lem wit="#T16">come io</lem>
+                    <rdg wit="#T1"> com'io</rdg>
                 </app>
-                un giorno tra gli altri nella fine del desinare, che sempre era
+                dissi, un giorno tra gli altri nella fine del desinare, che sempre era
 
                 <app>
                     <lem wit="#T16"> splendido </lem>
-                    <rdg wit="#T1">splendido et meraviglioso</rdg>
+                    <rdg wit="#T1">splendido et maraviglioso</rdg>
                 </app>
                 et da diversi giuochi d'huomini che ci soglion far ridere et da suoni di vari
 
@@ -1331,31 +1334,28 @@
         <!-- Riallineamento-->
         <p n="11" xml:id="s3_p11">
           <app>
-            <lem wit="#T16">là dove la Reina sedea, venute, riverentemente la salutarono; </lem>
-            <rdg wit="#T1">dove la Reina sedea, venute, riverentemente la salutarono; </rdg>
-            <rdg wit="#Q">dinanci la Reina, poi che riverentemente la salutarono,</rdg>
+            <lem wit="#T16">là dove la <persName ref="#caterina">Reina</persName> sedea, venute, riverentemente la salutarono; </lem>
+            <rdg wit="#T1">dove la <persName ref="#caterina">Reina</persName> sedea, venute, riverentemente la salutarono; </rdg>
+            <rdg wit="#Q">venute le fanciulle dinanci la <persName ref="#caterina">Reina</persName>, poi che riverentemente la salutarono,</rdg>
           </app>
 
           <app>
             <lem wit="#T16">et poi che l'hebbero salutata, amendue levatesi,</lem>
-            <rdg wit="#T1">et poi che l'hebbero salutata, amendue 
-         levatesi, </rdg>
+            <rdg wit="#T1">et poi che l'hebbero salutata, amendue levatesi,</rdg>
             <rdg wit="#Q">levatesi,</rdg>
           </app>
 
           <app>
             <lem wit="#T16">la maggiore, un bellissimo liuto che nell'una mano teneva al petto recandosi et assai maestrevolmente toccandolo,</lem>
-            <rdg wit="#T1">la maggiore, un bellissimo liuto che nell'una mano tenea
-         con dolce atto al petto recandosi et assai maestrevolmente toccandolo, </rdg>
+            <rdg wit="#T1">la maggiore, un bellissimo liuto che nell'una mano tenea con dolce atto al petto recandosi et assai maestrevolmente toccandolo, </rdg>
             <rdg wit="#Q">et col suono del liuto, che quel loro maestro drietro le lor spalle assai 
             acconciamente toccava, accordatasi la maggioretta,</rdg>
           </app>
 
           <app>
             <lem wit="#T16">dopo alquanto spatio col piacevole suono di quello la soave voce di lei accordando et dolcissimamente cantando,</lem>
-            <rdg wit="#T1">doppo alquanto spatio col piacevole suono di quello la soave voce di lei 
-         accordando, </rdg>
-            <rdg wit="#Q"><gap reason="not_parallel"/></rdg>
+            <rdg wit="#T1">doppo alquanto spatio col piacevole suono di quello la soave voce di lei accordando, </rdg>
+            <rdg wit="#Q"/>
           </app>
 
           <app>
@@ -1374,11 +1374,11 @@
                     <l n="2">Dov' el mio cor si strugge,</l>
                     <l n="3">Seguendo chi mi fugge,</l>
                     <l n="4">Amando chi 'l mio mal si torna in gioco?</l>
-                    <l n="5"> Credea trovar ne l'amorosa tresca</l>
+                    <l n="5">   Credea trovar ne l'amorosa tresca</l>
                     <l n="6">Più dolce ogni fatica:</l>
-                    <l n="7">Ahi, del mio ben nemica</l>
+                    <l n="7">Ahi, del mio ben nemica,</l>
                     <l n="8">Che 'l piacer manca e 'l tormento rinfresca.</l>
-                    <l n="9"> Donne, che non sentiste anchor d'Amore,</l>
+                    <l n="9">   Donne, che non sentiste anchor d'Amore,</l>
                     <l n="10">Quanto beate sete;</l>
                     <l n="11">Se voi non v'accorgete,</l>
                     <l n="12">Mirate quanto è grave el mio dolore.</l>
@@ -1387,37 +1387,43 @@
 
             <rdg wit="#T1 #T16">
                 <lg type="poem" xml:id="lg1">
-                    <l n="1"> Io vissi pargoletta in festa e 'n gioco,</l>
+                    <l n="1">   Io vissi pargoletta in festa e 'n gioco,</l>
                     <l n="2">De' miei pensier, di mia sorte contenta:</l>
                     <l n="3">Hor sì m'afflige Amor et mi tormenta,</l>
                     <l n="4">C'homai da tormentar gli avanza poco.</l>
 
                     <l n="5"> 
                         <app>
-                        <lem wit="#T16">Harei giurato haver gioiosa vita,</lem>
-                        <rdg wit="#T1">Credetti, lassa, haver gioiosa vita</rdg>
+                        <lem wit="#T16">    Credetti, lassa, haver gioiosa vita</lem>
+                        <rdg wit="#T1">    Harei giurato haver gioiosa vita,</rdg>
                         </app>
                     </l>
 
-                    <l n="5"> 
+                    <l n="6"> 
                         <app>
-                        <lem wit="#T16">Da prima intrando, Amor, a la tua corte;</lem>
-                        <rdg wit="#T1">Da prima entrando, Amor, a la tua corte;</rdg>
+                        <lem wit="#T16">Da prima entrando, Amor, a la tua corte;</lem>
+                        <rdg wit="#T1">Da prima intrando, Amor, a la tua corte;</rdg>
                         </app>
                     </l>
 
-                    <l n="5"> 
+                    <l n="7"> 
                         <app>
-                        <lem wit="#T16">Ma io n'aspetto dolorsa morte:</lem>
-                        <rdg wit="#T1">Et già n'aspetto dolorsa morte:</rdg>
+                        <lem wit="#T16">Et già n'aspetto dolorsa morte:</lem>
+                        <rdg wit="#T1">Ma io n'aspetto dolorsa morte:</rdg>
                         </app>
                     </l>
 
-                    <l n="8">O mia credenza, come m'hai fallita</l>
-                    <l n="9"> Mentre ad Amor non si commise anchora,</l>
+                    <l n="8">O mia credenza, come m'hai fallita.</l>
+                    <l n="9">   Mentre ad Amor non si commise anchora,</l>
                     <l n="10">Vide Colcho Medea lieta et secura;</l>
                     <l n="11">Poi ch'arse per Iason, acerba et dura</l>
-                    <l n="12">Fu la sua vita infin a l'ultim'hora.</l>
+                
+                    <l n="12"> 
+                        <app>
+                        <lem wit="#T16">Fu la sua vita infin a l'ultim'hora.</lem>
+                        <rdg wit="#T1">Fu la sua vita insin a l'ultim'hora.</rdg>
+                        </app>
+                    </l>
                 </rdg>
             </app>
     
