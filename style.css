@@ -318,8 +318,8 @@ nav a.active {
 
 .home-card {
   position: relative;
-  padding: 2.6rem 2.3rem;
-  min-height: 270px;
+  padding: 2.3rem 2rem;
+  min-height: 320px;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -329,8 +329,8 @@ nav a.active {
 .home-card::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: url("assets/images/pergamena_box_card.png") no-repeat center/100% 100%;
+  inset: -6px;
+  background: url("assets/images/pergamena_box_card.png") no-repeat center/108% 108%;
   z-index: -1;
 }
 
@@ -500,20 +500,20 @@ footer {
 /* paper box */
 .paper-box {
   position: relative;
-  padding: 2.7rem 2.4rem;
+  padding: 2.2rem 1.9rem;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   color: var(--ink);
-  min-height: 280px;
+  min-height: 340px;
 }
 
 .paper-box::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: url("assets/images/pergamena_box_card.png") no-repeat center / 100% 100%;
+  inset: -8px;
+  background: url("assets/images/pergamena_box_card.png") no-repeat center / 110% 110%;
   z-index: -1;
 }
 
@@ -537,8 +537,8 @@ footer {
 .paper-box p,
 .paper-box li {
   margin: 0;
-  font-size: 1rem;
-  line-height: 1.65;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 .paper-box p + p {
@@ -555,20 +555,20 @@ footer {
 }
 
 .paper-box--compact {
-  padding: 2.1rem 1.9rem;
-  min-height: 230px;
+  padding: 1.9rem 1.6rem;
+  min-height: 250px;
 }
 
 .paper-box--compact h3 {
-  font-size: 1.3rem;
+  font-size: 1.28rem;
 }
 
 .paper-box--wide {
-  min-height: 390px;
+  min-height: 430px;
 }
 
 .paper-box--work {
-  min-height: 470px;
+  min-height: 520px;
 }
 
 .panel-tag {
@@ -662,21 +662,21 @@ footer {
 }
 
 .timeline-bubble {
-  width: 210px;
-  min-height: 210px;
+  width: 225px;
+  min-height: 225px;
   margin: 0 auto;
-  padding: 1.1rem 1rem;
+  padding: 1.25rem 1.15rem;
   border-radius: 50%;
   background: linear-gradient(180deg, #f7efdf 0%, #ead8ba 100%);
   border: 3px solid rgba(139, 97, 72, 0.28);
   box-shadow: 0 10px 18px rgba(70,45,20,0.08);
   color: var(--accent-brown);
-  font-size: 0.90rem;
-  line-height: 1.35;
+  font-size: 0.88rem;
+  line-height: 1.28;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-wrap: balance;
+  text-align: center;
 }
 
 .timeline-stem {
@@ -849,10 +849,10 @@ footer {
   }
 
   .timeline-bubble {
-    width: 100%;
-    max-width: 360px;
-    min-height: 240px;
-  }
+  width: 100%;
+  max-width: 390px;
+  min-height: 250px;
+}
 
   .timeline-stem {
     display: none;
