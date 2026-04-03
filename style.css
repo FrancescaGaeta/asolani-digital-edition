@@ -50,11 +50,8 @@ h1, h2, h3, h4,
 .hero-home-subtitle,
 .enter-button,
 .home-card-kicker,
-.texts-card h2,
-.texts-long-box h3,
 .section-title,
-.panel-tag,
-.side-banner span {
+.panel-tag {
   font-family: "Bodoni Moda", Georgia, serif;
 }
 
@@ -320,8 +317,8 @@ nav a.active {
 
 .home-card {
   position: relative;
-  padding: 2.5rem 2.2rem; /* Aumentato padding per sicurezza */
-  height: 100%;
+  padding: 2.5rem 2.2rem;
+  min-height: 240px;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -348,7 +345,7 @@ nav a.active {
   margin: 0 0 0.7rem;
   color: var(--accent-dark);
   font-size: 1.35rem;
-  line-height: 1.05;
+  line-height: 1.08;
   font-style: italic;
 }
 
@@ -378,7 +375,6 @@ footer {
   padding: 0 1.5rem 4rem;
 }
 
-/* title */
 .texts-title-slide {
   padding: 3rem 0 2rem;
   text-align: center;
@@ -418,12 +414,6 @@ footer {
   line-height: 0.95;
 }
 
-/* hide old powerpoint big questions */
-.texts-section-intro {
-  display: none;
-}
-
-/* shared titles */
 .section-title {
   margin: 0 0 1.3rem;
   color: var(--accent-dark);
@@ -447,12 +437,13 @@ footer {
 /* paper box */
 .paper-box {
   position: relative;
-  padding: 2.5rem 2.2rem; /* Uniformato per contenere meglio il testo */
+  padding: 2.5rem 2.2rem;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   color: var(--ink);
+  min-height: 240px;
 }
 
 .paper-box::before {
@@ -487,22 +478,34 @@ footer {
   line-height: 1.6;
 }
 
+.paper-box p + p {
+  margin-top: 1rem;
+}
+
 .paper-box ul {
   margin: 0;
   padding-left: 1.2rem;
 }
 
+.paper-box li + li {
+  margin-top: 0.6rem;
+}
+
 .paper-box--compact {
-  padding: 1.8rem 1.6rem;
+  padding: 2rem 1.8rem;
+  min-height: 200px;
 }
 
 .paper-box--compact h3 {
   font-size: 1.3rem;
 }
 
-.paper-box--wide,
+.paper-box--wide {
+  min-height: 340px;
+}
+
 .paper-box--work {
-  min-height: auto; /* Rimosse altezze fisse eccessive */
+  min-height: 420px;
 }
 
 .panel-tag {
@@ -530,10 +533,6 @@ footer {
   padding: 2rem 0 4rem;
 }
 
-.side-banner {
-  display: none;
-}
-
 .author-figure img {
   width: 100%;
   border: 10px solid #e6d6bf;
@@ -547,15 +546,11 @@ footer {
   color: var(--ink-soft);
 }
 
-.author-copy {
-  min-width: 0;
-}
-
 .author-list li {
   margin-bottom: 0.8rem;
 }
 
-/* timeline */
+/* timeline - power point inspired */
 .timeline-block {
   display: grid;
   grid-template-columns: 1fr;
@@ -569,68 +564,97 @@ footer {
   min-width: 0;
 }
 
-.timeline-ppt {
+.timeline-readable {
+  margin-top: 2.5rem;
   position: relative;
-  padding: 3rem 0 2rem;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-  align-items: start;
 }
 
 .timeline-axis {
-  display: none;
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 50%;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(187,89,85,0.55), rgba(139,97,72,0.55));
+  transform: translateY(-50%);
 }
 
-.timeline-node {
+.timeline-row {
   position: relative;
-  z-index: 2;
+  height: 320px;
+}
+
+.timeline-row.top-row {
+  margin-bottom: 14px;
+}
+
+.timeline-row.bottom-row {
+  margin-top: 14px;
+}
+
+.timeline-card {
+  position: absolute;
+  width: 190px;
   text-align: center;
 }
 
-.timeline-node.bottom {
-  transform: none;
-}
-
-.timeline-circle {
-  width: 180px;
-  min-height: 220px;
+.timeline-bubble {
+  width: 190px;
+  min-height: 190px;
   margin: 0 auto;
-  border-radius: 90px 90px 90px 90px / 74px 74px 120px 120px;
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.16), rgba(0,0,0,0.02)),
-    linear-gradient(180deg, #ead8ba 0%, #f7efdf 100%);
-  border: 3px solid rgba(139, 97, 72, 0.32);
-  box-shadow: 0 10px 18px rgba(70,45,20,0.07);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.timeline-year {
-  display: block;
-  background: linear-gradient(180deg, rgba(207,106,99,0.92), rgba(187,89,85,0.96));
-  color: #fff9f5;
-  padding: 0.65rem 0.5rem;
-  font-family: "Bodoni Moda", Georgia, serif;
-  font-size: 1.05rem;
-  letter-spacing: 0.03em;
-}
-
-.timeline-content {
-  flex: 1;
+  padding: 1.2rem 1rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f7efdf 0%, #ead8ba 100%);
+  border: 3px solid rgba(139, 97, 72, 0.28);
+  box-shadow: 0 10px 18px rgba(70,45,20,0.08);
+  color: var(--accent-brown);
+  font-size: 0.93rem;
+  line-height: 1.42;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 1rem 1.2rem;
-  font-size: 0.95rem;
-  line-height: 1.45;
-  color: var(--accent-brown);
 }
 
-.timeline-dot {
-  display: none;
+.timeline-stem {
+  width: 4px;
+  height: 52px;
+  background: rgba(139, 97, 72, 0.6);
+  margin: 0 auto;
+  position: relative;
 }
+
+.timeline-stem::before,
+.timeline-stem::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent-dark);
+}
+
+.timeline-stem::before { top: -6px; }
+.timeline-stem::after { bottom: -6px; }
+
+.timeline-year-tag {
+  display: inline-block;
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: #fff9f5;
+  padding: 0.42rem 0.9rem;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  border-radius: 999px;
+}
+
+.pos-1 { left: 0%; }
+.pos-2 { left: 16%; }
+.pos-3 { left: 32%; }
+.pos-4 { left: 48%; }
+.pos-5 { left: 64%; }
+.pos-6 { left: 80%; }
 
 /* work section */
 .work-layout {
@@ -702,14 +726,15 @@ footer {
 .book-cover::before {
   content: attr(data-year);
   position: absolute;
-  top: 48px;
-  left: 18px;
-  right: 18px;
-  padding: 0.9rem 0;
+  top: 38px;
+  left: 14px;
+  right: 14px;
+  padding: 0.8rem 0.4rem;
   background: rgba(95,63,44,0.65);
   color: #fff7ef;
   font-family: "Bodoni Moda", Georgia, serif;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
+  line-height: 1.1;
 }
 
 /* critical */
@@ -737,12 +762,49 @@ footer {
 }
 
 /* responsive */
-@media (max-width: 1200px) {
-  .timeline-ppt {
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 1.5rem;
+@media (max-width: 1280px) {
+  .timeline-readable {
+    min-height: auto;
   }
 
+  .timeline-axis {
+    display: none;
+  }
+
+  .timeline-row {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    margin: 0;
+  }
+
+  .timeline-card {
+    position: static;
+    width: 100%;
+  }
+
+  .timeline-bubble {
+    width: 100%;
+    max-width: 340px;
+    min-height: 220px;
+  }
+
+  .timeline-stem {
+    display: none;
+  }
+
+  .timeline-row.bottom-row,
+  .timeline-row.top-row {
+    margin: 0;
+  }
+
+  .timeline-row.bottom-row {
+    margin-top: 1.2rem;
+  }
+}
+
+@media (max-width: 1200px) {
   .work-layout {
     grid-template-columns: 1fr;
   }
@@ -798,10 +860,6 @@ footer {
   .hero-illustration {
     max-width: 460px;
   }
-
-  .timeline-ppt {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 760px) {
@@ -815,15 +873,12 @@ footer {
     padding-right: 1rem;
   }
 
-  .timeline-ppt {
+  .timeline-row {
     grid-template-columns: 1fr;
-    padding-top: 1rem;
   }
 
-  .timeline-circle {
-    width: 100%;
-    max-width: 320px;
-    min-height: 200px;
+  .timeline-bubble {
+    max-width: 100%;
   }
 
   .paper-box--wide,
