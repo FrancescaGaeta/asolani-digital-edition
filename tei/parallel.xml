@@ -76,6 +76,7 @@
                 </listPlace>
             </settingDesc>  
 
+
             <particDesc>
                 <listPerson>
                 <person xml:id="caterina" sameAs="http://viaf.org/viaf/52489508">
@@ -90,9 +91,6 @@
                     <persName>Giacco</persName>
                     <note>King Giacco</note>
                 </person>
-                <person xml:id="cornelia">
-                    <persName>Cornelia</persName>
-                </person>
                 <person xml:id="berenice">
                     <persName>Berenice</persName>
                 </person>
@@ -101,6 +99,14 @@
                     <note>happy lover of the Asolani</note>
                 </person>
                 </listPerson>
+
+                <listOrg>
+                    <org xml:id="cornelia">
+                    <orgName>Cornelia</orgName>
+                    <note>noble family</note>
+                    </org>
+                </listOrg>
+
             </particDesc>
 
         </profileDesc>
@@ -165,28 +171,28 @@
 
             <app xml:id="book1_titles">
 
-            <rdg wit="#Q">
-                <head type="title">
-                De gli Asolani di Messer Pietro Bembo ne' quali si ragiona d'Amore,
-                donati da·llui a madonna .....
-                </head>
-                <head type="book">Libro primo</head>
-            </rdg>
+                <rdg wit="#Q">
+                    <head type="title">
+                    De gli Asolani di Messer Pietro Bembo ne' quali si ragiona d'Amore,
+                    donati da·llui a madonna .....
+                    </head>
+                    <head type="book">Libro primo</head>
+                </rdg>
 
-            <rdg wit="#T1">
-                <head type="title">
-                DE GLI ASOLANI DI MESSER PIETRO BEMBO
-                </head>
-                <head type="book">PRIMO LIBRO</head>
-            </rdg>
+                <rdg wit="#T1">
+                    <head type="title">
+                    DE GLI ASOLANI DI MESSER PIETRO BEMBO
+                    </head>
+                    <head type="book">PRIMO LIBRO</head>
+                </rdg>
 
-            <rdg wit="#T16">
-                <head type="title">
-                DE GLI ASOLANI DI MESSER PIETRO BEMBO<lb/>
-                NE' QUALI SI RAGIONA D'AMORE
-                </head>
-                <head type="book">LIBRO PRIMO</head>
-            </rdg>
+                <rdg wit="#T16">
+                    <head type="title">
+                    DE GLI ASOLANI DI MESSER PIETRO BEMBO<lb/>
+                    NE' QUALI SI RAGIONA D'AMORE
+                    </head>
+                    <head type="book">LIBRO PRIMO</head>
+                </rdg>
 
             </app>
 
@@ -701,7 +707,7 @@
             </app>
 
             <app>
-                <lem wit="#T16">con la cui famiglia, la quale è detta <persName ref="#cornelia">Cornelia</persName>,</lem>
+                <lem wit="#T16">con la cui famiglia, la quale è detta <orgName ref="#cornelia">Cornelia</orgName>,</lem>
                 <rdg wit="#T1">con la cui famiglia,</rdg>
                 <rdg wit="#Q">la quale</rdg>
             </app>
@@ -864,7 +870,7 @@
             <app>
                 <lem wit="#T16 #T1"/>
                 <rdg wit="#Q">et tra essi per sangue et per amistà di stretto et dolce legame congiunti,
-                insieme ad una loro villa non guari lontana dal castello dove la <persName ref="caterina">Reina</persName> dimorava
+                insieme ad una loro villa non guari lontana dal castello dove la <persName ref="#caterina">Reina</persName> dimorava
                 (sì come quella stagione faciamo) con le lor donne giovani et vaghe et belle ciascuna,
                 et di quegli costumi che in honesta donna sono più cari ornate quanto alcune dell'altre,
                 o più forse, che si sapesse già buon tempo di queste contrade, lasciata la città,
@@ -1165,7 +1171,8 @@
 
         <!--SEQUENZA 3-->
       <div type="sequence" n="3" xml:id="seq3">
-        <div type="version" corresp="#Q">
+        <app xml:id="seq3_macro_1">
+            <rdg wit="#Q">
                     <p n="1" xml:id="q_s3_p1">Hora nelle nozze ritornandomi, solea la <persName ref="#caterina">Reina</persName> doppo 'l desinare, 
                     che sempre magnifico era et maraviglioso molto et da diversi giuochi 
                     d'huomini che ci soglion far ridere et da suoni di vari stormenti et canti 
@@ -1194,7 +1201,7 @@
                     et volentieri sempre le donne in dolce festa et in honesto giuoco tenea, 
                     a loro rivoltosi così disse:</p>
 
-                    <p n="4" xml:id="q_s3_p4"> — Care giovani, il dormire doppo 'l cibo in quest'hora del dì, quantunque 
+                    <p n="4" xml:id="q_s3_p4"> <q who="#gismondo">Care giovani, il dormire doppo 'l cibo in quest'hora del dì, quantunque 
                     in alcuna stagion dell'anno non sia buono, pure la state, perciò 
                     che longissimi sono e giorni et le notti più brievi, come quello che cosa 
                     piacevole è, da gli occhi nostri più volentieri ricevuto, alquanto meno 
@@ -1206,7 +1213,7 @@
                     et quivi nel rezzo et nel fresco dell'herbe ripostisi, o novellando | o 
                     di cose dilettevoli ragionando, ingannare questa parte del giorno incresciosa,
                     per infino che·ll'hora del festeggiare venuta nelle sale ci richiamasse 
-                    insieme con gli altri ad honorare la nostra novella sposa. —</p>
+                    insieme con gli altri ad honorare la nostra novella sposa.</q></p>
 
                     <p n="5" xml:id="q_s3_p5">Alle donne, le quali non meno l'ombre de gli alberi et gli accorti 
                     ragionamenti de' giovani che 'l sonno delle coltre regali et le favole dell'altre 
@@ -1258,44 +1265,44 @@
                     la men giovane era de l'altre due et da esse honorata quasi come lor capo 
                     et, oltre a·cciò, vie più ardita che esse non erano, verso <persName ref="#gismondo">Gismondo</persName> riguardando:</p>
 
-                    <p n="11" xml:id="q_s3_p10"><q>— Deh —</q> disse <q>— come mal facemmo, <persName ref="#gismondo">Gismondo</persName>, a non ci essere quivi 
+                    <p n="10" xml:id="q_s3_p10"><q who="#berenice"><seg>Deh</seg> disse <seg>come mal facemmo,<persName ref="#gismondo">Gismondo</persName>, a non ci essere quivi 
                         tutti questi dì passati venute, ché meglio in cotesto giardino che nelle 
                         nostre camere haremmo questo di tempo, che sanza la sposa et la <persName ref="#caterina">Reina</persName>
                         ci corre, trappassato. Hora (poi che noi la tua mercé vi siamo) vedi dove 
                         a te paia che si siedi, perciò che l'andare hora altre parti del giardino
-                        riguardando il sole ci vieta, che in|vidiosamente (come tu vedi) se le riguarda lui. —</q>
+                        riguardando il sole ci vieta, che in|vidiosamente (come tu vedi) se le riguarda lui. </seg></q>
                         A cui <persName ref="#gismondo">Gismondo</persName>:
-                        <q>— <persName ref="#berenice">Madonna</persName>, —</q> rispose <q>— dove a voi così piaccia, a me parrebbe che 
+                        <q who="#gismondo"><seg><persName ref="#berenice">Madonna</persName>,</seg> rispose <seg> dove a voi così piaccia, a me parrebbe che 
                         questa fonte non si dovesse rifiutare, perciò che l'herbetta è quivi più 
                         lieta che altrove et più dipinta di fiori. Poi quest'alberi ci terranno sì
-                        il sole, che, per potere che egli habbia, hoggi non ci ritroverrà egli giamai.</q>
-                        <q>— Dunque —</q> disse madonna <persName ref="#berenice">Berenice</persName> <q>— sedianci costì, dove a te 
+                        il sole, che, per potere che egli habbia, hoggi non ci ritroverrà egli giamai.</seg></q>
+                        <q who="#berenice"><seg>Dunque</seg> disse madonna <persName ref="#berenice">Berenice</persName> <seg> sedianci costì, dove a te 
                         piace, che vi·cci hai guidate. Et perciò che lo starci quivi, sì come tu dicesti, 
                         non c'incresca, col mormorio dell'acque che c'invitano a ragionare 
                         et con l'horrore di quest'ombre che ci ascoltano, disponti tu a dire di 
                         quello che a te più giova che si ragioni, perciò che et noi volentieri sempre 
                         t'ascoltiamo et, poi che sì bello et vago luoco gli hai dato, meritamente 
-                        in te cade hoggi la signoria de' nostri sermoni. —</q>
+                        in te cade hoggi la signoria de' nostri sermoni. </seg></q>
                         Dette queste parole da madonna <persName ref="#berenice">Berenice</persName>, et da ciascuna dell'altre 
                         due invitato <persName ref="#gismondo">Gismondo</persName> al favellare, esso lietamente così disse:
-                        <q>- Amabili donne, poscia che voi hoggi questa maggioranza mi date, 
-                        et io la mia prenderò. —</q> </p>
+                        <q who="#gismondo">Amabili donne, poscia che voi hoggi questa maggioranza mi date, 
+                        et io la mia prenderò.</q> </p>
 
-                    <p n="12" xml:id="q_s3_p12">Et poi che, fatta di loro corona, a sedere in grembo dell'herbetta si 
+                    <p n="11" xml:id="q_s3_p11">Et poi che, fatta di loro corona, a sedere in grembo dell'herbetta si 
                     fûr posti, chi vicino la bella fonte et | chi a piè de gli ombrosi allori di 
                     qua et di là del picciol rio, <persName ref="#gismondo">Gismondo</persName>, accortamente rassettatosi et pel 
                     viso d'intorno piacevolmente le belle donne riguardate, in questa guisa incominciò: 
-                    - Vaghe et festose donne, ciascuno di noi ha hoggi udite quelle due fanciulle, 
+                     <q who="#gismondo" part="I">Vaghe et festose donne, ciascuno di noi ha hoggi udite quelle due fanciulle, 
                     che dinanzi alla Reina, prima che si levassono le tavole, assai vezzosamente 
                     l'una all'altra rispondendo cantarono di molte canzoni, tra le 
                     quali se io mi ricorderò le due prime, che allhora, perciò che molto mi 
                     piacquono, agevolmente appresi, assai bello et spatioso campo haremo 
-                    hoggi da favellare. Elle per aventura son queste. Perciò che ...</p>
+                    hoggi da favellare. Elle per aventura son queste. Perciò che ...</q></p>
 
 
-                    </rdg>
+                </rdg>
 
-                </p>
+    
 
 
             <rdg wit="#T1 #T16">
@@ -1336,20 +1343,20 @@
           <app>
             <lem wit="#T16">là dove la <persName ref="#caterina">Reina</persName> sedea, venute, riverentemente la salutarono; </lem>
             <rdg wit="#T1">dove la <persName ref="#caterina">Reina</persName> sedea, venute, riverentemente la salutarono; </rdg>
-            <rdg wit="#Q">venute le fanciulle dinanci la <persName ref="#caterina">Reina</persName>, poi che riverentemente la salutarono,</rdg>
+            <rdg wit="#Q"><q who="#gismondo" part="M">venute le fanciulle dinanci la <persName ref="#caterina">Reina</persName>, poi che riverentemente la salutarono,</q></rdg>
           </app>
 
           <app>
             <lem wit="#T16">et poi che l'hebbero salutata, amendue levatesi,</lem>
             <rdg wit="#T1">et poi che l'hebbero salutata, amendue levatesi,</rdg>
-            <rdg wit="#Q">levatesi,</rdg>
+            <rdg wit="#Q"><q who="#gismondo" part="M">levatesi,</q></rdg>
           </app>
 
           <app>
             <lem wit="#T16">la maggiore, un bellissimo liuto che nell'una mano teneva al petto recandosi et assai maestrevolmente toccandolo,</lem>
             <rdg wit="#T1">la maggiore, un bellissimo liuto che nell'una mano tenea con dolce atto al petto recandosi et assai maestrevolmente toccandolo, </rdg>
-            <rdg wit="#Q">et col suono del liuto, che quel loro maestro drietro le lor spalle assai 
-            acconciamente toccava, accordatasi la maggioretta,</rdg>
+            <rdg wit="#Q"><q who="#gismondo" part="M">et col suono del liuto, che quel loro maestro drietro le lor spalle assai 
+            acconciamente toccava, accordatasi la maggioretta,</q></rdg>
           </app>
 
           <app>
@@ -1360,7 +1367,8 @@
 
           <app>
             <lem wit="#T16">così disse:</lem>
-            <rdg wit="#T1 #Q">così incominciò a dire:</rdg>
+            <rdg wit="#T1">così incominciò a dire:</rdg>
+            <rdg wit="#Q"><q who="#gismondo" part="F">così incominciò a dire</q></rdg>
           </app>
 
           
@@ -1424,12 +1432,15 @@
                         <rdg wit="#T1">Fu la sua vita insin a l'ultim'hora.</rdg>
                         </app>
                     </l>
+                </lg>
                 </rdg>
             </app>
     
 
 
+        </app>
         </div>
-
-
-          
+        </div>
+        </body>
+</text>
+</TEI>
