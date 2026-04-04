@@ -316,7 +316,7 @@ nav a.active {
 .home-cards {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 0.8rem 1.5rem 3.2rem;
+  padding: 1rem 1.5rem 3.2rem;
   display: grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
   gap: 1.2rem;
@@ -325,25 +325,25 @@ nav a.active {
 
 .home-card {
   position: relative;
-  padding: 2rem 1.8rem;
-  min-height: 180px;
+  padding: 2.35rem 2.1rem 2.15rem;
+  min-height: 250px;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .home-card::before {
   content: "";
   position: absolute;
-  inset: -6px;
-  background: url("assets/images/pergamena_box_card.png") no-repeat center/108% 108%;
+  inset: 0;
+  background: url("assets/images/pergamena_box_card.png") no-repeat center / 100% 100%;
   z-index: -1;
 }
 
 .home-card-kicker {
-  margin: 0 0 0.28rem;
-  color: var(--accent-strong);
+  margin: 0 0 0.3rem;
+  color: var(--ink-soft);
   text-transform: none;
   letter-spacing: 0;
   font-size: 0.95rem;
@@ -352,16 +352,16 @@ nav a.active {
 .home-card h3 {
   margin: 0 0 0.85rem;
   color: var(--accent-dark);
-  font-size: 1.42rem;
-  line-height: 1.12;
+  font-size: 1.26rem;
+  line-height: 1.14;
   font-style: italic;
 }
 
 .home-card p {
   margin: 0;
   color: var(--ink);
-  font-size: 0.96rem;
-  line-height: 1.58;
+  font-size: 0.94rem;
+  line-height: 1.52;
   max-width: 100%;
 }
 
@@ -499,34 +499,21 @@ nav a.active {
 
 .paper-box {
   position: relative;
-  padding: 3rem 3rem 2.6rem 5rem;
+  padding: 2.3rem 2.2rem 2rem 2.8rem;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   color: var(--ink);
-  min-height: 520px;
+  min-height: 320px;
 }
 
 .paper-box::before {
   content: "";
   position: absolute;
-  inset: 14px 18px 14px 42px;
+  inset: 0;
   background: url("assets/images/pergamena_box_card.png") no-repeat center / 100% 100%;
   z-index: -1;
-}
-
-.author-copy .paper-box {
-  padding: 3.2rem 3.2rem 2.8rem 5.2rem;
-  min-height: 560px;
-}
-
-.author-copy .paper-box ul {
-  padding-left: 1.4rem;
-}
-
-.panel-tag {
-  margin-left: 0.4rem;
 }
 
 .paper-box::after {
@@ -549,7 +536,7 @@ nav a.active {
 .paper-box p,
 .paper-box li {
   margin: 0;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
   line-height: 1.58;
 }
 
@@ -559,39 +546,39 @@ nav a.active {
 
 .paper-box ul {
   margin: 0;
-  padding-left: 1.25rem;
+  padding-left: 1.2rem;
 }
 
 .paper-box li + li {
-  margin-top: 0.6rem;
+  margin-top: 0.55rem;
 }
 
 .paper-box--compact {
-  padding: 2rem 1.8rem;
-  min-height: 250px;
+  padding: 1.9rem 1.7rem;
+  min-height: 220px;
 }
 
 .paper-box--compact h3 {
-  font-size: 1.28rem;
+  font-size: 1.24rem;
 }
 
 .paper-box--wide {
-  min-height: 520px;
+  min-height: 420px;
 }
 
 .paper-box--work {
-  min-height: 520px;
+  min-height: 430px;
 }
 
 .panel-tag {
   display: inline-block;
   align-self: flex-start;
-  margin-bottom: 1.2rem;
-  padding: 0.38rem 0.9rem;
+  margin-bottom: 1rem;
+  padding: 0.36rem 0.85rem;
   background: rgba(207,106,99,0.10);
   border: 1px solid rgba(207,106,99,0.22);
   color: var(--accent-dark);
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border-radius: 999px;
@@ -610,12 +597,12 @@ nav a.active {
 }
 
 .author-copy .paper-box {
-  padding: 3rem 3rem 2.6rem 4.4rem;
-  min-height: 520px;
+  padding: 2.35rem 2.35rem 2rem 2.9rem;
+  min-height: 430px;
 }
 
 .author-copy .paper-box ul {
-  padding-left: 1.35rem;
+  padding-left: 1.25rem;
 }
 
 .author-figure img {
