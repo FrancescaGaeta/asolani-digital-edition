@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<imageList> 
+    <imagerv>
+        <image val="94r" url="data/images/single/fol.94r.jpg" id="pde-1-1-v">94r</image>
+        <image val="94v" url="data/images/single/fol.94v.jpg" id="pde-1-1-r">94v</image>
+    </imagerv>
+    <imagerv>
+        <image val="95r" url="data/images/single/fol.95r.jpg" id="pde-1-2-v">95r</image>
+        <image val="95v" url="data/images/single/fol.95v.jpg" id="pde-1-2-r">95v</image>
+    </imagerv>
+    <imagerv>
+        <image val="96r" url="data/images/single/fol.96r.jpg" id="pde-1-3-v">96r</image>
+        <image val="96v" url="data/images/single/fol.96v.jpg" id="pde-1-3-r">96v</image>
+    </imagerv>
+    <imagerv>
+        <image val="97r" url="data/images/single/fol.97r.jpg" id="pde-1-4-v">97r</image>
+        <image val="97v" url="data/images/single/fol.97v.jpg" id="pde-1-4-r">97v</image>
+    </imagerv>   
+    <imagerv>
+        <image val="98r" url="data/images/single/fol.98r.jpg" id="pde-1-5-v">98r</image>
+        <image val="98v" url="data/images/single/fol.98v.jpg" id="pde-1-5-r">98v</image>
+    </imagerv>
+    <imagerv>
+        <image val="99r" url="data/images/single/fol.99r.jpg" id="pde-1-6-v">99r</image>
+        <image val="99v" url="data/images/single/fol.99v.jpg" id="pde-1-6-r">99v</image>
+    </imagerv>
+    <imagerv>
+        <image val="100r" url="data/images/single/fol.100r.jpg" id="pde-1-7-v">100r</image>
+        <image val="100v" url="data/images/single/fol.100v.jpg" id="pde-1-7-r">100v</image>
+    </imagerv>
+    <imagerv>
+        <image val="101r" url="data/images/single/fol.101r.jpg" id="pde-1-8-v">101r</image>
+        <image val="101v" url="data/images/single/fol.101v.jpg" id="pde-1-8-r">101v</image>
+    </imagerv>
+    <imagerv>
+        <image val="102r" url="data/images/single/fol.102r.jpg" id="pde-2-1-v">102r</image>
+        <image val="102v" url="data/images/single/fol.102v.jpg" id="pde-2-1-r">102v</image>
+    </imagerv>
+    <imagerv>
+        <image val="103r" url="data/images/single/fol.103r.jpg" id="pde-2-2-v">103r</image>
+        <image val="103v" url="data/images/single/fol.103v.jpg" id="pde-2-2-r">103v</image>
+    </imagerv>
+    <imagerv>
+        <image val="104r" url="data/images/single/fol.104r.jpg" id="pde-2-3-v">104r</image>
+        <image val="104v" url="data/images/single/fol.104v.jpg" id="pde-2-3-r">104v</image>
+    </imagerv>
+    <imagerv>
+        <image val="105r" url="data/images/single/fol.105r.jpg" id="pde-2-4-v">105r</image>
+        <image val="105v" url="data/images/single/fol.105v.jpg" id="pde-2-4-r">105v</image>
+    </imagerv>
+    <imagerv>
+        <image val="106r" url="data/images/single/fol.106r.jpg" id="pde-2-5-v">106r</image>
+        <image val="106v" url="data/images/single/fol.106v.jpg" id="pde-2-5-r">106v</image>
+    </imagerv>
+    <imagerv>
+        <image val="107r" url="data/images/single/fol.107r.jpg" id="pde-2-6-v">107r</image>
+        <image val="107v" url="data/images/single/fol.107v.jpg" id="pde-2-6-r">107v</image>
+    </imagerv>
+    <imagerv>
+        <image val="108r" url="data/images/single/fol.108r.jpg" id="pde-2-7-v">108r</image>
+        <image val="108v" url="data/images/single/fol.108v.jpg" id="pde-2-7-r">108v</image>
+    </imagerv>
+    <imagerv>
+        <image val="109r" url="data/images/single/fol.109r.jpg" id="pde-2-8-v">109r</image>
+        <image val="109v" url="data/images/single/fol.109v.jpg" id="pde-2-8-r">109v</image>
+    </imagerv>
+    <imagerv>
+        <image val="110r" url="data/images/single/fol.110r.jpg" id="pde-3-1-v">110r</image>
+        <image val="110v" url="data/images/single/fol.110v.jpg" id="pde-3-1-r">110v</image>
+    </imagerv>
+    <imagerv>
+        <image val="111r" url="data/images/single/fol.111r.jpg" id="pde-3-2-v">111r</image>
+        <image val="111v" url="data/images/single/fol.111v.jpg" id="pde-3-2-r">111v</image>
+    </imagerv>
+    <imagerv>
+        <image val="112r" url="data/images/single/fol.112r.jpg" id="pde-3-3-v">112r</image>
+        <image val="112v" url="data/images/single/fol.112v.jpg" id="pde-3-3-r">112v</image>
+    </imagerv>
+    <imagerv>
+        <image val="113r" url="data/images/single/fol.113r.jpg" id="pde-3-4-v">113r</image>
+        <image val="113v" url="data/images/single/fol.113v.jpg" id="pde-3-4-r">113v</image>
+    </imagerv>
+    <imagerv>
+        <image val="114r" url="data/images/single/fol.114r.jpg" id="pde-3-5-v">114r</image>
+        <image val="114v" url="data/images/single/fol.114v.jpg" id="pde-3-5-r">114v</image>
+    </imagerv>
+    <imagerv>
+        <image val="115r" url="data/images/single/fol.115r.jpg" id="pde-3-6-v">115r</image>
+        <image val="115v" url="data/images/single/fol.115v.jpg" id="pde-3-6-r">115v</image>
+    </imagerv>
+    <imagerv>
+        <image val="116r" url="data/images/single/fol.116r.jpg" id="pde-3-7-v">116r</image>
+        <image val="116v" url="data/images/single/fol.116v.jpg" id="pde-3-7-r">116v</image>
+    </imagerv>
+    <imagerv>
+        <image val="117r" url="data/images/single/fol.117r.jpg" id="pde-3-8-v">117r</image>
+        <image val="117v" url="data/images/single/fol.117v.jpg" id="pde-3-8-r">117v</image>
+    </imagerv>
+    <imagerv>
+        <image val="118r" url="data/images/single/fol.118r.jpg" id="pde-4-1-v">118r</image>
+        <image val="118v" url="data/images/single/fol.118v.jpg" id="pde-4-1-r">118v</image>
+    </imagerv>
+    <imagerv>
+        <image val="119r" url="data/images/single/fol.119r.jpg" id="pde-4-2-v">119r</image>
+        <image val="119v" url="data/images/single/fol.119v.jpg" id="pde-4-2-r">119v</image>
+    </imagerv>
+    <imagerv>
+        <image val="120r" url="data/images/single/fol.120r.jpg" id="pde-4-3-v">120r</image>
+        <image val="120v" url="data/images/single/fol.120v.jpg" id="pde-4-3-r">120v</image>
+    </imagerv>
+    <imagerv>
+        <image val="121r" url="data/images/single/fol.121r.jpg" id="pde-4-4-v">121r</image>
+        <image val="121v" url="data/images/single/fol.121v.jpg" id="pde-4-4-r">121v</image>
+    </imagerv>
+    <imagerv>
+        <image val="122r" url="data/images/single/fol.122r.jpg" id="pde-4-5-v">122r</image>
+        <image val="122v" url="data/images/single/fol.122v.jpg" id="pde-4-5-r">122v</image>
+    </imagerv>
+    <imagerv>
+        <image val="123r" url="data/images/single/fol.123r.jpg" id="pde-4-6-v">123r</image>
+        <image val="123v" url="data/images/single/fol.123v.jpg" id="pde-4-6-r">123v</image>
+    </imagerv>
+    <imagerv>
+        <image val="124r" url="data/images/single/fol.124r.jpg" id="pde-4-7-v">124r</image>
+        <image val="124v" url="data/images/single/fol.124v.jpg" id="pde-4-7-r">124v</image>
+    </imagerv>
+    <imagerv>
+        <image val="125r" url="data/images/single/fol.125r.jpg" id="pde-4-8-v">125r</image>
+        <image val="125v" url="data/images/single/fol.125v.jpg" id="pde-4-8-r">125v</image>
+    </imagerv>
+    <imagerv>
+        <image val="126r" url="data/images/single/fol.126r.jpg" id="pde-5-1-v">126r</image>
+        <image val="126v" url="data/images/single/fol.126v.jpg" id="pde-5-1-r">126v</image>
+    </imagerv>
+    <imagerv>
+        <image val="127r" url="data/images/single/fol.127r.jpg" id="pde-5-2-v">127r</image>
+        <image val="127v" url="data/images/single/fol.127v.jpg" id="pde-5-2-r">127v</image>
+    </imagerv>
+    <imagerv>
+        <image val="128r" url="data/images/single/fol.128r.jpg" id="pde-5-3-v">128r</image>
+        <image val="128v" url="data/images/single/fol.128v.jpg" id="pde-5-3-r">128v</image>
+    </imagerv>
+    <imagerv>
+        <image val="129r" url="data/images/single/fol.129r.jpg" id="pde-5-4-v">129r</image>
+        <image val="129v" url="data/images/single/fol.129v.jpg" id="pde-5-4-r">129v</image>
+    </imagerv>
+    <imagerv>
+        <image val="130r" url="data/images/single/fol.130r.jpg" id="pde-5-5-v">130r</image>
+        <image val="130v" url="data/images/single/fol.130v.jpg" id="pde-5-5-r">130v</image>
+    </imagerv>
+    <imagerv>
+        <image val="131r" url="data/images/single/fol.131r.jpg" id="pde-5-6-v">131r</image>
+        <image val="131v" url="data/images/single/fol.131v.jpg" id="pde-5-6-r">131v</image>
+    </imagerv>
+    <imagerv>
+        <image val="131s-r" url="data/images/single/fol.131s-r.jpg" id="pde-5-7-v">131s-r</image>
+        <image val="131s-v" url="data/images/single/fol.131s-v.jpg" id="pde-5-7-r">131s-v</image>
+    </imagerv>
+    <imagerv>
+        <image val="132r" url="data/images/single/fol.132r.jpg" id="pde-5-8-v">132r</image>
+        <image val="132v" url="data/images/single/fol.132v.jpg" id="pde-5-8-r">132v</image>
+    </imagerv>
+    <imagerv>
+        <image val="133r" url="data/images/single/fol.133r.jpg" id="pde-6-1-v">133r</image>
+        <image val="133v" url="data/images/single/fol.133v.jpg" id="pde-6-1-r">133v</image>
+    </imagerv>
+    <imagerv>
+        <image val="134r" url="data/images/single/fol.134r.jpg" id="pde-6-2-v">134r</image>
+        <image val="134v" url="data/images/single/fol.134v.jpg" id="pde-6-2-r">134v</image>
+    </imagerv>
+    <imagerv>
+        <image val="135r" url="data/images/single/fol.135r.jpg" id="pde-6-3-v">135r</image>
+        <image val="135v" url="data/images/single/fol.135v.jpg" id="pde-6-3-r">135v</image>
+    </imagerv>
+    <imagerv>
+        <image val="136r" url="data/images/single/fol.136r.jpg" id="pde-6-5-v">136r</image>
+        <image val="136v" url="data/images/single/fol.136v.jpg" id="pde-6-5-r">136v</image>
+    </imagerv>
+    <imagerv>
+        <image val="137r" url="data/images/single/fol.137r.jpg" id="pde-6-6-v">137r</image>
+        <image val="137v" url="data/images/single/fol.137v.jpg" id="pde-6-6-r">137v</image>
+    </imagerv>
+    <imagerv>
+        <image val="138r" url="data/images/single/fol.138r.jpg" id="pde-6-7-v">138r</image>
+        <image val="138v" url="data/images/single/fol.138v.jpg" id="pde-6-7-r">138v</image>
+    </imagerv>
+    <imagerv>
+        <image val="139r-144r" url="data/images/single/fol.139r-144r.jpg" id="pde-7-2-v">139r-144r</image>
+        <image val="139v-144v" url="data/images/single/fol.139v-144v.jpg" id="pde-7-2-r">139v-144v</image>
+    </imagerv>
+    <imagerv>
+        <image val="140-145r" url="data/images/single/fol.140r-145r.jpg" id="pde-7-3-v">140r-145r</image>
+        <image val="140v-145v" url="data/images/single/fol.140v-145v.jpg" id="pde-7-3-r">140v-145v</image>
+    </imagerv>
+    <imagerv>
+        <image val="141r-139r" url="data/images/single/fol.141r-139r.jpg" id="pde-7-4-v">141r-139r</image>
+        <image val="141v-139v" url="data/images/single/fol.141v-139v.jpg" id="pde-7-4-r">141v-139v</image>
+    </imagerv>
+    <imagerv>
+        <image val="142r-140r" url="data/images/single/fol.142r-140r.jpg" id="pde-7-5-v">142r-140r</image>
+        <image val="142v-140v" url="data/images/single/fol.142v-140v.jpg" id="pde-7-5-r">142v-140v</image>
+    </imagerv>
+    <imagerv>
+        <image val="143r-141r" url="data/images/single/fol.143r-141r.jpg" id="pde-7-6-v">143r-141r</image>
+        <image val="143v-141v" url="data/images/single/fol.143v-141v.jpg" id="pde-7-6-r">143v-141v</image>
+    </imagerv>
+    <imagerv>
+        <image val="144r-142r" url="data/images/single/fol.144r-142r.jpg" id="pde-7-7-v">144r-142r</image>
+        <image val="144v-142v" url="data/images/single/fol.144v-142v.jpg" id="pde-7-7-r">144v-142v</image>
+    </imagerv>
+    <imagerv>
+        <image val="145r-143r" url="data/images/single/fol.145r-143r.jpg" id="pde-7-8-v">145r-143r</image>
+        <image val="145v-143v" url="data/images/single/fol.145v-143v.jpg" id="pde-7-8-r">145v-143v</image>
+    </imagerv>
+    <imagerv>
+        <image val="146r" url="data/images/single/fol.146r.jpg" id="pde-7-10-v">146r</image>
+        <image val="146v" url="data/images/single/fol.146v.jpg" id="pde-7-10-r">146v</image>
+    </imagerv>
+    <imagerv>
+        <image val="147r" url="data/images/single/fol.147r.jpg" id="pde-7-11-v">147r</image>
+        <image val="147v" url="data/images/single/fol.147v.jpg" id="pde-7-11-r">147v</image>
+    </imagerv>
+    <imagerv>
+        <image val="148r" url="data/images/single/fol.148r.jpg" id="pde-7-12-v">148r</image>
+        <image val="148v" url="data/images/single/fol.148v.jpg" id="pde-7-12-r">148v</image>
+    </imagerv>
+</imageList>
