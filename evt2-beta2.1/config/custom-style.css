@@ -23,15 +23,48 @@
 	background-color: coral;
 }
 
+
+
+body {
+  background: #fcfaf6 !important;
+  color: #5c4035 !important;
+}
+
+a {
+  color: #bb5955 !important;
+}
+
+button,
+.btn,
+select {
+  background: #f7f3ec !important;
+  color: #5c4035 !important;
+  border: 1px solid rgba(92,64,53,0.22) !important;
+}
+
+.active,
+.selected {
+  background: #dd7a73 !important;
+  color: #fffaf8 !important;
+}
+
+.term {
+  background-color: rgba(221, 122, 115, 0.22) !important;
+  color: #5c4035 !important;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
 .figDesc {
-	display: block;
-	border-left: 5px solid #b30000;
-	background-color: #ffe6e6;
-	padding: 5px 5px 5px 8px;
-	margin-bottom: 3%;
-	text-align: justify;
-	font-size: 95%;
-	font-style: italic;
+  display: block;
+  border-left: 4px solid #bb5955 !important;
+  background-color: #f7efdf !important;
+  padding: 8px 10px;
+  margin-bottom: 3%;
+  text-align: justify;
+  font-size: 95%;
+  font-style: italic;
+  color: #5c4035 !important;
 }
 
 span.analogue span.analogue__text span.quote {
