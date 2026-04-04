@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -29,18 +29,24 @@
   </div>
 </header>
 
-<main class="texts-ppt-page">
+<main class="parallel-page">
 
-  <!-- TITLE -->
   <section class="texts-title-slide reveal reveal-1">
-    <h1>Parallel Segmentation</h1>
+    <div class="texts-title-inner">
+      <div class="texts-title-line" aria-hidden="true">
+        <span></span>
+        <span class="dot"></span>
+        <span></span>
+      </div>
+      <h1>Parallel Segmentation</h1>
+    </div>
   </section>
 
-  <!-- BANNER -->
   <section class="macro-banner reveal reveal-1">
     <div class="macro-banner-inner">
-      <h2>Method and Alignment</h2>
-      <div class="macro-ornament">
+      <span class="macro-banner-mini">EVT Integration</span>
+      <h2>Aligned Reading Environment</h2>
+      <div class="macro-ornament" aria-hidden="true">
         <span></span>
         <span class="diamond"></span>
         <span></span>
@@ -48,94 +54,38 @@
     </div>
   </section>
 
-  <!-- INTRO -->
-  <section class="generic-page reveal reveal-1">
-    <div class="paper-box">
+  <section class="evt-intro reveal reveal-2">
+    <div class="paper-box paper-box--wide">
+      <div class="panel-tag">Method</div>
       <p>
-        Parallel segmentation is the editorial method used to align corresponding portions of text across different witnesses of <em>Gli Asolani</em>. 
-        Rather than treating each edition as an isolated object, the text is divided into comparable segments, allowing direct comparison of linguistic, structural, and editorial variations.
-      </p>
-
-      <p>
-        This approach is particularly useful for analysing Bembo’s progressive revision of the work, especially in light of his linguistic theory as formulated in the <em>Prose della volgar lingua</em>.
+        This section embeds the EVT reading environment used to visualise the parallel segmentation
+        of the witnesses. The interface allows the critical text to be explored within the broader
+        editorial framework of the digital edition.
       </p>
     </div>
   </section>
 
-  <!-- METHOD -->
-  <section class="generic-page reveal reveal-2">
-    <h2 class="section-title centered-title">Method</h2>
-
-    <div class="critical-bottom-grid">
-
-      <div class="paper-box paper-box--compact">
-        <h3>Segmentation</h3>
-        <p>
-          The text is divided into meaningful units (paragraphs or sentences), each assigned a unique identifier.
-        </p>
-      </div>
-
-      <div class="paper-box paper-box--compact">
-        <h3>Alignment</h3>
-        <p>
-          Corresponding segments from different editions are aligned to allow direct comparison.
-        </p>
-      </div>
-
-      <div class="paper-box paper-box--compact">
-        <h3>Encoding</h3>
-        <p>
-          TEI-XML markup is used to encode structural divisions and relationships between segments.
-        </p>
-      </div>
-
-      <div class="paper-box paper-box--compact">
-        <h3>Comparison</h3>
-        <p>
-          Variants, omissions, and additions are analysed across witnesses within a shared framework.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- EVT -->
-  <section class="generic-page reveal reveal-2">
-    <h2 class="section-title centered-title">Visualization (EVT)</h2>
-
-    <div class="paper-box">
-      <p>
-        The encoded text is visualised through EVT (Edition Visualization Technology), which allows users to explore aligned segments dynamically. 
-        Readers can switch between witnesses, highlight variants, and observe how the text evolves across different editions.
-      </p>
-    </div>
-  </section>
-
-  <!-- EXAMPLE -->
-  <section class="generic-page reveal reveal-3">
-    <h2 class="section-title centered-title">Example</h2>
-
-    <div class="paper-box">
-      <p>
-        The following example illustrates how a passage is segmented and aligned across two editions. 
-        Differences in wording, syntax, and structure become immediately visible through parallel comparison.
-      </p>
+  <section class="evt-shell reveal reveal-3">
+    <div class="evt-shell-topbar">
+      <span class="evt-shell-label">EVT Viewer</span>
+      <a
+        class="evt-open-link"
+        href="https://francescagaeta.github.io/asolani-digital-edition/evt2-beta2.1/index.html#/readingTxt?d=doc_1&s=seq3&e=critical"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open full screen
+      </a>
     </div>
 
-    <!-- spazio per EVT -->
-    <div class="panel" style="margin-top:1.5rem; text-align:center;">
-      <p>[EVT visualization will be embedded here]</p>
-    </div>
-  </section>
-
-  <!-- NOTE -->
-  <section class="generic-page reveal reveal-3">
-    <div class="paper-box">
-      <h3>Editorial Note</h3>
-      <p>
-        The segmentation process involves interpretative choices, especially in cases where the structure of the text differs significantly between editions. 
-        These decisions aim to preserve both readability and philological accuracy.
-      </p>
+    <div class="evt-frame-wrap">
+      <iframe
+        class="evt-frame"
+        src="https://francescagaeta.github.io/asolani-digital-edition/evt2-beta2.1/index.html#/readingTxt?d=doc_1&s=seq3&e=critical"
+        title="EVT Viewer for Gli Asolani"
+        loading="lazy"
+        referrerpolicy="no-referrer"
+      ></iframe>
     </div>
   </section>
 
