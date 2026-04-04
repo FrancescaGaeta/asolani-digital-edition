@@ -965,8 +965,8 @@
             <p n="1" xml:id="s2_p1">
 
             <app>
-                <lem wit="#T16 #T1"><placeName ref="#asolo"> Asolo </placeName>  aduqnue,</lem>
-                <rdg wit="#Q"><placeName ref="#asolo"> Asolo </placeName>  aduqnue, madonna ...,</rdg>
+                <lem wit="#T16 #T1"><placeName ref="#asolo">Asolo</placeName>  aduqnue,</lem>
+                <rdg wit="#Q"><placeName ref="#asolo">Asolo</placeName>  aduqnue, madonna ...,</rdg>
             </app>
             vago et piacevole castello posto ne gli 
             <app>
@@ -1263,7 +1263,7 @@
           <app>
             <lem wit="#T16 #T1"/>
             <rdg wit="#Q">Et saliti con esse sopra e portanti cavalli et co' tre compagni altresì, et ad
-            Asolo venuti, perciò</rdg>
+            <placeName ref="#asolo">Asolo</placeName> venuti, perciò</rdg>
           </app>
 
           <app>
@@ -1291,7 +1291,7 @@
 
           <app>
             <lem wit="#T16 #T1"/>
-            <rdg wit="#Q">Le donne lietamente dalla Reina et da molt'altre ricevute, che
+            <rdg wit="#Q">Le donne lietamente dalla <persName ref="#caterina">Reina</persName> et da molt'altre ricevute, che
             a quello venute erano che loro vennero, et quivi dimorando, molto di spasso 
             pigliavano nelle feste et molto ne davano altrui co' loro giovani insieme 
             assai accorti et accostumati tutt'a tre, et di be' motti et di giuochi honesti 
@@ -1459,13 +1459,13 @@
         
 
                 <app>
-                    <lem wit="#T16"> Ma alle nozze della <persName ref="#caterina"> Reina </persName> tornando,</lem>
-                    <rdg wit="#T1"> Ma tornando alle nozze della <persName ref="#caterina"> Reina </persName>,</rdg>
+                    <lem wit="#T16"> Ma alle nozze della <persName ref="#caterina">Reina</persName> tornando,</lem>
+                    <rdg wit="#T1"> Ma tornando alle nozze della <persName ref="#caterina">Reina</persName>,</rdg>
                     <rdg wit="#Q">Hora nelle nozze ritornandomi,</rdg>
                 </app>
                 <app>
                     <lem wit="#T16 #T1"/>
-                    <rdg wit="#Q">solea la <persName ref="#caterina"> Reina </persName> doppo 'l desinare, 
+                    <rdg wit="#Q">solea la <persName ref="#caterina">Reina</persName> doppo 'l desinare, 
                     che sempre magnifico era et maraviglioso molto et da diversi giuochi 
                     d'huomini che ci soglion far ridere et da suoni di vari stormenti et canti 
                     hora di fanciulle et quando d'huomini rallegrato, con le sue damigielle 
@@ -1553,11 +1553,11 @@
                     <rdg wit="#Q">Piacque questo luoco maravigliosamente alle belle donne, il quale 
                     poi che molto da ciascuna di loro fu lodato, madonna <persName ref="#berenice">Berenice</persName>, che 
                     la men giovane era de l'altre due et da esse honorata quasi come lor capo 
-                    et, oltre a·cciò, vie più ardita che esse non erano, verso <persName ref="#gismondo"> Gismondo </persName> riguardando:
+                    et, oltre a·cciò, vie più ardita che esse non erano, verso <persName ref="#gismondo">Gismondo</persName> riguardando:
 
                     <q who="#berenice">- Deh -  disse  - come mal facemmo,<persName ref="#gismondo">Gismondo</persName>, a non ci essere quivi 
                     tutti questi dì passati venute, ché meglio in cotesto giardino che nelle 
-                    nostre camere haremmo questo di tempo, che sanza la sposa et la <persName ref="#caterina"> Reina </persName>
+                    nostre camere haremmo questo di tempo, che sanza la sposa et la <persName ref="#caterina">Reina</persName>
                     ci corre, trappassato. Hora (poi che noi la tua mercé vi siamo) vedi dove 
                     a te paia che si siedi, perciò che l'andare hora altre parti del giardino
                     riguardando il sole ci vieta, che in|vidiosamente (come tu vedi) se le riguarda lui. - </q>
@@ -1568,7 +1568,7 @@
                     lieta che altrove et più dipinta di fiori. Poi quest'alberi ci terranno sì
                     il sole, che, per potere che egli habbia, hoggi non ci ritroverrà egli giamai. -</q>
 
-                    <q who="#berenice"> - Dunque - disse madonna <persName ref="#berenice"> Berenice </persName> - sedianci costì, dove a te 
+                    <q who="#berenice"> - Dunque - disse madonna <persName ref="#berenice">Berenice</persName> - sedianci costì, dove a te 
                     piace, che vi·cci hai guidate. Et perciò che lo starci quivi, sì come tu dicesti, 
                     non c'incresca, col mormorio dell'acque che c'invitano a ragionare 
                     et con l'horrore di quest'ombre che ci ascoltano, disponti tu a dire di 
@@ -1576,16 +1576,16 @@
                     t'ascoltiamo et, poi che sì bello et vago luoco gli hai dato, meritamente 
                     in te cade hoggi la signoria de' nostri sermoni. - </q>
 
-                    Dette queste parole da madonna <persName ref="#berenice"> Berenice</persName>, et da ciascuna dell'altre 
-                    due invitato <persName ref="#gismondo"> Gismondo </persName> al favellare, esso lietamente così disse: 
+                    Dette queste parole da madonna <persName ref="#berenice">Berenice</persName>, et da ciascuna dell'altre 
+                    due invitato <persName ref="#gismondo">Gismondo</persName> al favellare, esso lietamente così disse: 
                     <q who="#gismondo">- Amabili donne, poscia che voi hoggi questa maggioranza mi date, 
                     et io la mia prenderò. - </q>
                     Et poi che, fatta di loro corona, a sedere in grembo dell'herbetta si 
                     fûr posti, chi vicino la bella fonte et | chi a piè de gli ombrosi allori di 
-                    qua et di là del picciol rio, <persName ref="#gismondo"> Gismondo</persName>, accortamente rassettatosi et pel 
+                    qua et di là del picciol rio, <persName ref="#gismondo">Gismondo</persName>, accortamente rassettatosi et pel 
                     viso d'intorno piacevolmente le belle donne riguardate, in questa guisa incominciò: 
                     <q who="#gismondo"> - Vaghe et festose donne, ciascuno di noi ha hoggi udite quelle due fanciulle, 
-                    che dinanzi alla Reina, prima che si levassono le tavole, assai vezzosamente 
+                    che dinanzi alla <persName ref="#caterina">Reina</persName>, prima che si levassono le tavole, assai vezzosamente 
                     l'una all'altra rispondendo cantarono di molte canzoni, tra le 
                     quali se io mi ricorderò le due prime, che allhora, perciò che molto mi 
                     piacquono, agevolmente appresi, assai bello et spatioso campo haremo 
@@ -1645,8 +1645,8 @@
             <!-- Riallineamento-->
         
             <app>
-                <lem wit="#T16">là dove la <persName ref="#caterina"> Reina </persName> sedea, venute, riverentemente la salutarono; </lem>
-                <rdg wit="#T1">dove la <persName ref="#caterina"> Reina </persName> sedea, venute, riverentemente la salutarono; </rdg>
+                <lem wit="#T16">là dove la <persName ref="#caterina">Reina</persName> sedea, venute, riverentemente la salutarono; </lem>
+                <rdg wit="#T1">dove la <persName ref="#caterina">Reina</persName> sedea, venute, riverentemente la salutarono; </rdg>
                 <rdg wit="#Q"><q who="#gismondo">venute le fanciulle dinanci la <persName ref="#caterina">Reina</persName>, poi che riverentemente la salutarono,</q></rdg>
             </app>
 
