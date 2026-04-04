@@ -19,13 +19,14 @@
 /*                                                                   */
 
 /* ***************************************************************** */
-.term {
-	background-color: coral;
-}
 
+/* ************************* */
+/* EVT 2.0 CUSTOM STYLESHEET */
+/* ************************* */
 
-
-body {
+/* base */
+body,
+html {
   background: #fcfaf6 !important;
   color: #5c4035 !important;
 }
@@ -34,19 +35,97 @@ a {
   color: #bb5955 !important;
 }
 
-button,
-.btn,
-select {
-  background: #f7f3ec !important;
-  color: #5c4035 !important;
-  border: 1px solid rgba(92,64,53,0.22) !important;
+/* =========================
+   TOP BAR / DARK HEADER
+   ========================= */
+
+header,
+nav,
+mat-toolbar,
+.mat-toolbar,
+.mat-toolbar-row,
+.mat-toolbar-single-row,
+.navbar,
+.navbar-header,
+.topbar,
+.top-bar,
+.toolbar,
+.main-toolbar,
+.editionHeader,
+.menuBar,
+#main-navbar,
+#topbar,
+[class*="toolbar"],
+[class*="topbar"],
+[class*="top-bar"],
+[class*="header"],
+[class*="navbar"] {
+  background: linear-gradient(180deg, #dd7a73 0%, #bb5955 100%) !important;
+  background-color: #bb5955 !important;
+  color: #fffaf7 !important;
+  border-color: rgba(255,255,255,0.14) !important;
+  box-shadow: none !important;
 }
 
-.active,
-.selected {
-  background: #dd7a73 !important;
-  color: #fffaf8 !important;
+/* testo e icone dentro la barra */
+header *,
+nav *,
+mat-toolbar *,
+.mat-toolbar *,
+.navbar *,
+.topbar *,
+.toolbar *,
+.editionHeader *,
+.menuBar *,
+#main-navbar *,
+#topbar *,
+[class*="toolbar"] *,
+[class*="topbar"] *,
+[class*="header"] *,
+[class*="navbar"] * {
+  color: #fffaf7 !important;
+  fill: #fffaf7 !important;
+  border-color: rgba(255,255,255,0.16) !important;
 }
+
+/* titolo evt */
+h1,
+h1.title,
+.app-title,
+.editionTitle,
+[class*="title"] {
+  color: #fffaf7 !important;
+  font-family: "Bodoni Moda", Georgia, serif !important;
+}
+
+/* bottoni / controlli */
+button,
+.btn,
+select,
+option,
+.dropdown-toggle,
+.mat-button,
+.mat-icon-button,
+.mat-raised-button,
+.mat-flat-button {
+  background: #f7efdf !important;
+  color: #5c4035 !important;
+  border: 1px solid rgba(92,64,53,0.22) !important;
+  box-shadow: none !important;
+}
+
+button:hover,
+.btn:hover,
+.dropdown-toggle:hover,
+.mat-button:hover,
+.mat-icon-button:hover {
+  background: #ead8ba !important;
+  color: #5c4035 !important;
+}
+
+/* =========================
+   BLUE HIGHLIGHTS / SELECTIONS
+   ========================= */
 
 .term {
   background-color: rgba(221, 122, 115, 0.22) !important;
@@ -54,6 +133,45 @@ select {
   border-radius: 3px;
   padding: 0 2px;
 }
+
+/* evidenziazioni comuni */
+mark,
+.highlight,
+.selected,
+.active,
+.current,
+.focused,
+[class*="highlight"],
+[class*="selected"],
+[class*="active"],
+[class*="current"] {
+  background-color: rgba(221, 122, 115, 0.28) !important;
+  color: #5c4035 !important;
+}
+
+/* forzatura su elementi con background inline blu */
+span[style*="background"],
+div[style*="background"],
+td[style*="background"],
+a[style*="background"] {
+  background-color: rgba(221, 122, 115, 0.28) !important;
+  color: #5c4035 !important;
+}
+
+/* testo selezionato dal browser */
+::selection {
+  background: rgba(221, 122, 115, 0.35) !important;
+  color: #5c4035 !important;
+}
+
+::-moz-selection {
+  background: rgba(221, 122, 115, 0.35) !important;
+  color: #5c4035 !important;
+}
+
+/* =========================
+   TEI / NOTES
+   ========================= */
 
 .figDesc {
   display: block;
@@ -68,10 +186,10 @@ select {
 }
 
 span.analogue span.analogue__text span.quote {
-	font-style: italic;
+  font-style: italic;
 }
 
 span.quote sup.iconbis-evt_quote-left,
 span.quote sup.iconbis-evt_quote-right {
-	display: none;
+  display: none;
 }
