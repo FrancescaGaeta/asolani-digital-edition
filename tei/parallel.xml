@@ -38,8 +38,6 @@
                     <witness xml:id="Q">Autograph witness Q (Querini Stampalia)</witness>
                     <witness xml:id="T1">Printed edition 1505 (text 1)</witness>
                     <witness xml:id="T16">Printed edition 1553 (text 16)</witness>
-                    <witness xml:id="T10">Printed edition 1530 (text 10, used as ancillary witness, not transcribed in this sample)</witness>
-                    <witness xml:id="M">Autograph fragments M (not transcribed in this sample)</witness>
                 </listWit>
             </sourceDesc>
         </fileDesc>
@@ -191,6 +189,7 @@
         <!-- SEQUENZA 1 -->
         <div type="sequence" n="1" xml:id="seq1">
             <p n="1" xml:id="s1_p1">
+            
                 <app>
                     <lem wit="#T16">Suole a' faticosi navicanti esser caro,</lem>
                     <rdg wit="#T1">Suole essere a' naviganti caro,</rdg>
