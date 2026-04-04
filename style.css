@@ -18,6 +18,9 @@
 
   --line: rgba(98, 73, 56, 0.18);
   --shadow-soft: 0 10px 24px rgba(72, 51, 36, 0.08);
+  --shadow-antique: 0 8px 22px rgba(84, 52, 40, 0.14),
+                    inset 0 1px 0 rgba(255,255,255,0.18),
+                    inset 0 -1px 0 rgba(90,50,40,0.08);
 
   --maxw: 1220px;
 }
@@ -496,7 +499,7 @@ nav a.active {
   text-transform: uppercase;
 }
 
-/* MACRO SECTION BANNERS */
+/* MACRO BANNERS */
 
 .macro-banner {
   max-width: 1100px;
@@ -507,31 +510,39 @@ nav a.active {
 .macro-banner-inner {
   position: relative;
   text-align: center;
-  padding: 1.1rem 1.4rem 1rem;
-  background: linear-gradient(180deg, rgba(221,122,115,0.92), rgba(187,89,85,0.95));
+  padding: 1.15rem 4.4rem 1rem;
+  background:
+    linear-gradient(180deg, rgba(233,144,136,0.96), rgba(187,89,85,0.95));
   color: #fff7f2;
-  border-radius: 10px;
-  box-shadow: 0 10px 24px rgba(90, 50, 40, 0.14);
+  border-radius: 12px;
+  border: 1px solid rgba(120, 66, 52, 0.20);
+  box-shadow: var(--shadow-antique);
   overflow: hidden;
 }
 
 .macro-banner-inner::before,
 .macro-banner-inner::after {
-  content: "❦";
+  content: "";
   position: absolute;
   top: 50%;
+  width: 72px;
+  height: 18px;
   transform: translateY(-50%);
-  font-size: 1.1rem;
-  color: rgba(255,255,255,0.72);
-  letter-spacing: 0.08em;
+  opacity: 0.95;
 }
 
 .macro-banner-inner::before {
-  left: 1.2rem;
+  left: 1.25rem;
+  background:
+    linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.42) 18%, rgba(255,255,255,0.42) 82%, transparent 100%);
+  clip-path: polygon(0 50%, 18% 50%, 26% 0, 34% 50%, 66% 50%, 74% 0, 82% 50%, 100% 50%, 82% 50%, 74% 100%, 66% 50%, 34% 50%, 26% 100%, 18% 50%);
 }
 
 .macro-banner-inner::after {
-  right: 1.2rem;
+  right: 1.25rem;
+  background:
+    linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.42) 18%, rgba(255,255,255,0.42) 82%, transparent 100%);
+  clip-path: polygon(0 50%, 18% 50%, 26% 0, 34% 50%, 66% 50%, 74% 0, 82% 50%, 100% 50%, 82% 50%, 74% 100%, 66% 50%, 34% 50%, 26% 100%, 18% 50%);
 }
 
 .macro-banner-mini {
@@ -548,30 +559,27 @@ nav a.active {
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1;
   color: #fffaf7;
+  text-shadow: 0 1px 0 rgba(90, 45, 35, 0.18);
 }
 
 .macro-ornament {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.7rem;
-  width: min(260px, 80%);
-  margin: 0.7rem auto 0;
+  gap: 0.55rem;
+  width: min(220px, 70%);
+  margin: 0.72rem auto 0;
 }
 
 .macro-ornament span {
   display: block;
   height: 1px;
   flex: 1;
-  background: rgba(255,255,255,0.45);
+  background: rgba(255,255,255,0.42);
 }
 
 .macro-ornament .diamond {
-  width: 9px;
-  height: 9px;
-  flex: none;
-  background: rgba(255,255,255,0.88);
-  transform: rotate(45deg);
+  display: none;
 }
 
 /* PAPER BOXES */
@@ -649,6 +657,18 @@ nav a.active {
   min-height: 430px;
 }
 
+.paper-box--author {
+  min-height: 430px;
+}
+
+.paper-box--dilemmi-intro {
+  min-height: auto;
+}
+
+.paper-box--editorial-choices {
+  min-height: 100%;
+}
+
 .panel-tag {
   display: inline-block;
   align-self: flex-start;
@@ -703,9 +723,9 @@ nav a.active {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0;
-  max-width: 1440px;
+  max-width: 1380px;
   margin: 0 auto;
-  padding: 1rem 0 4rem;
+  padding: 0.5rem 0 4rem;
 }
 
 .timeline-main {
@@ -713,61 +733,74 @@ nav a.active {
 }
 
 .timeline-readable {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   position: relative;
 }
 
 .timeline-axis {
   position: absolute;
-  left: 7%;
-  right: 7%;
+  left: 8%;
+  right: 8%;
   top: 50%;
-  height: 4px;
-  background: linear-gradient(90deg, rgba(187,89,85,0.55), rgba(139,97,72,0.55));
+  height: 3px;
+  background: linear-gradient(90deg, rgba(187,89,85,0.48), rgba(139,97,72,0.48));
   transform: translateY(-50%);
 }
 
 .timeline-row {
   position: relative;
-  height: 360px;
+  height: 300px;
 }
 
 .timeline-row.top-row {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .timeline-row.bottom-row {
-  margin-top: 18px;
+  margin-top: 12px;
 }
 
 .timeline-card {
   position: absolute;
-  width: 228px;
+  width: 205px;
   text-align: center;
 }
 
 .timeline-bubble {
-  width: 228px;
-  min-height: 228px;
+  width: 205px;
+  min-height: 205px;
   margin: 0 auto;
-  padding: 1.3rem 1.2rem;
+  padding: 0;
   border-radius: 50%;
   background: linear-gradient(180deg, #f7efdf 0%, #ead8ba 100%);
   border: 3px solid rgba(139, 97, 72, 0.28);
   box-shadow: 0 10px 18px rgba(70,45,20,0.08);
   color: var(--accent-brown);
-  font-size: 0.88rem;
-  line-height: 1.28;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
+.timeline-bubble-text {
+  width: 72%;
+  margin: 0 auto;
+  font-size: 0.82rem;
+  line-height: 1.28;
+  text-align: center;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+.timeline-bubble-text em {
+  white-space: nowrap;
+}
+
 .timeline-stem {
   width: 4px;
-  height: 50px;
-  background: rgba(139, 97, 72, 0.6);
+  height: 42px;
+  background: rgba(139, 97, 72, 0.55);
   margin: 0 auto;
   position: relative;
 }
@@ -778,32 +811,32 @@ nav a.active {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: var(--accent-dark);
 }
 
-.timeline-stem::before { top: -6px; }
-.timeline-stem::after { bottom: -6px; }
+.timeline-stem::before { top: -5px; }
+.timeline-stem::after { bottom: -5px; }
 
 .timeline-year-tag {
   display: inline-block;
   background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
   color: #fff9f5;
-  padding: 0.42rem 0.9rem;
+  padding: 0.35rem 0.8rem;
   font-family: "Bodoni Moda", Georgia, serif;
-  font-size: 1rem;
+  font-size: 0.94rem;
   letter-spacing: 0.03em;
   border-radius: 999px;
 }
 
-.pos-1 { left: 0%; }
-.pos-2 { left: 16%; }
-.pos-3 { left: 32%; }
-.pos-4 { left: 48%; }
-.pos-5 { left: 64%; }
-.pos-6 { left: 80%; }
+.pos-1 { left: 1%; }
+.pos-2 { left: 17%; }
+.pos-3 { left: 33%; }
+.pos-4 { left: 49%; }
+.pos-5 { left: 65%; }
+.pos-6 { left: 81%; }
 
 /* WORK SECTION */
 
@@ -838,6 +871,64 @@ nav a.active {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
+}
+
+/* DILEMMI SECTION */
+
+.dilemmi-intro {
+  max-width: 1100px;
+  margin: 0 auto 2.5rem;
+}
+
+.dilemmi-choices {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+}
+
+.dilemmi-choices-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.dilemmi-choices-figure img {
+  width: 100%;
+  box-shadow: 0 12px 28px rgba(60,40,20,0.12);
+  border: 10px solid rgba(255,255,255,0.40);
+}
+
+.witness-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.witness-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.witness-card {
+  margin: 0;
+  text-align: center;
+}
+
+.witness-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  box-shadow: 0 12px 28px rgba(60,40,20,0.12);
+  border: 10px solid rgba(255,255,255,0.40);
+  background: #fff;
+}
+
+.witness-card figcaption {
+  margin-top: 0.8rem;
+  color: var(--accent-brown);
+  font-size: 0.96rem;
 }
 
 /* BOOKS */
@@ -949,8 +1040,13 @@ footer {
 
   .timeline-bubble {
     width: 100%;
-    max-width: 390px;
-    min-height: 250px;
+    max-width: 320px;
+    min-height: 220px;
+  }
+
+  .timeline-bubble-text {
+    width: 76%;
+    font-size: 0.92rem;
   }
 
   .timeline-stem {
@@ -983,7 +1079,9 @@ footer {
   }
 
   .author-layout,
-  .critical-layout {
+  .critical-layout,
+  .dilemmi-choices-grid,
+  .witness-gallery-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1023,6 +1121,16 @@ footer {
   .hero-illustration {
     max-width: 460px;
   }
+
+  .macro-banner-inner {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+
+  .macro-banner-inner::before,
+  .macro-banner-inner::after {
+    width: 52px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1032,7 +1140,10 @@ footer {
   .author-layout,
   .timeline-block,
   .critical-layout,
-  .generic-page {
+  .generic-page,
+  .dilemmi-intro,
+  .dilemmi-choices,
+  .witness-gallery {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -1049,7 +1160,8 @@ footer {
   .paper-box,
   .author-copy .paper-box,
   .paper-box--wide,
-  .paper-box--work {
+  .paper-box--work,
+  .paper-box--author {
     min-height: auto;
     padding: 2rem 1.7rem;
   }
@@ -1057,6 +1169,15 @@ footer {
   .critical-layout,
   .author-layout {
     gap: 1.5rem;
+  }
+
+  .macro-banner-inner::before,
+  .macro-banner-inner::after {
+    display: none;
+  }
+
+  .macro-banner-inner {
+    padding: 1rem 1.2rem 0.95rem;
   }
 }
 
