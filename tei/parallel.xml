@@ -1463,9 +1463,17 @@
 
         <!--SEQUENZA 3-->
       <div type="sequence" n="3" xml:id="seq3">
-        <app xml:id="seq3_macro_1">
-            <rdg wit="#Q">
-                    <p n="1" xml:id="q_s3_p1">Hora nelle nozze ritornandomi, solea la <persName ref="#caterina">Reina</persName> doppo 'l desinare, 
+            <p n="1" xml:id="s3_p1">
+        
+
+                <app>
+                    <lem wit="#T16"> Ma alle nozze della <persName ref="#caterina">Reina</persName> tornando,</lem>
+                    <rdg wit="#T1"> Ma tornando alle nozze della <persName ref="#caterina">Reina</persName>,</rdg>
+                    <rdg wit="#Q">Hora nelle nozze ritornandomi,</rdg>
+                </app>
+                <app>
+                    <lem wit="#T16 #T1"/>
+                    <rdg wit="#Q">solea la <persName ref="#caterina">Reina</persName> doppo 'l desinare, 
                     che sempre magnifico era et maraviglioso molto et da diversi giuochi 
                     d'huomini che ci soglion far ridere et da suoni di vari stormenti et canti 
                     hora di fanciulle et quando d'huomini rallegrato, con le sue damigielle 
@@ -1476,24 +1484,21 @@
                     tutte le donne et gentili huomini et suoi cortigiani si raunavano nell'ampissime
                     sale del palagio, dove si danzava gaiamente et tutte quelle cose 
                     si faceano che a festa di reina si convenia di fare, per infino che tempo 
-                    fusse da por le tavole.</p>
-
-                    <p n="2" xml:id="q_s3_p2">Andando adunque così alcun giorno le nuove nozze, 
+                    fusse da por le tavole.
+                    Andando adunque così alcun giorno le nuove nozze, 
                     et levatasi un dì, finito 'l mangiare et e suoi spassi forniti, dall'altre 
                     donne la <persName ref="#caterina">Reina</persName>, come solea, et nelle sue camere raccoltasi, et ciascuno 
                     similmente partendo, rimase per aventura ultime, le tre donne co' loro 
                     giovani per le sale si spatiavano ragionando, et quinci, da' piedi et dalle
                     parole portate, ad un | poggetto di marmo pervennono, il quale da una 
                     parte delle sale più rimota sopra ad un bellissimo giardino del palagio
-                    riguardava.</p>
-
-                    <p n="3" xml:id="q_s3_p3">Dove come giunsono, maravigliatesi della bellezza del 
+                    riguardava.
+                    Dove come giunsono, maravigliatesi della bellezza del 
                     giardino, poi che di lui hebbero molte cose parlato, hor questa hor quella 
                     parte riguardando, <persName ref="#gismondo">Gismondo</persName>, che il più festevole era de' suoi compagni 
                     et volentieri sempre le donne in dolce festa et in honesto giuoco tenea, 
-                    a loro rivoltosi così disse:</p>
-
-                    <p n="4" xml:id="q_s3_p4"> <q who="#gismondo">Care giovani, il dormire doppo 'l cibo in quest'hora del dì, quantunque 
+                    a loro rivoltosi così disse:
+                    <q who="#gismondo">Care giovani, il dormire doppo 'l cibo in quest'hora del dì, quantunque 
                     in alcuna stagion dell'anno non sia buono, pure la state, perciò 
                     che longissimi sono e giorni et le notti più brievi, come quello che cosa 
                     piacevole è, da gli occhi nostri più volentieri ricevuto, alquanto meno 
@@ -1505,15 +1510,17 @@
                     et quivi nel rezzo et nel fresco dell'herbe ripostisi, o novellando | o 
                     di cose dilettevoli ragionando, ingannare questa parte del giorno incresciosa,
                     per infino che·ll'hora del festeggiare venuta nelle sale ci richiamasse 
-                    insieme con gli altri ad honorare la nostra novella sposa.</q></p>
-
-                    <p n="5" xml:id="q_s3_p5">Alle donne, le quali non meno l'ombre de gli alberi et gli accorti 
+                    insieme con gli altri ad honorare la nostra novella sposa.</q>
+                    Alle donne, le quali non meno l'ombre de gli alberi et gli accorti 
                     ragionamenti de' giovani che 'l sonno delle coltre regali et le favole dell'altre 
                     donne dilettavano, piacque il consiglio di <persName ref="#gismondo">Gismondo</persName>. Per che, discese, 
-                    tutte liete et festose co' loro giovani n'andarono nel giardino. </p>
+                    tutte liete et festose co' loro giovani n'andarono nel giardino.
+                    </rdg>
+                </app>
 
-
-                    <p n="6" xml:id="q_s3_p6">Era questo giardino vago molto et di maravigliosa bellezza. Ma per 
+                <app>
+                    <lem wit="#T16 #T1"/>
+                    <rdg wit="#Q"> Era questo giardino vago molto et di maravigliosa bellezza. Ma per 
                     non raccontare ogni parte di lui, che sarebbe troppo lungo, egli, oltre 
                     ad un bellissimo pergolato, che largo et ombroso pel mezzo in croce lo 
                     dipartiva, una medesima via dava a gli entranti di qua et di là, et lungo 
@@ -1522,20 +1529,16 @@
                     pergolato, una siepe di verdissimi et minutissimi bossi, humile non tanto 
                     che con mano sanza chinarsi il sommo di lei non si potesse toccare, spessissima 
                     et, ugualmente in ogni parte di sé (quantunque longissima fusse) 
-                    gli occhi et la | vista pascendo, dilettevole a riguardare.</p>
-
-
-                    <p n="7" xml:id="q_s3_p7">Dall'altra honorati allori, 
+                    gli occhi et la | vista pascendo, dilettevole a riguardare.
+                    Dall'altra honorati allori, 
                     lungo 'l muro assai nel cielo crescendo, della più alta parte 
                     di loro mezzo arco faceano, in maniera folti et castigati, che niuna lor 
                     foglia fuori del commandato ordine parea che ardisse di si mostrare; né 
                     altro del muro si vedea, che dall'una delle latora del giardino e marmi 
                     bianchissimi di due finestre, che ne gli estremi di loro erano, large et 
                     aperte, et dalle quali (perciò che il muro grossissimo era) in ciascun lato 
-                    sedendo si potea gittar la vista sopra 'l piano il quale esse signoreggiavano.</p>
-
-
-                    <p n="8" xml:id="q_s3_p8">Per questa adunque così bella via dall'una parte entrate nel giardino 
+                    sedendo si potea gittar la vista sopra 'l piano il quale esse signoreggiavano.
+                    Per questa adunque così bella via dall'una parte entrate nel giardino 
                     le vaghe donne co' loro giovani caminando tutte diffese dal sole (come 
                     che egli assai alto si fusse nel cielo), et questa cosa et quell'altra considerando, 
                     pervennono in un pratello che 'l giardin terminava, di sì fresche 
@@ -1549,185 +1552,232 @@
                     cristallo, che del monte usciva, baldanzosamente cadendo et di lei, che 
                     guari alta non era dal terreno, in un canaletto di marmo, che 'l pratello 
                     dividea, descendendo, soavemente si facea sentire et, nel canale ricevuta,
-                    quasi tutta coperta dall'herbe, mormorando s'affrettava di correre nel giardino.</p>
+                    quasi tutta coperta dall'herbe, mormorando s'affrettava di correre nel giardino.
+                    </rdg>
+                </app>
 
-
-                    <p n="9" xml:id="q_s3_p9">Piacque questo luoco maravigliosamente alle belle donne, il quale 
+                <app>
+                    <lem wit="#T16 #T1"/>
+                    <rdg wit="#Q">Piacque questo luoco maravigliosamente alle belle donne, il quale 
                     poi che molto da ciascuna di loro fu lodato, madonna <persName ref="#berenice">Berenice</persName>, che 
                     la men giovane era de l'altre due et da esse honorata quasi come lor capo 
-                    et, oltre a·cciò, vie più ardita che esse non erano, verso <persName ref="#gismondo">Gismondo</persName> riguardando:</p>
+                    et, oltre a·cciò, vie più ardita che esse non erano, verso <persName ref="#gismondo">Gismondo</persName> riguardando:
 
-                    <p n="10" xml:id="q_s3_p10"><q who="#berenice"><seg>Deh</seg> disse <seg>come mal facemmo,<persName ref="#gismondo">Gismondo</persName>, a non ci essere quivi 
-                        tutti questi dì passati venute, ché meglio in cotesto giardino che nelle 
-                        nostre camere haremmo questo di tempo, che sanza la sposa et la <persName ref="#caterina">Reina</persName>
-                        ci corre, trappassato. Hora (poi che noi la tua mercé vi siamo) vedi dove 
-                        a te paia che si siedi, perciò che l'andare hora altre parti del giardino
-                        riguardando il sole ci vieta, che in|vidiosamente (come tu vedi) se le riguarda lui. </seg></q>
-                        A cui <persName ref="#gismondo">Gismondo</persName>:
-                        <q who="#gismondo"><seg><persName ref="#berenice">Madonna</persName>,</seg> rispose <seg> dove a voi così piaccia, a me parrebbe che 
-                        questa fonte non si dovesse rifiutare, perciò che l'herbetta è quivi più 
-                        lieta che altrove et più dipinta di fiori. Poi quest'alberi ci terranno sì
-                        il sole, che, per potere che egli habbia, hoggi non ci ritroverrà egli giamai.</seg></q>
-                        <q who="#berenice"><seg>Dunque</seg> disse madonna <persName ref="#berenice">Berenice</persName> <seg> sedianci costì, dove a te 
-                        piace, che vi·cci hai guidate. Et perciò che lo starci quivi, sì come tu dicesti, 
-                        non c'incresca, col mormorio dell'acque che c'invitano a ragionare 
-                        et con l'horrore di quest'ombre che ci ascoltano, disponti tu a dire di 
-                        quello che a te più giova che si ragioni, perciò che et noi volentieri sempre 
-                        t'ascoltiamo et, poi che sì bello et vago luoco gli hai dato, meritamente 
-                        in te cade hoggi la signoria de' nostri sermoni. </seg></q>
-                        Dette queste parole da madonna <persName ref="#berenice">Berenice</persName>, et da ciascuna dell'altre 
-                        due invitato <persName ref="#gismondo">Gismondo</persName> al favellare, esso lietamente così disse:
-                        <q who="#gismondo">Amabili donne, poscia che voi hoggi questa maggioranza mi date, 
-                        et io la mia prenderò.</q> </p>
+                    <q who="#berenice"><seg>Deh</seg> disse <seg>come mal facemmo,<persName ref="#gismondo">Gismondo</persName>, a non ci essere quivi 
+                    tutti questi dì passati venute, ché meglio in cotesto giardino che nelle 
+                    nostre camere haremmo questo di tempo, che sanza la sposa et la <persName ref="#caterina">Reina</persName>
+                    ci corre, trappassato. Hora (poi che noi la tua mercé vi siamo) vedi dove 
+                    a te paia che si siedi, perciò che l'andare hora altre parti del giardino
+                    riguardando il sole ci vieta, che in|vidiosamente (come tu vedi) se le riguarda lui. </seg></q>
 
-                    <p n="11" xml:id="q_s3_p11">Et poi che, fatta di loro corona, a sedere in grembo dell'herbetta si 
+                    A cui <persName ref="#gismondo">Gismondo</persName>:
+                    <q who="#gismondo"><seg><persName ref="#berenice">Madonna</persName>,</seg> rispose <seg> dove a voi così piaccia, a me parrebbe che 
+                    questa fonte non si dovesse rifiutare, perciò che l'herbetta è quivi più 
+                    lieta che altrove et più dipinta di fiori. Poi quest'alberi ci terranno sì
+                    il sole, che, per potere che egli habbia, hoggi non ci ritroverrà egli giamai.</seg></q>
+
+                    <q who="#berenice"><seg>Dunque</seg> disse madonna <persName ref="#berenice">Berenice</persName> <seg> sedianci costì, dove a te 
+                    piace, che vi·cci hai guidate. Et perciò che lo starci quivi, sì come tu dicesti, 
+                    non c'incresca, col mormorio dell'acque che c'invitano a ragionare 
+                    et con l'horrore di quest'ombre che ci ascoltano, disponti tu a dire di 
+                    quello che a te più giova che si ragioni, perciò che et noi volentieri sempre 
+                    t'ascoltiamo et, poi che sì bello et vago luoco gli hai dato, meritamente 
+                    in te cade hoggi la signoria de' nostri sermoni. </seg></q>
+
+                    Dette queste parole da madonna <persName ref="#berenice">Berenice</persName>, et da ciascuna dell'altre 
+                    due invitato <persName ref="#gismondo">Gismondo</persName> al favellare, esso lietamente così disse:
+                    <q who="#gismondo">Amabili donne, poscia che voi hoggi questa maggioranza mi date, 
+                    et io la mia prenderò.</q>
+                    Et poi che, fatta di loro corona, a sedere in grembo dell'herbetta si 
                     fûr posti, chi vicino la bella fonte et | chi a piè de gli ombrosi allori di 
                     qua et di là del picciol rio, <persName ref="#gismondo">Gismondo</persName>, accortamente rassettatosi et pel 
                     viso d'intorno piacevolmente le belle donne riguardate, in questa guisa incominciò: 
-                     <q who="#gismondo" part="I">Vaghe et festose donne, ciascuno di noi ha hoggi udite quelle due fanciulle, 
+                    <q>Vaghe et festose donne, ciascuno di noi ha hoggi udite quelle due fanciulle, 
                     che dinanzi alla Reina, prima che si levassono le tavole, assai vezzosamente 
                     l'una all'altra rispondendo cantarono di molte canzoni, tra le 
                     quali se io mi ricorderò le due prime, che allhora, perciò che molto mi 
                     piacquono, agevolmente appresi, assai bello et spatioso campo haremo 
-                    hoggi da favellare. Elle per aventura son queste. Perciò che ...</q></p>
-
-
-                </rdg>
-
-    
-
-
-            <rdg wit="#T1 #T16">
-            <p n="1" xml:id="s3_print_p1">
-                <app>
-                    <lem wit="#T16"> Ma alle nozze della <persName ref="#caterina">Reina</persName> tornando,</lem>
-                    <rdg wit="#T1"> Ma tornando alle nozze della <persName ref="#caterina">Reina</persName>,</rdg>
+                    hoggi da favellare. Elle per aventura son queste. Perciò che </q>
+                    </rdg>
                 </app>
-                mentre che elle così andavano
+
+
+                <app>
+                    <lem wit="#T16 #T1">mentre che elle così andavano</lem>
+                    <rdg wit="#Q"/>
+                </app>
 
                 <app>
                     <lem wit="#T16">come io</lem>
                     <rdg wit="#T1"> com'io</rdg>
+                    <rdg wit="#Q"/>
                 </app>
-                dissi, un giorno tra gli altri nella fine del desinare, che sempre era
+                <app>
+                    <lem wit="#T16 #T1">dissi, un giorno tra gli altri nella fine del desinare, che sempre era</lem>
+                    <rdg wit="#Q"/>
+                </app>
 
                 <app>
                     <lem wit="#T16"> splendido </lem>
                     <rdg wit="#T1">splendido et maraviglioso</rdg>
+                    <rdg wit="#Q"/>
                 </app>
-                et da diversi giuochi d'huomini che ci soglion far ridere et da suoni di vari
+                <app>
+                    <lem wit="#T16 #T1">et da diversi giuochi d'huomini che ci soglion far ridere et da suoni di vari</lem>
+                    <rdg wit="#Q"/>
+                </app>
 
                 <app>
                     <lem wit="#T16">strumenti</lem>
                     <rdg wit="#T1">stormenti</rdg>
+                    <rdg wit="#Q"/>
                 </app>
-                et da canti hora d'una maniera et quando d'altra rallegrato, due vaghe fanciulle per mano 
-
+                <app>
+                    <lem wit="#T16 #T1">et da canti hora d'una maniera et quando d'altra rallegrato, due vaghe fanciulle per mano </lem>
+                    <rdg wit="#Q"/>
+                </app>
+                
                 <app>
                     <lem wit="#T16">tenendosi, con lieto</lem>
                     <rdg wit="#T1">tenendosi et con alegro </rdg>
+                    <rdg wit="#Q"/>
                 </app>
-                sembiante al capo delle tavole,</p>
-            </rdg>
-        </app>
+                <app>
+                    <lem wit="#T16 #T1">sembiante al capo delle tavole,</lem>
+                    <rdg wit="#Q"/>
+                </app>
+            </p>
+            
         
-        <!-- Riallineamento-->
-        <p n="11" xml:id="s3_p11">
-          <app>
-            <lem wit="#T16">là dove la <persName ref="#caterina">Reina</persName> sedea, venute, riverentemente la salutarono; </lem>
-            <rdg wit="#T1">dove la <persName ref="#caterina">Reina</persName> sedea, venute, riverentemente la salutarono; </rdg>
-            <rdg wit="#Q"><q who="#gismondo" part="M">venute le fanciulle dinanci la <persName ref="#caterina">Reina</persName>, poi che riverentemente la salutarono,</q></rdg>
-          </app>
+        
+            <!-- Riallineamento-->
+        
+            <app>
+                <lem wit="#T16">là dove la <persName ref="#caterina">Reina</persName> sedea, venute, riverentemente la salutarono; </lem>
+                <rdg wit="#T1">dove la <persName ref="#caterina">Reina</persName> sedea, venute, riverentemente la salutarono; </rdg>
+                <rdg wit="#Q"><q who="#gismondo">venute le fanciulle dinanci la <persName ref="#caterina">Reina</persName>, poi che riverentemente la salutarono,</q></rdg>
+            </app>
 
-          <app>
-            <lem wit="#T16">et poi che l'hebbero salutata, amendue levatesi,</lem>
-            <rdg wit="#T1">et poi che l'hebbero salutata, amendue levatesi,</rdg>
-            <rdg wit="#Q"><q who="#gismondo" part="M">levatesi,</q></rdg>
-          </app>
+            <app>
+                <lem wit="#T16">et poi che l'hebbero salutata, amendue levatesi,</lem>
+                <rdg wit="#T1">et poi che l'hebbero salutata, amendue levatesi,</rdg>
+                <rdg wit="#Q"><q who="#gismondo">levatesi,</q></rdg>
+            </app>
 
-          <app>
-            <lem wit="#T16">la maggiore, un bellissimo liuto che nell'una mano teneva al petto recandosi et assai maestrevolmente toccandolo,</lem>
-            <rdg wit="#T1">la maggiore, un bellissimo liuto che nell'una mano tenea con dolce atto al petto recandosi et assai maestrevolmente toccandolo, </rdg>
-            <rdg wit="#Q"><q who="#gismondo" part="M">et col suono del liuto, che quel loro maestro drietro le lor spalle assai 
-            acconciamente toccava, accordatasi la maggioretta,</q></rdg>
-          </app>
+            <app>
+                <lem wit="#T16">la maggiore, un bellissimo liuto che nell'una mano teneva al petto recandosi et assai maestrevolmente toccandolo,</lem>
+                <rdg wit="#T1">la maggiore, un bellissimo liuto che nell'una mano tenea con dolce atto al petto recandosi et assai maestrevolmente toccandolo, </rdg>
+                <rdg wit="#Q"><q who="#gismondo">et col suono del liuto, che quel loro maestro drietro le lor spalle assai 
+                acconciamente toccava, accordatasi la maggioretta,</q></rdg>
+            </app>
 
-          <app>
-            <lem wit="#T16">dopo alquanto spatio col piacevole suono di quello la soave voce di lei accordando et dolcissimamente cantando,</lem>
-            <rdg wit="#T1">doppo alquanto spatio col piacevole suono di quello la soave voce di lei accordando, </rdg>
-            <rdg wit="#Q"/>
-          </app>
+            <app>
+                <lem wit="#T16">dopo alquanto spatio col piacevole suono di quello la soave voce di lei accordando et dolcissimamente cantando,</lem>
+                <rdg wit="#T1">doppo alquanto spatio col piacevole suono di quello la soave voce di lei accordando, </rdg>
+                <rdg wit="#Q"/>
+            </app>
 
-          <app>
-            <lem wit="#T16">così disse:</lem>
-            <rdg wit="#T1">così incominciò a dire:</rdg>
-            <rdg wit="#Q"><q who="#gismondo" part="F">così incominciò a dire</q></rdg>
-          </app>
+            <app>
+                <lem wit="#T16">così disse:</lem>
+                <rdg wit="#T1">così incominciò a dire:</rdg>
+                <rdg wit="#Q"><q who="#gismondo">così incominciò a dire</q></rdg>
+            </app>
 
-          
-        </p>
+            
+    
 
         <!-- POESIA 1 -->
-        <app xml:id="seq3_poem1">
-            <rdg wit="#Q">
-                <lg type="poem" xml:id="q_lg1">
-                    <l n="1">Amor, perchè m'insegni andar al foco,</l>
-                    <l n="2">Dov' el mio cor si strugge,</l>
-                    <l n="3">Seguendo chi mi fugge,</l>
-                    <l n="4">Amando chi 'l mio mal si torna in gioco?</l>
-                    <l n="5">   Credea trovar ne l'amorosa tresca</l>
-                    <l n="6">Più dolce ogni fatica:</l>
-                    <l n="7">Ahi, del mio ben nemica,</l>
-                    <l n="8">Che 'l piacer manca e 'l tormento rinfresca.</l>
-                    <l n="9">   Donne, che non sentiste anchor d'Amore,</l>
-                    <l n="10">Quanto beate sete;</l>
-                    <l n="11">Se voi non v'accorgete,</l>
-                    <l n="12">Mirate quanto è grave el mio dolore.</l>
-                </lg>
-            </rdg>
+        
 
-            <rdg wit="#T1 #T16">
-                <lg type="poem" xml:id="lg1">
-                    <l n="1">   Io vissi pargoletta in festa e 'n gioco,</l>
-                    <l n="2">De' miei pensier, di mia sorte contenta:</l>
-                    <l n="3">Hor sì m'afflige Amor et mi tormenta,</l>
-                    <l n="4">C'homai da tormentar gli avanza poco.</l>
+             <lg type="poem" xml:id="lg1">
+                <l n="1"> 
+                    <app>
+                        <lem wit="#T16 #T1">   Io vissi pargoletta in festa e 'n gioco,</lem>
+                        <rdg wit="#Q">Amor, perchè m'insegni andar al foco,</rdg>
+                     </app>
+                </l>
 
-                    <l n="5"> 
-                        <app>
+                <l n="2"> 
+                    <app>
+                        <lem wit="#T16 #T1">De' miei pensier, di mia sorte contenta:</lem>
+                        <rdg wit="#Q">Dov' el mio cor si strugge,</rdg>
+                     </app>
+                </l>
+
+                <l n="3"> 
+                    <app>
+                        <lem wit="#T16 #T1">Hor sì m'afflige Amor et mi tormenta,</lem>
+                        <rdg wit="#Q">Seguendo chi mi fugge,</rdg>
+                     </app>
+                </l>
+
+                <l n="4"> 
+                    <app>
+                        <lem wit="#T16 #T1">C'homai da tormentar gli avanza poco.</lem>
+                        <rdg wit="#Q">Amando chi 'l mio mal si torna in gioco?</rdg>
+                     </app>
+                </l>
+
+                <l n="5"> 
+                    <app>
                         <lem wit="#T16">    Credetti, lassa, haver gioiosa vita</lem>
                         <rdg wit="#T1">    Harei giurato haver gioiosa vita,</rdg>
-                        </app>
-                    </l>
+                        <rdg wit="#Q">   Credea trovar ne l'amorosa tresca</rdg>
+                    </app>
+                </l>
 
-                    <l n="6"> 
-                        <app>
+                <l n="6"> 
+                    <app>
                         <lem wit="#T16">Da prima entrando, Amor, a la tua corte;</lem>
                         <rdg wit="#T1">Da prima intrando, Amor, a la tua corte;</rdg>
-                        </app>
-                    </l>
+                        <rdg wit="#Q">Più dolce ogni fatica:</rdg>
+                    </app>
+                </l>
 
-                    <l n="7"> 
-                        <app>
+                <l n="7"> 
+                    <app>
                         <lem wit="#T16">Et già n'aspetto dolorsa morte:</lem>
                         <rdg wit="#T1">Ma io n'aspetto dolorsa morte:</rdg>
-                        </app>
-                    </l>
+                        <rdg wit="#Q">Ahi del mio ben nemica,</rdg>
+                    </app>
+                </l>
 
-                    <l n="8">O mia credenza, come m'hai fallita.</l>
-                    <l n="9">   Mentre ad Amor non si commise anchora,</l>
-                    <l n="10">Vide Colcho Medea lieta et secura;</l>
-                    <l n="11">Poi ch'arse per Iason, acerba et dura</l>
+                <l n="8"> 
+                    <app>
+                        <lem wit="#T16 #T1">O mia credenza, come m'hai fallita.</lem>
+                        <rdg wit="#Q">Che 'l piacer manca e 'l tormento rinfresca.</rdg>
+                     </app>
+                </l>
+
+                <l n="9"> 
+                    <app>
+                        <lem wit="#T16 #T1">   Mentre ad Amor non si commise anchora,</lem>
+                        <rdg wit="#Q">   Donne, che non sentiste anchor d'Amore,</rdg>
+                     </app>
+                </l>
+
+                <l n="10"> 
+                    <app>
+                        <lem wit="#T16 #T1">Vide Colcho Medea lieta et secura;</lem>
+                        <rdg wit="#Q">Quanto beate sete;</rdg>
+                     </app>
+                </l>
+
+                <l n="11"> 
+                    <app>
+                        <lem wit="#T16 #T1">Poi ch'arse per Iason, acerba et dura</lem>
+                        <rdg wit="#Q">Se voi non v'accorgete,</rdg>
+                     </app>
+                </l>
                 
-                    <l n="12"> 
-                        <app>
+                <l n="12"> 
+                    <app>
                         <lem wit="#T16">Fu la sua vita infin a l'ultim'hora.</lem>
                         <rdg wit="#T1">Fu la sua vita insin a l'ultim'hora.</rdg>
-                        </app>
-                    </l>
-                </lg>
-                </rdg>
-            </app>
+                        <rdg wit="#Q">Mirate quanto è  grave el mio dolore.</rdg>
+                    </app>
+                </l>
+            </lg>
     
         </div>
         </div>
