@@ -1,201 +1,1095 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Author and Work – The Asolani Digital Edition</title>
+:root {
+  --bg-1: #fcfaf6;
+  --bg-2: #f7f3ec;
+  --bg-3: #f1e8db;
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  --ink: #5c4035;
+  --ink-soft: #7a5a4b;
+  --muted: #978072;
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  --accent: #dd7a73;
+  --accent-strong: #cf6a63;
+  --accent-dark: #bb5955;
+  --accent-brown: #8b6148;
 
-<header>
-  <div class="navbar">
-    <a class="site-title" href="index.html">The Asolani – Digital Edition</a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="author-work.html">Author and Work</a></li>
-        <li><a href="printed-tradition.html">Printed Tradition</a></li>
-        <li><a href="digital-edition.html">Digital Edition</a></li>
-        <li><a href="synoptic.html">Synoptic View</a></li>
-        <li><a href="tei/asolani.xml">TEI XML</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  --paper-light: #f7efdf;
+  --paper-mid: #ead8ba;
+  --paper-dark: #d6bea0;
 
-<main class="texts-ppt-page">
+  --line: rgba(98, 73, 56, 0.18);
+  --shadow-soft: 0 10px 24px rgba(72, 51, 36, 0.08);
 
-  <section class="texts-title-slide reveal reveal-1">
-    <div class="texts-title-inner">
-      <div class="texts-title-line" aria-hidden="true">
-        <span></span>
-        <span class="dot"></span>
-        <span></span>
-      </div>
-      <h1>Author and Work</h1>
-    </div>
-  </section>
+  --maxw: 1220px;
+}
 
-  <!-- AUTHOR BANNER -->
-  <section class="macro-banner reveal reveal-1">
-    <div class="macro-banner-inner">
-      <span class="macro-banner-mini">Section I</span>
-      <h2>Author</h2>
-      <div class="macro-ornament" aria-hidden="true">
-        <span></span>
-        <span class="diamond"></span>
-        <span></span>
-      </div>
-    </div>
-  </section>
+* {
+  box-sizing: border-box;
+}
 
-  <!-- AUTHOR -->
-  <section class="author-layout">
-    <figure class="author-figure reveal reveal-1">
-      <img src="assets/images/bembo-portrait.jpg" alt="Portrait of Pietro Bembo">
-      <figcaption>
-        Vecellio Tiziano, <em>Ritratto del cardinale Pietro Bembo</em>, 1538 ca.–1542 ca.
-      </figcaption>
-    </figure>
+html {
+  scroll-behavior: smooth;
+}
 
-    <article class="author-copy reveal reveal-2">
-      <h2 class="section-title">Pietro Bembo</h2>
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--ink);
+  line-height: 1.7;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 16% 20%, rgba(255,255,255,0.45), transparent 12%),
+    radial-gradient(circle at 82% 16%, rgba(130, 98, 72, 0.04), transparent 10%),
+    radial-gradient(circle at 28% 78%, rgba(120, 90, 66, 0.03), transparent 14%),
+    linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 58%, var(--bg-3) 100%);
+  background-attachment: fixed;
+}
 
-      <div class="paper-box paper-box--wide">
-        <div class="panel-tag">Life</div>
-        <ul class="author-list">
-          <li><strong>1470–1547</strong></li>
-          <li>Pietro Bembo was a Venetian scholar, poet, literary theorist and cardinal.</li>
-          <li>He frequented the most active cultural centres of his time, moving between Venice, Messina, Ferrara, Urbino, Rome and Padua.</li>
-          <li>He contributed decisively to the Italian language question by proposing Petrarch as a model for poetry and Boccaccio for prose.</li>
-          <li>He supported this idea through a coherent editorial programme that made Trecento classics accessible to a wider readership.</li>
-        </ul>
-      </div>
-    </article>
-  </section>
+h1, h2, h3, h4,
+.site-title,
+.hero-home-kicker,
+.hero-home-subtitle,
+.enter-button,
+.home-card-kicker,
+.section-title,
+.panel-tag,
+.generic-hero h1,
+.macro-banner h2 {
+  font-family: "Bodoni Moda", Georgia, serif;
+}
 
-  <!-- TIMELINE -->
-  <section class="timeline-block reveal reveal-1">
-    <div class="timeline-main">
-      <h2 class="section-title centered-title">Timeline</h2>
-      <p class="section-subtitle">Of his editorial programme in volgare language</p>
+img {
+  max-width: 100%;
+  display: block;
+}
 
-      <div class="timeline-readable">
+a {
+  color: var(--accent-strong);
+  transition: 0.25s ease;
+}
 
-        <div class="timeline-row top-row">
-          <article class="timeline-card pos-1">
-            <div class="timeline-bubble">
-              Bembo published Dante’s <em>Commedia</em> with the title <em>Terze Rime</em>.
-            </div>
-            <div class="timeline-stem"></div>
-            <div class="timeline-year-tag">1501</div>
-          </article>
+a:hover {
+  color: var(--accent-dark);
+}
 
-          <article class="timeline-card pos-3">
-            <div class="timeline-bubble">
-              Bembo published the first edition of <em>Gli Asolani</em>, a dialogue written following Boccaccio’s model.
-            </div>
-            <div class="timeline-stem"></div>
-            <div class="timeline-year-tag">1505</div>
-          </article>
+/* =========================
+   ANIMATIONS
+   ========================= */
 
-          <article class="timeline-card pos-5">
-            <div class="timeline-bubble">
-              Bembo published <em>Rime</em>, following Petrarch’s model.
-            </div>
-            <div class="timeline-stem"></div>
-            <div class="timeline-year-tag">1530</div>
-          </article>
-        </div>
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: revealUp 0.9s ease forwards;
+}
 
-        <div class="timeline-axis"></div>
+.reveal-1 { animation-delay: 0.1s; }
+.reveal-2 { animation-delay: 0.25s; }
+.reveal-3 { animation-delay: 0.4s; }
 
-        <div class="timeline-row bottom-row">
-          <article class="timeline-card pos-2">
-            <div class="timeline-year-tag">1502</div>
-            <div class="timeline-stem"></div>
-            <div class="timeline-bubble">
-              Bembo published Petrarch’s <em>Canzoniere</em> in an affordable edition.
-            </div>
-          </article>
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-          <article class="timeline-card pos-4">
-            <div class="timeline-year-tag">1525</div>
-            <div class="timeline-stem"></div>
-            <div class="timeline-bubble">
-              Bembo published the first edition of <em>Prose della Volgare Lingua</em>, illustrating his linguistic proposal.
-            </div>
-          </article>
+@keyframes floatMote {
+  0%   { transform: translateY(0) translateX(0); opacity: 0.08; }
+  50%  { transform: translateY(-14px) translateX(8px); opacity: 0.18; }
+  100% { transform: translateY(-28px) translateX(-4px); opacity: 0.06; }
+}
 
-          <article class="timeline-card pos-6">
-            <div class="timeline-year-tag">1530–47</div>
-            <div class="timeline-stem"></div>
-            <div class="timeline-bubble">
-              Bembo republished his works, adapting them linguistically to his project.
-            </div>
-          </article>
-        </div>
+@keyframes pulseButton {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
 
-      </div>
-    </div>
-  </section>
+/* =========================
+   HEADER
+   ========================= */
 
-  <!-- WORK BANNER -->
-  <section class="macro-banner reveal reveal-1">
-    <div class="macro-banner-inner">
-      <span class="macro-banner-mini">Section II</span>
-      <h2>The Work</h2>
-      <div class="macro-ornament" aria-hidden="true">
-        <span></span>
-        <span class="diamond"></span>
-        <span></span>
-      </div>
-    </div>
-  </section>
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(252, 249, 244, 0.86);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
 
-  <!-- WORK -->
-  <section class="work-layout reveal reveal-1">
-    <article class="paper-box paper-box--work reveal reveal-1">
-      <div class="panel-tag">The work</div>
-      <p>
-        <em>Gli Asolani</em> is a treatise in three books, written in dialogue form between 1497 and 1502.
-        It discusses the nature of love in a structure combining prose and verse, framed by a narrative setting
-        clearly modelled on Boccaccio’s <em>Decameron</em>.
-      </p>
-      <p>
-        The action unfolds over three days of celebrations in the gardens of the court of Caterina Cornaro,
-        queen of Cyprus, at Asolo.
-      </p>
-    </article>
+.navbar {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
 
-    <div class="work-center reveal reveal-2">
-      <h2 class="section-title work-title">Gli Asolani</h2>
-      <div class="oval-image">
-        <img src="assets/images/asolo-castle.jpg" alt="Representative image of Asolo">
-      </div>
-    </div>
+.site-title {
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 1.12rem;
+  letter-spacing: 0.02em;
+}
 
-    <article class="paper-box paper-box--work reveal reveal-3">
-      <div class="panel-tag">The content</div>
-      <ul>
-        <li><strong>Book I – Perottino:</strong> the unhappy lover speaks about the pain of love.</li>
-        <li><strong>Book II – Gismondo:</strong> the happy lover illustrates the positive dimension of love.</li>
-        <li><strong>Book III – Lavinello:</strong> he refutes both previous arguments and supports a Platonic theory of love, later turning toward an ascetic and transcendent vision of divine beauty.</li>
-      </ul>
-    </article>
-  </section>
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
 
-</main>
+nav a {
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.97rem;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.15rem;
+}
 
-<footer>
-  <p>Francesca Gaeta · The Asolani Digital Edition · 2026</p>
-</footer>
+nav a:hover,
+nav a.active {
+  color: var(--accent-strong);
+  border-bottom-color: var(--accent-strong);
+}
 
-</body>
-</html>
+/* =========================
+   HOME PAGE
+   ========================= */
+
+.home-page {
+  max-width: none;
+  padding: 0;
+}
+
+.hero-home {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2.8rem 1.5rem 1rem;
+}
+
+.ambient-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.mote {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(210, 185, 160, 0.22);
+  filter: blur(1px);
+  animation: floatMote linear infinite;
+}
+
+.mote-1 { top: 14%; left: 12%; width: 8px; height: 8px; animation-duration: 12s; }
+.mote-2 { top: 26%; left: 80%; width: 11px; height: 11px; animation-duration: 16s; }
+.mote-3 { top: 54%; left: 8%; width: 7px; height: 7px; animation-duration: 15s; }
+.mote-4 { top: 70%; left: 82%; width: 10px; height: 10px; animation-duration: 18s; }
+.mote-5 { top: 82%; left: 20%; width: 9px; height: 9px; animation-duration: 14s; }
+.mote-6 { top: 40%; left: 88%; width: 6px; height: 6px; animation-duration: 17s; }
+
+.hero-home-grid {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.hero-home-copy {
+  max-width: 560px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-home-kicker {
+  margin: 0 0 0.4rem;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero-home h1 {
+  margin: 0;
+  color: var(--accent-dark);
+  font-size: clamp(3.8rem, 6.3vw, 5.7rem);
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+}
+
+.hero-home-subtitle {
+  margin: 0.7rem 0 0;
+  color: var(--ink-soft);
+  font-size: 1.08rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: min(360px, 100%);
+  margin: 1.3rem auto 1.2rem;
+}
+
+.ornament span {
+  display: block;
+  height: 1px;
+  flex: 1;
+  background: rgba(111,67,38,0.24);
+}
+
+.ornament .diamond {
+  width: 10px;
+  height: 10px;
+  flex: none;
+  background: var(--accent-strong);
+  transform: rotate(45deg);
+}
+
+.hero-home-text {
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--ink);
+  text-align: center;
+}
+
+.hero-home-actions {
+  margin-top: 1.7rem;
+  text-align: center;
+}
+
+.enter-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.8rem 1.25rem;
+  border-radius: 4px;
+  font-size: 0.98rem;
+  letter-spacing: 0.03em;
+  color: #fffaf8;
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
+  box-shadow: 0 10px 20px rgba(187, 89, 85, 0.16);
+  animation: pulseButton 2.8s ease-in-out infinite;
+}
+
+.enter-button:hover {
+  transform: translateY(-2px);
+}
+
+.hero-home-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-illustration {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-illustration img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: saturate(0.96) contrast(1.02);
+}
+
+/* HOME CARDS */
+
+.home-cards {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+.home-card {
+  position: relative;
+  padding: 2.35rem 2.1rem 2.15rem;
+  min-height: 250px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.home-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/images/pergamena_box_card.png") no-repeat center / 100% 100%;
+  z-index: -1;
+}
+
+.home-card-kicker {
+  margin: 0 0 0.3rem;
+  color: var(--ink-soft);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.95rem;
+}
+
+.home-card h3 {
+  margin: 0 0 0.85rem;
+  color: var(--accent-dark);
+  font-size: 1.26rem;
+  line-height: 1.14;
+  font-style: italic;
+}
+
+.home-card p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.94rem;
+  line-height: 1.52;
+  max-width: 100%;
+}
+
+/* =========================
+   GENERIC PAGES
+   ========================= */
+
+.generic-page {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.generic-hero {
+  text-align: center;
+  padding: 2rem 0 2.5rem;
+}
+
+.generic-hero h1 {
+  margin: 0 0 1rem;
+  color: var(--accent-dark);
+  font-size: clamp(3rem, 7vw, 4.8rem);
+}
+
+.generic-hero p {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 2.5rem;
+}
+
+.section h2 {
+  color: var(--accent-dark);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.panel {
+  background: rgba(255,255,255,0.52);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+  padding: 1.5rem;
+}
+
+.button,
+.button-secondary {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+}
+
+.button {
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: #fffaf8;
+}
+
+.button-secondary {
+  border: 1px solid var(--accent-dark);
+  color: var(--accent-dark);
+}
+
+/* =========================
+   AUTHOR AND WORK PAGE
+   ========================= */
+
+.texts-ppt-page {
+  max-width: none;
+  padding: 0 1.5rem 4rem;
+}
+
+.texts-title-slide {
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+
+.texts-title-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.texts-title-line {
+  width: min(460px, 82%);
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.texts-title-line span {
+  flex: 1;
+  height: 1px;
+  background: rgba(111,67,38,0.22);
+}
+
+.texts-title-line .dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background: var(--accent-strong);
+  border-radius: 50%;
+}
+
+.texts-title-slide h1 {
+  margin: 0;
+  color: var(--accent-dark);
+  font-size: clamp(3.8rem, 8vw, 5.6rem);
+  line-height: 0.95;
+}
+
+.section-title {
+  margin: 0 0 1.1rem;
+  color: var(--accent-dark);
+  font-size: clamp(2.2rem, 4.2vw, 3.5rem);
+  line-height: 0.96;
+}
+
+.centered-title {
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin: -0.6rem 0 2rem;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* MACRO SECTION BANNERS */
+
+.macro-banner {
+  max-width: 1100px;
+  margin: 2.2rem auto 2.4rem;
+  padding: 0 1rem;
+}
+
+.macro-banner-inner {
+  position: relative;
+  text-align: center;
+  padding: 1.1rem 1.4rem 1rem;
+  background: linear-gradient(180deg, rgba(221,122,115,0.92), rgba(187,89,85,0.95));
+  color: #fff7f2;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(90, 50, 40, 0.14);
+  overflow: hidden;
+}
+
+.macro-banner-inner::before,
+.macro-banner-inner::after {
+  content: "❦";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.72);
+  letter-spacing: 0.08em;
+}
+
+.macro-banner-inner::before {
+  left: 1.2rem;
+}
+
+.macro-banner-inner::after {
+  right: 1.2rem;
+}
+
+.macro-banner-mini {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.macro-banner h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+  color: #fffaf7;
+}
+
+.macro-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  width: min(260px, 80%);
+  margin: 0.7rem auto 0;
+}
+
+.macro-ornament span {
+  display: block;
+  height: 1px;
+  flex: 1;
+  background: rgba(255,255,255,0.45);
+}
+
+.macro-ornament .diamond {
+  width: 9px;
+  height: 9px;
+  flex: none;
+  background: rgba(255,255,255,0.88);
+  transform: rotate(45deg);
+}
+
+/* PAPER BOXES */
+
+.paper-box {
+  position: relative;
+  padding: 2.3rem 2.2rem 2rem 2.8rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: var(--ink);
+  min-height: 320px;
+}
+
+.paper-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/images/pergamena_box_card.png") no-repeat center / 100% 100%;
+  z-index: -1;
+}
+
+.paper-box::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(130, 98, 72, 0.10);
+  pointer-events: none;
+}
+
+.paper-box h3,
+.paper-box h4 {
+  margin: 0 0 0.7rem;
+  color: var(--accent-dark);
+  font-size: 1.5rem;
+  line-height: 1.04;
+  font-style: italic;
+}
+
+.paper-box p,
+.paper-box li {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.58;
+}
+
+.paper-box p + p {
+  margin-top: 1rem;
+}
+
+.paper-box ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.paper-box li + li {
+  margin-top: 0.55rem;
+}
+
+.paper-box--compact {
+  padding: 1.9rem 1.7rem;
+  min-height: 220px;
+}
+
+.paper-box--compact h3 {
+  font-size: 1.24rem;
+}
+
+.paper-box--wide {
+  min-height: 420px;
+}
+
+.paper-box--work {
+  min-height: 430px;
+}
+
+.panel-tag {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  padding: 0.36rem 0.85rem;
+  background: rgba(207,106,99,0.10);
+  border: 1px solid rgba(207,106,99,0.22);
+  color: var(--accent-dark);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 999px;
+}
+
+/* AUTHOR */
+
+.author-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  align-items: start;
+  max-width: 1280px;
+  margin: 0.5rem auto 0;
+  padding: 2rem 0 4rem;
+}
+
+.author-copy .paper-box {
+  padding: 2.35rem 2.35rem 2rem 2.9rem;
+  min-height: 430px;
+}
+
+.author-copy .paper-box ul {
+  padding-left: 1.25rem;
+}
+
+.author-figure img {
+  width: 100%;
+  border: 10px solid #e6d6bf;
+  box-shadow: 0 12px 30px rgba(70,45,20,0.12);
+}
+
+.author-figure figcaption {
+  margin-top: 0.9rem;
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+/* TIMELINE */
+
+.timeline-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem 0 4rem;
+}
+
+.timeline-main {
+  min-width: 0;
+}
+
+.timeline-readable {
+  margin-top: 2.5rem;
+  position: relative;
+}
+
+.timeline-axis {
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 50%;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(187,89,85,0.55), rgba(139,97,72,0.55));
+  transform: translateY(-50%);
+}
+
+.timeline-row {
+  position: relative;
+  height: 360px;
+}
+
+.timeline-row.top-row {
+  margin-bottom: 18px;
+}
+
+.timeline-row.bottom-row {
+  margin-top: 18px;
+}
+
+.timeline-card {
+  position: absolute;
+  width: 228px;
+  text-align: center;
+}
+
+.timeline-bubble {
+  width: 228px;
+  min-height: 228px;
+  margin: 0 auto;
+  padding: 1.3rem 1.2rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f7efdf 0%, #ead8ba 100%);
+  border: 3px solid rgba(139, 97, 72, 0.28);
+  box-shadow: 0 10px 18px rgba(70,45,20,0.08);
+  color: var(--accent-brown);
+  font-size: 0.88rem;
+  line-height: 1.28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.timeline-stem {
+  width: 4px;
+  height: 50px;
+  background: rgba(139, 97, 72, 0.6);
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-stem::before,
+.timeline-stem::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent-dark);
+}
+
+.timeline-stem::before { top: -6px; }
+.timeline-stem::after { bottom: -6px; }
+
+.timeline-year-tag {
+  display: inline-block;
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: #fff9f5;
+  padding: 0.42rem 0.9rem;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  border-radius: 999px;
+}
+
+.pos-1 { left: 0%; }
+.pos-2 { left: 16%; }
+.pos-3 { left: 32%; }
+.pos-4 { left: 48%; }
+.pos-5 { left: 64%; }
+.pos-6 { left: 80%; }
+
+/* WORK SECTION */
+
+.work-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1360px;
+  margin: 0.5rem auto 0;
+  padding: 4rem 0;
+  background: transparent;
+}
+
+.work-center {
+  text-align: center;
+}
+
+.work-title {
+  margin-bottom: 1.4rem;
+}
+
+.oval-image {
+  padding: 0.9rem;
+  background: rgba(255,255,255,0.42);
+  border-radius: 50%;
+  box-shadow: 0 10px 24px rgba(70,45,20,0.10);
+}
+
+.oval-image img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* BOOKS */
+
+.books-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.book-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.book-card {
+  text-align: center;
+}
+
+.book-cover {
+  width: 220px;
+  height: 320px;
+  margin: 0 auto 1.3rem;
+  border-radius: 8px 8px 16px 16px;
+  background:
+    linear-gradient(180deg, rgba(65,40,20,0.16), rgba(65,40,20,0.06)),
+    linear-gradient(120deg, #4d3322 0%, #7a563a 45%, #5a3b28 100%);
+  box-shadow:
+    inset -10px 0 0 rgba(255,255,255,0.16),
+    0 16px 28px rgba(50,30,16,0.16);
+  position: relative;
+}
+
+.book-cover::before {
+  content: attr(data-year);
+  position: absolute;
+  top: 38px;
+  left: 14px;
+  right: 14px;
+  padding: 0.8rem 0.4rem;
+  background: rgba(95,63,44,0.65);
+  color: #fff7ef;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 1.1;
+}
+
+/* CRITICAL */
+
+.critical-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 0 5rem;
+}
+
+.critical-figure img {
+  width: 100%;
+  box-shadow: 0 12px 28px rgba(60,40,20,0.12);
+  border: 10px solid rgba(255,255,255,0.40);
+}
+
+.critical-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.2rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1280px) {
+  .timeline-readable {
+    min-height: auto;
+  }
+
+  .timeline-axis {
+    display: none;
+  }
+
+  .timeline-row {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    margin: 0;
+  }
+
+  .timeline-card {
+    position: static;
+    width: 100%;
+  }
+
+  .timeline-bubble {
+    width: 100%;
+    max-width: 390px;
+    min-height: 250px;
+  }
+
+  .timeline-stem {
+    display: none;
+  }
+
+  .timeline-row.bottom-row,
+  .timeline-row.top-row {
+    margin: 0;
+  }
+
+  .timeline-row.bottom-row {
+    margin-top: 1.2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .work-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .book-showcase {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .author-layout,
+  .critical-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .critical-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 980px) {
+  .hero-home-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-home-copy {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .ornament {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-home-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-home-visual {
+    margin-top: 0.5rem;
+  }
+
+  .hero-illustration {
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 760px) {
+  .texts-ppt-page,
+  .books-section,
+  .work-layout,
+  .author-layout,
+  .timeline-block,
+  .critical-layout,
+  .generic-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .timeline-row {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-bubble {
+    max-width: 100%;
+    min-height: 220px;
+  }
+
+  .paper-box,
+  .author-copy .paper-box,
+  .paper-box--wide,
+  .paper-box--work {
+    min-height: auto;
+    padding: 2rem 1.7rem;
+  }
+
+  .critical-layout,
+  .author-layout {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-home {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .hero-home h1 {
+    font-size: clamp(3.3rem, 15vw, 5.2rem);
+  }
+
+  .hero-home-subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+  }
+
+  .home-cards {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .home-card {
+    padding: 2.3rem 1.9rem;
+    min-height: 280px;
+  }
+
+  .home-card h3 {
+    font-size: 1.28rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
