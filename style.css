@@ -989,20 +989,21 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  @media (max-width: 900px) {
+  .author-layout,
+  .dilemmi-choices-grid,
+  .witness-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
   .book-showcase--three {
     grid-template-columns: 1fr;
   }
 
   .book-image {
-    max-width: 240px;
-  }
-}
-
-  .author-layout,
-  .dilemmi-choices-grid,
-  .witness-gallery-grid {
-    grid-template-columns: 1fr;
+    height: 300px;
+    max-width: 220px;
   }
 }
 
