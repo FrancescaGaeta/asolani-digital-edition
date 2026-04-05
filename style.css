@@ -863,6 +863,18 @@ nav a.active {
   text-align: center;
 }
 
+.witness-card img {
+  width: 100%;
+  max-width: 220px;
+  height: 320px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
 
 .witness-card figcaption {
   margin-top: 0.8rem;
