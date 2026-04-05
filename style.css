@@ -878,6 +878,54 @@ nav a.active {
   color: var(--accent-brown);
   font-size: 0.96rem;
 }
+/* editions analysed by Dilemmi */
+
+.books-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.book-showcase--three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 1.8rem;
+  align-items: start;
+}
+
+.book-card {
+  text-align: center;
+}
+
+.book-image {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto 1rem;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  background: #fff;
+  border: 8px solid rgba(255,255,255,0.5);
+  border-radius: 6px;
+  box-shadow: 0 12px 28px rgba(60,40,20,0.12);
+}
+
+.book-caption {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.book-caption h3 {
+  margin: 0 0 0.35rem;
+  color: var(--accent-dark);
+  font-size: 1.15rem;
+}
+
+.book-caption p {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
 
 /* footer */
 footer {
