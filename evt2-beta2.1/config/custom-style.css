@@ -20,9 +20,9 @@
 
 /* ***************************************************************** */
 
-/* ************************* */
-/* EVT 2.0 CUSTOM STYLESHEET */
-/* ************************* */
+/* =======================================================
+   EVT – CLEANER NAV / TABS / PARATEXT / MODAL COLORS
+   ======================================================= */
 
 /* base */
 body,
@@ -35,10 +35,9 @@ a {
   color: #bb5955 !important;
 }
 
-/* =========================
-   TOP BAR / DARK HEADER
-   ========================= */
-
+/* -----------------------
+   top bars
+----------------------- */
 header,
 nav,
 mat-toolbar,
@@ -67,7 +66,6 @@ mat-toolbar,
   box-shadow: none !important;
 }
 
-/* testo e icone dentro la barra */
 header *,
 nav *,
 mat-toolbar *,
@@ -88,17 +86,9 @@ mat-toolbar *,
   border-color: rgba(255,255,255,0.16) !important;
 }
 
-/* titolo evt */
-h1,
-h1.title,
-.app-title,
-.editionTitle,
-[class*="title"] {
-  color: #fffaf7 !important;
-  font-family: "Bodoni Moda", Georgia, serif !important;
-}
-
-/* bottoni / controlli */
+/* -----------------------
+   generic controls
+----------------------- */
 button,
 .btn,
 select,
@@ -123,55 +113,216 @@ button:hover,
   color: #5c4035 !important;
 }
 
-/* =========================
-   BLUE HIGHLIGHTS / SELECTIONS
-   ========================= */
+/* =======================================================
+   TABS / SUBNAV – remove blue and avoid strong highlight
+   ======================================================= */
 
-.term {
-  background-color: rgba(221, 122, 115, 0.22) !important;
-  color: #5c4035 !important;
-  border-radius: 3px;
-  padding: 0 2px;
+/* upper tabs like Dedication / Critical */
+.nav-tabs,
+.nav-pills,
+ul[role="tablist"],
+.tabset,
+.tabs,
+[class*="tab-bar"],
+[class*="nav-tabs"] {
+  background: transparent !important;
+  border-color: rgba(92,64,53,0.18) !important;
 }
 
-/* evidenziazioni comuni */
-mark,
-.highlight,
-.selected,
+.nav-tabs > li > a,
+.nav-pills > li > a,
+ul[role="tablist"] li a,
+.tab,
+[class*="tab"] > a,
+[class*="tab-link"] {
+  background: #f7efdf !important;
+  color: #5c4035 !important;
+  border: 1px solid rgba(92,64,53,0.20) !important;
+  box-shadow: none !important;
+}
+
+/* active tab: subtle, not strongly highlighted */
+.nav-tabs > li.active > a,
+.nav-tabs > li > a.active,
+.nav-pills > li.active > a,
+ul[role="tablist"] li.active a,
+.tab.active,
+[class*="tab"].active,
+[class*="selected-tab"] {
+  background: #ead8ba !important;
+  color: #5c4035 !important;
+  border-color: rgba(92,64,53,0.28) !important;
+  box-shadow: inset 0 -2px 0 #bb5955 !important;
+}
+
+/* remove blue on selected/focused UI elements */
 .active,
+.selected,
 .current,
 .focused,
 [class*="highlight"],
 [class*="selected"],
 [class*="active"],
 [class*="current"] {
-  background-color: rgba(221, 122, 115, 0.28) !important;
+  background-color: rgba(221, 122, 115, 0.18) !important;
   color: #5c4035 !important;
 }
 
-/* forzatura su elementi con background inline blu */
+/* inline background overrides */
 span[style*="background"],
 div[style*="background"],
 td[style*="background"],
 a[style*="background"] {
-  background-color: rgba(221, 122, 115, 0.28) !important;
+  background-color: rgba(221, 122, 115, 0.18) !important;
   color: #5c4035 !important;
 }
 
-/* testo selezionato dal browser */
+/* selection */
 ::selection {
-  background: rgba(221, 122, 115, 0.35) !important;
+  background: rgba(221, 122, 115, 0.28) !important;
   color: #5c4035 !important;
 }
 
 ::-moz-selection {
-  background: rgba(221, 122, 115, 0.35) !important;
+  background: rgba(221, 122, 115, 0.28) !important;
   color: #5c4035 !important;
 }
 
-/* =========================
-   TEI / NOTES
-   ========================= */
+/* =======================================================
+   LOWER NAV / INFO-XML BAR / FOOT CONTROLS
+   ======================================================= */
+
+[class*="bottom-toolbar"],
+[class*="bottom-bar"],
+[class*="footer-toolbar"],
+[class*="subnav"],
+[class*="sub-nav"],
+[class*="toolbox"],
+[class*="command-bar"] {
+  background: #f7efdf !important;
+  border-top: 1px solid rgba(92,64,53,0.18) !important;
+  color: #5c4035 !important;
+}
+
+[class*="bottom-toolbar"] *,
+[class*="bottom-bar"] *,
+[class*="footer-toolbar"] *,
+[class*="subnav"] *,
+[class*="sub-nav"] *,
+[class*="toolbox"] *,
+[class*="command-bar"] * {
+  color: #5c4035 !important;
+  fill: #5c4035 !important;
+}
+
+/* =======================================================
+   PARATEXT / INDEX MODAL – make it readable
+   ======================================================= */
+
+.modal,
+.modal-dialog,
+.modal-content,
+[role="dialog"],
+[class*="dialog"],
+[class*="modal"] {
+  background: transparent !important;
+}
+
+/* outer box */
+.modal-content,
+[role="dialog"] > div,
+[class*="modal-content"],
+[class*="dialog-content"],
+[class*="popup-content"] {
+  background: #fcfaf6 !important;
+  color: #5c4035 !important;
+  border: 1px solid rgba(92,64,53,0.18) !important;
+  box-shadow: 0 16px 36px rgba(60,40,20,0.14) !important;
+}
+
+/* modal header */
+.modal-header,
+[class*="modal-header"],
+[class*="dialog-header"],
+[class*="popup-header"] {
+  background: #5c4035 !important;
+  color: #fffaf7 !important;
+}
+
+.modal-header *,
+[class*="modal-header"] *,
+[class*="dialog-header"] *,
+[class*="popup-header"] * {
+  color: #fffaf7 !important;
+}
+
+/* left navigation inside modal */
+.modal .nav,
+.modal .sidebar,
+.modal [class*="sidebar"],
+.modal [class*="menu"],
+.modal [class*="index"],
+[role="dialog"] .nav,
+[role="dialog"] [class*="sidebar"],
+[role="dialog"] [class*="menu"],
+[role="dialog"] [class*="index"] {
+  background: linear-gradient(180deg, #d98a82 0%, #c8736d 100%) !important;
+  color: #fff8f5 !important;
+}
+
+.modal .nav *,
+.modal .sidebar *,
+.modal [class*="sidebar"] *,
+.modal [class*="menu"] *,
+.modal [class*="index"] *,
+[role="dialog"] .nav *,
+[role="dialog"] [class*="sidebar"] *,
+[role="dialog"] [class*="menu"] *,
+[role="dialog"] [class*="index"] * {
+  color: #fff8f5 !important;
+}
+
+/* main text area of modal */
+.modal .content,
+.modal [class*="content"],
+.modal [class*="body"],
+[role="dialog"] .content,
+[role="dialog"] [class*="content"],
+[role="dialog"] [class*="body"] {
+  background: #fcfaf6 !important;
+  color: #5c4035 !important;
+}
+
+/* headings in modal */
+.modal h1,
+.modal h2,
+.modal h3,
+.modal h4,
+[role="dialog"] h1,
+[role="dialog"] h2,
+[role="dialog"] h3,
+[role="dialog"] h4 {
+  color: #5c4035 !important;
+}
+
+/* close button */
+.modal button,
+[role="dialog"] button {
+  background: #f7efdf !important;
+  color: #5c4035 !important;
+  border: 1px solid rgba(92,64,53,0.18) !important;
+}
+
+/* =======================================================
+   TEI / textual content
+   ======================================================= */
+
+.term {
+  background-color: rgba(221, 122, 115, 0.18) !important;
+  color: #5c4035 !important;
+  border-radius: 3px;
+  padding: 0 2px;
+}
 
 .figDesc {
   display: block;
