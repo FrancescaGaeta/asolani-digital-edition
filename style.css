@@ -74,10 +74,7 @@ a:hover {
   color: var(--accent-dark);
 }
 
-/* =========================
-   ANIMATIONS
-   ========================= */
-
+/* animations */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -106,15 +103,12 @@ a:hover {
   50% { transform: translateY(-2px); }
 }
 
-/* =========================
-   HEADER
-   ========================= */
-
+/* header */
 header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(252, 249, 244, 0.86);
+  background: rgba(252, 249, 244, 0.88);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -149,20 +143,17 @@ nav a {
   text-decoration: none;
   color: var(--ink);
   font-size: 0.97rem;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 0.15rem;
+  padding: 0.2rem 0 0.25rem;
+  border-bottom: 2px solid transparent;
 }
 
 nav a:hover,
 nav a.active {
-  color: var(--accent-strong);
-  border-bottom-color: var(--accent-strong);
+  color: var(--accent-dark);
+  border-bottom-color: var(--accent-dark);
 }
 
-/* =========================
-   HOME PAGE
-   ========================= */
-
+/* home page */
 .home-page {
   max-width: none;
   padding: 0;
@@ -315,8 +306,7 @@ nav a.active {
   filter: saturate(0.96) contrast(1.02);
 }
 
-/* HOME CARDS */
-
+/* home cards */
 .home-cards {
   max-width: var(--maxw);
   margin: 0 auto;
@@ -348,8 +338,6 @@ nav a.active {
 .home-card-kicker {
   margin: 0 0 0.3rem;
   color: var(--ink-soft);
-  text-transform: none;
-  letter-spacing: 0;
   font-size: 0.95rem;
 }
 
@@ -366,13 +354,9 @@ nav a.active {
   color: var(--ink);
   font-size: 0.94rem;
   line-height: 1.52;
-  max-width: 100%;
 }
 
-/* =========================
-   GENERIC PAGES
-   ========================= */
-
+/* generic pages */
 .generic-page {
   max-width: var(--maxw);
   margin: 0 auto;
@@ -431,10 +415,7 @@ nav a.active {
   color: var(--accent-dark);
 }
 
-/* =========================
-   AUTHOR AND WORK PAGE
-   ========================= */
-
+/* author and work page */
 .texts-ppt-page {
   max-width: none;
   padding: 0 1.5rem 4rem;
@@ -480,7 +461,7 @@ nav a.active {
 }
 
 .section-title {
-  margin: 0 0 1.1rem;
+  margin: 0 0 1rem;
   color: var(--accent-dark);
   font-size: clamp(2.2rem, 4.2vw, 3.5rem);
   line-height: 0.96;
@@ -499,8 +480,7 @@ nav a.active {
   text-transform: uppercase;
 }
 
-/* MACRO BANNERS */
-
+/* banners using banner.png */
 .macro-banner {
   max-width: 1100px;
   margin: 2.2rem auto 2.4rem;
@@ -508,41 +488,14 @@ nav a.active {
 }
 
 .macro-banner-inner {
-  position: relative;
+  min-height: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("assets/images/banner.png") center center / cover no-repeat;
   text-align: center;
-  padding: 1.15rem 4.4rem 1rem;
-  background:
-    linear-gradient(180deg, rgba(233,144,136,0.96), rgba(187,89,85,0.95));
-  color: #fff7f2;
-  border-radius: 12px;
-  border: 1px solid rgba(120, 66, 52, 0.20);
-  box-shadow: var(--shadow-antique);
-  overflow: hidden;
-}
-
-.macro-banner-inner::before,
-.macro-banner-inner::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 72px;
-  height: 18px;
-  transform: translateY(-50%);
-  opacity: 0.95;
-}
-
-.macro-banner-inner::before {
-  left: 1.25rem;
-  background:
-    linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.42) 18%, rgba(255,255,255,0.42) 82%, transparent 100%);
-  clip-path: polygon(0 50%, 18% 50%, 26% 0, 34% 50%, 66% 50%, 74% 0, 82% 50%, 100% 50%, 82% 50%, 74% 100%, 66% 50%, 34% 50%, 26% 100%, 18% 50%);
-}
-
-.macro-banner-inner::after {
-  right: 1.25rem;
-  background:
-    linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.42) 18%, rgba(255,255,255,0.42) 82%, transparent 100%);
-  clip-path: polygon(0 50%, 18% 50%, 26% 0, 34% 50%, 66% 50%, 74% 0, 82% 50%, 100% 50%, 82% 50%, 74% 100%, 66% 50%, 34% 50%, 26% 100%, 18% 50%);
+  padding: 1rem 2rem;
 }
 
 .macro-banner-mini {
@@ -551,128 +504,47 @@ nav a.active {
   font-size: 0.82rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  opacity: 0.9;
+  color: var(--ink-soft);
 }
 
 .macro-banner h2 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1;
-  color: #fffaf7;
-  text-shadow: 0 1px 0 rgba(90, 45, 35, 0.18);
-}
-
-.macro-ornament {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.55rem;
-  width: min(220px, 70%);
-  margin: 0.72rem auto 0;
-}
-
-.macro-ornament span {
-  display: block;
-  height: 1px;
-  flex: 1;
-  background: rgba(255,255,255,0.42);
-}
-
-.macro-ornament .diamond {
-  display: none;
-}
-
-/* PAPER BOXES */
-
-.paper-box {
-  position: relative;
-  padding: 2.3rem 2.2rem 2rem 2.8rem;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: var(--ink);
-  min-height: 320px;
-}
-
-.paper-box::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("assets/images/pergamena_box_card.png") no-repeat center / 100% 100%;
-  z-index: -1;
-}
-
-.paper-box::after {
-  content: "";
-  position: absolute;
-  inset: 12px;
-  border: 1px solid rgba(130, 98, 72, 0.10);
-  pointer-events: none;
-}
-
-.paper-box h3,
-.paper-box h4 {
-  margin: 0 0 0.7rem;
   color: var(--accent-dark);
-  font-size: 1.5rem;
-  line-height: 1.04;
-  font-style: italic;
 }
 
-.paper-box p,
-.paper-box li {
+/* clean content panels */
+.aw-panel {
+  background: rgba(255, 252, 247, 0.88);
+  border: 1px solid rgba(130, 98, 72, 0.14);
+  box-shadow: 0 10px 28px rgba(72, 51, 36, 0.06);
+  border-radius: 14px;
+  padding: 2rem 2rem 1.8rem;
+}
+
+.aw-panel p,
+.aw-panel li {
+  font-size: 0.98rem;
+  line-height: 1.62;
   margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.58;
 }
 
-.paper-box p + p {
+.aw-panel p + p {
   margin-top: 1rem;
 }
 
-.paper-box ul {
+.aw-panel ul {
   margin: 0;
   padding-left: 1.2rem;
 }
 
-.paper-box li + li {
-  margin-top: 0.55rem;
-}
-
-.paper-box--compact {
-  padding: 1.9rem 1.7rem;
-  min-height: 220px;
-}
-
-.paper-box--compact h3 {
-  font-size: 1.24rem;
-}
-
-.paper-box--wide {
-  min-height: 420px;
-}
-
-.paper-box--work {
-  min-height: 430px;
-}
-
-.paper-box--author {
-  min-height: 430px;
-}
-
-.paper-box--dilemmi-intro {
-  min-height: auto;
-}
-
-.paper-box--editorial-choices {
-  min-height: 100%;
+.aw-panel li + li {
+  margin-top: 0.5rem;
 }
 
 .panel-tag {
   display: inline-block;
-  align-self: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
   padding: 0.36rem 0.85rem;
   background: rgba(207,106,99,0.10);
   border: 1px solid rgba(207,106,99,0.22);
@@ -683,8 +555,7 @@ nav a.active {
   border-radius: 999px;
 }
 
-/* AUTHOR */
-
+/* author */
 .author-layout {
   display: grid;
   grid-template-columns: 320px 1fr;
@@ -695,19 +566,11 @@ nav a.active {
   padding: 2rem 0 4rem;
 }
 
-.author-copy .paper-box {
-  padding: 2.35rem 2.35rem 2rem 2.9rem;
-  min-height: 430px;
-}
-
-.author-copy .paper-box ul {
-  padding-left: 1.25rem;
-}
-
 .author-figure img {
   width: 100%;
   border: 10px solid #e6d6bf;
   box-shadow: 0 12px 30px rgba(70,45,20,0.12);
+  border-radius: 6px;
 }
 
 .author-figure figcaption {
@@ -717,8 +580,7 @@ nav a.active {
   color: var(--ink-soft);
 }
 
-/* TIMELINE */
-
+/* timeline */
 .timeline-block {
   display: grid;
   grid-template-columns: 1fr;
@@ -837,10 +699,8 @@ nav a.active {
 .pos-4 { left: 49%; }
 .pos-5 { left: 65%; }
 .pos-6 { left: 81%; }
-/* =========================
-   PARALLEL SEGMENTATION / EVT
-   ========================= */
 
+/* parallel segmentation / evt */
 .parallel-page {
   max-width: none;
   padding: 0 1.5rem 4rem;
@@ -907,24 +767,7 @@ nav a.active {
   box-shadow: inset 0 0 0 1px rgba(98, 73, 56, 0.08);
 }
 
-@media (max-width: 760px) {
-  .parallel-page {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .evt-shell-topbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .evt-frame {
-    min-height: 72vh;
-  }
-}
-
-/* WORK SECTION */
-
+/* work */
 .work-layout {
   display: grid;
   grid-template-columns: 1fr 360px 1fr;
@@ -933,7 +776,6 @@ nav a.active {
   max-width: 1360px;
   margin: 0.5rem auto 0;
   padding: 4rem 0;
-  background: transparent;
 }
 
 .work-center {
@@ -958,11 +800,27 @@ nav a.active {
   border-radius: 50%;
 }
 
-/* DILEMMI SECTION */
-
+/* dilemmi */
 .dilemmi-intro {
   max-width: 1100px;
+  margin: 0 auto 2rem;
+}
+
+.dilemmi-criteria-image {
+  max-width: 1100px;
   margin: 0 auto 2.5rem;
+}
+
+.dilemmi-criteria-figure {
+  margin: 0;
+}
+
+.dilemmi-criteria-figure img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(60, 40, 20, 0.12);
+  border: 8px solid rgba(255, 255, 255, 0.55);
 }
 
 .dilemmi-choices {
@@ -981,8 +839,10 @@ nav a.active {
   width: 100%;
   box-shadow: 0 12px 28px rgba(60,40,20,0.12);
   border: 10px solid rgba(255,255,255,0.40);
+  border-radius: 6px;
 }
 
+/* witness gallery */
 .witness-gallery {
   max-width: 1200px;
   margin: 0 auto;
@@ -1008,6 +868,7 @@ nav a.active {
   box-shadow: 0 12px 28px rgba(60,40,20,0.12);
   border: 10px solid rgba(255,255,255,0.40);
   background: #fff;
+  border-radius: 6px;
 }
 
 .witness-card figcaption {
@@ -1016,81 +877,7 @@ nav a.active {
   font-size: 0.96rem;
 }
 
-/* BOOKS */
-
-.books-section {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem 0 4rem;
-}
-
-.book-showcase {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.book-card {
-  text-align: center;
-}
-
-.book-cover {
-  width: 220px;
-  height: 320px;
-  margin: 0 auto 1.3rem;
-  border-radius: 8px 8px 16px 16px;
-  background:
-    linear-gradient(180deg, rgba(65,40,20,0.16), rgba(65,40,20,0.06)),
-    linear-gradient(120deg, #4d3322 0%, #7a563a 45%, #5a3b28 100%);
-  box-shadow:
-    inset -10px 0 0 rgba(255,255,255,0.16),
-    0 16px 28px rgba(50,30,16,0.16);
-  position: relative;
-}
-
-.book-cover::before {
-  content: attr(data-year);
-  position: absolute;
-  top: 38px;
-  left: 14px;
-  right: 14px;
-  padding: 0.8rem 0.4rem;
-  background: rgba(95,63,44,0.65);
-  color: #fff7ef;
-  font-family: "Bodoni Moda", Georgia, serif;
-  font-size: 2.2rem;
-  line-height: 1.1;
-}
-
-/* CRITICAL */
-
-.critical-layout {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 2.5rem;
-  align-items: start;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem 0 5rem;
-}
-
-.critical-figure img {
-  width: 100%;
-  box-shadow: 0 12px 28px rgba(60,40,20,0.12);
-  border: 10px solid rgba(255,255,255,0.40);
-}
-
-.critical-bottom-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.4rem;
-  margin-top: 1.5rem;
-}
-
-/* FOOTER */
-
+/* footer */
 footer {
   max-width: var(--maxw);
   margin: 0 auto;
@@ -1099,8 +886,7 @@ footer {
   color: var(--muted);
 }
 
-/* RESPONSIVE */
-
+/* responsive */
 @media (max-width: 1280px) {
   .timeline-readable {
     min-height: auto;
@@ -1152,10 +938,6 @@ footer {
   .work-layout {
     grid-template-columns: 1fr;
   }
-
-  .book-showcase {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 1100px) {
@@ -1164,13 +946,8 @@ footer {
   }
 
   .author-layout,
-  .critical-layout,
   .dilemmi-choices-grid,
   .witness-gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .critical-bottom-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1206,29 +983,18 @@ footer {
   .hero-illustration {
     max-width: 460px;
   }
-
-  .macro-banner-inner {
-    padding-left: 3.2rem;
-    padding-right: 3.2rem;
-  }
-
-  .macro-banner-inner::before,
-  .macro-banner-inner::after {
-    width: 52px;
-  }
 }
 
 @media (max-width: 760px) {
   .texts-ppt-page,
-  .books-section,
   .work-layout,
   .author-layout,
   .timeline-block,
-  .critical-layout,
   .generic-page,
   .dilemmi-intro,
   .dilemmi-choices,
-  .witness-gallery {
+  .witness-gallery,
+  .parallel-page {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -1242,27 +1008,19 @@ footer {
     min-height: 220px;
   }
 
-  .paper-box,
-  .author-copy .paper-box,
-  .paper-box--wide,
-  .paper-box--work,
-  .paper-box--author {
-    min-height: auto;
-    padding: 2rem 1.7rem;
-  }
-
-  .critical-layout,
-  .author-layout {
+  .author-layout,
+  .dilemmi-choices-grid,
+  .witness-gallery-grid {
     gap: 1.5rem;
   }
 
-  .macro-banner-inner::before,
-  .macro-banner-inner::after {
-    display: none;
+  .evt-shell-topbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .macro-banner-inner {
-    padding: 1rem 1.2rem 0.95rem;
+  .evt-frame {
+    min-height: 72vh;
   }
 }
 
