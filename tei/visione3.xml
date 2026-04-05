@@ -119,6 +119,91 @@
         <body>
             <!--MANOSCRITTO Q-->
             <div type="edition" xml:id="Q">
+
+            <!--SEQUENZA 1-->
+            <div type="sequence" n="1" xml:id="Q_seq1">
+                Gli otij, madonna..., delle lettre sempre da me con somma vaghezza
+                desiderati et cercati, et ne' miei primi anni assai di leggiero lunga stagione 
+                posseduti et sollecitati, et ultimatamente per le sopravenute mie cure
+                interrotti et intralasciati, hora alla fine riconcedutimisi et ripresi, occasione
+                mi porgono di ragionare in quella maniera che io posso con voi.
+                
+                Perciò che, dapoi che io da voi mi diparti', (forse perché la lontananza mi fusse men grave)
+                m'è venuto fuori d'ogni mia credenza fatto il potere
+                ispendere e miei giorni ne gli studi et di loro o leggendo
+                o scrivendo quel frutto coglierne che per me il più si puote.
+                Il che io fo non meno sovente che volentieri: 
+                sì perché a me giova di sempre così fare, et sì per ristorarmi 
+                di quello che le molte noie passate m'hanno di loro invidiosamente interdetto
+                lunga fiata.
+
+                Ma perciò che non parrebbe a me di pieno frutto cogliere de' miei studi,
+                se parte a voi non ne venisse di loro,
+                e quali non meno mi piacciono per sé che per quello che essi sogliono piacere a voi,
+                né posso io intero godimento di veruna cosa | in questa
+                vita sentire, se ella primieramente a voi alcuno sodisfaccimento
+                non arreca, poi che il favellare cn voci vive lungo paese c'interchiude, 
+                il che fare, prima che io mi dipartissi, assai piacevolmente spesse volte solevamo,
+                hora con queste carte loquaci a me piace di raccontarvi quello che in una brigata 
+                di tre nostre valorose donne et tre aveduti et intelligenti giovani
+                novellamente fusse ragionato d'Amore et da loro assai diversamente in tre giornate recitato.
+                
+                
+                Perciò che né io parlare posso con voi di cosa più convenevole a me che questa,
+                che sapete ben quanto io v'amo, né a voi altresì doverà essere discaro,
+                che non potete anchora  ben sapere per la giovanetta vostra età che cosa è Amore, 
+                sentendone ragionare ( sì come in voi sono le parti del vostro ingegno singolari),
+                prima potere di lui far giudicio che egli di voi s'habbia fatto pruova.
+
+                Et nel vero, madonna..., sì come nel più delle cose l'uso è ottimo maestro della vita, 
+                così in alcune, et in quelle massimamente che possono non meno di noia 
+                essere che di sollazzo cagione, come mostra che questi sia, 
+                l'ascoltarle o leggerle in altrui,
+                prima che a·ppruova di loro si venga, sanza fallo molte volte a molti huomini di molto giovamento è stato.
+
+                Per la qual cosa bellissimo | dono della natura è da dire che sieno le lettre, 
+                nelle quali noi molte cose passate, che non potrebbono altrimenti essere alla nsotra notitia pervenute, 
+                tutte quasi in un specchio riguardando et quello di loro che faccia per noi raccogliendo,
+                da gli altrui essempi amaestrati ad entrare ne gli non solcati pelaghi della vita, 
+                quasi approvati nocchieri, più sicuramente ci mettiamo.
+
+                Oltre che infinito piacere ci porgono le diverse lettioni, delle quali gli animi d'alquanti huomini, 
+                non altrimenti che li corp[i] di cibo, si pascono assai sovente et prendono insieme da esse [*] nutrimento.
+
+                Sì come in voi, madonna [...], intervenire; la quale, assai più vagha 
+                d'ornare l'animo che 'l corpo non fate, tutto 'l vostro tempo ponete in loro,
+                forse per questo, acciò che di quanto con le bellezze del corpo quelle dell'altre donne soprastate,
+                di tanto con queste dell'animo avanciate le vostre, et siate voi di voi stessa maggiore, 
+                amando troppo più di piacere a voi sola drento che a tutti gli altri di fuora
+                (quantunque questo infinitamente sia) non piacete.
+
+                Al qual vostro alto et lodevole disio se alcuno aiuto si potrà dar per me,
+                tale, quale esso sarà, cotale dandovi, non ricuso et per l'avenire di molte altre volte
+                porgere favoreggevole mano et hora, | questi ragionamenti d'Amore, che io dico, isponendovi,
+                (quanto fie in me) darvi modo che non, sì come le più delle donne 
+                soglion fare et de gli huomini altresì, d'altrui v'innamoriate, 
+                ma di voi stessa v'accendiate, et del vostro raro et caro proponimento ognihora,
+                leggendo queste carte, diveniate più vaga.
+
+                Il che se mi verrà fatto, assai buon guiderdone mi terrò havere di questa mia scrittura
+                et dell'amore che io vi porto ricevuto, vedendo voi d'honestissimo disiderio accesa 
+                vie più ferventemente amare di voi medesima quello che io sopra tutte l'altre cose
+                amo et amarò di pari con la mia vita.
+
+                hora, per più lungo tempo dimorarmi con voi tra questi inchiostri, 
+                acciò che per di più lungo ispatio voi medesimamente meco nella lettura dimoriate,
+                il che già mi si fa dolce nel pensiero, 
+                prima che io quello che d'Amore sie stato ragionato vi racconti, 
+                come il ragionare havesse luoco, 
+                alquanto più sopra incominciando che non farei se io non favellassi con voi, 
+                quanto più brievemente potrò, vi farò chiaro.
+
+
+            </div>
+
+
+
+            <!--SEQUENZA 2-->
             <div type="sequence" n="2" xml:id="Q_seq2">
                 <p n="1" xml:id="Q_s2_p1" corresp="#al_s2_p1">
                     Asolo adunque, madonna ..., vago et piacevole castello posto ne 
@@ -253,6 +338,119 @@
 
 
             <div type="edition" xml:id="T1">
+            <!--SEQUENZA 1-->
+            <div type="sequence" n="2" xml:id="T1_seq2">
+
+                <p n="1" xml:id="T1_s1_p1" corresp="#al_s1_p1">
+                    Suole essere a' naviganti caro, qualhora da oscuro et fortunevole
+                    nembo sospinti errano et travagliano la lor via, col segno della indiana
+                    pietra ritrovare la tramontana, in modo che, quale vento soffi conoscendo,
+                    non sia lor tolto il potere et vela et governo là, dove essi di giugnere
+                    procacciano o almeno dove più la loro salvezza veggono, drizzare; et a 
+                    quegli che per straniera contrada caminano è dolce, quando, a parte venuti
+                    dove parimente molte vie faccian capo, in quale più tosto debbano
+                    mettersi non scorgendo, stanno in sul piè dubitosi et sospesi, incontrare
+                    chi loro la diritta insegni, sì che essi possano a l'albergo senza errore,
+                    o forse prima che la notte gli sopragiunga, pervenire.
+                </p>
+        
+                <p n="2" xml:id="T1_s1_p2" corresp="#al_s1_p2">
+                    Il perché istimando io, per quello che si vede avenire tutto dì, pochissimi essere quegli,
+                    huomini, a' quali nel peregrinaggio di questa nostra vita mortale, hora dalla turba delle passiomi soffiato et hora dalle tante et 
+                    così al vero somiglianti apparenze d'oppenioni fatto incerto, quasi per lo continovo et di
+                    calamita et di scorta non faccia mestiero, ho sempre giudicato gratioso ufficio per coloro usarsi, 
+                    e quali, delle cose o ad essi avenute o da altri apparate o per se medesimi ritrovate trattando, 
+                    a gli altri huomini dimostrano come si possa in qualche parte di questa perigliosa strada et corso non errare. 
+                </p>
+
+                <p n="3" xml:id="T1_s1_p3" corresp="#al_s1_p3">
+                    Perciò che quale più gratiosa cosa può essere che il giovare altrui?
+                    O pure che si può qua giù fare più convenevole a chi è huomo,
+                    che essere a molti huomini di lor bene cagione?
+                </p>
+
+                <p n="4" xml:id="T1_s1_p4" corresp="#al_s1_p4">
+                    Et poi, se è lodevole per sé (che è in ogni maniera lodevolissimo) 
+                    un huom solo sanza fallimento saper vivere non inteso et non veduto da persona, 
+                    quanto più è da credere che lodare si debba un altro, 
+                    il quale et sa esso la sua vita sanza fallo scorgere et insegna et dona modo a infiniti altri huomini,
+                    che vivono, di non fallire?
+                    ché pensare che alcuno, insegnante altrui la via di pervenire ad una parte, 
+                    non la sappia egli, ragionevolmente non si puote.
+                </p>
+
+                <p n="5" xml:id="T1_s1_p5" corresp="#al_s1_p5">
+                    Ma perciò che tra cagioni, che il nostro tranquillo navigar ci sturbano 
+                    et calla del buon vivere ci rendono sospetta et dubbiosa, 
+                    suole per la primiera essere il non sapere noi le più volte quale 
+                    buono amore sia et quale reo, il che non saputo fa che noi, 
+                    le cose che fuggire si dovrebbono amando et 
+                    quell'altre che sono da essere seguitate non amando,
+                    et tale volta o meno o più del convenevole hora schifandole et hora cercandole, 
+                    travagliati et smarriti viviamo,
+                    ho voluto alcuni ragionamenti raccogliere, 
+                    che in una brigata di tre nostre valorose donne et in parte di madonna la Reina di Cipri,
+                    pochi dì sono, tre nostri aveduti et intendenti giovani fecero d'Amore, 
+                    assai ampia et diversamente questionandone in tre giornate,
+                    a·ffine che il giovamento et pro che essi hanno a me renduto,
+                    da loro che gli hanno fatti sentendogli,
+                    (et nel vero non è stato poco) possano etiandio rendere a chiunque altro,
+                    così hora da me raccolti, piacesse di sentirgli.
+                </p>
+
+                <p n="6" xml:id="T1_s1_p6" corresp="#al_s1_p6">
+                    Alla qual cosa fare (come che in ciascuna età stia bene l'udire 
+                    et leggere le giovevoli cose et sopra l'altre questa, 
+                    perciò che non amare come che sia in nessuna stagione si puote,
+                    quando si vede che da natura insieme col vivere a tutti gli huomini è dato
+                    che ciascuno alcuna cosa sempre ami et sempre disii) pure io,
+                    che giovane sono, gli giovani huomini et le giovani donne conforto et
+                    invito maggiormente.
+                </p>
+
+                <p n="7" xml:id="T1_s1_p7" corresp="#al_s1_p7">
+                    Perciò che a molti et a molte di loro per aventura (se io non m'inganno)
+                    agevolmente avverrà che, udito quello che io mi profero di scriverne,
+                    essi prima d'Amore potranno far giudicio che egli di loro s'habbia fatto pruova.
+                </p>
+
+                <p n="8" xml:id="T1_s1_p8" corresp="#al_s1_p8">
+                    Il che, quanto debba essere lor caro, né io  hora dirò, 
+                    et essi meglio potranno ne gli altri loro più maturi anni giudicare.
+                </p>
+
+                <p n="9" xml:id="T1_s1_p9" corresp="#al_s1_p9">
+                    Ma di vero, sì come nel più delle cose l'uso è ottimo et certissimo maestro,
+                    così in alcune, et in quelle massimamente che possono non meno 
+                    di noia essere che di sollazzo cagione, 
+                    come mostra che questi sia, l'ascoltarle o leggerle in altrui,
+                    prima che a pruova di loro si venga, sanza fallo molte volte a molti huomini 
+                    di molto giovamento è stato.
+                </p>
+
+                <p n="10" xml:id="T1_s1_p10" corresp="#al_s1_p10">
+                    Per la qual cosa bellissimo ritrovamento delle genti è da dire che sieno le lettre istate,
+                    nelle quali noi molte cose passate, che non potrebbono altrimenti essere alla nostra notitia pervenute, 
+                    tutte quasi in un specchio riguardando et quello loro di loro che faccia per noi raccogliendo,
+                    da gli altrui essempi ammaestrati ad entrare ne gli non prima o solcati pelaghi o caminati sentieri della vita, 
+                    quasi approvati et nocchieri et viandanti, più sicuramente ci mettia[m]o.
+                </p>
+
+                <p n="11" xml:id="T1_s1_p11" corresp="#al_s1_p11">
+                    Sanza che infinito piacere ci porgono le diverse lettioni, delle quali 
+                    gli animi d'alquanti huomini, non altrimenti che il corpo di cibo,
+                    si pascono assai sovente et prendono insieme da esse dilettevolissimo nodrimento.
+                </p>
+
+                <p n="12" xml:id="T1_s1_p12" corresp="#al_s1_p12">
+                    Ma lasciando questo da parte stare et alle ragionate cose d'Amore,
+                    che io dissi, venendo, acciò che meglio si possa ogni loro parte scorgere tale,
+                    quale appunto ciascuna fu ragionata, bene sarà che, prima che io passi di loro 
+                    più innanzi, come il ragionare havesse luoco si faccia chiaro.
+                </p>
+
+            </div>
+
 
             <!--SEQUENZA 2-->
             <div type="sequence" n="2" xml:id="T1_seq2">
@@ -486,6 +684,122 @@
 
             <!--T16 - 1553-->
             <div type="edition" xml:id="T16">
+
+            <!--SEQUENZA 1-->
+            <div type="sequence" n="1" xml:id="T16_seq1">
+                <p n="1" xml:id="T16_s1_p1" corresp="#al_s1_p1">
+                    Suole a' faticosi navicanti esser caro, quando la notte, da oscuro
+                    et tempestoso nembo assaliti et sospinti, nè stella scorgono, nè cosa alcuna
+                    appar loro che regga la lor via, col segno della indiana pietra ritrovare
+                    la tramontana, in guisa che, quale vento soffi et percuota conoscendo,
+                    non sia lor tolto il potere et vela et governo là, dove essi di giugnere procacciano
+                    o almeno dove più la loro salute veggono, drizzare; et piace
+                    a quelli che per contrada non usata caminano, qualhora essi, a parte venuti
+                    dove molte vie faccian capo, in qual più tosto sia da mettersi non
+                    scorgendo, stanno in sul piè dubitosi et sospesi, incontrare chi loro la
+                    diritta insegni, sì che essi possano all'albergo senza errore, o forse prima
+                    che la notte gli sopragiunga, pervenire. 
+                </p>
+                    
+                <p n="2" xml:id="T16_s1_p2" corresp="#al_s1_p2">
+                    Per la qual cosa avisando io, da quello che che si vede avenire tutto dì,
+                    pochissimi essere quegli huomini,
+                    a' quali nel peregrinaggio di questa nostra vita mortale, 
+                    hora dalla turba delle passioni soffiato et hora dalle tante
+                    et così al vero somiglianti apparenze d'openioni fatto incerto,
+                    quasi per lo continuo et di calamita et di scorta non faccia mestiero,
+                    ho sempre giudicato gratioso ufficio  per coloro adoperarsi,
+                    i quali, delle cose o ad essi avenute o da altri apparate o per se medesimi ritrovate trattando, 
+                    a gli altri huomini dimostrano come si possa in qualche parte di questo periglioso corso
+                    et di questa starda, a smarrire così agevole, non errare.
+                </p>
+
+                <p n="3" xml:id="T16_s1_p3" corresp="#al_s1_p3">
+                    Perciò che quale più gratiosa cosa può essere che il giovare altrui?
+                    O pure che si può qua giù fare, che ad huom più si convenga, che essere a molti huomini di lor bene cagione?
+                </p>
+
+                <p n="4" xml:id="T16_s1_p4" corresp="#al_s1_p4">
+                    Et poi, se è lodevole per sé, che è in ogni maniera lodevolissimo,
+                    un huom solo senza fallimento saper vivere non inteso et non veduto da persona,
+                    quanto più è da credere che lodar si debba un altro,
+                    il quale et sa esso la sua vita senza fallo scorgere et oltre a·cciò insegna
+                    et dona modo ad infiniti altri huomini, che ci vivono, di non fallire?
+                </p>
+
+                <p n="5" xml:id="T16_s1_p5" corresp="#al_s1_p5">
+                    Ma perciò che tra le molte cagioni, le quali il nostro tranquillo navicar ci 
+                    turbano et il sentiero del buon vivere ci rendono sospetto et dubbioso,
+                    suole con le primiere essere il non saper noi le più volte quale amore buono sia et qual reo,
+                    il che non saputo fa che noi, le cose che fuggire si devrebbono amando 
+                    et quelle che sono da seguire non amando, et tal volta o meno o più 
+                    del convenevole hora schifandole et hora cercandole,
+                    travagliati et smarriti viviamo, ho voluto alcuni ragionamenti raccogliere,
+                    che in una brigata di tre nostre valorose donne et in parte di madonna la Reina di Cipri, pochi dì sono, 
+                    tre nostri aveduti et intendenti giovani fecero d'Amore, 
+                    assai diversamente questionandone in tre giornate, 
+                    a·ffine che il giovamento et pro che essi hanno a me renduto, 
+                    da a·lloro che fatti gli hanno sentendogli, che nel vero non è stato poco,
+                    possano etiandio rendere a qualunque altro, così hora da me raccolti,
+                    piacesse di sentirgli.
+                    </p>
+
+                <p n="6" xml:id="T16_s1_p6" corresp="#al_s1_p6">
+                    Alla qual cosa fare, come che in ciascuna età stia bene l'udire 
+                    et leggere le giovevoli cose et spetialmente questa, 
+                    perciò che non amare come che sia in niuna stagione non si può,
+                    quando si vede che da natura insieme col vivere a tutti gli huomini è dato 
+                    che ciascuno alcuna cosa sempre ami, pure io, che giovane sono, 
+                    i giovani huomini et le giovani donne conforto et invito maggiormente. 
+                </p>
+
+                <p n="7" xml:id="T16_s1_p7" corresp="#al_s1_p7">
+                    Perciò che a molti et a molte di loro per aventura agevolmente avverrà che, 
+                    udito quello che io mi profero di scriverne, essi prima d'Amore potranno far giudicio
+                    che egli di loro s'habbia fatto pruova. 
+                </p>
+
+                <p n="8" xml:id="T16_s1_p8" corresp="#al_s1_p8">
+                    Il che, quanto esser debba lor caro, nè io hora dirò, 
+                    et essi meglio potranno ne gli altri loro più maturi anni giudicare. 
+                </p>
+
+                <p n="9" xml:id="T16_s1_p9" corresp="#al_s1_p9">
+                    Ma di vero, sì come nel più delle cose l'uso è ottimo et certissimo maestro,
+                    così in alcune, et in quelle massimamente che possono non meno di noia essere che
+                    di diletto cagione, sì come mostra che questa sia, 
+                    l'ascoltarle o leggerle in altrui,
+                    prima che a pruova di loro si venga, 
+                    senza fallo molte volte a molti huomini di molto giovamento è stato.
+                    </p>
+
+                <p n="10" xml:id="T16_s1_p10" corresp="#al_s1_p10">
+                    Per la qual cosa bellissimo ritrovamento delle genti è da dir che sieno le lettere et la scrittura,
+                    nella qual noi molte cose passate, che non potrebbono altramente essere alla nostra notitia pervenute,
+                    tutte quasi in uno specchio riguardando et quello di loro che faccia per noi raccogliendo,
+                    da gli altrui essempi ammaestrati ad entrare nelli non prima o solcati pelaghi o caminati sentieri della vita, 
+                    quasi provati et nocchieri et viandanti, più sicuramente ci mettiamo.
+                </p>
+
+                <p n="11" xml:id="T16_s1_p11" corresp="#al_s1_p11">
+                    Senza che infinito piacere ci porgono le diverse lettioni, delle quali gli animi d'alquanti huomini, 
+                    non altramente che faccia di cibo il corpo,
+                    si pascono assai sovente et prendono insieme da esse dilettevolissimo nodrimento.
+                </p>
+
+                <p n="12" xml:id="T16_s1_p12" corresp="#al_s1_p12">
+                    Ma lasciando questo da parte stare et alle ragionate cose d'Amore, 
+                    che io dissi, venendo, acciò che meglio si possa ogni lor parte scorgere tale, 
+                    quale appunto ciascuna fu ragionata, stimo che ben fatto sia che,
+                    prima che io passi di loro più avanti,
+                    come il ragionare havesse luogo si faccia chiaro.
+                </p>
+
+
+            </div>
+
+
+            <!--SEQUENZA 2-->
             <div type="sequence" n="2" xml:id="T16_seq2">
                 
 
