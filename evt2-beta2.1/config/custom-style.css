@@ -344,3 +344,52 @@ span.quote sup.iconbis-evt_quote-left,
 span.quote sup.iconbis-evt_quote-right {
   display: none;
 }
+
+/* =======================================================
+   POETRY / VERSE LAYOUT
+   ======================================================= */
+
+/* gruppo poetico */
+.lg {
+  display: block !important;
+  margin: 1.4em 0 !important;
+}
+
+/* ogni verso deve andare a capo */
+.l {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.5 !important;
+  white-space: normal !important;
+}
+
+/* piccolo respiro tra i versi */
+.l + .l {
+  margin-top: 0.18em !important;
+}
+
+/* se il verso contiene apparatus, non deve tornare inline */
+.l .app,
+.l app {
+  display: inline !important;
+}
+
+/* mantieni il blocco poetico separato dalla prosa */
+.lg + .p,
+.p + .lg,
+.lg + div,
+div + .lg {
+  margin-top: 1.2em !important;
+}
+
+/* eventuale rientro poetico leggero */
+.lg {
+  padding-left: 1.2rem !important;
+}
+
+/* versi numerati, se visibili */
+.l[n]::before {
+  margin-right: 0.4rem !important;
+  color: rgba(92,64,53,0.55) !important;
+}
