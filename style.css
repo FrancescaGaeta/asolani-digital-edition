@@ -826,22 +826,51 @@ nav a.active {
 }
 
 .dilemmi-choices {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto 3rem;
 }
 
 .dilemmi-choices-grid {
   display: grid;
-  grid-template-columns: 340px 1fr;
+  grid-template-columns: 260px 1fr;
   gap: 2rem;
   align-items: start;
 }
 
-.dilemmi-choices-figure img {
+.dilemmi-choices-figure {
+  margin: 0;
+}
+
+.dilemmi-choices-figure--cover {
+  align-self: start;
+}
+
+.dilemmi-choices-figure--criteria {
+  grid-column: 2;
+}
+
+.dilemmi-choices-figure--cover img {
   width: 100%;
-  box-shadow: 0 12px 28px rgba(60,40,20,0.12);
-  border: 10px solid rgba(255,255,255,0.40);
-  border-radius: 6px;
+  max-width: 220px;
+  margin: 0 auto;
+  display: block;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
+}
+
+.dilemmi-choices-figure--criteria img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(60, 40, 20, 0.12);
+  border: 8px solid rgba(255, 255, 255, 0.55);
+}
+
+.dilemmi-choices-text {
+  grid-column: 2;
 }
 
 /* witness gallery */
