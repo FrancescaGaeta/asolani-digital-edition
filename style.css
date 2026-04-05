@@ -488,14 +488,16 @@ nav a.active {
 }
 
 .macro-banner-inner {
-  min-height: 96px;
+  min-height: 180px; /* aumenta altezza */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   background: url("assets/images/banner.png") center center / cover no-repeat;
+
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem; /* più aria interna */
 }
 
 .macro-banner-mini {
