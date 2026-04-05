@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gli Asolani: aligned reading texts with local apparatus</title>
+        <respStmt>
+          <resp>Transcription and TEI encoding by</resp>
+          <name>Francesca Gaeta</name>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Francesca Gaeta</publisher>
+        <pubPlace>Bologna / GitHub Pages</pubPlace>
+        <date>2026</date>
+        <availability>
+          <p>Project developed as part of the Digital Scholarly Editing course.</p>
+        </availability>
+      </publicationStmt>
+
+      <sourceDesc>
+        <bibl>
+          <author>Pietro Bembo</author>
+          <title>Gli Asolani</title>
+          <editor>Giorgio Dilemmi</editor>
+          <date>1991</date>
+        </bibl>
+
+        <listWit>
+          <witness xml:id="T1">Printed edition 1505 (text 1)</witness>
+          <witness xml:id="T16">Printed edition 1553 (text 16)</witness>
+          <witness xml:id="Q">Autograph witness Q</witness>
+
+          <witness xml:id="M">apparatus for text 1</witness>
+          <witness xml:id="T10">apparatus for text 16</witness>
+          <witness xml:id="C">apparatus for Q</witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <projectDesc>
+        <p>Aligned reading texts derived from a previous parallel-segmentation collation. 
+        Each witness is displayed as an autonomous reading text, with a local internal apparatus encoded through double-end-point attachment. 
+        Alignment among the three reading texts is preserved through shared segment identifiers in @n.</p>
+      </projectDesc>
+
+      <editorialDecl>
+        <p>The previous parallel segmentation is retained as the alignment logic of the edition.</p>
+        <p>Text 1 is accompanied by the local apparatus of witness M; text 16 by witness 10; Q by witness C.</p>
+      </editorialDecl>
+
+      <variantEncoding method="double-end-point" location="internal"/>
+    </encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <language ident="it">Italian</language>
+        <language ident="en">English</language>
+      </langUsage>
+
+      <settingDesc>
+        <listPlace>
+          <place xml:id="vinegia">
+            <placeName>Vinegia</placeName>
+          </place>
+          <place xml:id="asolo">
+            <placeName>Asolo</placeName>
+          </place>
+        </listPlace>
+      </settingDesc>
+
+      <particDesc>
+        <listPerson>
+          <person xml:id="caterina"><persName>Caterina Cornaro</persName></person>
+          <person xml:id="perottino"><persName>Perottino</persName></person>
+          <person xml:id="giacco"><persName>Giacco</persName></person>
+          <person xml:id="berenice"><persName>Berenice</persName></person>
+          <person xml:id="gismondo"><persName>Gismondo</persName></person>
+        </listPerson>
+
+        <listOrg>
+          <org xml:id="cornelia"><orgName>Cornelia</orgName></org>
+        </listOrg>
+      </particDesc>
+    </profileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+
+
+    <!-- EDIZIONE Q -->
+    <!-- EDIZIONE Q -->
+    <!-- EDIZIONE Q -->
+    <!-- EDIZIONE Q -->
+      <div type="edition" xml:id="ed_Q" corresp="#Q">
+        <head type="title" xml:id="Q_book1_title_main">
+          <seg xml:id="Q_book1_title_main_a01" n="al_book1_title_main_a01">De gli Asolani di Messer Pietro Bembo ne' quali si ragiona d'Amore,</seg>
+          <app from="#Q_book1_title_main_a01">
+            <rdg wit="#C"><supplied reason="placeholder">[lezione di C da inserire]</supplied></rdg>
+          </app>
+          <lb/>
+          <seg xml:id="Q_book1_title_main_a02" n="al_book1_title_main_a02">donati da·llui a madonna .....</seg>
+          <app from="#Q_book1_title_main_a02">
+            <rdg wit="#C"><supplied reason="placeholder">[eventuale lezione di C]</supplied></rdg>
+          </app>
+        </head>
+
+        <head type="book" xml:id="Q_book1_title_book">
+          <seg xml:id="Q_book1_title_book_a01" n="al_book1_title_book_a01">Libro primo</seg>
+          <app from="#Q_book1_title_book_a01">
+            <rdg wit="#C"><supplied reason="placeholder">[lezione di C]</supplied></rdg>
+          </app>
+        </head>
+
+        <!-- SEQUENZA 1-->
+        <div type="sequence" n="1" xml:id="Q_seq1">
+          <p n="1" xml:id="Q_s1_p1">
+
+            <seg xml:id="Q_s1_p1_a01" n="al_s1_p1_a01">Gli otij, madonna...,</seg>
+            <app from="#Q_s1_p1_a01">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C per questo segmento]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a02" n="al_s1_p1_a02">delle lettre sempre da me con somma vaghezza disiderati et cercati, et ne' miei primi anni assai di leggiero lunga stagione posseduti et sollecitati, et ultimatamente per le sopravenute mie cure interrotti et intralasciati, hora alla fine riconcedutimisi et ripresi, occasione mi porgono di ragionare in quella maniera che io posso con voi.</seg>
+            <app from="#Q_s1_p1_a02">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a03" n="al_s1_p1_a03"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a03">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a04" n="al_s1_p1_a04"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a04">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a05" n="al_s1_p1_a05"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a05">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a06" n="al_s1_p1_a06"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a06">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a07" n="al_s1_p1_a07"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a07">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a08" n="al_s1_p1_a08"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a08">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a09" n="al_s1_p1_a09"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a09">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a10" n="al_s1_p1_a10"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a10">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a11" n="al_s1_p1_a11"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a11">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a12" n="al_s1_p1_a12"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a12">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a13" n="al_s1_p1_a13"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a13">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a14" n="al_s1_p1_a14"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a14">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a15" n="al_s1_p1_a15"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a15">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a16" n="al_s1_p1_a16"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a16">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a17" n="al_s1_p1_a17"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a17">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+            <seg xml:id="Q_s1_p1_a18" n="al_s1_p1_a18"><gap reason="omitted"/></seg>
+            <app from="#Q_s1_p1_a18">
+              <rdg wit="#C"><supplied reason="placeholder">[apparato C]</supplied></rdg>
+            </app>
+
+          </p>
+        </div>
+      </div>
+
+
+      <!--SEQUENZA 2-->
+      <div type="edition" xml:id="ed_Q_seq2" corresp="#Q">
+
+            <p n="1" xml:id="Q_s2_p1">
+            <seg xml:id="Q_s2_p1_a01" n="al_s2_p1_a01"><placeName ref="#asolo">Asolo</placeName> aduqnue, madonna ...,</seg>
+            <app from="#Q_s2_p1_a01"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            vago et piacevole castello posto ne gli
+
+            <seg xml:id="Q_s2_p1_a02" n="al_s2_p1_a02">estremi</seg>
+            <app from="#Q_s2_p1_a02"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            gioghi delle nostre alpi sopra
+
+            <seg xml:id="Q_s2_p1_a03" n="al_s2_p1_a03">'l</seg>
+            <app from="#Q_s2_p1_a03"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            Trivigiano,
+
+            <seg xml:id="Q_s2_p1_a04" n="al_s2_p1_a04">è hora (sì come dovete sapere) | </seg>
+            <app from="#Q_s2_p1_a04"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p1_a05" n="al_s2_p1_a05">arnese della <persName ref="#caterina">Reina di Cipri</persName>,</seg>
+            <app from="#Q_s2_p1_a05"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p1_a06" n="al_s2_p1_a06">la quale</seg>
+            <app from="#Q_s2_p1_a06"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p1_a07" n="al_s2_p1_a07">per la morte del <persName ref="#giacco">re Giacco</persName> suo marito, non guari con lui dimorata, rimasa vedova et sanza figliuoli, poi che così hebbe con somma soddisfattione de' suoi popoli quasi tutta la sua giovanezza trappassata, raccommandato il governo del regno alla Signoria nostra, in <placeName ref="#vinegia">Vinegia</placeName> se ne tornò, dove era nata, per rivedere e suoi parenti et appo loro nella sua patria più riposatamente menarne gli altri anni della sua vita.</seg>
+            <app from="#Q_s2_p1_a07"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p1_a08" n="al_s2_p1_a08"><gap reason="omitted"/></seg>
+            <app from="#Q_s2_p1_a08"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p1_a09" n="al_s2_p1_a09"><gap reason="omitted"/></seg>
+            <app from="#Q_s2_p1_a09"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p1_a10" n="al_s2_p1_a10"><gap reason="omitted"/></seg>
+            <app from="#Q_s2_p1_a10"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p1_a11" n="al_s2_p1_a11"><gap reason="omitted"/></seg>
+            <app from="#Q_s2_p1_a11"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p1_a12" n="al_s2_p1_a12">Dove venuta et lietamente ricevuta da' suoi, fu dalla Signoria nostra honorata di bellissimi et preciosi doni, tra' quali hebbe questo castello, del quale io dico, et per sito del luoco et per natura del paese et per salubrità d'aria amenissimo et piacevolissimo sopra modo.</seg>
+            <app from="#Q_s2_p1_a12"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+            </p>
+
+            <p n="2" xml:id="Q_s2_p2">
+            <seg xml:id="Q_s2_p2_a01" n="al_s2_p2_a01">Quivi essendo la Reina per diporto questo settembre passato</seg>
+            <app from="#Q_s2_p2_a01"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p2_a02" n="al_s2_p2_a02">(sì come suole spesso la state),</seg>
+            <app from="#Q_s2_p2_a02"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            avvenne che ella
+
+            <seg xml:id="Q_s2_p2_a03" n="al_s2_p2_a03">maritò</seg>
+            <app from="#Q_s2_p2_a03"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            una delle sue damigielle, la quale, perciò che
+
+            <seg xml:id="Q_s2_p2_a04" n="al_s2_p2_a04">bellissima giovane era</seg>
+            <app from="#Q_s2_p2_a04"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p2_a05" n="al_s2_p2_a05">et perchè da piccola fanciulla se l'havea allevata,</seg>
+            <app from="#Q_s2_p2_a05"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p2_a06" n="al_s2_p2_a06">ella più che alcuna dell'altre amava et havea cara.</seg>
+            <app from="#Q_s2_p2_a06"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+            </p>
+
+            <p n="3" xml:id="Q_s2_p3">
+            <seg xml:id="Q_s2_p3_a01" n="al_s2_p3_a01">Il perchè fece fare</seg>
+            <app from="#Q_s2_p3_a01"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            l'apparecchio delle nozze
+
+            <seg xml:id="Q_s2_p3_a02" n="al_s2_p3_a02">bellissimo,</seg>
+            <app from="#Q_s2_p3_a02"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            et,
+
+            <seg xml:id="Q_s2_p3_a03" n="al_s2_p3_a03">convitando de' luochi circonvicini chiunque</seg>
+            <app from="#Q_s2_p3_a03"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            più honorato huomo
+
+            <seg xml:id="Q_s2_p3_a04" n="al_s2_p3_a04">era con le lor donne,</seg>
+            <app from="#Q_s2_p3_a04"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            et da <placeName ref="#vinegia">Vinegia</placeName>
+
+            <seg xml:id="Q_s2_p3_a05" n="al_s2_p3_a05">altresì,</seg>
+            <app from="#Q_s2_p3_a05"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p3_a06" n="al_s2_p3_a06">in | suoni</seg>
+            <app from="#Q_s2_p3_a06"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            et canti et balli et
+
+            <seg xml:id="Q_s2_p3_a07" n="al_s2_p3_a07">sollennissimi conviti molti giorni</seg>
+            <app from="#Q_s2_p3_a07"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            <seg xml:id="Q_s2_p3_a08" n="al_s2_p3_a08">ne menò</seg>
+            <app from="#Q_s2_p3_a08"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+
+            festeggiando con sommo
+
+            <seg xml:id="Q_s2_p3_a09" n="al_s2_p3_a09">dilettamento et maraviglia d'ogniuno.</seg>
+            <app from="#Q_s2_p3_a09"><rdg wit="#C"><supplied reason="placeholder">[apparato genetico C]</supplied></rdg></app>
+            </p>
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- EDIZIONE 1 -->
+      <!-- EDIZIONE 1 -->
+      <!-- EDIZIONE 1 -->
+      <!-- EDIZIONE 1 -->
+      <div type="edition" xml:id="ed_T1" corresp="#T1">
+        <head type="title" xml:id="T1_book1_title_main">
+          <seg xml:id="T1_book1_title_main_a01" n="al_book1_title_main_a01">DE GLI ASOLANI DI MESSER PIETRO BEMBO</seg>
+          <app from="#T1_book1_title_main_a01">
+            <rdg wit="#M"><supplied reason="placeholder">[lezione di M da inserire]</supplied></rdg>
+          </app>
+          <lb/>
+          <seg xml:id="T1_book1_title_main_a02" n="al_book1_title_main_a02"><gap reason="omitted"/></seg>
+          <app from="#T1_book1_title_main_a02">
+            <rdg wit="#M"><supplied reason="placeholder">[eventuale lezione di M]</supplied></rdg>
+          </app>
+        </head>
+
+        <head type="book" xml:id="T1_book1_title_book">
+          <seg xml:id="T1_book1_title_book_a01" n="al_book1_title_book_a01">PRIMO LIBRO</seg>
+          <app from="#T1_book1_title_book_a01">
+            <rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg>
+          </app>
+        </head>
+
+
+
+        <!--SEQUENZA 1-->
+        <div type="sequence" n="1" xml:id="T1_seq1">
+          <p n="1" xml:id="T1_s1_p1">
+
+            <seg xml:id="T1_s1_p1_a01" n="al_s1_p1_a01">Suole essere a' naviganti caro,</seg>
+            <app from="#T1_s1_p1_a01">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M per questo segmento]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a02" n="al_s1_p1_a02"><gap reason="omitted"/></seg>
+            <app from="#T1_s1_p1_a02">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a03" n="al_s1_p1_a03">qualhora da oscuro et fortunevole nembo sospinti errano et travagliano</seg>
+            <app from="#T1_s1_p1_a03">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a04" n="al_s1_p1_a04">la lor via,</seg>
+            <app from="#T1_s1_p1_a04">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a05" n="al_s1_p1_a05">col segno della indiana pietra ritrovare la tramontana,</seg>
+            <app from="#T1_s1_p1_a05">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a06" n="al_s1_p1_a06">in modo che,</seg>
+            <app from="#T1_s1_p1_a06">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a07" n="al_s1_p1_a07">quale vento soffi</seg>
+            <app from="#T1_s1_p1_a07">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a08" n="al_s1_p1_a08"><gap reason="omitted"/></seg>
+            <app from="#T1_s1_p1_a08">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a09" n="al_s1_p1_a09">conoscendo, non sia lor tolto il potere et vela et governo là, dove essi di giugnere procacciano o almeno dove più la loro salute veggono, dirizzare; et</seg>
+            <app from="#T1_s1_p1_a09">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a10" n="al_s1_p1_a10">a quegli che per straniera contrada caminano è dolce,</seg>
+            <app from="#T1_s1_p1_a10">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a11" n="al_s1_p1_a11">quando,</seg>
+            <app from="#T1_s1_p1_a11">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a12" n="al_s1_p1_a12">a parte venuti dove</seg>
+            <app from="#T1_s1_p1_a12">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a13" n="al_s1_p1_a13">parimente molte</seg>
+            <app from="#T1_s1_p1_a13">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a14" n="al_s1_p1_a14">vie faccian capo, in</seg>
+            <app from="#T1_s1_p1_a14">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a15" n="al_s1_p1_a15">quale più tosto debbano</seg>
+            <app from="#T1_s1_p1_a15">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a16" n="al_s1_p1_a16">mettersi non scorgendo, stanno in sul piè dubitosi et sospesi, incontrare chi loro la diritta insegni, sì che essi possano</seg>
+            <app from="#T1_s1_p1_a16">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a17" n="al_s1_p1_a17">a l'albergo sanza</seg>
+            <app from="#T1_s1_p1_a17">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T1_s1_p1_a18" n="al_s1_p1_a18">errore, o forse prima che la notte gli sopragiunga, pervenire.</seg>
+            <app from="#T1_s1_p1_a18">
+              <rdg wit="#M"><supplied reason="placeholder">[apparato M]</supplied></rdg>
+            </app>
+
+          </p>
+        </div>
+      </div>
+
+      <!--SEQUENZA 2-->
+        <div type="edition" xml:id="ed_T1_seq2" corresp="#T1">
+
+            <p n="1" xml:id="T1_s2_p1">
+            <seg xml:id="T1_s2_p1_a01" n="al_s2_p1_a01"><placeName ref="#asolo">Asolo</placeName> aduqnue,</seg>
+            <app from="#T1_s2_p1_a01"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            vago et piacevole castello posto ne gli
+
+            <seg xml:id="T1_s2_p1_a02" n="al_s2_p1_a02">stremi</seg>
+            <app from="#T1_s2_p1_a02"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            gioghi delle nostre alpi sopra
+
+            <seg xml:id="T1_s2_p1_a03" n="al_s2_p1_a03">'l</seg>
+            <app from="#T1_s2_p1_a03"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            Trivigiano,
+
+            <seg xml:id="T1_s2_p1_a04" n="al_s2_p1_a04">è (sì come ogniuno dee sapere)</seg>
+            <app from="#T1_s2_p1_a04"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p1_a05" n="al_s2_p1_a05">arnese della <persName ref="#caterina">Reina di Cipri</persName>,</seg>
+            <app from="#T1_s2_p1_a05"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p1_a06" n="al_s2_p1_a06">con la cui famiglia,</seg>
+            <app from="#T1_s2_p1_a06"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p1_a07" n="al_s2_p1_a07"><gap reason="omitted"/></seg>
+            <app from="#T1_s2_p1_a07"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p1_a08" n="al_s2_p1_a08">hoggi di molto</seg>
+            <app from="#T1_s2_p1_a08"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p1_a09" n="al_s2_p1_a09">nella nostra città honorata et illustre, è la mia non solamente d'amistà</seg>
+            <app from="#T1_s2_p1_a09"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p1_a10" n="al_s2_p1_a10">et di riverenza, che essa le porta, congiunta,</seg>
+            <app from="#T1_s2_p1_a10"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p1_a11" n="al_s2_p1_a11">ma anchora di parentado.</seg>
+            <app from="#T1_s2_p1_a11"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p1_a12" n="al_s2_p1_a12"><gap reason="omitted"/></seg>
+            <app from="#T1_s2_p1_a12"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+            </p>
+
+            <p n="2" xml:id="T1_s2_p2">
+            <seg xml:id="T1_s2_p2_a01" n="al_s2_p2_a01">Dove essendo ella questo settembre passato a' suoi diporti andata,</seg>
+            <app from="#T1_s2_p2_a01"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p2_a02" n="al_s2_p2_a02"><gap reason="omitted"/></seg>
+            <app from="#T1_s2_p2_a02"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            avvenne che ella
+
+            <seg xml:id="T1_s2_p2_a03" n="al_s2_p2_a03">quivi maritò</seg>
+            <app from="#T1_s2_p2_a03"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            una delle sue damigielle, la quale, perciò che
+
+            <seg xml:id="T1_s2_p2_a04" n="al_s2_p2_a04">bella et costumata et gentile fanciulla la vedea molto,</seg>
+            <app from="#T1_s2_p2_a04"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p2_a05" n="al_s2_p2_a05"><gap reason="omitted"/></seg>
+            <app from="#T1_s2_p2_a05"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p2_a06" n="al_s2_p2_a06">assai teneramente era da lei amata et havuta cara.</seg>
+            <app from="#T1_s2_p2_a06"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+            </p>
+
+            <p n="3" xml:id="T1_s2_p3">
+            <seg xml:id="T1_s2_p3_a01" n="al_s2_p3_a01">Il perche fecevi</seg>
+            <app from="#T1_s2_p3_a01"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            l'apparecchio delle nozze
+
+            <seg xml:id="T1_s2_p3_a02" n="al_s2_p3_a02">ordinare bello et grande,</seg>
+            <app from="#T1_s2_p3_a02"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            et,
+
+            <seg xml:id="T1_s2_p3_a03" n="al_s2_p3_a03">invitato delle vicine contrade chiunque</seg>
+            <app from="#T1_s2_p3_a03"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            più honorato huomo
+
+            <seg xml:id="T1_s2_p3_a04" n="al_s2_p3_a04">era con le lor donne,</seg>
+            <app from="#T1_s2_p3_a04"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            et da <placeName ref="#vinegia">Vinegia</placeName>
+
+            <seg xml:id="T1_s2_p3_a05" n="al_s2_p3_a05">similmente,</seg>
+            <app from="#T1_s2_p3_a05"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p3_a06" n="al_s2_p3_a06">in suoni</seg>
+            <app from="#T1_s2_p3_a06"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            et canti et balli et
+
+            <seg xml:id="T1_s2_p3_a07" n="al_s2_p3_a07">solennissimi conviti l'un giorno doppo l'altro</seg>
+            <app from="#T1_s2_p3_a07"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            <seg xml:id="T1_s2_p3_a08" n="al_s2_p3_a08">ne menava</seg>
+            <app from="#T1_s2_p3_a08"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+
+            festeggiando con sommo
+
+            <seg xml:id="T1_s2_p3_a09" n="al_s2_p3_a09">piacere di ciascuno.</seg>
+            <app from="#T1_s2_p3_a09"><rdg wit="#M"><supplied reason="placeholder">[lezione di M]</supplied></rdg></app>
+            </p>
+        </div>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- EDIZIONE 16 -->
+      <!-- EDIZIONE 16 -->
+      <!-- EDIZIONE 16 -->
+      <div type="edition" xml:id="ed_T16" corresp="#T16">
+        <head type="title" xml:id="T16_book1_title_main">
+          <seg xml:id="T16_book1_title_main_a01" n="al_book1_title_main_a01">DE GLI ASOLANI DI MESSER PIETRO BEMBO</seg>
+          <app from="#T16_book1_title_main_a01">
+            <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10 da inserire]</supplied></rdg>
+          </app>
+          <lb/>
+          <seg xml:id="T16_book1_title_main_a02" n="al_book1_title_main_a02">NE' QUALI SI RAGIONA D'AMORE</seg>
+          <app from="#T16_book1_title_main_a02">
+            <rdg wit="#T10"><supplied reason="placeholder">[eventuale lezione di 10]</supplied></rdg>
+          </app>
+        </head>
+
+        <head type="book" xml:id="T16_book1_title_book">
+          <seg xml:id="T16_book1_title_book_a01" n="al_book1_title_book_a01">LIBRO PRIMO</seg>
+          <app from="#T16_book1_title_book_a01">
+            <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+          </app>
+        </head>
+
+        <!--SEQUENZA 1-->
+        <div type="sequence" n="1" xml:id="T16_seq1">
+          <p n="1" xml:id="T16_s1_p1">
+
+            <seg xml:id="T16_s1_p1_a01" n="al_s1_p1_a01">Suole a' faticosi navicanti esser caro,</seg>
+            <app from="#T16_s1_p1_a01">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10 per questo segmento]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a02" n="al_s1_p1_a02"><gap reason="omitted"/></seg>
+            <app from="#T16_s1_p1_a02">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a03" n="al_s1_p1_a03">quando la notte, da oscuro et tempestoso nembo assaliti et sospinti,</seg>
+            <app from="#T16_s1_p1_a03">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a04" n="al_s1_p1_a04">nè stella scorgono, nè cosa alcuna appar loro che regga la lor via,</seg>
+            <app from="#T16_s1_p1_a04">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a05" n="al_s1_p1_a05">col segno della indiana pietra ritrovare la tramontana,</seg>
+            <app from="#T16_s1_p1_a05">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a06" n="al_s1_p1_a06">in guisa che, </seg>
+            <app from="#T16_s1_p1_a06">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a07" n="al_s1_p1_a07">quale vento soffi</seg>
+            <app from="#T16_s1_p1_a07">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a08" n="al_s1_p1_a08">et percuota</seg>
+            <app from="#T16_s1_p1_a08">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a09" n="al_s1_p1_a09">conoscendo, non sia lor tolto il potere et vela et governo là, dove essi di giugnere procacciano o almeno dove più la loro salute veggono, dirizzare; et</seg>
+            <app from="#T16_s1_p1_a09">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a10" n="al_s1_p1_a10">piace a quelli che per contrada non usata caminano,</seg>
+            <app from="#T16_s1_p1_a10">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a11" n="al_s1_p1_a11">qualhora essi,</seg>
+            <app from="#T16_s1_p1_a11">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a12" n="al_s1_p1_a12">a parte venuti dove</seg>
+            <app from="#T16_s1_p1_a12">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a13" n="al_s1_p1_a13">molte</seg>
+            <app from="#T16_s1_p1_a13">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a14" n="al_s1_p1_a14">vie faccian capo, in</seg>
+            <app from="#T16_s1_p1_a14">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a15" n="al_s1_p1_a15">qual più tosto sia da</seg>
+            <app from="#T16_s1_p1_a15">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a16" n="al_s1_p1_a16">mettersi non scorgendo, stanno in sul piè dubitosi et sospesi, incontrare chi loro la diritta insegni, sì che essi possano</seg>
+            <app from="#T16_s1_p1_a16">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a17" n="al_s1_p1_a17">all'albergo senza</seg>
+            <app from="#T16_s1_p1_a17">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s1_p1_a18" n="al_s1_p1_a18">errore, o forse prima che la notte gli sopragiunga, pervenire.</seg>
+            <app from="#T16_s1_p1_a18">
+              <rdg wit="#T10"><supplied reason="placeholder">[apparato 10]</supplied></rdg>
+            </app>
+
+          </p>
+        </div>
+      </div>
+
+      
+
+
+      <!--SEQUENZA 2-->
+      <div type="sequence" n="2" xml:id="seq2">
+        <div type="edition" xml:id="ed_T16_seq2" corresp="#T16">
+
+            <p n="1" xml:id="T16_s2_p1">
+            <seg xml:id="T16_s2_p1_a01" n="al_s2_p1_a01"><placeName ref="#asolo">Asolo</placeName> aduqnue,</seg>
+            <app from="#T16_s2_p1_a01">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            vago et piacevole castello posto ne gli
+
+            <seg xml:id="T16_s2_p1_a02" n="al_s2_p1_a02">stremi</seg>
+            <app from="#T16_s2_p1_a02">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            gioghi delle nostre alpi sopra
+
+            <seg xml:id="T16_s2_p1_a03" n="al_s2_p1_a03">il</seg>
+            <app from="#T16_s2_p1_a03">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            Trivigiano,
+
+            <seg xml:id="T16_s2_p1_a04" n="al_s2_p1_a04">è, sì come ogniuno dee sapere,</seg>
+            <app from="#T16_s2_p1_a04">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p1_a05" n="al_s2_p1_a05">di madonna la <persName ref="#caterina">Reina di Cipri</persName>,</seg>
+            <app from="#T16_s2_p1_a05">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p1_a06" n="al_s2_p1_a06">con la cui famiglia, la quale è detta <orgName ref="#cornelia">Cornelia</orgName>,</seg>
+            <app from="#T16_s2_p1_a06">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p1_a07" n="al_s2_p1_a07"><gap reason="omitted"/></seg>
+            <app from="#T16_s2_p1_a07">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p1_a08" n="al_s2_p1_a08">molto</seg>
+            <app from="#T16_s2_p1_a08">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p1_a09" n="al_s2_p1_a09">nella nostra città honorata et illustre, è la mia non solamente d'amistà</seg>
+            <app from="#T16_s2_p1_a09">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p1_a10" n="al_s2_p1_a10">et di dimestichezza congiunta,</seg>
+            <app from="#T16_s2_p1_a10">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p1_a11" n="al_s2_p1_a11">ma anchora di parentado.</seg>
+            <app from="#T16_s2_p1_a11">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p1_a12" n="al_s2_p1_a12"><gap reason="omitted"/></seg>
+            <app from="#T16_s2_p1_a12">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+            </p>
+
+            <p n="2" xml:id="T16_s2_p2">
+            <seg xml:id="T16_s2_p2_a01" n="al_s2_p2_a01">Dove essendo ella questo settembre passato a' suoi diporti andata,</seg>
+            <app from="#T16_s2_p2_a01">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p2_a02" n="al_s2_p2_a02"><gap reason="omitted"/></seg>
+            <app from="#T16_s2_p2_a02">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            avvenne che ella
+
+            <seg xml:id="T16_s2_p2_a03" n="al_s2_p2_a03">quivi maritò</seg>
+            <app from="#T16_s2_p2_a03">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            una delle sue damigielle, la quale, perciò che
+
+            <seg xml:id="T16_s2_p2_a04" n="al_s2_p2_a04">bella et costumata et gentile era molto</seg>
+            <app from="#T16_s2_p2_a04">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p2_a05" n="al_s2_p2_a05">et perciò che da bambina cresciuta se l'havea,</seg>
+            <app from="#T16_s2_p2_a05">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p2_a06" n="al_s2_p2_a06">assai teneramente era da·llei amata et havuta cara.</seg>
+            <app from="#T16_s2_p2_a06">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+            </p>
+
+            <p n="3" xml:id="T16_s2_p3">
+            <seg xml:id="T16_s2_p3_a01" n="al_s2_p3_a01">Per che vi fece</seg>
+            <app from="#T16_s2_p3_a01">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            l'apparecchio delle nozze
+
+            <seg xml:id="T16_s2_p3_a02" n="al_s2_p3_a02">ordinare bello et grande,</seg>
+            <app from="#T16_s2_p3_a02">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            et,
+
+            <seg xml:id="T16_s2_p3_a03" n="al_s2_p3_a03">invitatovi delle vicine contrade qualunque</seg>
+            <app from="#T16_s2_p3_a03">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            più honorato huomo
+
+            <seg xml:id="T16_s2_p3_a04" n="al_s2_p3_a04">v'era con le lor donne,</seg>
+            <app from="#T16_s2_p3_a04">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            et da <placeName ref="#vinegia">Vinegia</placeName>
+
+            <seg xml:id="T16_s2_p3_a05" n="al_s2_p3_a05">similmente,</seg>
+            <app from="#T16_s2_p3_a05">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p3_a06" n="al_s2_p3_a06">in suoni</seg>
+            <app from="#T16_s2_p3_a06">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            et canti et balli et
+
+            <seg xml:id="T16_s2_p3_a07" n="al_s2_p3_a07">solennissimi conviti l'un giorno appresso all'altro</seg>
+            <app from="#T16_s2_p3_a07">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            <seg xml:id="T16_s2_p3_a08" n="al_s2_p3_a08">ne menava</seg>
+            <app from="#T16_s2_p3_a08">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+
+            festeggiando con sommo
+
+            <seg xml:id="T16_s2_p3_a09" n="al_s2_p3_a09">piacer di ciascuno.</seg>
+            <app from="#T16_s2_p3_a09">
+                <rdg wit="#T10"><supplied reason="placeholder">[lezione di 10]</supplied></rdg>
+            </app>
+            </p>
+        </div>
+        </div>
+
+
+
+    </body>
+  </text>
+</TEI>

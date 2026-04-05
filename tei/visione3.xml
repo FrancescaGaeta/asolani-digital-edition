@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+  
+        <fileDesc>
+            <titleStmt>
+                <title>The Asolani by Pietro Bembo: A Digital Scholarly Edition based on Giorgio Dilemmi's Critical Edition</title>
+                <respStmt>
+                <resp>Transcription and TEI encoding by</resp>
+                <name>Francesca Gaeta</name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Francesca Gaeta</publisher>
+                <pubPlace>Bologna / GitHub Pages</pubPlace>
+                <date>2026</date>
+                <idno type="URL">https://francescagaeta.github.io/asolani-digital-edition/index.html</idno>
+                <availability>
+                <p>Project developed as part of the Digital Scholarly Editing course.</p>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <bibl>
+                    <author>Pietro Bembo</author>
+                    <title>Gli Asolani</title>
+                    <editor>Giorgio Dilemmi</editor>
+                    <pubPlace>Firenze</pubPlace>
+                    <publisher>Presso l'Accademia della Crusca</publisher>
+                    <date>1991</date>
+                    <note>Critical edition edited by Giorgio Dilemmi</note>
+                    <note type="content">The critical edition includes the redactions of manuscript Q and the printed editions of 1505 (1) and 1553 (16).</note>
+                    <note type="encoding">The digital text is based on the 1553 redaction.</note>
+                </bibl>
+                <listWit>
+                    <witness xml:id="Q">Autograph witness Q (Querini Stampalia)</witness>
+                    <witness xml:id="T1">Printed edition 1505 (text 1)</witness>
+                    <witness xml:id="T16">Printed edition 1553 (text 16)</witness>
+
+                    <witness xml:id="T10">apparatus for text 16</witness>
+                    <witness xml:id="M">apparatus for text 1</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <projectDesc>
+                <p>This project consists of the creation of a digital edition of <title> Gli Asolani</title> by Pietro Bembo, based on the critial edition of Giorgio Dilemmi (1991).</p>
+            </projectDesc>
+            <editorialDecl>
+                <p>The text has been transcribed from the reference critical edition, retaining the spelling and punctuation of the 1553 redaction, which serves as the basis for the digital text.</p>
+                <p>The work focuses on the collation of the redactions of manuscript Q and the printed editions of 1505 and 1553. The critical apparatus from the reference edition has not been reproduced; instead, a direct comparison between the three witnesses has been carried out.</p>
+                <p>No normalizing interventions have been carried out: the transcription faithfully reproduces the linguistic and formal characteristics of the base text. Words divided at line breaks in the source have been silently recombined without further intervention.</p>
+            </editorialDecl>
+            <variantEncoding method="parallel-segmentation" location="internal"/>
+            <tagsDecl>
+                <p>The encoding was carried out in compliance with the TEI P5 guidelines.</p>
+            </tagsDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <langUsage>
+                <language ident="it">Italian (primary text)</language>
+                <language ident="en">English (editorial documentation)</language>
+            </langUsage>
+
+            <settingDesc>
+                <listPlace>
+                <place xml:id="vinegia" sameAs="http://viaf.org/viaf/136651400">
+                    <placeName>Vinegia</placeName>
+                </place>
+                <place xml:id="asolo" sameAs="http://viaf.org/viaf/137212919">
+                    <placeName>Asolo</placeName>
+                </place>
+                </listPlace>
+            </settingDesc>  
+
+
+            <particDesc>
+                <listPerson>
+                <person xml:id="caterina" sameAs="http://viaf.org/viaf/52489508">
+                    <persName>Caterina Cornaro</persName>
+                    <note>Queen of Cyprus</note>
+                </person>
+                <person xml:id="perottino">
+                    <persName>Perottino</persName>
+                    <note>unhappy lover of the Asolani</note>
+                </person>
+                <person xml:id="giacco">
+                    <persName>Giacco</persName>
+                    <note>King Giacco</note>
+                </person>
+                <person xml:id="berenice">
+                    <persName>Berenice</persName>
+                </person>
+                <person xml:id="gismondo">
+                    <persName>Gismondo</persName>
+                    <note>happy lover of the Asolani</note>
+                </person>
+                </listPerson>
+
+                <listOrg>
+                    <org xml:id="cornelia">
+                    <orgName>Cornelia</orgName>
+                    <note>noble family</note>
+                    </org>
+                </listOrg>
+
+            </particDesc>
+
+        </profileDesc>
+    </teiHeader>
+
+
+
+    <text>
+        <body>
+            <!--MANOSCRITTO Q-->
+            <div type="edition" xml:id="Q">
+            <div type="sequence" n="2" xml:id="Q_seq2">
+                <p n="1" xml:id="Q_s2_p1" corresp="#al_s2_p1">
+                    Asolo adunque, madonna ..., vago et piacevole castello posto ne 
+                    gli estremi gioghi delle nostre alpi sopra 'l Trivigiano, è hora (sì come
+                    dovete sapere) | arnese della Reina di Cipri, la quale per la morte del re Giacco
+                    suo marito, non guari con lui dimorata, rimasa vedova et sanza figliuoli,
+                    poi che così hebbe con somma sodisfattione de' suoi popoli quasi
+                    tutta la sua giovanezza trappassata, raccommandato il governo del regno
+                    alla Signoria nostra, in Vinegia se ne tornò, dove era nata, per rivedere
+                    e suoi parenti et appo loro nella sua patria più riposatamente menarne
+                    gli altri anni della sua vita. 
+                </p>
+
+
+
+                <p n="2" xml:id="Q_s2_p2" corresp="#al_s2_p2">
+                    Dove venuta et lietamente ricevuta da' suoi,
+                    fu dalla Signoria nostra honorata di bellissimi et preciosi doni, tra' quali 
+                    hebbe questo castello, del quale io dico, et per sito del luoco et per natura
+                    del paese et per salubrità d'aria amenissimo et piacevolissimo sopra 
+                    modo.
+                    Quivi essendo la Reina per diporto questo settembre passato (sì
+                    come suole spesso la state), avenne che ella maritò una delle sue damigielle, 
+                    la quale, perciò che bellissima giovane era et perchè da piccola
+                    fanciulla se l'havea allevata, ella più che alcuna dell'altre amava et 
+                    havea cara.
+                </p>
+
+
+                <p n="3" xml:id="Q_s2_p3" corresp="#al_s2_p3">
+                    Il perchè fece fare l'apparechhio delle nozze bellissimo, et, convitando
+                    de' luochi circonvicini chiunque più honorato huomo era con le 
+                    lor donne, et da Vinegia altresì, in | suoni et canti et balli et sollennissimi
+                    conviti molti giorni ne menò festeggiando con sommo dilettamento
+                    et maraviglia d'ogniuno.
+                </p>
+
+                <p n="4" xml:id="Q_s2_p4" corresp="#al_s2_p4">
+                    Ma prima che queste nozze incominciassono 
+                    alquanti giorni avanti, (come avengono le venture) tre gentili huomini 
+                    della nostra cità, et tra essi per sangue et per amistà di stretto et dolce 
+                    legame congiunti, insieme ad una loro villa non guari lontana dal castello
+                    dove la Reina dimorava (sì come quella stagione faciamo) con le lor donne 
+                    giovani et vaghe et belle ciascuna, et di quegli costumi che in honesta 
+                    donna sono più cari ornate quanto alcune dell'altre, o più forse, che si 
+                    sapesse già buon tempo di queste contrade, lasciata la città, tutti festosi 
+                    et sollazzevoli n'andarono.
+                    Et quivi ritrovati tre loro carissimi compagni, 
+                    e quali in otio delle Muse si stavano similmente in una villetta vicina 
+                    la loro, uccellando, cacciando, diportandosi, prendevano insieme que' piaceri 
+                    che quella stagione a' gentili huomini suol dare.
+                </p>
+
+                <p n="5" xml:id="Q_s2_p5" corresp="#al_s2_p5">
+                    Né guari quivi così 
+                    dimorarono quella bella brigata, che'lla Reina, intendendo di loro, sopravenutole 
+                    il tempo del festeggiare per le nuove nozze che della sua damigiella 
+                    fatte havea, mandò a' gentili huomini un suo, che | piacesse loro, 
+                    insieme con le lor donne et co' loro compagni, di venire per alcun dì
+                    ad honorare la sua novella sposa. E quali prestamente così feciono. 
+                
+                    Et saliti con esse sopra e portanti cavalli et co' tre compagni altresì, et ad
+                    Asolo venuti, perciò che per alcuna bisogna era loro uopo di ritrovarsi 
+                    que' giorni in Vinegia, fatta loro scusa con la Reina et a llei et a' compagni 
+                    accommandate le lor donne, a cavallo risaliti, se ne tornarono pe' fatti loro.
+             
+                    Le donne lietamente dalla Reina et da molt'altre ricevute, che
+                    a quello venute erano che loro vennero, et quivi dimorando, molto di spasso 
+                    pigliavano nelle feste et molto ne davano altrui co' loro giovani insieme 
+                    assai accorti et accostumati tutt'a tre, et di be' motti et di giuochi honesti 
+                    et di soavi ragionamenti pieni, et per questo da tutte le donne chiamati sovente et disiderati.
+                </p>
+
+                <p n="6" xml:id="Q_s2_p6" corresp="#al_s2_p6">
+                    Quantunque Perottino (che uno di loro così
+                    volle che io in questi fogli lo chiamasse, non molto dal suo primiero nome 
+                    deviando) poco et rado parlasse, nè fusse chi riso in bocca gli havesse 
+                    solo una volta in tutte quelle feste veduto. 
+                </p>
+
+                <p n="7" xml:id="Q_s2_p7" corresp="#al_s2_p7">
+                    Et molto da ogniuno
+                    ispesse volte si furava; né mai, se non quanto e suoi compagni lo chiamassero 
+                    o di | bisogna le fusse, con gli altri si ritrovava nelle feste, come 
+                    quello che ll'animo sempre havea in tristo pensiero; né quivi venuto sarebbe, 
+                    se egli da' suoi compagni, che questo maestrevolmente fecero, perché 
+                    egli tra gli allegri dimorando si rallegrasse, astretto et sospinto non
+                    fusse stato al venire.
+                </p>
+
+                <p n="8" xml:id="Q_s2_p8" corresp="#al_s2_p8">
+                    Né pure solamente Perottino così ha voluto che io 
+                    il suo vero nome altrimenti in queste carte non tocchi, ma le tre donne 
+                    et gli altri giovani altresì, da' quali io queste cose ho havute, et con loro 
+                    assai sovente dimoro, (che se ne sia la cagione) m'hanno dolcemente pregato 
+                    che io faccia medesimamente de' nomi loro; credo io per tôrre occasione 
+                    alle sciocche menti de' volgari di pensar cosa che all'honestissima 
+                    et interissima vita loro meno che convenevole sia.
+                </p>
+
+                <p n="9" xml:id="Q_s2_9" corresp="#al_s2_p9">
+                   Perciò che sanno bene che questi sermoni possono in mano de gli huomini pervenire, de' quali 
+                    non pochi sogliono esser coloro per aventura che lle cose sane le più volte 
+                    rimirano con occhio non sano.
+                   Il che farò io, sì come debbo, sollecito
+                    di compiacergli; et dove il nomargli mi verrà nella penna, con semplici
+                    et finte voci mi passerò in guisa, che non più saranno di quello, che 
+                    essi vogliono essere, conosciuti.
+                </p>
+            </div>
+            </div>
+
+
+
+
+            <!--T1 - 1505-->
+            <app xml:id="app_s1_bellissimo">
+  <lem wit="#T1">bellissimo</lem>
+  <rdg wit="#M">belissimo</rdg>
+</app>
+
+<app xml:id="app_s1_scorgere">
+  <lem wit="#T1">scorgere</lem>
+  <rdg wit="#M">
+    <subst>
+      <del><unclear>intendere, né più ...</unclear></del>
+      <add place="above">scorgere</add>
+    </subst>
+    <note type="editorial">scorgere spscr.</note>
+  </rdg>
+</app>
+
+
+            <div type="edition" xml:id="T1">
+
+            <!--SEQUENZA 2-->
+            <div type="sequence" n="2" xml:id="T1_seq2">
+
+
+                <p n="1" xml:id="T1_s2_p1" corresp="#al_s2_p1">
+                    Asolo adunque, 
+                    <app>
+                        <lem wit="#T1">vago</lem>
+                        <rdg wit="#M">
+                            <gap reason="illegible"/>
+                            <note type="editorial">il manoscritto prosegue da un punto precedente; alcune lettere illeggibili</note>
+                        </rdg>
+                    </app>
+                    et piacevole castello posto 
+                    <app>
+                        <lem wit="#T1">ne gli</lem>
+                        <rdg wit="#M">negli</rdg>
+                    </app>
+                    stremi gioghi delle nostre alpi sopra 'l Trivigiano, è 
+                    <app>
+                        <lem wit="#T1">(sì come ogniuno dee sapere)</lem>
+                        <rdg wit="#M">
+                            <add place="inline">(</add>
+                            <seg>sì come ogniuno dee sapere</seg>
+                            <add place="inline">)</add>
+                            <note type="editorial">la prima parentesi tonda è agg. in rigo, la seconda è riscr. sulla virgola che segue sapere</note>
+                        </rdg>
+                    </app>
+                    arnese della Reina di Cipri, con la cui famiglia, hoggi di molto nella nostra
+                    città 
+                    <app>
+                        <lem wit="#T1">honorata et illustre</lem>
+                        <rdg wit="#M">
+                            <add place="above">honorata et</add>
+                            <seg>illustre</seg>
+                            <note type="editorial">honorata et agg. interl. sup.</note>
+                        </rdg>
+                     </app>
+                    , è la mia non solamente d'amistà et di riverenza,
+                    che essa la porta, congiunta, ma anchora di parentado.
+                </p>
+
+                <p n="2" xml:id="T1_s2_p2" corresp="#al_s2_p2">
+                    Dove essendo ella
+                    questo settembre passato a' suoi diporti andata, avenne che ella quivi maritò 
+                    una delle sue damigelle, la quale, perciò che bella et costumata et gentile 
+                    fanciulla 
+                    <app>
+                        <lem wit="#T1">la vedea</lem>
+                        <rdg wit="#M">
+                            <subst>
+                            <del>era</del>
+                            <add place="above">la vedea</add>
+                            <note type="editorial">la vedea spscr.</note>
+                            </subst>
+                        </rdg>
+                    </app>
+                    molto, assai teneramente era da lei amata et havuta cara.
+                </p>
+
+                <p n="3" xml:id="T1_s2_p3" corresp="#al_s2_p3">
+                    Il perchè fecevi l'apparecchio delle nozze ordinare bello et grande, et,
+                    invitato delle vicine contrade chiunque più honorato huomo era con le lor
+                    donne, et da Vinegia similmente, in suoni et canti et balli et solennissimi 
+                    conviti l'un giorno doppo l'altro ne menava festeggiando con sommo piacere 
+                    di 
+                    <app>
+                        <lem wit="#T1">ciascuno</lem>
+                        <rdg wit="#M">
+                            <choice>
+                            <orig><unclear>cias [?] uno.</unclear></orig>
+                            <reg>ciascuno</reg>
+                            </choice>
+                            <note type="editorial">c riscr., cassazione[?]</note>
+                            <note type="editorial">il testimone M2 termina con "ciascuno" e con "Erano" inizia la c. 49r di M1</note>
+                        </rdg>
+                    </app>. 
+                </p>
+
+                <p n="4" xml:id="T1_s2_p4" corresp="#al_s2_p4"> 
+                    Erano quivi tra gli altri, che invitati dalla Reina vennero
+                    a quelle feste, tre gentili huomini della nostra città, giovani et d'alto cuore,
+                    e quali, da' loro primi anni ne gli 
+                    <app>
+                        <lem wit="#T1">otii</lem>
+                        <rdg wit="#M">otij
+                            <note type="editorial">(otij)</note>
+                        </rdg>
+                    </app>
+                    delle Muse allevati et in essi tuttavia
+                    dimoranti per lo più tempo, oltre gli ornamenti delle lettre il pregio d'ogni 
+                    bella loda 
+                    <app>
+                        <lem wit="#T1">haveano, che </lem>
+                        <rdg wit="#M">haveano, che
+                            <note type="editorial">con haveano, ha termine la c. 49 r. di M1 e con che ha inizio M3</note>
+                        </rdg>
+                    </app>
+                    a 
+                    <app>
+                        <lem wit="#T1">nobili donzelli</lem>
+                        <rdg wit="#M">nobile donzello
+                            <note type="editorial">nobil j riscr. donzell j riscr.</note>
+                        </rdg>
+                    </app>
+                    s'appartenesse d'havere.
+                </p>
+
+                <p n="5" xml:id="T1_s2_p5" corresp="#al_s2_p5">
+                    Costoro per aventura, come che a tutte le donne che in que' conviti si trovarono,
+                    sì per la chiarezza del sangue loro et sì anchora molto più per la viva fama de'
+                    loro studi et del loro valore fusser cari, et per questo chiamati 
+                    sovente da ciascuna et disiderati, essi nondimeno pure con tre di loro
+                    similmente belle et vaghe giovani et di gentili costumi ornate, perciò che 
+                    <app>
+                        <lem wit="#T1">prossimani</lem>
+                        <rdg wit="#M">
+                            congiunti
+                            <note type="editorial">prissimani marg. d., in inchiostro e caratteri diversi, più grandi e accurati, di quelli delle altre varianti</note>
+                        </rdg>
+                    </app>
+                    erano loro 
+                    <app>
+                        <lem wit="#T1">per sangue</lem>
+                        <rdg wit="#M">
+                            <subst>
+                            <del>di parentado</del>
+                            <add place="above">per sangue</add>
+                            </subst>
+                        </rdg>
+                     </app>
+                     et lunga dimestichezza con esse et co' loro
+                    mariti haveano, più ispesso et più sicuramente si davano che con altre, volentieri 
+                    sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.
+                </p>
+
+                <p n="6" xml:id="T1_s2_p6" corresp="#al_s2_p6"> Quantunque Perottino, (che 
+                <app>
+                    <lem wit="#T1">così nominare un di loro m’è piaciuto in questi sermoni</lem>
+                    <rdg wit="#M">
+                        un di loro così volle che io in questi fogli lo chiamasse, che tu leggerai
+                        <note type="editorial">così...sermoni spscr.</note>
+                    </rdg>
+                 </app>
+                    ) poco et rado parlasse, nè fusse chi riso in bocca gli
+                    havesse solo una volta in tutte quelle feste veduto. 
+                </p>
+
+                <p n="7" xml:id="T1_s2_p7" corresp="#al_s2_p7"> 
+                    <app>
+                        <lem wit="#T1">Il quale etiandio</lem>
+                        <rdg wit="#M">
+                            <subst>
+                            <del>Et</del>
+                            <add place="above">Il quale etiandio</add>
+                            </subst>
+                        </rdg>
+                     </app>
+                    molto da ogniuno spesse volte 
+                     <app>
+                        <lem wit="#T1">si furava, sì come</lem>
+                        <rdg wit="#M">
+                            <subst>
+                            si furava,
+                            <del>né mai, se non di quanto e suoi compagni lo chiamassero o di mestiero ne gli fusse, con gli altri si ritrovava nelle feste,</del>
+                            sì come
+                            </subst>
+                        </rdg>
+                     </app>
+                    quello che l'animo
+                    sempre havea in tristo pensiero; nè quivi venuto sarebbe, se da' suoi compagni,
+                    che questo maestrevolmente fecero, acciò che egli tra gli allegri dimorando
+                    si rallegrasse, astretto  et sospinto a venirvi non fusse stato. 
+                </p>
+
+                <p n="8" xml:id="T1_s2_p8" corresp="#al_s2_p8"> Nè pure solamente Perottino ho io con infinita voce in questa guisa nomato,
+                    ma le tre donne et gli altri giovani anchora; non per altro rispetto, se 
+                    non per tôrre alle vane et sciocche menti de' volgari occasione, gli loro veri nomi non
+                    appalesando, di pensar cosa in parte alcuna meno che convenevole alla loro 
+                    honestissima et interissima vita. 
+                </p>
+
+                <p n="9" xml:id="T1_s2_p9" corresp="#al_s2_p9"> Con ciò sia cosa che questi parlari, d'uno in altro
+                    passando, a brieve andare possono in contezza de gli huomini pervenire,
+                    de' quali non pochi sogliono esser coloro che le cose sane le più volte
+                    rimirano con occhio non sano.
+                </p>
+            </div>
+
+            <!--SEQUENZA 3-->
+            <div type="sequence" n="3" xml:id="T1_seq3">
+
+                <p n="1" xml:id="T1_s3_p1" corresp="#al_s3_p1">
+                Ma tornando alle nozze della Reina, mentre che elle così andavano
+                com'io dissi, un giorno tra gli altri nella fine del desinare, che sempre
+                era splendido et meraviglioso et da diversi giuochi d'huomini che 
+                ci soglion far ridere et da suoni di vari stormenti et da canti hora d'una 
+                maniera et quando d'altra rallegrato, due vaghe fanciulle per mano tenendosi
+                et con alegro sembiante al capo delle tavole, dove la Reina sedea, 
+                venute, riverentemente la salutarono; et poi che l'hebbero salutata, amendue 
+                levatesi, la maggiore, un bellissimo liuto che nell'una mano tenea
+                con dolce atto al petto recandosi et assai maestrevolmente toccandolo, 
+                doppo alquanto spatio col piacevole suono di quello la soave voce di lei 
+                accordando, così incominciò a dire:
+                </p>
+
+                <lg type="poem" xml:id="1_lg1">
+                    <head>Verses 1</head>
+                    <l n="1"> Io vissi pargoletta in festa e 'n gioco,</l>
+                    <l n="2">De' miei pensier, di mia sorte contenta:</l>
+                    <l n="3">Hor sì m'afflige Amor et mi tormenta,</l>
+                    <l n="4">C'homai da tormentar gli avanza poco.</l>
+                    <l n="5"> Harei giurato haver gioiosa vita,</l>
+                    <l n="6">Da prima intrando, Amor, a la tua corte;</l>
+                    <l n="7">Ma io n'aspetto dolorsa morte:</l>
+                    <l n="8">O mia credenza, come m'hai fallita</l>
+                    <l n="9"> Mentre ad Amor non si commise anchora,</l>
+                    <l n="10">Vide Colcho Medea lieta et secura;</l>
+                    <l n="11">Poi ch'arse per Iason, acerba et dura</l>
+                    <l n="12">Fu la sua vita infin a l'ultìm'hora.</l>
+                </lg>
+
+            </div>
+            </div>
+
+
+
+
+
+
+            <!--T16 - 1553-->
+            <div type="edition" xml:id="T16">
+            <div type="sequence" n="2" xml:id="T16_seq2">
+                
+
+                <p n="1" xml:id="T16_s2_p1" corresp="#al_s2_p1">
+                Asolo aduqnue, vago et piacevole castello posto ne gli stremi gioghi
+                delle nostre alpi sopra il Trivigiano, è, sì come ogniuno dee sapere, 
+                di madonna la Reina di 
+                <app>
+                    <lem wit="#T16">Cipri</lem>
+                    <rdg wit="#T10">Cipro</rdg>
+                </app>
+                , con la cui 
+                <app>
+                    <lem wit="#T16">famiglia, la quale è detta Cornelia,</lem>
+                    <rdg wit="#T10">famiglia</rdg>
+                </app> 
+                molto nella nostra città honorata et illustre, è la mia non solamente 
+                d'amistà et di dimestichezza congiunta, ma anchora di parentado. 
+                </p>
+
+                <p n="2" xml:id="T16_s2_p2" corresp="#al_s2_p2">
+                Dove essendo ella questo settembre passato a' suoi diporti andata, avvenne che
+                ella quivi maritò una delle sue damigelle, la quale, perciò che bella et 
+                costumata et gentile era molto et perciò che da bambina cresciuta se l'havea, 
+                assai teneramente era da llei amata et havuta cara.
+                </p>
+
+                <p n="3" xml:id="T16_s2_p3" corresp="#al_s2_p3">Per che vi fece 
+                l'apparecchio delle nozze ordinare bello et grande, et, invitatovi delle
+                vicine contrade qualunque più honorato huomo v'era con le lor donne,
+                et da Vinegia similmente, in suoni et canti et balli et 
+                <app>
+                    <lem wit="#T16">solennissimi</lem>
+                    <rdg wit="#T10">sollennissimi</rdg>
+                </app> 
+                conviti l'un giorno appresso all'altro ne menava festeggiando con sommo piacer
+                di ciascuno.
+                </p>
+
+                <p n="4" xml:id="T16_s2_p4" corresp="#al_s2_p4"> Erano quivi tra gli altri, che invitati dalla Reina vennero
+                    a quelle feste, tre gentili huomini della nostra città, giovani et d'alto cuore,
+                    i quali, da' loro primi anni ne gli studi delle lettere usati et in essi tuttavia
+                    dimoranti per lo più tempo, oltre a'cciò il pregio d'ogni bel costume
+                    haveano, che a nobili 
+                    <app>
+                        <lem wit="#T16">cavalieri</lem>
+                        <rdg wit="#T10">donzelli</rdg>
+                    </app> 
+                    s'appartenesse d'havere.
+                </p>
+
+                <p n="5" xml:id="T16_s2_p5" corresp="#al_s2_p5"> Costor per aventura, come che a tutte le donne che in que' conviti si trovarono, sì per 
+                la chiarezza del sangue loro et sì anchora molto più per la viva fama de'
+                loro studi et del lor valore fosser cari, essi nondimeno pure con tre di
+                loro belle et vaghe giovani et di gentili costumi ornate, [perciò che prossimani 
+                eran loro per sangue et lunga dimestichezza con esse et co' lor mariti 
+                <app>
+                        <lem wit="#T16">haveano, i quali tutti e tre di què dì a Vinegia tornati erano per loro bisogne</lem>
+                        <rdg wit="#T10">haveano</rdg>
+                    </app> 
+                ], più spesso et più sicuramente si davano che con altre, volentieri 
+                sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.
+                </p>
+
+                <p n="6" xml:id="T16_s2_p6" corresp="#al_s2_p6"> Quantunque Perottino, che così nominare un di loro m'è piaciuto
+                    in questi sermoni, poco et rado parlasse, nè fosse chi riso in bocca gli
+                    havesse solamente una volta in tutte quelle feste veduto. 
+                </p>
+
+                <p n="7" xml:id="T16_s2_p7" corresp="#al_s2_p7"> Il quale etiandio
+                    molto da ogniuno spesse volte si furava, sì come colui che l'animo
+                    sempre havea in tristo pensiero; nè quivi venuto sarebbe, se da' suoi compagni,
+                    che questo studiosamente fecero, acciò che egli tra gli allegri dimorando
+                    si rallegrasse, astretto  et sospinto al venirvi non fosse stato. 
+                </p>
+
+                <p n="8" xml:id="T16_s2_p8" corresp="#al_s2_p8"> Nè pure solamente Perottino ho io con infinita voce in questa guisa nomato,
+                    ma le tre donne et gli altri giovani anchora; non per altro rispetto, se 
+                    non per la tôrre alle vane menti de' volgari occasione, i loro veri nomi non
+                    palesando, di pensar cosa in parte alcuna meno che convenevole alla loro 
+                    honestissima vita. 
+                </p>
+
+                <p n="9" xml:id="T16_s2_p9" corresp="#al_s2_p9"> Con ciò sia cosa che questi parlari, d'uno in altro
+                passando, a brieve andare possono in contezza de gli huomini pervenire,
+                de' i quali non pochi sogliono esser coloro che le cose sane le più volte
+                rimirano con occhio non sano.
+                </p>
+        </div>
+
+        <div type="sequence" n="3" xml:id="T1_seq3">
+
+                <p n="1" xml:id="T16_s3_p1" corresp="#al_s3_p1">
+                Ma alle nozze della Reina tornando, mentre che elle così andavano
+                come io dissi, un giorno tra gli altri nella fine del desinare, che sempre
+                era splendido et da diversi giuochi d'huomini che ci soglion far ridere
+                et da suoni di vari strumenti et da canti hora d'una maniera et quando
+                d'altra rallegrato, due vaghe fanciulle per mano tenendosi, con lieto sembiante
+                al capo delle tavole, là dove la Reina sedea, venute, riverentemente
+                la salutarono; et poi che l'hebbero salutata, amendue levatesi, la maggiore,
+                un bellissimo liuto che nell'una mano teneva al petto recandosi 
+                et assai maestrevolmente toccandolo, dopo alquanto spatio col piacevole
+                suono di quello la soave voce di lei accordando et dolcissimamente cantando, così disse:
+                </p>
+
+                <lg type="poem" xml:id="T16_lg1">
+                    <head>Verses 1</head>
+                    <l n="1"> Io vissi pargoletta in festa e 'n gioco,</l>
+                    <l n="2">De' miei pensier, di mia sorte contenta:</l>
+                    <l n="3">Hor sì m'afflige Amor et mi tormenta,</l>
+                    <l n="4">C'homai da tormentar gli avanza poco.</l>
+                    <l n="5"> Credetti, lassa, haver gioiosa vita</l>
+                    <l n="6">Da prima entrando, Amor, a la tua corte;</l>
+                    <l n="7">Et già n'aspetto dolorsa morte:</l>
+                    <l n="8">O mia credenza, come m'hai fallita</l>
+                    <l n="9"> Mentre ad Amor non si commise anchora,</l>
+                    <l n="10">Vide Colcho Medea lieta et secura;</l>
+                    <l n="11">Poi ch'arse per Iason, acerba et dura</l>
+                    <l n="12">Fu la sua vita infin a l'ultim'hora.</l>
+                </lg>
+
+        </div>
+
+
+        </div>
+        </body>
+    </text>
+
+
+
+
+
+
+
+    </TEI>
