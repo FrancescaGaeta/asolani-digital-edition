@@ -39,8 +39,8 @@
                     <witness xml:id="T1">Printed edition 1505 (text 1)</witness>
                     <witness xml:id="T16">Printed edition 1553 (text 16)</witness>
 
-                    <witness xml:id="T10">apparatus for text 16</witness>
-                    <witness xml:id="M">apparatus for text 1</witness>
+                    <witness xml:id="T10">Printed edition 1530, apparatus for text 16</witness>
+                    <witness xml:id="M">Autograph witness M (Codice Marciano), apparatus for text 1</witness>
                 </listWit>
             </sourceDesc>
         </fileDesc>
@@ -120,83 +120,112 @@
             <!--MANOSCRITTO Q-->
             <div type="edition" xml:id="Q">
 
+            <head type="title" xml:id="Q_book1_title_main" corresp="#al_book1_title_main">
+                <seg xml:id="Q_book1_title_main_a1" corresp="#al_book1_title_main_a1">
+                    De gli Asolani di Messer Pietro Bembo ne' quali si ragiona d'Amore,
+                </seg>
+                <lb/>
+                <seg xml:id="Q_book1_title_main_a2" corresp="#al_book1_title_main_a2">
+                    donati da·llui a madonna .....
+                </seg>
+            </head>
+
+            <head type="book" xml:id="Q_book1_title_book" corresp="#al_book1_title_book">
+                <seg xml:id="Q_book1_title_book_a1" corresp="#al_book1_title_book_a1">Libro primo</seg>
+            </head>
+
             <!--SEQUENZA 1-->
             <div type="sequence" n="1" xml:id="Q_seq1">
-                Gli otij, madonna..., delle lettre sempre da me con somma vaghezza
-                desiderati et cercati, et ne' miei primi anni assai di leggiero lunga stagione 
-                posseduti et sollecitati, et ultimatamente per le sopravenute mie cure
-                interrotti et intralasciati, hora alla fine riconcedutimisi et ripresi, occasione
-                mi porgono di ragionare in quella maniera che io posso con voi.
+                <p n="1" xml:id="Q_s1_p1" corresp="#al_s1_p1">
+                    Gli otij, madonna..., delle lettre sempre da me con somma vaghezza
+                    desiderati et cercati, et ne' miei primi anni assai di leggiero lunga stagione 
+                    posseduti et sollecitati, et ultimatamente per le sopravenute mie cure
+                    interrotti et intralasciati, hora alla fine riconcedutimisi et ripresi, occasione
+                    mi porgono di ragionare in quella maniera che io posso con voi.
+                </p>  
+
+                <p n="2" xml:id="Q_s1_p2" corresp="#al_s1_p3">
+                    Perciò che, dapoi che io da voi mi diparti', (forse perché la lontananza mi fusse men grave)
+                    m'è venuto fuori d'ogni mia credenza fatto il potere
+                    ispendere e miei giorni ne gli studi et di loro o leggendo
+                    o scrivendo quel frutto coglierne che per me il più si puote.
+                    Il che io fo non meno sovente che volentieri: 
+                    sì perché a me giova di sempre così fare, et sì per ristorarmi 
+                    di quello che le molte noie passate m'hanno di loro invidiosamente interdetto
+                    lunga fiata.
+                </p>
+
+                 <p n="3" xml:id="Q_s1_p3" corresp="#al_s1_p5">
+                    Ma perciò che non parrebbe a me di pieno frutto cogliere de' miei studi,
+                    se parte a voi non ne venisse di loro,
+                    e quali non meno mi piacciono per sé che per quello che essi sogliono piacere a voi,
+                    né posso io intero godimento di veruna cosa | in questa
+                    vita sentire, se ella primieramente a voi alcuno sodisfaccimento
+                    non arreca, poi che il favellare cn voci vive lungo paese c'interchiude, 
+                    il che fare, prima che io mi dipartissi, assai piacevolmente spesse volte solevamo,
+                    hora con queste carte loquaci a me piace di raccontarvi quello che in una brigata 
+                    di tre nostre valorose donne et tre aveduti et intelligenti giovani
+                    novellamente fusse ragionato d'Amore et da loro assai diversamente in tre giornate recitato.
+                </p>
+
+                <p n="4" xml:id="Q_s1_p4" corresp="#al_s1_p7">  
+                    Perciò che né io parlare posso con voi di cosa più convenevole a me che questa,
+                    che sapete ben quanto io v'amo, né a voi altresì doverà essere discaro,
+                    che non potete anchora  ben sapere per la giovanetta vostra età che cosa è Amore, 
+                    sentendone ragionare ( sì come in voi sono le parti del vostro ingegno singolari),
+                    prima potere di lui far giudicio che egli di voi s'habbia fatto pruova.
+                </p>
+
+                <p n="5" xml:id="Q_s1_p5" corresp="#al_s1_p9">
+                    Et nel vero, madonna..., sì come nel più delle cose l'uso è ottimo maestro della vita, 
+                    così in alcune, et in quelle massimamente che possono non meno di noia 
+                    essere che di sollazzo cagione, come mostra che questi sia, 
+                    l'ascoltarle o leggerle in altrui,
+                    prima che a·ppruova di loro si venga, sanza fallo molte volte a molti huomini di molto giovamento è stato.
+                </p>
+
+                <p n="6" xml:id="Q_s1_p6" corresp="#al_s1_p10">
+                    Per la qual cosa bellissimo | dono della natura è da dire che sieno le lettre, 
+                    nelle quali noi molte cose passate, che non potrebbono altrimenti essere alla nsotra notitia pervenute, 
+                    tutte quasi in un specchio riguardando et quello di loro che faccia per noi raccogliendo,
+                    da gli altrui essempi amaestrati ad entrare ne gli non solcati pelaghi della vita, 
+                    quasi approvati nocchieri, più sicuramente ci mettiamo.
+                </p>
+
+                <p n="7" xml:id="Q_s1_p7" corresp="#al_s1_p11">
+                    Oltre che infinito piacere ci porgono le diverse lettioni, delle quali gli animi d'alquanti huomini, 
+                    non altrimenti che li corp[i] di cibo, si pascono assai sovente et prendono insieme da esse [*] nutrimento.
                 
-                Perciò che, dapoi che io da voi mi diparti', (forse perché la lontananza mi fusse men grave)
-                m'è venuto fuori d'ogni mia credenza fatto il potere
-                ispendere e miei giorni ne gli studi et di loro o leggendo
-                o scrivendo quel frutto coglierne che per me il più si puote.
-                Il che io fo non meno sovente che volentieri: 
-                sì perché a me giova di sempre così fare, et sì per ristorarmi 
-                di quello che le molte noie passate m'hanno di loro invidiosamente interdetto
-                lunga fiata.
+                    Sì come in voi, madonna [...], intervenire; la quale, assai più vagha 
+                    d'ornare l'animo che 'l corpo non fate, tutto 'l vostro tempo ponete in loro,
+                    forse per questo, acciò che di quanto con le bellezze del corpo quelle dell'altre donne soprastate,
+                    di tanto con queste dell'animo avanciate le vostre, et siate voi di voi stessa maggiore, 
+                    amando troppo più di piacere a voi sola drento che a tutti gli altri di fuora
+                    (quantunque questo infinitamente sia) non piacete.
 
-                Ma perciò che non parrebbe a me di pieno frutto cogliere de' miei studi,
-                se parte a voi non ne venisse di loro,
-                e quali non meno mi piacciono per sé che per quello che essi sogliono piacere a voi,
-                né posso io intero godimento di veruna cosa | in questa
-                vita sentire, se ella primieramente a voi alcuno sodisfaccimento
-                non arreca, poi che il favellare cn voci vive lungo paese c'interchiude, 
-                il che fare, prima che io mi dipartissi, assai piacevolmente spesse volte solevamo,
-                hora con queste carte loquaci a me piace di raccontarvi quello che in una brigata 
-                di tre nostre valorose donne et tre aveduti et intelligenti giovani
-                novellamente fusse ragionato d'Amore et da loro assai diversamente in tre giornate recitato.
-                
-                
-                Perciò che né io parlare posso con voi di cosa più convenevole a me che questa,
-                che sapete ben quanto io v'amo, né a voi altresì doverà essere discaro,
-                che non potete anchora  ben sapere per la giovanetta vostra età che cosa è Amore, 
-                sentendone ragionare ( sì come in voi sono le parti del vostro ingegno singolari),
-                prima potere di lui far giudicio che egli di voi s'habbia fatto pruova.
+                    Al qual vostro alto et lodevole disio se alcuno aiuto si potrà dar per me,
+                    tale, quale esso sarà, cotale dandovi, non ricuso et per l'avenire di molte altre volte
+                    porgere favoreggevole mano et hora, | questi ragionamenti d'Amore, che io dico, isponendovi,
+                    (quanto fie in me) darvi modo che non, sì come le più delle donne 
+                    soglion fare et de gli huomini altresì, d'altrui v'innamoriate, 
+                    ma di voi stessa v'accendiate, et del vostro raro et caro proponimento ognihora,
+                    leggendo queste carte, diveniate più vaga.
 
-                Et nel vero, madonna..., sì come nel più delle cose l'uso è ottimo maestro della vita, 
-                così in alcune, et in quelle massimamente che possono non meno di noia 
-                essere che di sollazzo cagione, come mostra che questi sia, 
-                l'ascoltarle o leggerle in altrui,
-                prima che a·ppruova di loro si venga, sanza fallo molte volte a molti huomini di molto giovamento è stato.
+                    Il che se mi verrà fatto, assai buon guiderdone mi terrò havere di questa mia scrittura
+                    et dell'amore che io vi porto ricevuto, vedendo voi d'honestissimo disiderio accesa 
+                    vie più ferventemente amare di voi medesima quello che io sopra tutte l'altre cose
+                    amo et amarò di pari con la mia vita.
+                    </p>
 
-                Per la qual cosa bellissimo | dono della natura è da dire che sieno le lettre, 
-                nelle quali noi molte cose passate, che non potrebbono altrimenti essere alla nsotra notitia pervenute, 
-                tutte quasi in un specchio riguardando et quello di loro che faccia per noi raccogliendo,
-                da gli altrui essempi amaestrati ad entrare ne gli non solcati pelaghi della vita, 
-                quasi approvati nocchieri, più sicuramente ci mettiamo.
-
-                Oltre che infinito piacere ci porgono le diverse lettioni, delle quali gli animi d'alquanti huomini, 
-                non altrimenti che li corp[i] di cibo, si pascono assai sovente et prendono insieme da esse [*] nutrimento.
-
-                Sì come in voi, madonna [...], intervenire; la quale, assai più vagha 
-                d'ornare l'animo che 'l corpo non fate, tutto 'l vostro tempo ponete in loro,
-                forse per questo, acciò che di quanto con le bellezze del corpo quelle dell'altre donne soprastate,
-                di tanto con queste dell'animo avanciate le vostre, et siate voi di voi stessa maggiore, 
-                amando troppo più di piacere a voi sola drento che a tutti gli altri di fuora
-                (quantunque questo infinitamente sia) non piacete.
-
-                Al qual vostro alto et lodevole disio se alcuno aiuto si potrà dar per me,
-                tale, quale esso sarà, cotale dandovi, non ricuso et per l'avenire di molte altre volte
-                porgere favoreggevole mano et hora, | questi ragionamenti d'Amore, che io dico, isponendovi,
-                (quanto fie in me) darvi modo che non, sì come le più delle donne 
-                soglion fare et de gli huomini altresì, d'altrui v'innamoriate, 
-                ma di voi stessa v'accendiate, et del vostro raro et caro proponimento ognihora,
-                leggendo queste carte, diveniate più vaga.
-
-                Il che se mi verrà fatto, assai buon guiderdone mi terrò havere di questa mia scrittura
-                et dell'amore che io vi porto ricevuto, vedendo voi d'honestissimo disiderio accesa 
-                vie più ferventemente amare di voi medesima quello che io sopra tutte l'altre cose
-                amo et amarò di pari con la mia vita.
-
-                hora, per più lungo tempo dimorarmi con voi tra questi inchiostri, 
-                acciò che per di più lungo ispatio voi medesimamente meco nella lettura dimoriate,
-                il che già mi si fa dolce nel pensiero, 
-                prima che io quello che d'Amore sie stato ragionato vi racconti, 
-                come il ragionare havesse luoco, 
-                alquanto più sopra incominciando che non farei se io non favellassi con voi, 
-                quanto più brievemente potrò, vi farò chiaro.
+                 <p n="8" xml:id="Q_s1_p8" corresp="#al_s1_p12">
+                    Hora, per più lungo tempo dimorarmi con voi tra questi inchiostri, 
+                    acciò che per di più lungo ispatio voi medesimamente meco nella lettura dimoriate,
+                    il che già mi si fa dolce nel pensiero, 
+                    prima che io quello che d'Amore sie stato ragionato vi racconti, 
+                    come il ragionare havesse luoco, 
+                    alquanto più sopra incominciando che non farei se io non favellassi con voi, 
+                    quanto più brievemente potrò, vi farò chiaro.
+                </p>
 
 
             </div>
@@ -206,13 +235,13 @@
             <!--SEQUENZA 2-->
             <div type="sequence" n="2" xml:id="Q_seq2">
                 <p n="1" xml:id="Q_s2_p1" corresp="#al_s2_p1">
-                    Asolo adunque, madonna ..., vago et piacevole castello posto ne 
+                    <placeName ref="#asolo">Asolo</placeName> adunque, madonna ..., vago et piacevole castello posto ne 
                     gli estremi gioghi delle nostre alpi sopra 'l Trivigiano, è hora (sì come
-                    dovete sapere) | arnese della Reina di Cipri, la quale per la morte del re Giacco
+                    dovete sapere) | arnese della <persName ref="#caterina">Reina di Cipri</persName>, la quale per la morte del <persName ref="#giacco">re Giacco</persName>
                     suo marito, non guari con lui dimorata, rimasa vedova et sanza figliuoli,
                     poi che così hebbe con somma sodisfattione de' suoi popoli quasi
                     tutta la sua giovanezza trappassata, raccommandato il governo del regno
-                    alla Signoria nostra, in Vinegia se ne tornò, dove era nata, per rivedere
+                    alla Signoria nostra, in <placeName ref="#vinegia">Vinegia</placeName> se ne tornò, dove era nata, per rivedere
                     e suoi parenti et appo loro nella sua patria più riposatamente menarne
                     gli altri anni della sua vita. 
                 </p>
@@ -225,7 +254,7 @@
                     hebbe questo castello, del quale io dico, et per sito del luoco et per natura
                     del paese et per salubrità d'aria amenissimo et piacevolissimo sopra 
                     modo.
-                    Quivi essendo la Reina per diporto questo settembre passato (sì
+                    Quivi essendo la <persName ref="#caterina">Reina</persName> per diporto questo settembre passato (sì
                     come suole spesso la state), avenne che ella maritò una delle sue damigielle, 
                     la quale, perciò che bellissima giovane era et perchè da piccola
                     fanciulla se l'havea allevata, ella più che alcuna dell'altre amava et 
@@ -236,7 +265,7 @@
                 <p n="3" xml:id="Q_s2_p3" corresp="#al_s2_p3">
                     Il perchè fece fare l'apparechhio delle nozze bellissimo, et, convitando
                     de' luochi circonvicini chiunque più honorato huomo era con le 
-                    lor donne, et da Vinegia altresì, in | suoni et canti et balli et sollennissimi
+                    lor donne, et da <placeName ref="#vinegia">Vinegia</placeName> altresì, in | suoni et canti et balli et sollennissimi
                     conviti molti giorni ne menò festeggiando con sommo dilettamento
                     et maraviglia d'ogniuno.
                 </p>
@@ -246,7 +275,7 @@
                     alquanti giorni avanti, (come avengono le venture) tre gentili huomini 
                     della nostra cità, et tra essi per sangue et per amistà di stretto et dolce 
                     legame congiunti, insieme ad una loro villa non guari lontana dal castello
-                    dove la Reina dimorava (sì come quella stagione faciamo) con le lor donne 
+                    dove la <persName ref="#caterina">Reina</persName> dimorava (sì come quella stagione faciamo) con le lor donne 
                     giovani et vaghe et belle ciascuna, et di quegli costumi che in honesta 
                     donna sono più cari ornate quanto alcune dell'altre, o più forse, che si 
                     sapesse già buon tempo di queste contrade, lasciata la città, tutti festosi 
@@ -259,18 +288,18 @@
 
                 <p n="5" xml:id="Q_s2_p5" corresp="#al_s2_p5">
                     Né guari quivi così 
-                    dimorarono quella bella brigata, che'lla Reina, intendendo di loro, sopravenutole 
+                    dimorarono quella bella brigata, che'lla <persName ref="#caterina">Reina</persName>, intendendo di loro, sopravenutole 
                     il tempo del festeggiare per le nuove nozze che della sua damigiella 
                     fatte havea, mandò a' gentili huomini un suo, che | piacesse loro, 
                     insieme con le lor donne et co' loro compagni, di venire per alcun dì
                     ad honorare la sua novella sposa. E quali prestamente così feciono. 
                 
                     Et saliti con esse sopra e portanti cavalli et co' tre compagni altresì, et ad
-                    Asolo venuti, perciò che per alcuna bisogna era loro uopo di ritrovarsi 
-                    que' giorni in Vinegia, fatta loro scusa con la Reina et a llei et a' compagni 
+                    <placeName ref="#asolo">Asolo</placeName> venuti, perciò che per alcuna bisogna era loro uopo di ritrovarsi 
+                    que' giorni in <placeName ref="#vinegia">Vinegia</placeName>, fatta loro scusa con la <persName ref="#caterina">Reina</persName> et a llei et a' compagni 
                     accommandate le lor donne, a cavallo risaliti, se ne tornarono pe' fatti loro.
              
-                    Le donne lietamente dalla Reina et da molt'altre ricevute, che
+                    Le donne lietamente dalla <persName ref="#caterina">Reina</persName> et da molt'altre ricevute, che
                     a quello venute erano che loro vennero, et quivi dimorando, molto di spasso 
                     pigliavano nelle feste et molto ne davano altrui co' loro giovani insieme 
                     assai accorti et accostumati tutt'a tre, et di be' motti et di giuochi honesti 
@@ -278,7 +307,7 @@
                 </p>
 
                 <p n="6" xml:id="Q_s2_p6" corresp="#al_s2_p6">
-                    Quantunque Perottino (che uno di loro così
+                    Quantunque <persName ref="#perottino">Perottino</persName> (che uno di loro così
                     volle che io in questi fogli lo chiamasse, non molto dal suo primiero nome 
                     deviando) poco et rado parlasse, nè fusse chi riso in bocca gli havesse 
                     solo una volta in tutte quelle feste veduto. 
@@ -295,7 +324,7 @@
                 </p>
 
                 <p n="8" xml:id="Q_s2_p8" corresp="#al_s2_p8">
-                    Né pure solamente Perottino così ha voluto che io 
+                    Né pure solamente <persName ref="#perottino">Perottino</persName> così ha voluto che io 
                     il suo vero nome altrimenti in queste carte non tocchi, ma le tre donne 
                     et gli altri giovani altresì, da' quali io queste cose ho havute, et con loro 
                     assai sovente dimoro, (che se ne sia la cagione) m'hanno dolcemente pregato 
@@ -304,7 +333,7 @@
                     et interissima vita loro meno che convenevole sia.
                 </p>
 
-                <p n="9" xml:id="Q_s2_9" corresp="#al_s2_p9">
+                <p n="9" xml:id="Q_s2_p9" corresp="#al_s2_p9">
                    Perciò che sanno bene che questi sermoni possono in mano de gli huomini pervenire, de' quali 
                     non pochi sogliono esser coloro per aventura che lle cose sane le più volte 
                     rimirano con occhio non sano.
@@ -314,36 +343,199 @@
                     essi vogliono essere, conosciuti.
                 </p>
             </div>
+            
+            <!--SEQUENZA 3-->
+            <div type="sequence" n="3" xml:id="Q_seq3">
+                <p n="1" xml:id="Q_s3_1" corresp="#al_s3_p1">
+                    Hora nelle nozze ritornandomi, solea la <persName ref="#caterina">Reina</persName> doppo 'l desinare, 
+                    che sempre magnifico era et maraviglioso molto et da diversi giuochi 
+                    d'huomini che ci soglion far ridere et da suoni di vari stormenti et canti 
+                    hora di fanciulle et quando d'huomini rallegrato, con le sue damigielle 
+                    ritrarsi nelle sue camere, et quivi o dormire o, ciò che più le piacea di
+                    fare facendo, la parte più calda del giorno separatamente passarsi, et così 
+                    concedere che·ll'altre donne di loro facessono a·llor modo, per infino a·ttanto
+                    che venuto là dal vespro tempo fusse da festeggiare; nel quale
+                    tutte le donne et gentili huomini et suoi cortigiani si raunavano nell'ampissime
+                    sale del palagio, dove si danzava gaiamente et tutte quelle cose 
+                    si faceano che a festa di reina si convenia di fare, per infino che tempo 
+                    fusse da por le tavole.
+                    Andando adunque così alcun giorno le nuove nozze, 
+                    et levatasi un dì, finito 'l mangiare et e suoi spassi forniti, dall'altre 
+                    donne la <persName ref="#caterina">Reina</persName>, come solea, et nelle sue camere raccoltasi, et ciascuno 
+                    similmente partendo, rimase per aventura ultime, le tre donne co' loro 
+                    giovani per le sale si spatiavano ragionando, et quinci, da' piedi et dalle
+                    parole portate, ad un | poggetto di marmo pervennono, il quale da una 
+                    parte delle sale più rimota sopra ad un bellissimo giardino del palagio
+                    riguardava.
+                    Dove come giunsono, maravigliatesi della bellezza del 
+                    giardino, poi che di lui hebbero molte cose parlato, hor questa hor quella 
+                    parte riguardando, <persName ref="#gismondo">Gismondo</persName>, che il più festevole era de' suoi compagni 
+                    et volentieri sempre le donne in dolce festa et in honesto giuoco tenea, 
+                    a loro rivoltosi così disse: 
+                    <q who="#gismondo">- Care giovani, il dormire doppo 'l cibo in quest'hora del dì, quantunque 
+                    in alcuna stagion dell'anno non sia buono, pure la state, perciò 
+                    che longissimi sono e giorni et le notti più brievi, come quello che cosa 
+                    piacevole è, da gli occhi nostri più volentieri ricevuto, alquanto meno 
+                    sanza fallo ci nuoce. Ma questo mese incomincia egli a perdere molto della 
+                    sua dolcezza passata et oltre a·cciò a farsi di dì in dì più dannoso 
+                    et più grave. Per che (dove voi questa volta il mio consiglio voleste pigliare)
+                    io direi che fusse vie bene fatto, lasciando il sonno nelle camere drieto 
+                    le pigre cortine delle nostre letta giacere, che noi passassimo nel giardino,
+                    et quivi nel rezzo et nel fresco dell'herbe ripostisi, o novellando | o 
+                    di cose dilettevoli ragionando, ingannare questa parte del giorno incresciosa,
+                    per infino che·ll'hora del festeggiare venuta nelle sale ci richiamasse 
+                    insieme con gli altri ad honorare la nostra novella sposa. - </q> 
+                    Alle donne, le quali non meno l'ombre de gli alberi et gli accorti 
+                    ragionamenti de' giovani che 'l sonno delle coltre regali et le favole dell'altre 
+                    donne dilettavano, piacque il consiglio di <persName ref="#gismondo">Gismondo</persName>. Per che, discese, 
+                    tutte liete et festose co' loro giovani n'andarono nel giardino.
+                     Era questo giardino vago molto et di maravigliosa bellezza. Ma per 
+                    non raccontare ogni parte di lui, che sarebbe troppo lungo, egli, oltre 
+                    ad un bellissimo pergolato, che largo et ombroso pel mezzo in croce lo 
+                    dipartiva, una medesima via dava a gli entranti di qua et di là, et lungo 
+                    le latora di lui ne la distendea; la quale, assai spatiosa et lunga et tutta di vivo 
+                    selice soprastrata, chiudea dall'una parte, solo che dove facea porta nel 
+                    pergolato, una siepe di verdissimi et minutissimi bossi, humile non tanto 
+                    che con mano sanza chinarsi il sommo di lei non si potesse toccare, spessissima 
+                    et, ugualmente in ogni parte di sé (quantunque longissima fusse) 
+                    gli occhi et la | vista pascendo, dilettevole a riguardare.
+                    Dall'altra honorati allori, 
+                    lungo 'l muro assai nel cielo crescendo, della più alta parte 
+                    di loro mezzo arco faceano, in maniera folti et castigati, che niuna lor 
+                    foglia fuori del commandato ordine parea che ardisse di si mostrare; né 
+                    altro del muro si vedea, che dall'una delle latora del giardino e marmi 
+                    bianchissimi di due finestre, che ne gli estremi di loro erano, large et 
+                    aperte, et dalle quali (perciò che il muro grossissimo era) in ciascun lato 
+                    sedendo si potea gittar la vista sopra 'l piano il quale esse signoreggiavano.
+                    Per questa adunque così bella via dall'una parte entrate nel giardino 
+                    le vaghe donne co' loro giovani caminando tutte diffese dal sole (come 
+                    che egli assai alto si fusse nel cielo), et questa cosa et quell'altra considerando, 
+                    pervennono in un pratello che 'l giardin terminava, di sì fresche 
+                    herbe et così minute pieno, che tutto un dolce smeraldo parea, se non
+                    che alquante varietà di vaghetti fiori lo dipingneano; nello stremo del 
+                    quale faceano gli allori, sanza legge et in maggior quantità cresciuti, due 
+                    selvette pari et nere per l'ombre et piene d'una soletaria riverenza; et 
+                    nel mezzo di loro più a | drento davano luoco tra esse ad una bellissima 
+                    fonte, nel sasso vivo del monte, che da quella parte serrava il giardino, 
+                    maestrevolmente cavata, nella quale una vena di liquido et limpidissimo 
+                    cristallo, che del monte usciva, baldanzosamente cadendo et di lei, che 
+                    guari alta non era dal terreno, in un canaletto di marmo, che 'l pratello 
+                    dividea, descendendo, soavemente si facea sentire et, nel canale ricevuta,
+                    quasi tutta coperta dall'herbe, mormorando s'affrettava di correre nel giardino.
+                    Piacque questo luoco maravigliosamente alle belle donne, il quale 
+                    poi che molto da ciascuna di loro fu lodato, madonna <persName ref="#berenice">Berenice</persName>, che 
+                    la men giovane era de l'altre due et da esse honorata quasi come lor capo 
+                    et, oltre a·cciò, vie più ardita che esse non erano, verso <persName ref="#gismondo">Gismondo</persName> riguardando:
+                    <q who="#berenice">- Deh -  disse  - come mal facemmo,<persName ref="#gismondo">Gismondo</persName>, a non ci essere quivi 
+                    tutti questi dì passati venute, ché meglio in cotesto giardino che nelle 
+                    nostre camere haremmo questo di tempo, che sanza la sposa et la <persName ref="#caterina">Reina</persName>
+                    ci corre, trappassato. Hora (poi che noi la tua mercé vi siamo) vedi dove 
+                    a te paia che si siedi, perciò che l'andare hora altre parti del giardino
+                    riguardando il sole ci vieta, che in|vidiosamente (come tu vedi) se le riguarda lui. - </q>
+                    A cui <persName ref="#gismondo">Gismondo</persName>:
+                    <q who="#gismondo"> - <persName ref="#berenice">Madonna</persName>, - rispose - dove a voi così piaccia, a me parrebbe che 
+                    questa fonte non si dovesse rifiutare, perciò che l'herbetta è quivi più 
+                    lieta che altrove et più dipinta di fiori. Poi quest'alberi ci terranno sì
+                    il sole, che, per potere che egli habbia, hoggi non ci ritroverrà egli giamai. -</q>
+
+                    <q who="#berenice"> - Dunque - disse madonna <persName ref="#berenice">Berenice</persName> - sedianci costì, dove a te 
+                    piace, che vi·cci hai guidate. Et perciò che lo starci quivi, sì come tu dicesti, 
+                    non c'incresca, col mormorio dell'acque che c'invitano a ragionare 
+                    et con l'horrore di quest'ombre che ci ascoltano, disponti tu a dire di 
+                    quello che a te più giova che si ragioni, perciò che et noi volentieri sempre 
+                    t'ascoltiamo et, poi che sì bello et vago luoco gli hai dato, meritamente 
+                    in te cade hoggi la signoria de' nostri sermoni. - </q>
+
+                    Dette queste parole da madonna <persName ref="#berenice">Berenice</persName>, et da ciascuna dell'altre 
+                    due invitato <persName ref="#gismondo">Gismondo</persName> al favellare, esso lietamente così disse: 
+                    <q who="#gismondo">- Amabili donne, poscia che voi hoggi questa maggioranza mi date, 
+                    et io la mia prenderò. - </q>
+                    Et poi che, fatta di loro corona, a sedere in grembo dell'herbetta si 
+                    fûr posti, chi vicino la bella fonte et | chi a piè de gli ombrosi allori di 
+                    qua et di là del picciol rio, <persName ref="#gismondo">Gismondo</persName>, accortamente rassettatosi et pel 
+                    viso d'intorno piacevolmente le belle donne riguardate, in questa guisa incominciò: 
+                    <q who="#gismondo"> - Vaghe et festose donne, ciascuno di noi ha hoggi udite quelle due fanciulle, 
+                    che dinanzi alla <persName ref="#caterina">Reina</persName>, prima che si levassono le tavole, assai vezzosamente 
+                    l'una all'altra rispondendo cantarono di molte canzoni, tra le 
+                    quali se io mi ricorderò le due prime, che allhora, perciò che molto mi 
+                    piacquono, agevolmente appresi, assai bello et spatioso campo haremo 
+                    hoggi da favellare. Elle per aventura son queste.</q>
+                     <q who="#gismondo"> Perciò che venute le fanciulle dinanci la <persName ref="#caterina">Reina</persName>, poi che riverentemente la salutarono,
+                    levatesi, et col suono del liuto, che quel loro maestro drietro le lor spalle assai 
+                    acconciamente toccava, accordatasi la maggioretta, così incominciò a dire:
+                    </q></p>
+
+                    <lg type="poem" xml:id="Q_lg1" corresp="#al_s3_lg1">
+                    <head>Verses 1</head>
+                        <l n="1">Amor, perchè m'insegni andar al foco,</l>
+                        <l n="2">Dov' el mio cor si strugge,</l>
+                        <l n="3">Seguendo chi mi fugge,</l>
+                        <l n="4">Amando chi 'l mio mal si torna in gioco?</l>
+                        <l n="5"> Credea trovar ne l'amorosa tresca</l>
+                        <l n="6">Più dolce ogni fatica:</l>
+                        <l n="7">Ahi, del mio ben nemica</l>
+                        <l n="8">Che 'l piacer manca e 'l tormento rinfresca.</l>
+                        <l n="9"> Donne, che non sentiste anchor d'Amore,</l>
+                        <l n="10">Quanto beate sete;</l>
+                        <l n="11">Se voi non v'accorgete,</l>
+                        <l n="12">Mirate quanto è grave el mio dolore.</l>
+                    </lg>
+
+
+            </div>
+
             </div>
 
 
 
 
+
+
             <!--T1 - 1505-->
-            <app xml:id="app_s1_bellissimo">
-  <lem wit="#T1">bellissimo</lem>
-  <rdg wit="#M">belissimo</rdg>
-</app>
-
-<app xml:id="app_s1_scorgere">
-  <lem wit="#T1">scorgere</lem>
-  <rdg wit="#M">
-    <subst>
-      <del><unclear>intendere, né più ...</unclear></del>
-      <add place="above">scorgere</add>
-    </subst>
-    <note type="editorial">scorgere spscr.</note>
-  </rdg>
-</app>
-
 
             <div type="edition" xml:id="T1">
+
+            <head type="title" xml:id="T1_book1_title_main" corresp="#al_book1_title_main">
+                <seg xml:id="T1_book1_title_main_a1" corresp="#al_book1_title_main_a1">
+                    <app>
+                        <lem wit="#T16">DE GLI ASOLANI</lem>
+                        <rdg wit="#M">DE GLI ASOLA<supplied reason="editorial">[NI]</supplied></rdg>
+                    </app>
+                    DI MESSER PIETRO
+                    <app>
+                        <lem wit="#T16">BEMBO</lem>
+                        <rdg wit="#M">
+                            <seg>BEMBO</seg>
+                            <del>NE' QUALI SI RAGIONA D'AMORE</del>
+                        </rdg>
+                    </app>
+                </seg>
+                <lb/>
+                <seg xml:id="T1_book1_title_main_a2" corresp="#al_book1_title_main_a2">
+                    <gap reason="omitted"/>
+                </seg>
+            </head>
+
+            <head type="book" xml:id="T1_book1_title_book" corresp="#al_book1_title_book">
+                <seg xml:id="T1_book1_title_book_a1" corresp="#al_book1_title_book_a1">PRIMO LIBRO</seg>
+            </head>
+
             <!--SEQUENZA 1-->
-            <div type="sequence" n="2" xml:id="T1_seq2">
+            <div type="sequence" n="1" xml:id="T1_seq1">
 
                 <p n="1" xml:id="T1_s1_p1" corresp="#al_s1_p1">
                     Suole essere a' naviganti caro, qualhora da oscuro et fortunevole
-                    nembo sospinti errano et travagliano la lor via, col segno della indiana
+                    nembo 
+                    <app>
+                        <lem wit="#T16">sospinti</lem>
+                        <rdg wit="#M">
+                            <subst>
+                            <del>soprapresi et</del>
+                            <seg>sospinti</seg>
+                            </subst>
+                        </rdg>
+                    </app>
+                    errano et travagliano la lor via, col segno della indiana
                     pietra ritrovare la tramontana, in modo che, quale vento soffi conoscendo,
                     non sia lor tolto il potere et vela et governo là, dove essi di giugnere
                     procacciano o almeno dove più la loro salvezza veggono, drizzare; et a 
@@ -356,9 +548,24 @@
         
                 <p n="2" xml:id="T1_s1_p2" corresp="#al_s1_p2">
                     Il perché istimando io, per quello che si vede avenire tutto dì, pochissimi essere quegli,
-                    huomini, a' quali nel peregrinaggio di questa nostra vita mortale, hora dalla turba delle passiomi soffiato et hora dalle tante et 
+                    <app>
+                        <lem wit="#T16">huomini</lem>
+                        <rdg wit="#M">
+                            <seg>huomini</seg>
+                            <del>, et per aventura non niuno</del>
+                        </rdg>
+                    </app>
+                    , a' quali nel peregrinaggio di questa nostra vita mortale, hora dalla turba delle passiomi soffiato et hora dalle tante et 
                     così al vero somiglianti apparenze d'oppenioni fatto incerto, quasi per lo continovo et di
-                    calamita et di scorta non faccia mestiero, ho sempre giudicato gratioso ufficio per coloro usarsi, 
+                    calamita et di scorta non faccia mestiero, ho sempre giudicato 
+                    <app>
+                        <lem wit="#T16">gratioso</lem>
+                        <rdg wit="#M">
+                            <seg>gratioso</seg>
+                            <del>et dicevole</del>
+                        </rdg>
+                    </app>
+                    ufficio per coloro usarsi, 
                     e quali, delle cose o ad essi avenute o da altri apparate o per se medesimi ritrovate trattando, 
                     a gli altri huomini dimostrano come si possa in qualche parte di questa perigliosa strada et corso non errare. 
                 </p>
@@ -374,7 +581,14 @@
                     un huom solo sanza fallimento saper vivere non inteso et non veduto da persona, 
                     quanto più è da credere che lodare si debba un altro, 
                     il quale et sa esso la sua vita sanza fallo scorgere et insegna et dona modo a infiniti altri huomini,
-                    che vivono, di non fallire?
+                    <app>
+                        <lem wit="#T16">che vivono,</lem>
+                        <rdg wit="#M">
+                            <add place="above">che vivono,</add>
+                            <note type="editorial">agg. interl. sup.</note>
+                        </rdg>
+                    </app>
+                    di non fallire?
                     ché pensare che alcuno, insegnante altrui la via di pervenire ad una parte, 
                     non la sappia egli, ragionevolmente non si puote.
                 </p>
@@ -382,14 +596,53 @@
                 <p n="5" xml:id="T1_s1_p5" corresp="#al_s1_p5">
                     Ma perciò che tra cagioni, che il nostro tranquillo navigar ci sturbano 
                     et calla del buon vivere ci rendono sospetta et dubbiosa, 
-                    suole per la primiera essere il non sapere noi le più volte quale 
-                    buono amore sia et quale reo, il che non saputo fa che noi, 
+                    suole per la primiera essere il non sapere noi le più 
+                    <app>
+                        <lem wit="#T16">volte</lem>
+                        <rdg wit="#M">
+                            <seg>volte</seg>
+                            <del>come sia</del>
+                            <add place="above"><unclear>...</unclear></add>
+                            <note type="editorial">con "volte" termina la c. 46v di M1</note>
+                        </rdg>
+                    </app>
+                    <app>
+                        <lem wit="#T16">quale buono</lem>
+                        <rdg wit="#M">
+                            <subst>
+                            <del><unclear>dee ... et</unclear></del>
+                            <add place="above">quale buono</add>
+                            </subst>
+                            <note type="editorial">con "quale buono" inizia M2</note>
+                        </rdg>
+                    </app>
+                    amore sia et quale reo, il che non saputo fa che noi, 
                     le cose che fuggire si dovrebbono amando et 
                     quell'altre che sono da essere seguitate non amando,
-                    et tale volta o meno o più del convenevole hora schifandole et hora cercandole, 
+                    et tale volta o meno o più del convenevole hora schifandole 
+                    <app>
+                        <lem wit="#T16">et hora</lem>
+                        <rdg wit="#M">
+                            <subst>
+                            <seg>et</seg>
+                            <del>quando</del>
+                            <add place="above">hora</add>
+                            </subst>
+                        </rdg>
+                    </app>
+                    cercandole, 
                     travagliati et smarriti viviamo,
                     ho voluto alcuni ragionamenti raccogliere, 
-                    che in una brigata di tre nostre valorose donne et in parte di madonna la Reina di Cipri,
+                    che in una brigata di tre nostre valorose donne et in parte di 
+                    <app>
+                        <lem wit="#T16">madonna</lem>
+                        <rdg wit="#M">
+                            <seg>mad.</seg>
+                            <add place="above">onna</add>
+                            <note type="editorial">onna agg. interl. sup.</note>
+                        </rdg>
+                    </app>
+                    <persName ref="#caterina">Reina di Cipri</persName>,
                     pochi dì sono, tre nostri aveduti et intendenti giovani fecero d'Amore, 
                     assai ampia et diversamente questionandone in tre giornate,
                     a·ffine che il giovamento et pro che essi hanno a me renduto,
@@ -403,9 +656,47 @@
                     et leggere le giovevoli cose et sopra l'altre questa, 
                     perciò che non amare come che sia in nessuna stagione si puote,
                     quando si vede che da natura insieme col vivere a tutti gli huomini è dato
-                    che ciascuno alcuna cosa sempre ami et sempre disii) pure io,
-                    che giovane sono, gli giovani huomini et le giovani donne conforto et
-                    invito maggiormente.
+                    che ciascuno alcuna cosa sempre ami et sempre 
+                    <app>
+                        <lem wit="#T16">disii</lem>
+                        <rdg wit="#M">disij</rdg>
+                    </app>
+                    ) 
+                    <app>
+                        <lem wit="#T16">pure</lem>
+                        <rdg wit="#M">
+                            <gap reason="illegible"/>
+                            <note type="editorial">segue a due lettere illeggibili cancellate</note>
+                        </rdg>
+                    </app>
+                    io,che giovane sono, gli giovani huomini et le giovani donne 
+                    <app>
+                        <lem wit="#T16">conforto et invito</lem>
+                        <rdg wit="#M">
+
+                            <!-- fase 1 -->
+                            <del>consiglio et</del>
+                            <seg>invito</seg>
+
+                            <!-- fase 2 -->
+                            <add place="above">conforto et</add>
+
+                            <!-- fase 3 -->
+                            <del>conforto et</del>
+                            <add place="above">et</add>
+
+                            <!-- fase 4 -->
+                            <seg>invito</seg>
+                            <add place="above">
+                            et <gap reason="illegible"/>
+                            </add>
+
+                            <!--ultima-->
+                            <del>et <gap reason="illegible"/> </del>
+
+                        </rdg>
+                    </app>
+                    maggiormente.
                 </p>
 
                 <p n="7" xml:id="T1_s1_p7" corresp="#al_s1_p7">
@@ -415,7 +706,15 @@
                 </p>
 
                 <p n="8" xml:id="T1_s1_p8" corresp="#al_s1_p8">
-                    Il che, quanto debba essere lor caro, né io  hora dirò, 
+                    Il che, quanto debba 
+                    <app>
+                        <lem wit="#T16">essere</lem>
+                        <rdg wit="#M">
+                            <seg>esser</seg>
+                            <add place="inline">e</add>
+                        </rdg>
+                    </app>
+                    lor caro, né io  hora dirò, 
                     et essi meglio potranno ne gli altri loro più maturi anni giudicare.
                 </p>
 
@@ -429,7 +728,12 @@
                 </p>
 
                 <p n="10" xml:id="T1_s1_p10" corresp="#al_s1_p10">
-                    Per la qual cosa bellissimo ritrovamento delle genti è da dire che sieno le lettre istate,
+                    Per la qual cosa 
+                    <app>
+                        <lem wit="#T1">bellissimo</lem>
+                        <rdg wit="#M">belissimo</rdg>
+                    </app>
+                    ritrovamento delle genti è da dire che sieno le lettre istate,
                     nelle quali noi molte cose passate, che non potrebbono altrimenti essere alla nostra notitia pervenute, 
                     tutte quasi in un specchio riguardando et quello loro di loro che faccia per noi raccogliendo,
                     da gli altrui essempi ammaestrati ad entrare ne gli non prima o solcati pelaghi o caminati sentieri della vita, 
@@ -444,20 +748,31 @@
 
                 <p n="12" xml:id="T1_s1_p12" corresp="#al_s1_p12">
                     Ma lasciando questo da parte stare et alle ragionate cose d'Amore,
-                    che io dissi, venendo, acciò che meglio si possa ogni loro parte scorgere tale,
-                    quale appunto ciascuna fu ragionata, bene sarà che, prima che io passi di loro 
+                    che io dissi, venendo, acciò che meglio si possa ogni loro parte 
+                    <app>
+                        <lem wit="#T1">scorgere</lem>
+                        <rdg wit="#M">
+                            <subst>
+                            <del><unclear>intendere, né più</unclear></del>
+                            <add place="above">scorgere</add>
+                            </subst>
+                            <note type="editorial">scorgere spscr.</note>
+                        </rdg>
+                    </app>
+                    tale, quale appunto ciascuna fu ragionata, bene sarà che, prima che io passi di loro 
                     più innanzi, come il ragionare havesse luoco si faccia chiaro.
                 </p>
 
             </div>
 
+ 
 
             <!--SEQUENZA 2-->
             <div type="sequence" n="2" xml:id="T1_seq2">
 
 
                 <p n="1" xml:id="T1_s2_p1" corresp="#al_s2_p1">
-                    Asolo adunque, 
+                    <placeName ref="#asolo">Asolo</placeName> adunque, 
                     <app>
                         <lem wit="#T1">vago</lem>
                         <rdg wit="#M">
@@ -480,7 +795,7 @@
                             <note type="editorial">la prima parentesi tonda è agg. in rigo, la seconda è riscr. sulla virgola che segue sapere</note>
                         </rdg>
                     </app>
-                    arnese della Reina di Cipri, con la cui famiglia, hoggi di molto nella nostra
+                    arnese della <persName ref="#caterina">Reina di Cipri</persName>, con la cui famiglia, hoggi di molto nella nostra
                     città 
                     <app>
                         <lem wit="#T1">honorata et illustre</lem>
@@ -515,7 +830,7 @@
                 <p n="3" xml:id="T1_s2_p3" corresp="#al_s2_p3">
                     Il perchè fecevi l'apparecchio delle nozze ordinare bello et grande, et,
                     invitato delle vicine contrade chiunque più honorato huomo era con le lor
-                    donne, et da Vinegia similmente, in suoni et canti et balli et solennissimi 
+                    donne, et da <placeName ref="#vinegia">Vinegia</placeName> similmente, in suoni et canti et balli et solennissimi 
                     conviti l'un giorno doppo l'altro ne menava festeggiando con sommo piacere 
                     di 
                     <app>
@@ -532,7 +847,7 @@
                 </p>
 
                 <p n="4" xml:id="T1_s2_p4" corresp="#al_s2_p4"> 
-                    Erano quivi tra gli altri, che invitati dalla Reina vennero
+                    Erano quivi tra gli altri, che invitati dalla <persName ref="#caterina">Reina</persName> vennero
                     a quelle feste, tre gentili huomini della nostra città, giovani et d'alto cuore,
                     e quali, da' loro primi anni ne gli 
                     <app>
@@ -588,7 +903,7 @@
                     sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.
                 </p>
 
-                <p n="6" xml:id="T1_s2_p6" corresp="#al_s2_p6"> Quantunque Perottino, (che 
+                <p n="6" xml:id="T1_s2_p6" corresp="#al_s2_p6"> Quantunque <persName ref="#perottino">Perottino</persName>, (che 
                 <app>
                     <lem wit="#T1">così nominare un di loro m’è piaciuto in questi sermoni</lem>
                     <rdg wit="#M">
@@ -624,20 +939,67 @@
                     quello che l'animo
                     sempre havea in tristo pensiero; nè quivi venuto sarebbe, se da' suoi compagni,
                     che questo maestrevolmente fecero, acciò che egli tra gli allegri dimorando
-                    si rallegrasse, astretto  et sospinto a venirvi non fusse stato. 
+                    si rallegrasse, astretto  et sospinto a venirvi non 
+                    <app>
+                        <lem wit="#T16">fusse stato</lem>
+                        <rdg wit="#M">
+                            <seg>fusse stato</seg>
+                            <note type="editorial">inizio della variante estesa che prosegue nel paragrafo successivo</note>
+                        </rdg>
+                    </app>. 
                 </p>
 
-                <p n="8" xml:id="T1_s2_p8" corresp="#al_s2_p8"> Nè pure solamente Perottino ho io con infinita voce in questa guisa nomato,
-                    ma le tre donne et gli altri giovani anchora; non per altro rispetto, se 
-                    non per tôrre alle vane et sciocche menti de' volgari occasione, gli loro veri nomi non
-                    appalesando, di pensar cosa in parte alcuna meno che convenevole alla loro 
-                    honestissima et interissima vita. 
+                <p n="8" xml:id="T1_s2_p8" corresp="#al_s2_p8"> 
+                    <app>
+                        <lem wit="#T1"> Nè pure solamente <persName ref="#perottino">Perottino</persName> ho io con infinita voce in questa guisa nomato,
+                                ma le tre donne et gli altri giovani anchora; non per altro rispetto, se 
+                                non per tôrre alle vane et sciocche menti de' volgari occasione, gli loro veri nomi non
+                                appalesando, di pensar cosa in parte alcuna meno che convenevole alla loro 
+                                honestissima et interissima vita. 
+                        </lem>
+
+                        <rdg wit="#M">
+                            Né pure solamente <persName ref="#perottino">Perottino</persName> così volle che io il suo vero nome altrimenti
+                            <del>in queste carte</del> non appalesassi,
+                            ma le tre donne et gli altri giovani ancora
+                            (che se ne fusse <del>la</del> cagione)
+                            <del>dolcemente</del> mi pregarono che io facessi medesimamente de’ nomi loro;
+                            credo io per tôrre occasione alle sciocche menti de’ volgari di pensar cosa in parte alcuna meno
+                            che convenevole alla loro honestissima et interissima vita, istimando per aventura che questi sermoni potessono in mano
+                            <del>fusse stato ... altrimenti non appalesassi ... fusse cagione) mi pregarono ... potessono</del> in mano fusse stato.
+                            Né pure solamente <persName ref="#perottino">Perottino</persName> ho io con infinita voce chiamato, ma le tre donne et gli altri giovani anchora; non per altro
+                            rispetto, se non per tôrre alle menti de' volgari occasione, gli loro veri nomi non appalesando, di pensar cosa in parte 
+                            alcuna meno che convenevole alla loro honestissima et interissima vita.
+                        </rdg>
+                    </app> 
                 </p>
 
-                <p n="9" xml:id="T1_s2_p9" corresp="#al_s2_p9"> Con ciò sia cosa che questi parlari, d'uno in altro
-                    passando, a brieve andare possono in contezza de gli huomini pervenire,
+                <p n="9" xml:id="T1_s2_p9" corresp="#al_s2_p9"> 
+                        <app>
+                        <lem wit="#T1"> Con ciò sia cosa che questi parlari, d'uno in altro passando, a brieve andare possono in contezza </lem>
+
+                        <rdg wit="#M">
+                            Con ciò sia cosa che questi parlari
+                            <del>per aventura possono</del> d'uno in altro passando, a brieve andare <note type="editorial">marg. d. e in calce alla c. 50 r.</note>,
+                            <del>in mano</del>fusse stato ... con infinita voce <del>chiamato</del> ... sia <del>cosa</del> che ... parlari,
+                            d'uno in altro ... andare <del>per aventura</del> possono in contezza <note type="editorial">in calce e marg. d. sempre di c. 50 r</note>,
+                           
+                        </rdg>
+                    </app> 
+                
+                    
+                    de gli huomini pervenire,
                     de' quali non pochi sogliono esser coloro che le cose sane le più volte
-                    rimirano con occhio non sano.
+                    rimirano con occhio non 
+                    <app>
+                        <lem wit="#T16">sano.</lem>
+                        <rdg wit="#M">
+                            <seg>sano.</seg>
+                            <del> Il che ho io fatto, sì come debbo, sollecito di compiacergli; et dove il nomargli m'
+                            è venuto nella penna, con semplici et finte voci mi sono passato in guisa, che non più
+                            saranno di quello, che essi hanno voluto essere, conosciuti.</del>
+                        </rdg>
+                    </app>
                 </p>
             </div>
 
@@ -645,12 +1007,32 @@
             <div type="sequence" n="3" xml:id="T1_seq3">
 
                 <p n="1" xml:id="T1_s3_p1" corresp="#al_s3_p1">
-                Ma tornando alle nozze della Reina, mentre che elle così andavano
+                Ma tornando alle nozze della <persName ref="#caterina">Reina</persName>, mentre che elle così andavano
                 com'io dissi, un giorno tra gli altri nella fine del desinare, che sempre
-                era splendido et meraviglioso et da diversi giuochi d'huomini che 
+                era 
+                <app>
+                    <lem wit="#T16">splendido</lem>
+                    <rdg wit="#M">
+                        <subst>
+                        <del>sprendido</del>
+                        <add>
+                            sp<supplied reason="editorial">l</supplied>endido
+                        </add>
+                        </subst>
+                    </rdg>
+                </app>
+                et meraviglioso et da diversi giuochi d'huomini che 
                 ci soglion far ridere et da suoni di vari stormenti et da canti hora d'una 
-                maniera et quando d'altra rallegrato, due vaghe fanciulle per mano tenendosi
-                et con alegro sembiante al capo delle tavole, dove la Reina sedea, 
+                maniera et quando d'altra rallegrato, due vaghe 
+                <app>
+                    <lem wit="#T16">fanciulle</lem>
+                    <rdg wit="#M">
+                        fan<supplied reason="editorial">ciulle</supplied>
+                        <note type="editorial">ultima parola di c. 50v.</note>
+                    </rdg>
+                </app> 
+                per mano tenendosi
+                et con alegro sembiante al capo delle tavole, dove la <persName ref="#caterina">Reina</persName> sedea, 
                 venute, riverentemente la salutarono; et poi che l'hebbero salutata, amendue 
                 levatesi, la maggiore, un bellissimo liuto che nell'una mano tenea
                 con dolce atto al petto recandosi et assai maestrevolmente toccandolo, 
@@ -658,7 +1040,7 @@
                 accordando, così incominciò a dire:
                 </p>
 
-                <lg type="poem" xml:id="1_lg1">
+                <lg type="poem" xml:id="1_lg1" corresp="#al_s3_lg1">
                     <head>Verses 1</head>
                     <l n="1"> Io vissi pargoletta in festa e 'n gioco,</l>
                     <l n="2">De' miei pensier, di mia sorte contenta:</l>
@@ -685,6 +1067,25 @@
             <!--T16 - 1553-->
             <div type="edition" xml:id="T16">
 
+            <head type="title" xml:id="T16_book1_title_main" corresp="#al_book1_title_main">
+                <seg xml:id="T16_book1_title_main_a1" corresp="#al_book1_title_main_a1">
+                    DE GLI ASOLANI DI MESSER PIETRO BEMBO
+                </seg>
+                <lb/>
+                <seg xml:id="T16_book1_title_main_a2" corresp="#al_book1_title_main_a2">
+                    NE' QUALI SI RAGIONA D'AMORE
+                </seg>
+            </head>
+
+            <head type="book" xml:id="T16_book1_title_book" corresp="#al_book1_title_book">
+                <seg xml:id="T16_book1_title_book_a1" corresp="#al_book1_title_book_a1">
+                <app>
+                    <lem wit="#T16">LIBRO PRIMO</lem>
+                    <rdg wit="#T10">PRIMO LIBRO</rdg>
+                </app>
+                </seg>
+            </head>
+
             <!--SEQUENZA 1-->
             <div type="sequence" n="1" xml:id="T16_seq1">
                 <p n="1" xml:id="T16_s1_p1" corresp="#al_s1_p1">
@@ -695,18 +1096,37 @@
                     non sia lor tolto il potere et vela et governo là, dove essi di giugnere procacciano
                     o almeno dove più la loro salute veggono, drizzare; et piace
                     a quelli che per contrada non usata caminano, qualhora essi, a parte venuti
-                    dove molte vie faccian capo, in qual più tosto sia da mettersi non
+                    <app>
+                        <lem wit="#T16">dove</lem>
+                        <rdg wit="#T10">dove parimente</rdg>
+                    </app>
+                    molte vie faccian capo, in qual più tosto sia da mettersi non
                     scorgendo, stanno in sul piè dubitosi et sospesi, incontrare chi loro la
-                    diritta insegni, sì che essi possano all'albergo senza errore, o forse prima
+                    diritta insegni, sì che essi possano 
+                    <app>
+                        <lem wit="#T16">all'</lem>
+                        <rdg wit="#T10">a l'</rdg>
+                    </app>
+                    albergo senza errore, o forse prima
                     che la notte gli sopragiunga, pervenire. 
                 </p>
                     
                 <p n="2" xml:id="T16_s1_p2" corresp="#al_s1_p2">
-                    Per la qual cosa avisando io, da quello che che si vede avenire tutto dì,
+                    Per la qual cosa
+                    <app>
+                        <lem wit="#T16">avisando</lem>
+                        <rdg wit="#T10">estimando</rdg>
+                    </app> 
+                    io, da quello che che si vede avenire tutto dì,
                     pochissimi essere quegli huomini,
                     a' quali nel peregrinaggio di questa nostra vita mortale, 
                     hora dalla turba delle passioni soffiato et hora dalle tante
-                    et così al vero somiglianti apparenze d'openioni fatto incerto,
+                    et così al vero somiglianti apparenze d'
+                    <app>
+                        <lem wit="#T16">openioni</lem>
+                        <rdg wit="#T10">oppenioni</rdg>
+                    </app> 
+                    fatto incerto,
                     quasi per lo continuo et di calamita et di scorta non faccia mestiero,
                     ho sempre giudicato gratioso ufficio  per coloro adoperarsi,
                     i quali, delle cose o ad essi avenute o da altri apparate o per se medesimi ritrovate trattando, 
@@ -735,11 +1155,23 @@
                     et quelle che sono da seguire non amando, et tal volta o meno o più 
                     del convenevole hora schifandole et hora cercandole,
                     travagliati et smarriti viviamo, ho voluto alcuni ragionamenti raccogliere,
-                    che in una brigata di tre nostre valorose donne et in parte di madonna la Reina di Cipri, pochi dì sono, 
+                    che in una brigata di tre nostre valorose donne et in parte di madonna la <persName ref="#caterina">Reina di 
+                    <app>
+                        <lem wit="#T16">Cipri</lem>
+                        <rdg wit="#T10">Cipro</rdg>
+                    </app></persName>, pochi dì sono, 
                     tre nostri aveduti et intendenti giovani fecero d'Amore, 
                     assai diversamente questionandone in tre giornate, 
-                    a·ffine che il giovamento et pro che essi hanno a me renduto, 
-                    da a·lloro che fatti gli hanno sentendogli, che nel vero non è stato poco,
+                    <app>
+                        <lem wit="#T16">a·ffine</lem>
+                        <rdg wit="#T10">a fine</rdg>
+                    </app> 
+                    che il giovamento et pro che essi hanno a me renduto, 
+                    <app>
+                        <lem wit="#T16">da·lloro</lem>
+                        <rdg wit="#T10">da loro</rdg>
+                    </app>
+                    che fatti gli hanno sentendogli, che nel vero non è stato poco,
                     possano etiandio rendere a qualunque altro, così hora da me raccolti,
                     piacesse di sentirgli.
                     </p>
@@ -767,7 +1199,11 @@
                 <p n="9" xml:id="T16_s1_p9" corresp="#al_s1_p9">
                     Ma di vero, sì come nel più delle cose l'uso è ottimo et certissimo maestro,
                     così in alcune, et in quelle massimamente che possono non meno di noia essere che
-                    di diletto cagione, sì come mostra che questa sia, 
+                    di diletto cagione, sì come mostra che 
+                    <app>
+                        <lem wit="#T16">questa</lem>
+                        <rdg wit="#T10">questi</rdg>
+                    </app> sia, 
                     l'ascoltarle o leggerle in altrui,
                     prima che a pruova di loro si venga, 
                     senza fallo molte volte a molti huomini di molto giovamento è stato.
@@ -804,16 +1240,16 @@
                 
 
                 <p n="1" xml:id="T16_s2_p1" corresp="#al_s2_p1">
-                Asolo aduqnue, vago et piacevole castello posto ne gli stremi gioghi
+                <placeName ref="#asolo">Asolo</placeName> aduqnue, vago et piacevole castello posto ne gli stremi gioghi
                 delle nostre alpi sopra il Trivigiano, è, sì come ogniuno dee sapere, 
-                di madonna la Reina di 
+                di madonna la <persName ref="#caterina">Reina di 
                 <app>
                     <lem wit="#T16">Cipri</lem>
                     <rdg wit="#T10">Cipro</rdg>
-                </app>
+                </app> </persName>
                 , con la cui 
                 <app>
-                    <lem wit="#T16">famiglia, la quale è detta Cornelia,</lem>
+                    <lem wit="#T16">famiglia, la quale è detta <orgName ref="#cornelia">Cornelia</orgName>,</lem>
                     <rdg wit="#T10">famiglia</rdg>
                 </app> 
                 molto nella nostra città honorata et illustre, è la mia non solamente 
@@ -830,7 +1266,7 @@
                 <p n="3" xml:id="T16_s2_p3" corresp="#al_s2_p3">Per che vi fece 
                 l'apparecchio delle nozze ordinare bello et grande, et, invitatovi delle
                 vicine contrade qualunque più honorato huomo v'era con le lor donne,
-                et da Vinegia similmente, in suoni et canti et balli et 
+                et da <placeName ref="#vinegia">Vinegia</placeName> similmente, in suoni et canti et balli et 
                 <app>
                     <lem wit="#T16">solennissimi</lem>
                     <rdg wit="#T10">sollennissimi</rdg>
@@ -839,7 +1275,7 @@
                 di ciascuno.
                 </p>
 
-                <p n="4" xml:id="T16_s2_p4" corresp="#al_s2_p4"> Erano quivi tra gli altri, che invitati dalla Reina vennero
+                <p n="4" xml:id="T16_s2_p4" corresp="#al_s2_p4"> Erano quivi tra gli altri, che invitati dalla <persName ref="#caterina">Reina</persName> vennero
                     a quelle feste, tre gentili huomini della nostra città, giovani et d'alto cuore,
                     i quali, da' loro primi anni ne gli studi delle lettere usati et in essi tuttavia
                     dimoranti per lo più tempo, oltre a'cciò il pregio d'ogni bel costume
@@ -857,14 +1293,14 @@
                 loro belle et vaghe giovani et di gentili costumi ornate, [perciò che prossimani 
                 eran loro per sangue et lunga dimestichezza con esse et co' lor mariti 
                 <app>
-                        <lem wit="#T16">haveano, i quali tutti e tre di què dì a Vinegia tornati erano per loro bisogne</lem>
+                        <lem wit="#T16">haveano, i quali tutti e tre di què dì a <placeName ref="#vinegia">Vinegia</placeName> tornati erano per loro bisogne</lem>
                         <rdg wit="#T10">haveano</rdg>
                     </app> 
                 ], più spesso et più sicuramente si davano che con altre, volentieri 
                 sempre in sollazzevoli ragionamenti dolci et honeste dimore trahendo.
                 </p>
 
-                <p n="6" xml:id="T16_s2_p6" corresp="#al_s2_p6"> Quantunque Perottino, che così nominare un di loro m'è piaciuto
+                <p n="6" xml:id="T16_s2_p6" corresp="#al_s2_p6"> Quantunque <persName ref="#perottino">Perottino</persName>, che così nominare un di loro m'è piaciuto
                     in questi sermoni, poco et rado parlasse, nè fosse chi riso in bocca gli
                     havesse solamente una volta in tutte quelle feste veduto. 
                 </p>
@@ -876,7 +1312,7 @@
                     si rallegrasse, astretto  et sospinto al venirvi non fosse stato. 
                 </p>
 
-                <p n="8" xml:id="T16_s2_p8" corresp="#al_s2_p8"> Nè pure solamente Perottino ho io con infinita voce in questa guisa nomato,
+                <p n="8" xml:id="T16_s2_p8" corresp="#al_s2_p8"> Nè pure solamente <persName ref="#perottino">Perottino</persName> ho io con infinita voce in questa guisa nomato,
                     ma le tre donne et gli altri giovani anchora; non per altro rispetto, se 
                     non per la tôrre alle vane menti de' volgari occasione, i loro veri nomi non
                     palesando, di pensar cosa in parte alcuna meno che convenevole alla loro 
@@ -890,29 +1326,49 @@
                 </p>
         </div>
 
-        <div type="sequence" n="3" xml:id="T1_seq3">
+
+        <!--SEQUENNZA 3-->
+        <div type="sequence" n="3" xml:id="T16_seq3">
 
                 <p n="1" xml:id="T16_s3_p1" corresp="#al_s3_p1">
-                Ma alle nozze della Reina tornando, mentre che elle così andavano
-                come io dissi, un giorno tra gli altri nella fine del desinare, che sempre
+                Ma alle nozze della <persName ref="#caterina">Reina</persName> tornando, mentre che elle così andavano
+                <app>
+                    <lem wit="#T16">come</lem>
+                    <rdg wit="#T10">com'</rdg>
+                </app> 
+                io dissi, un giorno tra gli altri nella fine del desinare, che sempre
                 era splendido et da diversi giuochi d'huomini che ci soglion far ridere
                 et da suoni di vari strumenti et da canti hora d'una maniera et quando
                 d'altra rallegrato, due vaghe fanciulle per mano tenendosi, con lieto sembiante
-                al capo delle tavole, là dove la Reina sedea, venute, riverentemente
+                al capo delle tavole, là dove la <persName ref="#caterina">Reina</persName> sedea, venute, riverentemente
                 la salutarono; et poi che l'hebbero salutata, amendue levatesi, la maggiore,
-                un bellissimo liuto che nell'una mano teneva al petto recandosi 
+                un bellissimo liuto che nell'una mano teneva al petto 
+                <app>
+                    <lem wit="#T16">recandosi </lem>
+                    <rdg wit="#T10">reccandosi </rdg>
+                </app> 
                 et assai maestrevolmente toccandolo, dopo alquanto spatio col piacevole
                 suono di quello la soave voce di lei accordando et dolcissimamente cantando, così disse:
                 </p>
 
-                <lg type="poem" xml:id="T16_lg1">
+                <lg type="poem" xml:id="T16_lg1" corresp="#al_s3_lg1">
                     <head>Verses 1</head>
                     <l n="1"> Io vissi pargoletta in festa e 'n gioco,</l>
                     <l n="2">De' miei pensier, di mia sorte contenta:</l>
-                    <l n="3">Hor sì m'afflige Amor et mi tormenta,</l>
+                    <l n="3">Hor sì m'
+                        <app>
+                            <lem wit="#T16">afflige </lem>
+                            <rdg wit="#T10">affligge</rdg>
+                        </app> 
+                        Amor et mi tormenta,</l>
                     <l n="4">C'homai da tormentar gli avanza poco.</l>
                     <l n="5"> Credetti, lassa, haver gioiosa vita</l>
-                    <l n="6">Da prima entrando, Amor, a la tua corte;</l>
+                    <l n="6">Da prima 
+                        <app>
+                            <lem wit="#T16">entrando</lem>
+                            <rdg wit="#T10">intrando</rdg>
+                        </app> 
+                        , Amor, a la tua corte;</l>
                     <l n="7">Et già n'aspetto dolorsa morte:</l>
                     <l n="8">O mia credenza, come m'hai fallita</l>
                     <l n="9"> Mentre ad Amor non si commise anchora,</l>
