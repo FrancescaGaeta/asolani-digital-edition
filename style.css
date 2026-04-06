@@ -490,7 +490,7 @@ nav a.active {
 
 .macro-banner-inner {
   width: 100%;
-  min-height: 150px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
