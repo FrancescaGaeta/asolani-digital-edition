@@ -971,6 +971,11 @@ nav a.active {
   box-shadow: none;
 }
 
+.book-image-q {
+  transform: scale(0.82);
+  transform-origin: center;
+}
+
 .book-caption {
   max-width: 220px;
   margin: 0 auto;
