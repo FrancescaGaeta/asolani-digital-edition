@@ -291,24 +291,26 @@
     </article>
 
   </div>
-</section>
-
-  <section class="edition-criteria-section reveal reveal-2">
+<section class="edition-criteria-section reveal reveal-2">
   <h2 class="section-title centered-title">Criteri di edizione</h2>
-  <p class="section-subtitle">Consultazione del PDF</p>
+  <p class="section-subtitle">Double-page consultation</p>
 
   <div class="edition-criteria-viewer">
     <div class="edition-criteria-topbar">
-      <span class="edition-criteria-label">criteri.pdf</span>
-      <a href="foto/criteri.pdf" target="_blank" class="edition-criteria-link">Open PDF in new tab</a>
+      <span class="edition-criteria-label">Criteri di edizione</span>
+
+      <div class="edition-criteria-controls">
+        <button id="prevSpread" type="button">← Previous</button>
+        <span id="pageIndicator">Pages 1–2</span>
+        <button id="nextSpread" type="button">Next →</button>
+      </div>
     </div>
 
     <div class="edition-criteria-frame-wrap">
-      <iframe
-        src="foto/criteri.pdf"
-        title="Criteri di edizione PDF"
-        class="edition-criteria-frame">
-      </iframe>
+      <div class="pdf-spread" id="pdfSpread">
+        <canvas id="pageLeft" class="pdf-page"></canvas>
+        <canvas id="pageRight" class="pdf-page"></canvas>
+      </div>
     </div>
   </div>
 </section>
