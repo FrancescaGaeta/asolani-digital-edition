@@ -892,9 +892,16 @@ nav a.active {
   text-align: center;
 }
 
+.witness-card {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .witness-card img {
-  width: 100%;
-  max-width: 220px;
+  width: 220px;
   height: 320px;
   object-fit: contain;
   display: block;
