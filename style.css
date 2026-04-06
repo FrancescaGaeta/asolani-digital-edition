@@ -968,7 +968,7 @@ nav a.active {
   color: var(--ink);
 }
 
-/* criteri di edizione pdf viewer */
+/* criteri di edizione - two page pdf viewer */
 .edition-criteria-section {
   max-width: 1280px;
   margin: 0 auto;
@@ -994,6 +994,7 @@ nav a.active {
   padding: 0.95rem 1.2rem;
   background: linear-gradient(180deg, rgba(221,122,115,0.92), rgba(187,89,85,0.95));
   color: #fff8f5;
+  flex-wrap: wrap;
 }
 
 .edition-criteria-label {
@@ -1002,32 +1003,74 @@ nav a.active {
   letter-spacing: 0.04em;
 }
 
-.edition-criteria-link {
-  color: #fffaf7;
-  text-decoration: none;
-  font-size: 0.92rem;
-  border-bottom: 1px solid rgba(255,255,255,0.45);
+.edition-criteria-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
-.edition-criteria-link:hover {
-  color: #fff;
-  border-bottom-color: rgba(255,255,255,0.8);
+.edition-criteria-controls button {
+  border: none;
+  background: rgba(255,255,255,0.16);
+  color: #fffaf7;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  transition: 0.25s ease;
+}
+
+.edition-criteria-controls button:hover {
+  background: rgba(255,255,255,0.26);
+}
+
+.edition-criteria-controls button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+#pageIndicator {
+  font-size: 0.95rem;
+  color: #fffaf7;
 }
 
 .edition-criteria-frame-wrap {
-  padding: 0.9rem;
+  padding: 1.25rem;
   background:
     linear-gradient(180deg, rgba(252,250,246,0.82), rgba(243,236,226,0.92));
 }
 
-.edition-criteria-frame {
+.pdf-spread {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.pdf-page {
   width: 100%;
-  height: 85vh;
-  min-height: 700px;
-  border: 0;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: inset 0 0 0 1px rgba(98, 73, 56, 0.08);
+  height: auto;
+  display: block;
+  background: #fffdf9;
+  border-radius: 10px;
+  box-shadow:
+    0 8px 24px rgba(72, 51, 36, 0.10),
+    inset 0 0 0 1px rgba(98, 73, 56, 0.08);
+}
+
+@media (max-width: 900px) {
+  .pdf-spread {
+    grid-template-columns: 1fr;
+  }
+
+  #pageRight {
+    display: none;
+  }
+
+  .edition-criteria-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* footer */
