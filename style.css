@@ -869,7 +869,7 @@ nav a.active {
 
 .dilemmi-choices-figure--cover img {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   margin: 0 auto;
   display: block;
   background: transparent;
@@ -881,7 +881,9 @@ nav a.active {
 
 .dilemmi-choices-figure--criteria img {
   width: 100%;
+  max-width: 900px;
   display: block;
+  margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 12px 28px rgba(60, 40, 20, 0.12);
   border: 8px solid rgba(255, 255, 255, 0.55);
