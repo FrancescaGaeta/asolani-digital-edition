@@ -393,3 +393,9 @@ div + .lg {
   margin-right: 0.4rem !important;
   color: rgba(92,64,53,0.55) !important;
 }
+
+/* Nasconde 3ª e 4ª icona nella barra EVT */
+.globalMenu .viewModeMenu .mode-view:nth-child(3),
+.globalMenu .viewModeMenu .mode-view:nth-child(4) {
+  display: none !important;
+}
