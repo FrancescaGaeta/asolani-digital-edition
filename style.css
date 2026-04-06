@@ -1059,6 +1059,23 @@ nav a.active {
   box-shadow: inset 0 0 0 1px rgba(98, 73, 56, 0.08);
 }
 
+/* specific image enlargements */
+.img-bembo-large {
+  max-width: 420px;
+  width: 100%;
+}
+
+.img-dilemmi-cover-large {
+  max-width: 430px !important;
+  width: 100%;
+}
+
+.book-image-1505-large,
+.book-image-1553-large {
+  transform: scale(1.18);
+  transform-origin: center;
+}
+
 /* footer */
 footer {
   max-width: var(--maxw);
