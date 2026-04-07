@@ -42,10 +42,8 @@
     <h2>Editorial rationale</h2>
     <div class="panel">
       <p>
-        The witnesses are treated as autonomous textual systems. The alignment is
-        derived from encoded correspondences (<code>@corresp</code>) in the TEI file.
-        Where textual segments correspond, they are displayed in parallel; where they
-        diverge, empty cells preserve structural asymmetry.
+        The transition from the XML encoding to the web visualization was achieved through a JavaScript script that reads the TEI file, interprets its structure, and transforms the encoded data into an interactive HTML table.</p>
+      <p>More specifically, once the page is loaded, the script fetches the XML file, parses it, and identifies the textual units that correspond across the three witnesses by means of the @corresp attribute. These aligned units are then grouped and displayed side by side in three columns, one for each witness (Q, T1, and T16), thus generating the synoptic view. The script also processes the TEI apparatus elements, such as <app>, <lem>, <rdg>, and <note>, converting them into clickable elements on the webpage: the main text remains readable, while the apparatus can be expanded and consulted interactively. In this way, the TEI encoding is not displayed directly, but is dynamically transformed into a user-friendly digital interface that allows both parallel reading and access to the apparatus.</p>
       </p>
     </div>
   </section>
