@@ -720,23 +720,6 @@ nav a.active {
 .pos-5 { left: 66%; }
 .pos-6 { left: 82%; }
 
-.image-row {
-  display: flex;
-  gap: 20px; 
-  justify-content: center; 
-  flex-wrap: wrap; 
-
-.feature-image img {
-  width: 100%;
-  max-width: 300px; 
-  height: auto;
-  border-radius: 8px; 
-}
-.feature-image {
-  flex: 1;
-  text-align: center;
-}
-
 /* parallel segmentation / evt */
 .parallel-page {
   max-width: none;
