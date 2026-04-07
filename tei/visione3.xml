@@ -125,6 +125,7 @@
         <body>
             <!--MANOSCRITTO Q-->
             <div type="edition" xml:id="Q">
+            <div type="dedication" xml:id="Q_dedication" corresp="al_dedication"/>
 
             <head type="title" xml:id="Q_book1_title_main" corresp="#al_book1_title_main">
                 <seg xml:id="Q_book1_title_main_a1" corresp="#al_book1_title_main_a1">
@@ -1071,7 +1072,7 @@
 
 
             <!--T1 - 1505-->
-            <div type="dedication" xml:id="t1_dedication">
+            <div type="dedication" xml:id="t1_dedication" corresp="al_dedication">
                 <opener>
                      <head>A MADONNA LUCREZIA ESTENSE BORGIA <lb/>
                             DUCHESSA ILLUSTRISSIMA DI FERRARA <lb/>
@@ -1617,6 +1618,7 @@
 
             <!--SEQUENZA 3-->
             <div type="sequence" n="3" xml:id="T1_seq3">
+            
 
                 <p n="1" xml:id="T1_s3_p1" corresp="#al_s3_p1">
                 Ma tornando alle nozze della <persName ref="#caterina">Reina</persName>, mentre che elle così andavano
@@ -1678,6 +1680,7 @@
 
             <!--T16 - 1553-->
             <div type="edition" xml:id="T16">
+            <div type="dedication" xml:id="T16_dedication" corresp="al_dedication"/>
 
             <head type="title" xml:id="T16_book1_title_main" corresp="#al_book1_title_main">
                 <seg xml:id="T16_book1_title_main_a1" corresp="#al_book1_title_main_a1">
