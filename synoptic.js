@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+ document.addEventListener("DOMContentLoaded", () => {
   loadSynopticView();
 });
 
@@ -40,6 +40,8 @@ async function loadSynopticView() {
 
       container.appendChild(row);
     });
+
+    activateVariantLinks(container);
 
   } catch (error) {
     console.error(error);
@@ -104,10 +106,18 @@ function buildWitnessTd(el, correspKey) {
   }
 
   const apparatusEntries = [];
-  const textHtml = renderNodeChildren(el, apparatusEntries);
+  const witnessId = getXmlId(el) || "unit";
+  const textHtml = renderNodeChildren(el, apparatusEntries, witnessId);
 
   const apparatusHtml = apparatusEntries.length
-    ? `<div class="inline-apparatus">${apparatusEntries.join("")}</div>`
+    ? `
+      <details class="apparatus-box">
+        <summary>Show apparatus</summary>
+        <div class="inline-apparatus">
+          ${apparatusEntries.join("")}
+        </div>
+      </details>
+    `
     : "";
 
   td.innerHTML = `
@@ -119,15 +129,15 @@ function buildWitnessTd(el, correspKey) {
   return td;
 }
 
-function renderNodeChildren(node, apparatusEntries = []) {
+function renderNodeChildren(node, apparatusEntries = [], witnessId = "unit") {
   let html = "";
   node.childNodes.forEach(child => {
-    html += renderSingleNode(child, apparatusEntries);
+    html += renderSingleNode(child, apparatusEntries, witnessId);
   });
   return html;
 }
 
-function renderSingleNode(node, apparatusEntries = []) {
+function renderSingleNode(node, apparatusEntries = [], witnessId = "unit") {
   if (node.nodeType === Node.TEXT_NODE) {
     return escapeHtml(node.nodeValue || "");
   }
@@ -142,7 +152,7 @@ function renderSingleNode(node, apparatusEntries = []) {
   if (name === "pb" || name === "cb") return "";
 
   if (name === "app") {
-    return renderAppInline(node, apparatusEntries);
+    return renderAppInline(node, apparatusEntries, witnessId);
   }
 
   if (name === "note") {
@@ -152,23 +162,23 @@ function renderSingleNode(node, apparatusEntries = []) {
   }
 
   if (name === "hi") {
-    return `<em>${renderNodeChildren(node, apparatusEntries)}</em>`;
+    return `<em>${renderNodeChildren(node, apparatusEntries, witnessId)}</em>`;
   }
 
   if (name === "q") {
-    return `<span class="quoted">${renderNodeChildren(node, apparatusEntries)}</span>`;
+    return `<span class="quoted">${renderNodeChildren(node, apparatusEntries, witnessId)}</span>`;
   }
 
   if (name === "persName" || name === "placeName" || name === "orgName") {
-    return `<span class="${name}">${renderNodeChildren(node, apparatusEntries)}</span>`;
+    return `<span class="${name}">${renderNodeChildren(node, apparatusEntries, witnessId)}</span>`;
   }
 
   if (name === "add") {
-    return `<span class="tei-add">${renderNodeChildren(node, apparatusEntries)}</span>`;
+    return `<span class="tei-add">${renderNodeChildren(node, apparatusEntries, witnessId)}</span>`;
   }
 
   if (name === "del") {
-    return `<span class="tei-del">${renderNodeChildren(node, apparatusEntries)}</span>`;
+    return `<span class="tei-del">${renderNodeChildren(node, apparatusEntries, witnessId)}</span>`;
   }
 
   if (
@@ -183,23 +193,24 @@ function renderSingleNode(node, apparatusEntries = []) {
     name === "rdg" ||
     name === "l"
   ) {
-    const content = renderNodeChildren(node, apparatusEntries);
+    const content = renderNodeChildren(node, apparatusEntries, witnessId);
     if (name === "l") return `${content}<br>`;
     return content;
   }
 
-  return renderNodeChildren(node, apparatusEntries);
+  return renderNodeChildren(node, apparatusEntries, witnessId);
 }
 
-function renderAppInline(appNode, apparatusEntries) {
+function renderAppInline(appNode, apparatusEntries, witnessId) {
   const lemEl = firstChildByLocalName(appNode, "lem");
   const rdgEls = childrenByLocalName(appNode, "rdg");
   const noteEls = childrenByLocalName(appNode, "note");
 
-  const lemmaText = lemEl ? normalizeText(lemEl.textContent) : "[no lemma]";
-  const lemmaHtml = lemEl ? renderNodeChildren(lemEl, []) : "[no lemma]";
-
   const appIndex = apparatusEntries.length + 1;
+  const appId = `${witnessId}-app-${appIndex}`;
+
+  const lemmaText = lemEl ? normalizeText(lemEl.textContent) : "[no lemma]";
+  const lemmaHtml = lemEl ? renderNodeChildren(lemEl, [], witnessId) : "[no lemma]";
 
   const readingsHtml = rdgEls.map(rdg => {
     const wit = rdg.getAttribute("wit") || "";
@@ -219,19 +230,47 @@ function renderAppInline(appNode, apparatusEntries) {
   }).join("");
 
   apparatusEntries.push(`
-    <div class="app-entry" id="app-${appIndex}">
-      <p><strong>Var.</strong> <strong>Lem:</strong> ${escapeHtml(lemmaText)}</p>
+    <div class="app-entry" id="${appId}">
+      <p><strong>Lemma:</strong> ${escapeHtml(lemmaText)}</p>
       ${readingsHtml ? `<ul>${readingsHtml}</ul>` : ""}
       ${notesHtml}
     </div>
   `);
 
   return `
-    <span class="variant-inline" title="Variant present here">
+    <a href="#${appId}" class="variant-inline variant-link" data-target="${appId}">
       ${lemmaHtml}
-      <sup class="variant-marker">${appIndex}</sup>
-    </span>
+    </a>
   `;
+}
+
+function activateVariantLinks(container) {
+  container.querySelectorAll(".variant-link").forEach(link => {
+    link.addEventListener("click", event => {
+      event.preventDefault();
+
+      const targetId = link.dataset.target;
+      if (!targetId) return;
+
+      const target = document.getElementById(targetId);
+      if (!target) return;
+
+      const cell = link.closest(".synoptic-cell");
+      if (!cell) return;
+
+      const details = cell.querySelector(".apparatus-box");
+      if (details) {
+        details.open = true;
+      }
+
+      cell.querySelectorAll(".app-entry.active").forEach(entry => {
+        entry.classList.remove("active");
+      });
+
+      target.classList.add("active");
+      target.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  });
 }
 
 function firstChildByLocalName(parent, localName) {
