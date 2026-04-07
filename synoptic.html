@@ -4,9 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Synoptic View – The Asolani Digital Edition</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
@@ -25,33 +29,59 @@
   </div>
 </header>
 
-<main>
+<main class="parallel-page">
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Synoptic View</h1>
-    <p>
-      This interface presents manuscript Q, the 1505 edition, and the 1553 redaction
-      in parallel. The alignment is based on TEI correspondence markers and preserves
-      both parallel and non-parallel structures.
-    </p>
-  </section>
-
-  <!-- EDITORIAL RATIONALE -->
-  <section class="section">
-    <h2>Editorial rationale</h2>
-    <div class="panel">
-      <p>
-        The transition from the XML encoding to the web visualization was achieved through a JavaScript script that reads the TEI file, interprets its structure, and transforms the encoded data into an interactive HTML table.</p>
-      <p>More specifically, once the page is loaded, the script fetches the XML file, parses it, and identifies the textual units that correspond across the three witnesses by means of the @corresp attribute. These aligned units are then grouped and displayed side by side in three columns, one for each witness (Q, T1, and T16), thus generating the synoptic view. The script also processes the TEI apparatus elements, such as <app>, <lem>, <rdg>, and <note>, converting them into clickable elements on the webpage: the main text remains readable, while the apparatus can be expanded and consulted interactively. In this way, the TEI encoding is not displayed directly, but is dynamically transformed into a user-friendly digital interface that allows both parallel reading and access to the apparatus.</p>
-      </p>
+  <section class="texts-title-slide reveal reveal-1">
+    <div class="texts-title-inner">
+      <div class="texts-title-line" aria-hidden="true">
+        <span></span>
+        <span class="dot"></span>
+        <span></span>
+      </div>
+      <h1>Synoptic View</h1>
     </div>
   </section>
 
-  <!-- SYNOPTIC VIEW -->
-  <main class="synoptic-page">
-  <div class="viewer-shell">
+  <section class="macro-banner reveal reveal-1">
+    <div class="macro-banner-inner">
+      <h2>Tripartite Visualization</h2>
+    </div>
+  </section>
 
+  <section class="evt-intro reveal reveal-2">
+    <article class="aw-panel">
+      <div class="panel-tag">Method</div>
+      <p>
+        This interface presents manuscript Q, the 1505 edition, and the 1553 redaction in parallel.
+        The alignment is based on TEI correspondence markers and preserves both parallel and non-parallel structures.
+      </p>
+      <p>
+        The transition from the XML encoding to the web visualization was achieved through a JavaScript script that reads the TEI file,
+        interprets its structure, and transforms the encoded data into an interactive HTML table.
+      </p>
+      <p>
+        Once the page is loaded, the script fetches the XML file, parses it, and identifies the textual units that correspond across the three witnesses by means of the <code>@corresp</code> attribute.
+        These aligned units are then grouped and displayed side by side in three columns, one for each witness (Q, T1, and T16), thus generating the synoptic view.
+      </p>
+      <p>
+        The script also processes the TEI apparatus elements, such as <code>&lt;app&gt;</code>, <code>&lt;lem&gt;</code>, <code>&lt;rdg&gt;</code>, and <code>&lt;note&gt;</code>,
+        converting them into interactive elements on the webpage: the main text remains readable, while the apparatus can be expanded and consulted when needed.
+      </p>
+    </article>
+  </section>
+
+  <section class="evt-shell reveal reveal-3">
+    <div class="evt-shell-topbar">
+      <span class="evt-shell-label">Synoptic Viewer</span>
+      <a
+        class="evt-open-link"
+        href="tei/version3.xml"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open XML/TEI
+      </a>
+    </div>
 
     <div class="viewer-inner">
       <div class="viewer-titlebar">Gli Asolani – Digital Edition</div>
@@ -79,21 +109,16 @@
         </div>
       </div>
     </div>
+  </section>
 
-  </div>
-</main>
-
-  <!-- CURRENT STATUS -->
-  <section class="section">
-    <h2>Current status</h2>
-    <div class="note">
+  <section class="evt-intro reveal reveal-2">
+    <article class="aw-panel">
+      <div class="panel-tag">Status</div>
       <p>
         This view is dynamically generated from the TEI source (<code>version3.xml</code>).
-        It reflects the current state of encoding and alignment based on parallel
-        segmentation. Further refinement may include more granular segmentation,
-        variant highlighting, and interactive apparatus visualization.
+        It reflects the current state of encoding and alignment based on correspondence markers and independent apparatuses for each witness.
       </p>
-    </div>
+    </article>
   </section>
 
 </main>
@@ -102,8 +127,6 @@
   <p>Francesca Gaeta · The Asolani Digital Edition · 2026</p>
 </footer>
 
-<!-- SCRIPT -->
 <script src="synoptic.js"></script>
-
 </body>
 </html>
