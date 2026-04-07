@@ -1331,22 +1331,7 @@ body {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
 }
 
-.viewer-topbar {
-  background: linear-gradient(180deg, #d98780 0%, var(--viewer-top-dark) 100%);
-  color: #fffaf7;
-  padding: 1.6rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
 
-.viewer-topbar a {
-  color: #fffaf7;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.6);
-}
 
 .viewer-inner {
   padding: 1.4rem;
