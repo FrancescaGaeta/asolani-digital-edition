@@ -1078,301 +1078,50 @@ nav a.active {
 
 
 /* synoptic */
-.synoptic-header,
-.synoptic-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.col-head {
-  font-weight: bold;
-  padding: 0.8rem 1rem;
-  border: 1px solid #ddd;
-  background: #f5f5f5;
-}
-
-.witness {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  background: #fff;
-}
-
-.witness h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.unit-meta {
-  font-size: 0.85rem;
-  color: #777;
-  margin-bottom: 0.8rem;
-}
-
-.witness-text {
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.witness-text.empty {
-  color: #999;
-  font-style: italic;
-}
-
-.toggle-app {
-  margin-bottom: 0.75rem;
-  cursor: pointer;
-}
-
-.apparatus {
-  border-top: 1px solid #ddd;
-  padding-top: 0.75rem;
-  font-size: 0.95rem;
-}
-
-.apparatus.hidden {
-  display: none;
-}
-
-.app-entry {
-  margin-bottom: 1rem;
-}
-
-.app-entry ul {
-  padding-left: 1.2rem;
-}
-
-.app-note {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.tei-add {
-  color: #7a1f1f;
-}
-
-.tei-del {
-  text-decoration: line-through;
-  opacity: 0.7;
-}
-
-.quoted {
-  font-style: italic;
-}
-
-@media (max-width: 900px) {
-  .synoptic-header,
-  .synoptic-row {
-    grid-template-columns: 1fr;
-  }
-}
-
-.synoptic-section {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 3rem;
-}
-
-.synoptic-table-wrapper {
-  margin-top: 2rem;
-  overflow-x: auto;
-}
-
-.synoptic-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  background: #fff;
-}
-
-.synoptic-table thead th {
-  text-align: left;
-  padding: 1rem 1.2rem;
-  border-bottom: 2px solid #d8d0ca;
-  background: #f7f4f0;
-  font-size: 1.15rem;
-}
-
-.synoptic-table tbody tr {
-  border-bottom: 1px solid #e3ddd7;
-  vertical-align: top;
-}
-
-.synoptic-table td {
-  padding: 1.25rem 1.2rem 1.5rem 1.2rem;
-  vertical-align: top;
-}
-
-.synoptic-table td + td,
-.synoptic-table th + th {
-  border-left: 1px solid #e3ddd7;
-}
-
-.unit-id {
-  font-size: 0.8rem;
-  color: #8b8178;
-  margin-bottom: 0.7rem;
-  letter-spacing: 0.02em;
-}
-
-.witness-text {
-  line-height: 1.85;
-  font-size: 1.05rem;
-}
-
-.witness-text.empty {
-  color: #9a928b;
-  font-style: italic;
-}
-
-.inline-apparatus {
-  margin-top: 0.9rem;
-  padding-top: 0.7rem;
-  border-top: 1px solid #e7e0da;
-  font-size: 0.92rem;
-}
-
-.app-entry {
-  margin-bottom: 0.8rem;
-}
-
-.app-entry ul {
-  margin: 0.3rem 0 0.5rem 1.2rem;
-  padding: 0;
-}
-
-.app-note {
-  margin: 0.3rem 0;
-  font-size: 0.9rem;
-  color: #6f645c;
-}
-
-.variant-inline {
-  background: rgba(184, 64, 64, 0.08);
-  border-bottom: 2px solid rgba(184, 64, 64, 0.35);
-  padding: 0 0.08em;
-  border-radius: 2px;
-}
-
-.variant-marker {
-  color: #b04848;
-  font-weight: 700;
-  font-size: 0.72em;
-  margin-left: 0.1em;
-}
-
-.note-inline {
-  color: #b04848;
-  font-size: 0.72em;
-  vertical-align: super;
-  margin-left: 0.15em;
-}
-
-.note-visible {
-  display: inline;
-  color: #7c6e64;
-  font-size: 0.92em;
-  margin-left: 0.25em;
-}
-
-.tei-add {
-  color: #8a2f2f;
-}
-
-.tei-del {
-  text-decoration: line-through;
-  opacity: 0.7;
-}
-
-.quoted {
-  font-style: italic;
-}
-
-@media (max-width: 1100px) {
-  .synoptic-section {
-    padding: 0 1.5rem;
-  }
-
-  .synoptic-table {
-    min-width: 980px;
-  }
-}
-
-:root {
-  --bg-page: #f3f0eb;
-  --viewer-top: #cd746d;
-  --viewer-top-dark: #bf665e;
-  --viewer-title: #d67d75;
-  --viewer-panel: #24343d;
-  --viewer-surface: #f8f6f3;
-  --viewer-border: #d9cfc8;
-  --text-main: #5c4038;
-  --text-soft: #8a7a72;
-  --accent: #b44f47;
-  --note-bg: #f3e3e0;
-}
-
-body {
-  background: var(--bg-page);
-  color: var(--text-main);
-}
 
 .synoptic-page {
-  max-width: 2050px;
-  margin: 1.5rem auto 3rem auto;
+  max-width: 1900px;
+  margin: 2rem auto 3rem auto;
+  padding: 0 1.2rem;
 }
 
 .viewer-shell {
-  background: var(--viewer-surface);
-  border: 1px solid var(--viewer-border);
+  background: #f8f5f1;
+  border: 1px solid #d9cfc8;
   border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
 }
-
-
 
 .viewer-inner {
   padding: 1.4rem;
 }
 
 .viewer-titlebar {
-  background: linear-gradient(180deg, #d7827a 0%, var(--viewer-title) 100%);
-  color: #fff7f4;
+  background: #d8837b;
+  color: #fff7f3;
   border-radius: 22px 22px 0 0;
-  padding: 1rem 1.4rem;
+  padding: 1.2rem 1.5rem;
   font-size: 1.9rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .viewer-toolbar {
-  background: var(--viewer-panel);
-  color: white;
-  padding: 0.8rem 1rem;
-  display: flex;
-  gap: 0.8rem;
-  align-items: center;
-  flex-wrap: wrap;
+  background: #223742;
+  padding: 0.9rem 1rem;
 }
 
-.viewer-toolbar select,
-.viewer-toolbar button,
-.viewer-toolbar .tool-label {
-  background: #f4efea;
-  color: var(--text-main);
-  border: 1px solid #cfc3bb;
-  border-radius: 6px;
-  padding: 0.45rem 0.7rem;
-  font-size: 0.95rem;
+.tool-label {
+  display: inline-block;
+  background: #f5efea;
+  color: #5a4138;
+  border: 1px solid #d6c8bf;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
 }
 
 .viewer-content {
-  background: var(--viewer-surface);
-  border-left: 3px solid var(--viewer-panel);
-  border-right: 3px solid var(--viewer-panel);
-  border-bottom: 3px solid var(--viewer-panel);
-  padding: 0;
+  padding-top: 1.2rem;
 }
 
 .synoptic-table-wrapper {
@@ -1383,21 +1132,23 @@ body {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  background: var(--viewer-surface);
+  background: #fcfaf8;
+  border-left: 4px solid #223742;
+  border-right: 4px solid #223742;
 }
 
 .synoptic-table thead th {
-  background: #f6efeb;
-  color: var(--text-main);
   text-align: left;
-  padding: 1rem 1rem;
-  border-bottom: 2px solid var(--viewer-border);
-  font-size: 1.05rem;
+  padding: 1rem 1.2rem;
+  background: #f3ece7;
+  color: #674c42;
+  border-bottom: 2px solid #d9cfc8;
+  font-size: 1rem;
 }
 
 .synoptic-table td,
 .synoptic-table th {
-  border-right: 1px solid #e2d8d1;
+  border-right: 1px solid #e1d7d0;
 }
 
 .synoptic-table td:last-child,
@@ -1406,7 +1157,7 @@ body {
 }
 
 .synoptic-table tbody tr {
-  border-bottom: 1px solid #e7dfd9;
+  border-bottom: 1px solid #e5ddd7;
   vertical-align: top;
 }
 
@@ -1415,78 +1166,83 @@ body {
   vertical-align: top;
 }
 
+.synoptic-cell {
+  vertical-align: top;
+}
+
 .unit-id {
-  color: var(--text-soft);
-  font-size: 0.78rem;
-  margin-bottom: 0.7rem;
-  letter-spacing: 0.03em;
+  font-size: 0.8rem;
+  color: #8a7c73;
+  margin-bottom: 0.75rem;
 }
 
 .witness-text {
   line-height: 1.8;
-  font-size: 1.02rem;
-  color: var(--text-main);
+  font-size: 1rem;
+  color: #5d4339;
+  word-break: break-word;
 }
 
 .witness-text.empty {
-  color: #9d9189;
+  color: #9b918a;
   font-style: italic;
-}
-
-.variant-inline {
-  background: rgba(205, 116, 109, 0.13);
-  border-bottom: 2px solid rgba(180, 79, 71, 0.45);
-  border-radius: 2px;
-  padding: 0 0.08em;
-}
-
-.variant-marker {
-  color: var(--accent);
-  font-size: 0.72em;
-  font-weight: 700;
-  margin-left: 0.08em;
 }
 
 .inline-apparatus {
   margin-top: 0.8rem;
   padding-top: 0.7rem;
-  border-top: 1px solid #eadfd8;
+  border-top: 1px solid #e6ddd7;
   font-size: 0.92rem;
 }
 
 .app-entry {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.8rem;
 }
 
 .app-entry ul {
   margin: 0.35rem 0 0.45rem 1.2rem;
+  padding: 0;
 }
 
 .app-note {
-  color: var(--text-soft);
+  color: #7a6b63;
   font-size: 0.9rem;
 }
 
+.variant-inline {
+  background: rgba(216, 131, 123, 0.14);
+  border-bottom: 2px solid rgba(180, 79, 71, 0.45);
+  padding: 0 0.08em;
+  border-radius: 2px;
+}
+
+.variant-marker {
+  color: #b44f47;
+  font-size: 0.72em;
+  font-weight: 700;
+  margin-left: 0.08em;
+}
+
 .note-inline {
-  color: var(--accent);
+  color: #b44f47;
   font-size: 0.72em;
   vertical-align: super;
-  margin-left: 0.14em;
+  margin-left: 0.15em;
 }
 
 .note-visible {
   display: inline-block;
-  margin-left: 0.35rem;
-  background: var(--note-bg);
-  color: var(--text-main);
-  border-left: 3px solid var(--accent);
-  padding: 0.1rem 0.45rem;
+  margin-left: 0.3rem;
+  background: #f5e4e0;
+  color: #5d4339;
+  border-left: 3px solid #b44f47;
+  padding: 0.08rem 0.4rem;
   border-radius: 4px;
   font-size: 0.9rem;
 }
 
 .tei-add {
-  color: var(--accent);
+  color: #8b3f3a;
 }
 
 .tei-del {
@@ -1499,14 +1255,6 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .synoptic-page {
-    margin: 0.8rem;
-  }
-
-  .viewer-titlebar {
-    font-size: 1.4rem;
-  }
-
   .synoptic-table {
     min-width: 1100px;
   }
