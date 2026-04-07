@@ -51,21 +51,26 @@
   </section>
 
   <!-- SYNOPTIC VIEW -->
-  <section class="section">
-    <h2>Synoptic comparison</h2>
+  <section class="section synoptic-section">
+  <h2>Synoptic comparison</h2>
 
-    <!-- HEADER COLONNE -->
-    <div class="synoptic-header">
-      <div class="col-head">Q (manuscript)</div>
-      <div class="col-head">1505 edition</div>
-      <div class="col-head">1553 redaction</div>
-    </div>
-
-    <!-- CONTENITORE DINAMICO -->
-    <div id="synoptic-container">
-      <p class="loading">Loading synoptic view...</p>
-    </div>
-  </section>
+  <div class="synoptic-table-wrapper">
+    <table class="synoptic-table">
+      <thead>
+        <tr>
+          <th>Q (manuscript)</th>
+          <th>1505 edition</th>
+          <th>1553 redaction</th>
+        </tr>
+      </thead>
+      <tbody id="synoptic-container">
+        <tr>
+          <td colspan="3">Loading synoptic view...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
   <!-- CURRENT STATUS -->
   <section class="section">
