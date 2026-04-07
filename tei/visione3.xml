@@ -9,6 +9,10 @@
                 <resp>Transcription and TEI encoding by</resp>
                 <name>Francesca Gaeta</name>
                 </respStmt>
+                <respStmt xml:id="ed">
+                    <resp>editorial intervention</resp>
+                    <name>Giorgio Dilemmi</name>
+                </respStmt>
             </titleStmt>
 
             <publicationStmt>
@@ -32,10 +36,11 @@
                     <date>1991</date>
                     <note>Critical edition edited by Giorgio Dilemmi</note>
                     <note type="content">The critical edition includes the redactions of manuscript Q and the printed editions of 1505 (1) and 1553 (16).</note>
-                    <note type="encoding">The digital text is based on the 1553 redaction.</note>
                 </bibl>
                 <listWit>
-                    <witness xml:id="Q">Autograph witness Q (Querini Stampalia)</witness>
+                    <witness xml:id="Q">Autograph witness Q (Querini Stampalia)
+                    This witness is encoded with a genetic apparatus, documenting authorial revisions (additions, deletions, substitutions, and overwritings).
+                    </witness>
                     <witness xml:id="T1">Printed edition 1505 (text 1)</witness>
                     <witness xml:id="T16">Printed edition 1553 (text 16)</witness>
 
@@ -50,8 +55,9 @@
                 <p>This project consists of the creation of a digital edition of <title> Gli Asolani</title> by Pietro Bembo, based on the critial edition of Giorgio Dilemmi (1991).</p>
             </projectDesc>
             <editorialDecl>
+                <p>This digital edition has been developed as part of a Digital Scholarly Editing course project.</p>
                 <p>The text has been transcribed from the reference critical edition, retaining the spelling and punctuation of the 1553 redaction, which serves as the basis for the digital text.</p>
-                <p>The work focuses on the collation of the redactions of manuscript Q and the printed editions of 1505 and 1553. The critical apparatus from the reference edition has not been reproduced; instead, a direct comparison between the three witnesses has been carried out.</p>
+                <p>The work focuses on the collation of the redactions of manuscript Q and the printed editions of 1505 and 1553. Each witness is represented with its own critical apparatus.</p>
                 <p>No normalizing interventions have been carried out: the transcription faithfully reproduces the linguistic and formal characteristics of the base text. Words divided at line breaks in the source have been silently recombined without further intervention.</p>
             </editorialDecl>
             <variantEncoding method="parallel-segmentation" location="internal"/>
@@ -172,7 +178,6 @@
                     <app>
                         <lem>meno</lem>
                         <rdg type="overwrite">pur</rdg>
-                        <note>spscr.</note>
                     </app>
                     mi piacciono per sé che per quello che essi 
                     <app>
@@ -228,14 +233,14 @@
                         </rdg>
                     </app>
                     è da dire che 
-                    <app n="33b">
+                    <app>
                         <lem>sieno</lem>
                         <rdg>
                             <seg>sieno</seg>
                             <add place="top">istate</add>
                         </rdg>
                     </app>
-                    <app n="33b">
+                    <app>
                         <lem>le lettre, nelle quali</lem>
                          <rdg>
                             <seg>
@@ -757,7 +762,7 @@
 
                    <app>
                         <lem resp="#ed"> pel mezzo</lem>
-                        <rdg wit="#ms">
+                        <rdg>
                             pel mezzo
                             <del>mezzo</del>
                             <note type="editorial" resp="#ed">segue a mezzo</note>
@@ -781,8 +786,11 @@
                     <app>
                         <lem>humile non tanto che con mano sanza chinarsi il sommo di lei non si potesse toccare, spessissima et,</lem>
                         <rdg>
-                            <del>humile non tanto che con mano sanza chinarsi il sommo di lei non si potesse toccare, spessissima et,</del>
+                            <del>humile non tanto che con mano sanza chinarsi il sommo di lei non si potesse</del>
+                            <add place="margin-right">acconciamente</add>
+                             <del>toccare, spessissima et,</del>
                         </rdg>
+
                     </app>
                      ugualmente in ogni parte di sé (
                     <app>
@@ -794,16 +802,24 @@
                     Dall'altra honorati allori, 
                     lungo 'l muro assai nel cielo crescendo, della più alta parte 
                     di loro mezzo arco faceano, in maniera folti et castigati, che niuna lor 
-                    foglia fuori del commandato ordine parea che ardisse di si mostrare; né 
-                    altro del muro si vedea, che dall'una delle latora del giardino e marmi 
-                    bianchissimi di due finestre, che
+                    foglia fuori del commandato ordine parea che ardisse di si mostrare; 
                     <app>
-                        <lem resp="#ed">ne gli</lem>
-                        <rdg>negli</rdg>
+                        <lem> né altro del muro si vedea, che dall'una delle latora del giardino e marmi 
+                            bianchissimi di due finestre, che ne gli estremi di loro erano, large et 
+                            aperte, et dalle quali (perciò che il muro grossissimo era) in ciascun lato 
+                            sedendo si potea gittar la vista sopra 'l piano il quale esse signoreggiavano.</lem>
+                        <rdg>
+                            <del>né altro del muro </del>
+                             <add place="above">vi</add>
+                            <del>si vedea, che dall'una delle latora del giardino e marmi 
+                            bianchissimi di due finestre, che negli estremi di</del>
+                            <add >lej</add><note type="editorial">riscr. su ras.</note>
+                            <del>erano, large et  aperte, et dalle quali (perciò che il muro grossissimo era) in ciascun lato 
+                            sedendo si potea gittar la vista sopra 'l piano il quale esse signoreggiavano. </del>
+                        </rdg>
+                    
                     </app>
-                    estremi di loro erano, large et 
-                    aperte, et dalle quali (perciò che il muro grossissimo era) in ciascun lato 
-                    sedendo si potea gittar la vista sopra 'l piano il quale esse signoreggiavano.
+
                     Per questa adunque così bella via dall'una parte entrate nel giardino 
                     le vaghe donne co' loro giovani caminando tutte diffese dal sole (come 
                     che egli assai alto si fusse nel cielo), et questa cosa et quell'altra considerando, 
@@ -1046,7 +1062,7 @@
 
 
             </div>
-
+                
             </div>
 
 
@@ -1055,6 +1071,47 @@
 
 
             <!--T1 - 1505-->
+            <div type="dedication" xml:id="t1_dedication">
+                <opener>
+                     <head>A MADONNA LUCREZIA ESTENSE BORGIA <lb/>
+                            DUCHESSA ILLUSTRISSIMA DI FERRARA <lb/>
+                            PIETRO BEMBO
+                    </head>
+                 </opener>
+                    <p>Se io non ho a Vostra Signoria più tosto quegli ragionamenti mandati che,
+                    essendo l’anno passato in Ferrara, le promisi giunto che io fussi qui di mandare, 
+                    iscusimi appo lei la morte del mio caro fratello Carlo,
+                    che io oltre ogni mia credenza ritrovai di questa vita passato;
+                    la qual morte sì mi stordì, che a guisa di coloro che dal fuoco delle saette tocchi rimangono lungo tempo sanza sentimento, 
+                    non ho per anchora ad altro potuto rivolger l'animo, che alla sua insanabile et penetrevolissima ferita.</p>
+                    <p>Perciò che io non solamente ho un fratello perduto, il che suole tuttavia esser grave et doloroso per sé,
+                    ma ho perduto un fratello che io solo havea et che pur hora nel primo fiore della sua giovanezza entrava; 
+                    et il quale per molto amore di me, ogni mio volere facendo suo, nessuna cura maggiore havea che di tutte le cure alleggiarmi,
+                    sì che io agli studi delle lettre, che esso sapea essermi sopra tutte le cose cari, potessi dare ogni mio tempo et pensiero; 
+                    et oltre a ciò di chiaro et di gentile ingegno, et per molte sue parti meritevole di pervenire a gli anni della inchinevole vecchiezza; 
+                    o certo almeno a cui si convenia, percio che egli era alla vita venuto doppo me, che anchora doppo me se ne dipartisse;
+                    le quai tutte cose quanto habbiano sanza fine fatta profonda la mia piaga, Vostra Signoria da quelle due che la ingiuriosa fortuna in
+                    ispatio di poco tempo a lei ha date, potrei istimare. </p>
+                    <p>Hora, poscia che altro fare non se ne può et che in me, per la tramissione di questo tempo,
+                    volgare et commune medicina, piu tosto che per altro rimedio, il dolore et le lachrime hanno in parte dato 
+                    luoco alla ragione et al diritto conoscimento, della promessa fatta a Vostra Signoria et del mio debito sovenutomi, tali quali essi sono ve gli mando,
+                    et tanto più anchora volentieri a questo tempo, quanto nuovamente ho inteso Vostra Signoria havere maritata la sua gentile Nicola, 
+                    istimandogli non disdicevole dono a cosi fatta stagione, a fine che, poi che io hora per le mie occupationi essere a parte delle vostre feste non posso, 
+                    essi con Vostra Signoria et con la sua cara et valorosa Madonna Angela Borgia et con la sposa favellino et tentionino in mia vece, 
+                    forse non sanza gli miei molto et da me amati et dal mondo honorati, et di Vostra Signoria domestici et famigliari,
+                    Messer Hercole Strozza et Messer Antonio Tebaldeo. </p>
+                    <p>Et averrà che quello che altri giovani hanno con altre donne tra gli sollazzi d'altre nozze ragionato, voi nelle vostre con le vostre damigelle et cortigiani da me, 
+                    che vostro sono, iscrittivi leggerete. Il che et farete voi per aventura volentieri, sì come quella che, vie più vaga d’ornare l'animo delle belle virtu, 
+                    che di care vestimenta il corpo, quanto più tempo per voi si può ponete sempre o leggendo alcuna cosa o scrivendo, forse acciò che di quanto con le bellezze del corpo quelle dell'altre donne soprastate, 
+                    di tanto con queste dell’animo sormontiate le vostre, et siate voi di voi stessa maggiore, amando troppo più di piacere a voi sola dentro che a tutti gli altri di fuora 
+                    (quantunque questo infinitamente sia) non piacete; et io assai buon guiderdone mi terrò havere di questa mia giovenile fatica ricevuto, pensando per la qualità delle ragionate cose 
+                    in questi sermoni che possa essere che di questo vostro medesimo così alto et così lodevole disio, leggendogli, diveniate anchora più vaga.</p>
+                    <p>Alla cui buona gratia et mercé inchinevolmente mi raccomando.</p>
+                    <closer>
+                        <dateline>In Venetia, il dì primo d’agosto 1504.</dateline>
+                    </closer>
+            </div>
+
 
             <div type="edition" xml:id="T1">
 
@@ -1148,7 +1205,6 @@
                         <lem wit="#T16">che vivono,</lem>
                         <rdg wit="#M">
                             <add place="above">che vivono,</add>
-                            <note type="editorial">agg. interl. sup.</note>
                         </rdg>
                     </app>
                     di non fallire?
@@ -1202,7 +1258,6 @@
                         <rdg wit="#M">
                             <seg>mad.</seg>
                             <add place="above">onna</add>
-                            <note type="editorial">onna agg. interl. sup.</note>
                         </rdg>
                     </app>
                     <persName ref="#caterina">Reina di Cipri</persName>,
@@ -1319,7 +1374,6 @@
                             <del><unclear>intendere, né più</unclear></del>
                             <add place="above">scorgere</add>
                             </subst>
-                            <note type="editorial">scorgere spscr.</note>
                         </rdg>
                     </app>
                     tale, quale appunto ciascuna fu ragionata, bene sarà che, prima che io passi di loro 
@@ -1365,7 +1419,6 @@
                         <rdg wit="#M">
                             <add place="above">honorata et</add>
                             <seg>illustre</seg>
-                            <note type="editorial">honorata et agg. interl. sup.</note>
                         </rdg>
                      </app>
                     , è la mia non solamente d'amistà et di riverenza,
@@ -1383,7 +1436,6 @@
                             <subst>
                             <del>era</del>
                             <add place="above">la vedea</add>
-                            <note type="editorial">la vedea spscr.</note>
                             </subst>
                         </rdg>
                     </app>
@@ -1403,7 +1455,6 @@
                             <orig><unclear>cias [?] uno.</unclear></orig>
                             <reg>ciascuno</reg>
                             </choice>
-                            <note type="editorial">c riscr., cassazione[?]</note>
                             <note type="editorial">il testimone M2 termina con "ciascuno" e con "Erano" inizia la c. 49r di M1</note>
                         </rdg>
                     </app>. 
@@ -1416,7 +1467,6 @@
                     <app>
                         <lem wit="#T1">otii</lem>
                         <rdg wit="#M">otij
-                            <note type="editorial">(otij)</note>
                         </rdg>
                     </app>
                     delle Muse allevati et in essi tuttavia
@@ -1471,7 +1521,6 @@
                     <lem wit="#T1">così nominare un di loro m’è piaciuto in questi sermoni</lem>
                     <rdg wit="#M">
                         un di loro così volle che io in questi fogli lo chiamasse, che tu leggerai
-                        <note type="editorial">così...sermoni spscr.</note>
                     </rdg>
                  </app>
                     ) poco et rado parlasse, nè fusse chi riso in bocca gli
@@ -1579,7 +1628,7 @@
                         <subst>
                         <del>sprendido</del>
                         <add>
-                            sp<supplied reason="editorial">l</supplied>endido
+                            splendido
                         </add>
                         </subst>
                     </rdg>
@@ -1590,7 +1639,7 @@
                 <app>
                     <lem wit="#T16">fanciulle</lem>
                     <rdg wit="#M">
-                        fan<supplied reason="editorial">ciulle</supplied>
+                        fanciulle
                         <note type="editorial">ultima parola di c. 50v.</note>
                     </rdg>
                 </app> 
