@@ -974,7 +974,7 @@ nav a.active {
 }
 
 .book-image-q {
-  transform: scale(0.82);
+  transform: scale(1);
   transform-origin: center;
 }
 
