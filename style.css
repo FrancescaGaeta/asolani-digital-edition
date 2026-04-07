@@ -1076,6 +1076,99 @@ nav a.active {
   transform-origin: center;
 }
 
+
+/* synoptic */
+.synoptic-header,
+.synoptic-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.col-head {
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+}
+
+.witness {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background: #fff;
+}
+
+.witness h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.unit-meta {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+
+.witness-text {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.witness-text.empty {
+  color: #999;
+  font-style: italic;
+}
+
+.toggle-app {
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+}
+
+.apparatus {
+  border-top: 1px solid #ddd;
+  padding-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.apparatus.hidden {
+  display: none;
+}
+
+.app-entry {
+  margin-bottom: 1rem;
+}
+
+.app-entry ul {
+  padding-left: 1.2rem;
+}
+
+.app-note {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.tei-add {
+  color: #7a1f1f;
+}
+
+.tei-del {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.quoted {
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .synoptic-header,
+  .synoptic-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* footer */
 footer {
   max-width: var(--maxw);
