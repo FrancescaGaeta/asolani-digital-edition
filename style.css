@@ -1292,6 +1292,40 @@ nav a.active {
   }
 }
 
+/* --- IMAGE ROW (Digital Edition) --- */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* spazio tra immagini */
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+/* singolo blocco immagine */
+.image-row .feature-image {
+  flex: 1;
+  max-width: 280px; /* dimensione ridotta */
+  text-align: center;
+}
+
+/* immagini più piccole */
+.image-row .feature-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 6px solid rgba(255,255,255,0.5);
+  box-shadow: 0 8px 18px rgba(72, 51, 36, 0.12);
+  object-fit: contain;
+}
+
+/* didascalie */
+.image-row figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
 /* footer */
 footer {
   max-width: var(--maxw);
