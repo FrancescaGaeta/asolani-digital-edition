@@ -11,7 +11,7 @@ async function loadSynopticView() {
   }
 
   try {
-    const response = await fetch("tei/visione3.xml");
+   const response = await fetch("/asolani-digital-edition/tei/visione3.xml");
 
     if (!response.ok) {
       throw new Error(`HTTP error ${response.status}`);
