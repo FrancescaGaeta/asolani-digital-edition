@@ -10,7 +10,7 @@
                 <name>Francesca Gaeta</name>
                 </respStmt>
                 <respStmt xml:id="ed">
-                    <resp>editorial intervention</resp>
+                    <resp>Editorial intervention by</resp>
                     <name>Giorgio Dilemmi</name>
                 </respStmt>
             </titleStmt>
@@ -52,12 +52,14 @@
 
         <encodingDesc>
             <projectDesc>
-                <p>This project consists of the creation of a digital edition of <title> Gli Asolani</title> by Pietro Bembo, based on the critial edition of Giorgio Dilemmi (1991).</p>
+                <p>This project consists of the creation of a digital edition of <title> Gli Asolani</title> by Pietro Bembo, 
+                based on the critial edition of Giorgio Dilemmi (1991).</p>
             </projectDesc>
             <editorialDecl>
                 <p>This digital edition has been developed as part of a Digital Scholarly Editing course project.</p>
-                <p>The text has been transcribed from the reference critical edition, retaining the spelling and punctuation of the 1553 redaction, which serves as the basis for the digital text.</p>
-                <p>The work focuses on the collation of the redactions of manuscript Q and the printed editions of 1505 and 1553. Each witness is represented with its own critical apparatus.</p>
+                <p>The text has been transcribed from the reference critical edition, retaining the spelling and punctuation.</p>
+                <p>The work focuses on the transcription of manuscript Q and the printed editions of 1505 and 1553. 
+                Each witness is represented with its own critical apparatus.</p>
                 <p>No normalizing interventions have been carried out: the transcription faithfully reproduces the linguistic and formal characteristics of the base text. Words divided at line breaks in the source have been silently recombined without further intervention.</p>
             </editorialDecl>
             <variantEncoding method="parallel-segmentation" location="internal"/>

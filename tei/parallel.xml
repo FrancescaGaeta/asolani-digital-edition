@@ -44,12 +44,17 @@
 
         <encodingDesc>
             <projectDesc>
-                <p>This project consists of the creation of a digital edition of <title> Gli Asolani</title> by Pietro Bembo, based on the critial edition of Giorgio Dilemmi (1991).</p>
+                <p>This project consists of the creation of a digital edition of <title> Gli Asolani</title> by Pietro Bembo, based on the 
+                critial edition of Giorgio Dilemmi (1991).</p>
             </projectDesc>
             <editorialDecl>
-                <p>The text has been transcribed from the reference critical edition, retaining the spelling and punctuation of the 1553 redaction, which serves as the basis for the digital text.</p>
-                <p>The work focuses on the collation of the redactions of manuscript Q and the printed editions of 1505 and 1553. The critical apparatus from the reference edition has not been reproduced; instead, a direct comparison between the three witnesses has been carried out.</p>
-                <p>No normalizing interventions have been carried out: the transcription faithfully reproduces the linguistic and formal characteristics of the base text. Words divided at line breaks in the source have been silently recombined without further intervention.</p>
+                <p>The text has been transcribed from the reference critical edition, retaining the spelling and punctuation of the 1553 redaction, 
+                which serves as the basis for the digital text.</p>
+                <p>The work focuses on the collation of the redactions of manuscript Q and the printed editions of 1505 and 1553. 
+                The critical apparatus from the reference edition has not been reproduced; instead, a direct comparison between the three
+                witnesses has been carried out.</p>
+                <p>No normalizing interventions have been carried out: the transcription faithfully reproduces the linguistic and formal characteristics
+                 of the base text. Words divided at line breaks in the source have been silently recombined without further intervention.</p>
             </editorialDecl>
             <variantEncoding method="parallel-segmentation" location="internal"/>
             <tagsDecl>
@@ -73,7 +78,6 @@
                 </place>
                 </listPlace>
             </settingDesc>  
-
 
             <particDesc>
                 <listPerson>
@@ -104,9 +108,8 @@
                     <note>noble family</note>
                     </org>
                 </listOrg>
-
+                
             </particDesc>
-
         </profileDesc>
     </teiHeader>
 
@@ -1772,5 +1775,5 @@
     
         </div>
         </body>
-</text>
+    </text>
 </TEI>
