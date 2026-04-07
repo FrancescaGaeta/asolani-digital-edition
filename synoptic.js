@@ -5,14 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
 async function loadSynopticView() {
   const container = document.getElementById("synoptic-container");
 
-  if (!container) {
-    console.error("Container #synoptic-container not found.");
-    return;
-  }
+  if (!container) return;
 
   try {
-   const response = await fetch("/asolani-digital-edition/tei/visione3.xml");
-
+    const response = await fetch("/asolani-digital-edition/tei/visione3.xml");
     if (!response.ok) {
       throw new Error(`HTTP error ${response.status}`);
     }
@@ -21,9 +17,8 @@ async function loadSynopticView() {
     const parser = new DOMParser();
     const xml = parser.parseFromString(xmlText, "application/xml");
 
-    const parserError = xml.getElementsByTagName("parsererror");
-    if (parserError.length > 0) {
-      throw new Error("XML parsing error.");
+    if (xml.querySelector("parsererror")) {
+      throw new Error("XML parsing error");
     }
 
     const grouped = collectParallelUnits(xml);
@@ -31,27 +26,25 @@ async function loadSynopticView() {
 
     container.innerHTML = "";
 
-    if (orderedKeys.length === 0) {
-      container.innerHTML = "<p>No aligned units found in version3.xml.</p>";
+    if (!orderedKeys.length) {
+      container.innerHTML = `<tr><td colspan="3">No aligned units found.</td></tr>`;
       return;
     }
 
     orderedKeys.forEach(key => {
-      const group = grouped[key];
-
-      const row = document.createElement("div");
+      const row = document.createElement("tr");
       row.className = "synoptic-row";
 
-      row.appendChild(buildWitnessCell(group.Q, "Q", key));
-      row.appendChild(buildWitnessCell(group.T1, "1505", key));
-      row.appendChild(buildWitnessCell(group.T16, "1553", key));
+      row.appendChild(buildWitnessTd(grouped[key].Q, "Q", key));
+      row.appendChild(buildWitnessTd(grouped[key].T1, "1505", key));
+      row.appendChild(buildWitnessTd(grouped[key].T16, "1553", key));
 
       container.appendChild(row);
     });
 
   } catch (error) {
     console.error(error);
-    container.innerHTML = `<p>Error loading synoptic view: ${escapeHtml(error.message)}</p>`;
+    container.innerHTML = `<tr><td colspan="3">Error loading synoptic view: ${escapeHtml(error.message)}</td></tr>`;
   }
 }
 
@@ -85,7 +78,11 @@ function collectParallelUnits(xml) {
 }
 
 function getXmlId(el) {
-  return el.getAttribute("xml:id") || el.getAttributeNS("http://www.w3.org/XML/1998/namespace", "id") || "";
+  return (
+    el.getAttribute("xml:id") ||
+    el.getAttributeNS("http://www.w3.org/XML/1998/namespace", "id") ||
+    ""
+  );
 }
 
 function detectWitnessFromId(id) {
@@ -95,108 +92,43 @@ function detectWitnessFromId(id) {
   return null;
 }
 
-function buildWitnessCell(el, label, correspKey) {
-  const cell = document.createElement("article");
-  cell.className = "witness";
+function buildWitnessTd(el, label, correspKey) {
+  const td = document.createElement("td");
+  td.className = "synoptic-cell";
 
   if (!el) {
-    cell.innerHTML = `
-      <h3>${label}</h3>
-      <div class="unit-meta">${escapeHtml(correspKey.replace(/^#/, ""))}</div>
+    td.innerHTML = `
+      <div class="unit-id">${escapeHtml(correspKey.replace(/^#/, ""))}</div>
       <div class="witness-text empty">—</div>
     `;
-    return cell;
+    return td;
   }
 
-  const textHtml = renderContent(el);
-  const appHtml = renderApparatus(el);
+  const apparatusEntries = [];
+  const textHtml = renderNodeChildren(el, apparatusEntries);
 
-  cell.innerHTML = `
-    <h3>${label}</h3>
-    <div class="unit-meta">${escapeHtml(correspKey.replace(/^#/, ""))}</div>
+  const apparatusHtml = apparatusEntries.length
+    ? `<div class="inline-apparatus">${apparatusEntries.join("")}</div>`
+    : "";
+
+  td.innerHTML = `
+    <div class="unit-id">${escapeHtml(correspKey.replace(/^#/, ""))}</div>
     <div class="witness-text">${textHtml}</div>
-    <button class="toggle-app" type="button">Show apparatus</button>
-    <div class="apparatus hidden">
-      ${appHtml || "<p>No apparatus in this unit.</p>"}
-    </div>
+    ${apparatusHtml}
   `;
 
-  const button = cell.querySelector(".toggle-app");
-  const apparatus = cell.querySelector(".apparatus");
-
-  button.addEventListener("click", () => {
-    apparatus.classList.toggle("hidden");
-    button.textContent = apparatus.classList.contains("hidden")
-      ? "Show apparatus"
-      : "Hide apparatus";
-  });
-
-  return cell;
+  return td;
 }
 
-function renderContent(el) {
-  const clone = el.cloneNode(true);
-
-  removeDescendantsByLocalName(clone, "app");
-  removeDescendantsByLocalName(clone, "note");
-
-  return renderNodeChildren(clone).trim();
-}
-
-function renderApparatus(el) {
-  const apps = Array.from(el.getElementsByTagNameNS("*", "app"));
-  if (!apps.length) return "";
-
-  return apps.map((app, index) => {
-    const lemEl = firstChildByLocalName(app, "lem");
-    const rdgEls = childrenByLocalName(app, "rdg");
-    const noteEls = childrenByLocalName(app, "note");
-
-    const lemma = lemEl ? normalizeText(lemEl.textContent) : "[no lemma]";
-
-    const readings = rdgEls.map(rdg => {
-      const wit = rdg.getAttribute("wit");
-      const type = rdg.getAttribute("type");
-      const txt = normalizeText(rdg.textContent);
-
-      let label = "";
-      if (wit) label += ` ${wit}`;
-      if (type) label += ` (${type})`;
-
-      return `
-        <li>
-          <strong>rdg${escapeHtml(label)}:</strong>
-          ${escapeHtml(txt || "[empty]")}
-        </li>
-      `;
-    }).join("");
-
-    const notes = noteEls.map(note => {
-      const txt = normalizeText(note.textContent);
-      return `<p class="app-note"><strong>Note:</strong> ${escapeHtml(txt)}</p>`;
-    }).join("");
-
-    return `
-      <div class="app-entry">
-        <p><strong>App ${index + 1}.</strong> <strong>Lem:</strong> ${escapeHtml(lemma)}</p>
-        ${readings ? `<ul>${readings}</ul>` : "<p>No readings.</p>"}
-        ${notes}
-      </div>
-    `;
-  }).join("");
-}
-
-function renderNodeChildren(node) {
+function renderNodeChildren(node, apparatusEntries = []) {
   let html = "";
-
   node.childNodes.forEach(child => {
-    html += renderSingleNode(child);
+    html += renderSingleNode(child, apparatusEntries);
   });
-
   return html;
 }
 
-function renderSingleNode(node) {
+function renderSingleNode(node, apparatusEntries = []) {
   if (node.nodeType === Node.TEXT_NODE) {
     return escapeHtml(node.nodeValue || "");
   }
@@ -208,47 +140,100 @@ function renderSingleNode(node) {
   const name = node.localName;
 
   if (name === "lb") return "<br>";
-  if (name === "pb") return "";
-  if (name === "cb") return "";
+  if (name === "pb" || name === "cb") return "";
+
+  if (name === "app") {
+    return renderAppInline(node, apparatusEntries);
+  }
+
+  if (name === "note") {
+    const text = normalizeText(node.textContent);
+    if (!text) return "";
+    return `<sup class="note-inline" title="${escapeHtml(text)}">[note]</sup><span class="note-visible">${escapeHtml(text)}</span>`;
+  }
 
   if (name === "hi") {
-    return `<em>${renderNodeChildren(node)}</em>`;
+    return `<em>${renderNodeChildren(node, apparatusEntries)}</em>`;
   }
 
   if (name === "q") {
-    return `<span class="quoted">${renderNodeChildren(node)}</span>`;
+    return `<span class="quoted">${renderNodeChildren(node, apparatusEntries)}</span>`;
   }
 
   if (name === "persName" || name === "placeName" || name === "orgName") {
-    return `<span class="${name}">${renderNodeChildren(node)}</span>`;
+    return `<span class="${name}">${renderNodeChildren(node, apparatusEntries)}</span>`;
   }
 
   if (name === "add") {
-    return `<span class="tei-add">${renderNodeChildren(node)}</span>`;
+    return `<span class="tei-add">${renderNodeChildren(node, apparatusEntries)}</span>`;
   }
 
   if (name === "del") {
-    return `<span class="tei-del">${renderNodeChildren(node)}</span>`;
+    return `<span class="tei-del">${renderNodeChildren(node, apparatusEntries)}</span>`;
   }
 
-  if (name === "subst" || name === "seg" || name === "choice" || name === "orig" || name === "reg" || name === "supplied" || name === "unclear") {
-    return renderNodeChildren(node);
+  if (
+    name === "subst" ||
+    name === "seg" ||
+    name === "choice" ||
+    name === "orig" ||
+    name === "reg" ||
+    name === "supplied" ||
+    name === "unclear" ||
+    name === "lem" ||
+    name === "rdg" ||
+    name === "head" ||
+    name === "l"
+  ) {
+    const content = renderNodeChildren(node, apparatusEntries);
+    if (name === "l") return `${content}<br>`;
+    return content;
   }
 
-  if (name === "head") {
-    return `<strong>${renderNodeChildren(node)}</strong>`;
-  }
-
-  if (name === "l") {
-    return `${renderNodeChildren(node)}<br>`;
-  }
-
-  return renderNodeChildren(node);
+  return renderNodeChildren(node, apparatusEntries);
 }
 
-function removeDescendantsByLocalName(root, localName) {
-  const nodes = Array.from(root.getElementsByTagNameNS("*", localName));
-  nodes.forEach(n => n.remove());
+function renderAppInline(appNode, apparatusEntries) {
+  const lemEl = firstChildByLocalName(appNode, "lem");
+  const rdgEls = childrenByLocalName(appNode, "rdg");
+  const noteEls = childrenByLocalName(appNode, "note");
+
+  const lemmaText = lemEl ? normalizeText(lemEl.textContent) : "[no lemma]";
+  const lemmaHtml = lemEl ? renderNodeChildren(lemEl, []) : "[no lemma]";
+
+  const appIndex = apparatusEntries.length + 1;
+
+  const readingsHtml = rdgEls.map(rdg => {
+    const wit = rdg.getAttribute("wit") || "";
+    const type = rdg.getAttribute("type") || "";
+    const txt = normalizeText(rdg.textContent);
+
+    let label = "";
+    if (wit) label += ` ${wit}`;
+    if (type) label += ` (${type})`;
+
+    return `<li><strong>rdg${escapeHtml(label)}:</strong> ${escapeHtml(txt || "[empty]")}</li>`;
+  }).join("");
+
+  const notesHtml = noteEls.map(note => {
+    const txt = normalizeText(note.textContent);
+    return `<p class="app-note"><strong>Note:</strong> ${escapeHtml(txt)}</p>`;
+  }).join("");
+
+  apparatusEntries.push(`
+    <div class="app-entry" id="app-${appIndex}">
+      <p><strong>Var.</strong> <strong>Lem:</strong> ${escapeHtml(lemmaText)}</p>
+      ${readingsHtml ? `<ul>${readingsHtml}</ul>` : ""}
+      ${notesHtml}
+    </div>
+  `);
+
+  return `
+    <span class="variant-inline" title="Variant present here">
+      ${lemmaHtml}
+      <sup class="variant-marker">${appIndex}</sup>
+    </span>
+  `;
 }
 
 function firstChildByLocalName(parent, localName) {
