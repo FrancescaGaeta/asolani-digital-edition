@@ -1299,7 +1299,233 @@ nav a.active {
   }
 }
 
+:root {
+  --bg-page: #f3f0eb;
+  --viewer-top: #cd746d;
+  --viewer-top-dark: #bf665e;
+  --viewer-title: #d67d75;
+  --viewer-panel: #24343d;
+  --viewer-surface: #f8f6f3;
+  --viewer-border: #d9cfc8;
+  --text-main: #5c4038;
+  --text-soft: #8a7a72;
+  --accent: #b44f47;
+  --note-bg: #f3e3e0;
+}
 
+body {
+  background: var(--bg-page);
+  color: var(--text-main);
+}
+
+.synoptic-page {
+  max-width: 2050px;
+  margin: 1.5rem auto 3rem auto;
+}
+
+.viewer-shell {
+  background: var(--viewer-surface);
+  border: 1px solid var(--viewer-border);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.viewer-topbar {
+  background: linear-gradient(180deg, #d98780 0%, var(--viewer-top-dark) 100%);
+  color: #fffaf7;
+  padding: 1.6rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.viewer-topbar a {
+  color: #fffaf7;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+.viewer-inner {
+  padding: 1.4rem;
+}
+
+.viewer-titlebar {
+  background: linear-gradient(180deg, #d7827a 0%, var(--viewer-title) 100%);
+  color: #fff7f4;
+  border-radius: 22px 22px 0 0;
+  padding: 1rem 1.4rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.viewer-toolbar {
+  background: var(--viewer-panel);
+  color: white;
+  padding: 0.8rem 1rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.viewer-toolbar select,
+.viewer-toolbar button,
+.viewer-toolbar .tool-label {
+  background: #f4efea;
+  color: var(--text-main);
+  border: 1px solid #cfc3bb;
+  border-radius: 6px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.95rem;
+}
+
+.viewer-content {
+  background: var(--viewer-surface);
+  border-left: 3px solid var(--viewer-panel);
+  border-right: 3px solid var(--viewer-panel);
+  border-bottom: 3px solid var(--viewer-panel);
+  padding: 0;
+}
+
+.synoptic-table-wrapper {
+  overflow-x: auto;
+}
+
+.synoptic-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: var(--viewer-surface);
+}
+
+.synoptic-table thead th {
+  background: #f6efeb;
+  color: var(--text-main);
+  text-align: left;
+  padding: 1rem 1rem;
+  border-bottom: 2px solid var(--viewer-border);
+  font-size: 1.05rem;
+}
+
+.synoptic-table td,
+.synoptic-table th {
+  border-right: 1px solid #e2d8d1;
+}
+
+.synoptic-table td:last-child,
+.synoptic-table th:last-child {
+  border-right: none;
+}
+
+.synoptic-table tbody tr {
+  border-bottom: 1px solid #e7dfd9;
+  vertical-align: top;
+}
+
+.synoptic-table td {
+  padding: 1rem 1rem 1.2rem 1rem;
+  vertical-align: top;
+}
+
+.unit-id {
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.03em;
+}
+
+.witness-text {
+  line-height: 1.8;
+  font-size: 1.02rem;
+  color: var(--text-main);
+}
+
+.witness-text.empty {
+  color: #9d9189;
+  font-style: italic;
+}
+
+.variant-inline {
+  background: rgba(205, 116, 109, 0.13);
+  border-bottom: 2px solid rgba(180, 79, 71, 0.45);
+  border-radius: 2px;
+  padding: 0 0.08em;
+}
+
+.variant-marker {
+  color: var(--accent);
+  font-size: 0.72em;
+  font-weight: 700;
+  margin-left: 0.08em;
+}
+
+.inline-apparatus {
+  margin-top: 0.8rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid #eadfd8;
+  font-size: 0.92rem;
+}
+
+.app-entry {
+  margin-bottom: 0.7rem;
+}
+
+.app-entry ul {
+  margin: 0.35rem 0 0.45rem 1.2rem;
+}
+
+.app-note {
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.note-inline {
+  color: var(--accent);
+  font-size: 0.72em;
+  vertical-align: super;
+  margin-left: 0.14em;
+}
+
+.note-visible {
+  display: inline-block;
+  margin-left: 0.35rem;
+  background: var(--note-bg);
+  color: var(--text-main);
+  border-left: 3px solid var(--accent);
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.tei-add {
+  color: var(--accent);
+}
+
+.tei-del {
+  text-decoration: line-through;
+  opacity: 0.72;
+}
+
+.quoted {
+  font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .synoptic-page {
+    margin: 0.8rem;
+  }
+
+  .viewer-titlebar {
+    font-size: 1.4rem;
+  }
+
+  .synoptic-table {
+    min-width: 1100px;
+  }
+}
 
 /* footer */
 footer {
