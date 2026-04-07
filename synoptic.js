@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function loadSynopticView() {
   const container = document.getElementById("synoptic-container");
-
   if (!container) return;
 
   try {
@@ -35,9 +34,9 @@ async function loadSynopticView() {
       const row = document.createElement("tr");
       row.className = "synoptic-row";
 
-      row.appendChild(buildWitnessTd(grouped[key].Q, "Q", key));
-      row.appendChild(buildWitnessTd(grouped[key].T1, "1505", key));
-      row.appendChild(buildWitnessTd(grouped[key].T16, "1553", key));
+      row.appendChild(buildWitnessTd(grouped[key].Q, key));
+      row.appendChild(buildWitnessTd(grouped[key].T1, key));
+      row.appendChild(buildWitnessTd(grouped[key].T16, key));
 
       container.appendChild(row);
     });
@@ -52,7 +51,7 @@ function collectParallelUnits(xml) {
   const grouped = {};
 
   const candidates = [
-    ...Array.from(xml.getElementsByTagNameNS("*", "head")),
+    ...Array.from(xml.getElementsByTagNameNS("*", "seg")),
     ...Array.from(xml.getElementsByTagNameNS("*", "p")),
     ...Array.from(xml.getElementsByTagNameNS("*", "lg"))
   ];
@@ -92,7 +91,7 @@ function detectWitnessFromId(id) {
   return null;
 }
 
-function buildWitnessTd(el, label, correspKey) {
+function buildWitnessTd(el, correspKey) {
   const td = document.createElement("td");
   td.className = "synoptic-cell";
 
@@ -182,7 +181,6 @@ function renderSingleNode(node, apparatusEntries = []) {
     name === "unclear" ||
     name === "lem" ||
     name === "rdg" ||
-    name === "head" ||
     name === "l"
   ) {
     const content = renderNodeChildren(node, apparatusEntries);
@@ -273,12 +271,14 @@ function sortGroupKeys(keys) {
 function parseCorrespKey(key) {
   const clean = key.replace(/^#/, "");
 
-  if (clean.includes("title_main")) {
-    return { section: 0, kindOrder: 0, number: 0 };
+  if (clean.includes("title_main_a")) {
+    const m = clean.match(/title_main_a(\d+)/);
+    return { section: 0, kindOrder: 0, number: m ? parseInt(m[1], 10) : 0 };
   }
 
-  if (clean.includes("title_book")) {
-    return { section: 0, kindOrder: 1, number: 0 };
+  if (clean.includes("title_book_a")) {
+    const m = clean.match(/title_book_a(\d+)/);
+    return { section: 0, kindOrder: 1, number: m ? parseInt(m[1], 10) : 0 };
   }
 
   const pMatch = clean.match(/al_s(\d+)_p(\d+)/);
