@@ -1441,6 +1441,12 @@ footer {
   }
 }
 
+.evt-topbar-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 /* responsive */
 @media (max-width: 1280px) {
   .timeline-readable {
