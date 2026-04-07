@@ -6,83 +6,88 @@
   <title>Synoptic View – The Asolani Digital Edition</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
   <div class="navbar">
     <a class="site-title" href="index.html">The Asolani – Digital Edition</a>
-   <nav>
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="author-work.html">Author and Work</a></li>
         <li><a href="digital-edition.html">Digital Edition</a></li>
         <li><a href="parallel-segmentation.html">Parallel Segmentation</a></li>
-        <li><a href="synoptic.html">Synoptic View</a></li>
-        <li><a href="tei/asolani.xml">TEI XML</a></li>
+        <li><a href="synoptic.html" class="active">Synoptic View</a></li>
+        <li><a href="tei/version3.xml">TEI XML</a></li>
       </ul>
-    </nav>
     </nav>
   </div>
 </header>
 
 <main>
+
+  <!-- HERO -->
   <section class="hero">
     <h1>Synoptic View</h1>
     <p>
-      This prototype presents manuscript Q, the 1505 edition, and the 1553 redaction
-      in parallel, making visible both textual correspondence and structural divergence.
+      This interface presents manuscript Q, the 1505 edition, and the 1553 redaction
+      in parallel. The alignment is based on TEI correspondence markers and preserves
+      both parallel and non-parallel structures.
     </p>
   </section>
 
+  <!-- EDITORIAL RATIONALE -->
   <section class="section">
     <h2>Editorial rationale</h2>
     <div class="panel">
       <p>
-        The witnesses are treated as autonomous texts. Where they can be aligned,
-        the interface supports direct comparison; where they diverge, the synoptic view
-        preserves the non-parallel structure.
+        The witnesses are treated as autonomous textual systems. The alignment is
+        derived from encoded correspondences (<code>@corresp</code>) in the TEI file.
+        Where textual segments correspond, they are displayed in parallel; where they
+        diverge, empty cells preserve structural asymmetry.
       </p>
     </div>
   </section>
 
+  <!-- SYNOPTIC VIEW -->
   <section class="section">
-    <h2>Prototype layout</h2>
-    <div class="synoptic-grid">
-      <article class="witness">
-        <h3>Q</h3>
-        <p>
-          Insert here the selected segment from Q.
-        </p>
-      </article>
+    <h2>Synoptic comparison</h2>
 
-      <article class="witness">
-        <h3>1505</h3>
-        <p>
-          Insert here the corresponding segment from the 1505 edition.
-        </p>
-      </article>
+    <!-- HEADER COLONNE -->
+    <div class="synoptic-header">
+      <div class="col-head">Q (manuscript)</div>
+      <div class="col-head">1505 edition</div>
+      <div class="col-head">1553 redaction</div>
+    </div>
 
-      <article class="witness">
-        <h3>1553</h3>
-        <p>
-          Insert here the corresponding segment from the 1553 edition.
-        </p>
-      </article>
+    <!-- CONTENITORE DINAMICO -->
+    <div id="synoptic-container">
+      <p class="loading">Loading synoptic view...</p>
     </div>
   </section>
 
+  <!-- CURRENT STATUS -->
   <section class="section">
     <h2>Current status</h2>
     <div class="note">
-      This view functions as a prototype for the comparison of parallel and non-parallel
-      sequences. Additional sequences can be progressively added to the page.
+      <p>
+        This view is dynamically generated from the TEI source (<code>version3.xml</code>).
+        It reflects the current state of encoding and alignment based on parallel
+        segmentation. Further refinement may include more granular segmentation,
+        variant highlighting, and interactive apparatus visualization.
+      </p>
     </div>
   </section>
+
 </main>
 
 <footer>
   <p>Francesca Gaeta · The Asolani Digital Edition · 2026</p>
 </footer>
+
+<!-- SCRIPT -->
+<script src="synoptic.js"></script>
 
 </body>
 </html>
