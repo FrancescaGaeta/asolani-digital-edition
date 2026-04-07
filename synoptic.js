@@ -11,7 +11,7 @@ async function loadSynopticView() {
   }
 
   try {
-    const response = await fetch("tei/version3.xml");
+    const response = await fetch("tei/visione3.xml");
 
     if (!response.ok) {
       throw new Error(`HTTP error ${response.status}`);
