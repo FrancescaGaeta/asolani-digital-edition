@@ -1170,6 +1170,38 @@ nav a.active {
   vertical-align: top;
 }
 
+.variant-inline {
+  background: rgba(216, 131, 123, 0.14);
+  border-bottom: 2px solid rgba(180, 79, 71, 0.45);
+  padding: 0 0.08em;
+  border-radius: 2px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.variant-inline:hover {
+  background: rgba(216, 131, 123, 0.22);
+}
+
+.apparatus-box {
+  margin-top: 0.9rem;
+  border-top: 1px solid #e5ddd7;
+  padding-top: 0.5rem;
+}
+
+.apparatus-box summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.app-entry.active {
+  background: #f5e4e0;
+  border-left: 3px solid #b44f47;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+}
+
 .unit-id {
   font-size: 0.8rem;
   color: #8a7c73;
