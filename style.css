@@ -1326,6 +1326,66 @@ nav a.active {
   line-height: 1.4;
 }
 
+/* ONLY for the images in the Critical View section */
+.critical-image-stack {
+  max-width: 900px;
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.critical-image-item {
+  margin: 0;
+  text-align: center;
+}
+
+.critical-image-item img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 14px;
+  border: 8px solid rgba(255,255,255,0.5);
+  box-shadow: 0 12px 28px rgba(72, 51, 36, 0.12);
+}
+
+.critical-image-item figcaption {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+
+/* ONLY for the buttons in this section */
+.critical-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.critical-buttons .button {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .critical-image-stack {
+    gap: 1.8rem;
+  }
+
+  .critical-image-item img {
+    max-width: 100%;
+  }
+
+  .critical-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* footer */
 footer {
   max-width: var(--maxw);
