@@ -167,7 +167,7 @@
         <article class="aw-panel">
           <div class="panel-tag">PROFILEDESC</div>
           <p>
-            The <profileDesc> section provides contextual metadata about the linguistic and spatial dimensions of the text. The <langUsage> element specifies the languages used in the edition, distinguishing between Italian as the primary language of the text and English as the language of editorial documentation. The <settingDesc> element encodes the geographical setting through <listPlace>, where places are identified, named, and, when possible, linked to external authority identifiers.
+            The <emp>profileDesc</emp> section provides contextual metadata about the linguistic and spatial dimensions of the text. The <emp>langUsage</emp> element specifies the languages used in the edition, distinguishing between Italian as the primary language of the text and English as the language of editorial documentation. The <emp>settingDesc</emp> element encodes the geographical setting through <emp>listPlace</emp>, where places are identified, named, and, when possible, linked to external authority identifiers.
               This approach ensures a clear representation of the cultural and spatial framework in which the narrative unfolds, while enabling connections with external datasets.
           </p>
         </article>
@@ -182,20 +182,18 @@
         <article class="aw-panel">
           <div class="panel-tag">ProfileDesc</div>
           <p>
-            The <profileDesc> section also encodes the entities involved in the text, including characters and social groups, through the <particDesc> element. 
-              Individuals are listed within <listPerson>, where each <person> is uniquely identified and, when possible, linked to external authority files such as VIAF.
-                Each entry includes a standardized name (<persName>) and a brief descriptive note (<note>), allowing both identification and contextualization of the figures within the narrative. 
-                  Similarly, collective entities are encoded in <listOrg>, where organizations or families are described through <orgName> and explanatory notes. This structured representation supports both semantic clarity and interoperability.
+            The <emp>profileDesc </emp>section also encodes the entities involved in the text, including characters and social groups, through the <emp>particDesc</emp> element. 
+              Individuals are listed within <emp>listPerson</emp>, where each <emp>person</emp> is uniquely identified and, when possible, linked to external authority files such as VIAF.
+                Each entry includes a standardized name (<emp>persName</emp>) and a brief descriptive note (<emp>note</emp>), allowing both identification and contextualization of the figures within the narrative. 
+                  Similarly, collective entities are encoded in <emp>listOrg,</emp> where organizations or families are described through <emp>orgName</emp> and explanatory notes. This structured representation supports both semantic clarity and interoperability.
           </p>
         </article>
       </div>
       <div class="feature-image">
-        <img src="parti.png" alt="Critical apparatus example">
+        <img src="foto/parti.png" alt="Critical apparatus example">
       </div>
     </div>
 
-   <section class="edition-criteria-section reveal reveal-2">
-    <h2 class="section-title centered-title">Critical View</h2>
      
     </section>       
 
@@ -205,19 +203,32 @@
   <section class="macro-banner reveal reveal-1">
     <div class="macro-banner-inner">
       <span class="macro-banner-mini">Section IV</span>
-      <h2>Critical Apparatus View</h2>
+      <h2>Critical View</h2>
     </div>
   </section>
 
   <section class="digital-narrow reveal reveal-2">
     <article class="aw-panel">
       <p>
-        One branch of the project focuses on the visualisation of a critical reading text,
-        based on the 1553 redaction, accompanied by the corresponding variants of Q and the
-        1505 edition. This view highlights the philological structure of the edition and offers
-        a controlled representation of textual divergence within a traditional critical framework.
-      </p>
-      <a class="button" href="evt/index.html">Open Critical Apparatus View</a>
+       The text has been encoded using a parallel segmentation approach in order to compare the three witnesses directly while preserving their individual structure. 
+       The choice of parallel segmentation was motivated by the specific nature of the textual tradition of Gli Asolani and by the editorial structure of Giorgio Dilemmi’s
+       critical edition. Since the project does not deal with a single text accompanied by a unified apparatus, but with three autonomous redactions
+       that must be compared directly, a simple linear encoding would not have been sufficient. 
+       Parallel segmentation makes it possible to align corresponding passages across the 1553 redaction, the 1505 edition, and manuscript Q while preserving their individual textual integrity. 
+       The 1553 redaction functions as the base text and is generally encoded as the lemma, while the manuscript Q and the 1505 edition are recorded as parallel readings. The segmentation was applied flexibly, not uniformly: where the witnesses diverge more significantly, the text has been divided into smaller units, so that correspondences and variants can be represented more precisely; where the alignment is clearer, broader segments have been maintained. This makes it possible to associate each portion of text with its variants while respecting the textual autonomy of each witness. The same method has also been applied to titles and to the poetic section, where the verses are encoded as corresponding units within the same comparative structure.
+     </p>
+      <div class="feature-image">
+        <img src="foto/ptitoli.png">
+      </div>
+      <div class="feature-image">
+        <img src="foto/p1.png">
+      </div>
+      <div class="feature-image">
+        <img src="foto/l1.png">
+      </div>
+      
+      <a class="button" href="tei/parallel.xml" target="_blank">Open XML/TEI File</a>
+<a class="button" href="critical-view.html">Open Critical View</a>
     </article>
   </section>
 
