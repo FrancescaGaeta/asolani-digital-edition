@@ -32,7 +32,7 @@ async function loadSynopticView() {
 
     orderedKeys.forEach(key => {
       const row = document.createElement("tr");
-      row.className = "synoptic-row";
+      row.className = "synoptic-table-row";
 
       row.appendChild(buildWitnessTd(grouped[key].Q, key));
       row.appendChild(buildWitnessTd(grouped[key].T1, key));
