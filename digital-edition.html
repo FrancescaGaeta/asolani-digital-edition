@@ -20,7 +20,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="author-work.html">Author and Work</a></li>
-        <li><a href="digital-edition.html">Digital Edition</a></li>
+        <li><a class="active" href="digital-edition.html">Digital Edition</a></li>
         <li><a href="parallel-segmentation.html">Parallel Segmentation</a></li>
         <li><a href="synoptic.html">Synoptic View</a></li>
         <li><a href="tei/visione3.xml">TEI XML</a></li>
@@ -29,26 +29,39 @@
   </div>
 </header>
 
-<main class="generic-page">
+<main class="texts-ppt-page">
 
-  <!-- HERO -->
-  <section class="generic-hero">
-    <h1>Digital Edition</h1>
-    <p>
-      This section presents the digital modelling of the edition, from textual selection
-      and encoding strategy to the visualisation of variants and the synoptic comparison
-      of the three witnesses.
-    </p>
+  <!-- TITLE SLIDE -->
+  <section class="texts-title-slide reveal reveal-1">
+    <div class="texts-title-inner">
+      <div class="texts-title-line" aria-hidden="true">
+        <span></span>
+        <span class="dot"></span>
+        <span></span>
+      </div>
+      <h1>Digital Edition</h1>
+      <p class="section-subtitle digital-subtitle">
+        This section presents the digital modelling of the edition, from textual selection
+        and encoding strategy to the visualisation of variants and the synoptic comparison
+        of the three witnesses.
+      </p>
+    </div>
   </section>
 
-  <!-- 1. ABOUT THE TEXT -->
-  <section class="section">
-    <h2>About the Text</h2>
-    <div class="panel">
+  <!-- SECTION I -->
+  <section class="macro-banner reveal reveal-1">
+    <div class="macro-banner-inner">
+      <span class="macro-banner-mini">Section I</span>
+      <h2>About the Text</h2>
+    </div>
+  </section>
+
+  <section class="digital-narrow reveal reveal-2">
+    <article class="aw-panel">
       <p>
-        <em>Gli Asolani</em> by Pietro Bembo is transmitted in multiple redactions that are
-        philologically significant and structurally distinct. The present project is based on
-        Giorgio Dilemmi’s 1991 critical edition, which does not reduce the tradition to a single
+        <strong><em>Gli Asolani</em></strong> by Pietro Bembo is transmitted in multiple redactions
+        that are philologically significant and structurally distinct. The present project is based
+        on Giorgio Dilemmi’s 1991 critical edition, which does not reduce the tradition to a single
         reconstructed text with one unified apparatus, but instead preserves the autonomy of the
         principal witnesses.
       </p>
@@ -58,13 +71,19 @@
         individuality of manuscript Q, the 1505 edition, and the 1553 redaction, while making
         their relationships visible through digital tools.
       </p>
+    </article>
+  </section>
+
+  <!-- SECTION II -->
+  <section class="macro-banner reveal reveal-1">
+    <div class="macro-banner-inner">
+      <span class="macro-banner-mini">Section II</span>
+      <h2>Selection and Rationale</h2>
     </div>
   </section>
 
-  <!-- 2. SELECTION AND RATIONALE -->
-  <section class="section">
-    <h2>Selection and Rationale</h2>
-    <div class="panel">
+  <section class="digital-narrow reveal reveal-2">
+    <article class="aw-panel">
       <p>
         The mock-up was developed by selecting a substantial and representative portion of the text:
         pages 1–8 for witness Q, pages 1–4 for the 1505 edition, and pages 1–7 for the 1553 edition.
@@ -81,138 +100,165 @@
         design. In addition, for this portion only, the independent apparatus of M is available within
         the 1505 textual tradition, making the sample especially suitable for experimentation.
       </p>
+    </article>
+  </section>
+
+  <!-- SECTION III -->
+  <section class="macro-banner reveal reveal-1">
+    <div class="macro-banner-inner">
+      <span class="macro-banner-mini">Section III</span>
+      <h2>Markup Criteria</h2>
     </div>
   </section>
 
-  <!-- 3. MARKUP CRITERIA -->
-  <section class="section">
-    <h2>Markup Criteria</h2>
+  <section class="digital-features">
 
-    <!-- 3.1 -->
-    <div class="feature-block">
+    <div class="feature-block reveal reveal-1">
       <div class="feature-text">
-        <h3>1. Editorial Model</h3>
-        <p>
-          The project preserves the tripartite editorial structure of Dilemmi’s edition.
-          Instead of privileging a single witness, the digital model is designed to represent
-          three autonomous textual forms, each with its own apparatus and its own philological value.
-        </p>
+        <article class="aw-panel">
+          <div class="panel-tag">1. Editorial Model</div>
+          <p>
+            The project preserves the tripartite editorial structure of Dilemmi’s edition.
+            Instead of privileging a single witness, the digital model is designed to represent
+            three autonomous textual forms, each with its own apparatus and its own philological value.
+          </p>
+        </article>
       </div>
       <div class="feature-image">
         <img src="foto/editorial-model.jpg" alt="Editorial model of the digital edition">
       </div>
     </div>
 
-    <!-- 3.2 -->
-    <div class="feature-block reverse">
+    <div class="feature-block reverse reveal reveal-2">
       <div class="feature-text">
-        <h3>2. TEI Encoding Principles</h3>
-        <p>
-          The text has been encoded according to TEI P5 principles. The XML structure reflects both
-          the formal articulation of the work and the critical logic of the printed edition, allowing
-          textual units, variants, speakers, places, and editorial notes to be represented in a
-          machine-readable and interpretable way.
-        </p>
+        <article class="aw-panel">
+          <div class="panel-tag">2. TEI Encoding Principles</div>
+          <p>
+            The text has been encoded according to TEI P5 principles. The XML structure reflects both
+            the formal articulation of the work and the critical logic of the printed edition, allowing
+            textual units, variants, speakers, places, and editorial notes to be represented in a
+            machine-readable and interpretable way.
+          </p>
+        </article>
       </div>
       <div class="feature-image">
         <img src="foto/tei-encoding.jpg" alt="TEI encoding example">
       </div>
     </div>
 
-    <!-- 3.3 -->
-    <div class="feature-block">
+    <div class="feature-block reveal reveal-1">
       <div class="feature-text">
-        <h3>3. Parallel Segmentation</h3>
-        <p>
-          A parallel segmentation model was adopted in order to align corresponding units across the
-          three witnesses. This makes it possible to compare equivalent passages directly while also
-          preserving non-parallel structures where exact correspondence is not possible.
-        </p>
+        <article class="aw-panel">
+          <div class="panel-tag">3. Parallel Segmentation</div>
+          <p>
+            A parallel segmentation model was adopted in order to align corresponding units across
+            the three witnesses. This makes it possible to compare equivalent passages directly while
+            also preserving non-parallel structures where exact correspondence is not possible.
+          </p>
+        </article>
       </div>
       <div class="feature-image">
         <img src="foto/parallel-segmentation.jpg" alt="Parallel segmentation diagram">
       </div>
     </div>
 
-    <!-- 3.4 -->
-    <div class="feature-block reverse">
+    <div class="feature-block reverse reveal reveal-2">
       <div class="feature-text">
-        <h3>4. Textual Units and Correspondence</h3>
-        <p>
-          The encoding operates at multiple levels. On the macro-level, the text is divided into
-          narrative sequences. On the micro-level, paragraphs, verse groups, and smaller segments are
-          linked through correspondence markers, allowing the interface to reconstruct aligned passages
-          dynamically.
-        </p>
+        <article class="aw-panel">
+          <div class="panel-tag">4. Textual Units and Correspondence</div>
+          <p>
+            The encoding operates at multiple levels. On the macro-level, the text is divided into
+            narrative sequences. On the micro-level, paragraphs, verse groups, and smaller segments
+            are linked through correspondence markers, allowing the interface to reconstruct aligned
+            passages dynamically.
+          </p>
+        </article>
       </div>
       <div class="feature-image">
         <img src="foto/textual-units.jpg" alt="Aligned textual units">
       </div>
     </div>
 
-    <!-- 3.5 -->
-    <div class="feature-block">
+    <div class="feature-block reveal reveal-1">
       <div class="feature-text">
-        <h3>5. Apparatus and Variants</h3>
-        <p>
-          Variants are encoded through apparatus structures that preserve the internal logic of each
-          witness. Additions, deletions, substitutions, overwritten forms, and editorial interventions
-          are all retained, allowing the reader to move from a clean reading text to a more analytical
-          philological view.
-        </p>
+        <article class="aw-panel">
+          <div class="panel-tag">5. Apparatus and Variants</div>
+          <p>
+            Variants are encoded through apparatus structures that preserve the internal logic of each
+            witness. Additions, deletions, substitutions, overwritten forms, and editorial interventions
+            are all retained, allowing the reader to move from a clean reading text to a more analytical
+            philological view.
+          </p>
+        </article>
       </div>
       <div class="feature-image">
         <img src="foto/apparatus.jpg" alt="Critical apparatus example">
       </div>
     </div>
 
-    <!-- 3.6 -->
-    <div class="feature-block reverse">
+    <div class="feature-block reverse reveal reveal-2">
       <div class="feature-text">
-        <h3>6. Diplomatic Fidelity and Editorial Intervention</h3>
-        <p>
-          No normalization has been applied. The transcription reproduces spelling, punctuation,
-          capitalization, and typographical features exactly as they appear in the source edition.
-          The only silent intervention is the recomposition of words divided by line breaks, introduced
-          solely to preserve readability in the digital environment.
-        </p>
+        <article class="aw-panel">
+          <div class="panel-tag">6. Diplomatic Fidelity and Editorial Intervention</div>
+          <p>
+            No normalization has been applied. The transcription reproduces spelling, punctuation,
+            capitalization, and typographical features exactly as they appear in the source edition.
+            The only silent intervention is the recomposition of words divided by line breaks,
+            introduced solely to preserve readability in the digital environment.
+          </p>
+        </article>
       </div>
       <div class="feature-image">
         <img src="foto/diplomatic-transcription.jpg" alt="Diplomatic transcription example">
       </div>
     </div>
 
-    <div class="panel">
-      <a class="button-secondary" href="tei/visione3.xml">Open the TEI XML file</a>
+    <section class="digital-narrow reveal reveal-2">
+      <article class="aw-panel digital-button-panel">
+        <a class="button-secondary" href="tei/visione3.xml">Open the TEI XML file</a>
+      </article>
+    </section>
+
+  </section>
+
+  <!-- SECTION IV -->
+  <section class="macro-banner reveal reveal-1">
+    <div class="macro-banner-inner">
+      <span class="macro-banner-mini">Section IV</span>
+      <h2>Critical Apparatus View</h2>
     </div>
   </section>
 
-  <!-- 4. CRITICAL APPARATUS VIEW -->
-  <section class="section">
-    <h2>Critical Apparatus View</h2>
-    <div class="panel">
+  <section class="digital-narrow reveal reveal-2">
+    <article class="aw-panel">
       <p>
         One branch of the project focuses on the visualisation of a critical reading text,
         based on the 1553 redaction, accompanied by the corresponding variants of Q and the
-        1505 edition. This view highlights the philological structure of the edition and
-        offers a controlled representation of textual divergence within a traditional critical framework.
+        1505 edition. This view highlights the philological structure of the edition and offers
+        a controlled representation of textual divergence within a traditional critical framework.
       </p>
       <a class="button" href="evt/index.html">Open Critical Apparatus View</a>
+    </article>
+  </section>
+
+  <!-- SECTION V -->
+  <section class="macro-banner reveal reveal-1">
+    <div class="macro-banner-inner">
+      <span class="macro-banner-mini">Section V</span>
+      <h2>Synoptic View</h2>
     </div>
   </section>
 
-  <!-- 5. SYNOPTIC VIEW -->
-  <section class="section">
-    <h2>Synoptic View</h2>
-    <div class="panel">
+  <section class="digital-narrow reveal reveal-2">
+    <article class="aw-panel">
       <p>
-        The synoptic interface presents the three witnesses side by side, preserving their
-        textual autonomy while making visible the relations encoded through parallel segmentation.
-        It supports direct comparison of corresponding passages and reveals structural asymmetries
-        where the witnesses diverge.
+        The synoptic interface presents the three witnesses side by side, preserving their textual
+        autonomy while making visible the relations encoded through parallel segmentation. It supports
+        direct comparison of corresponding passages and reveals structural asymmetries where the
+        witnesses diverge.
       </p>
       <a class="button" href="synoptic.html">Open Synoptic View</a>
-    </div>
+    </article>
   </section>
 
 </main>
