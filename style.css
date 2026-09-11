@@ -280,6 +280,7 @@ nav a.active {
 }
 
 .enter-button:hover {
+  color: #e7d297;
   transform: translateY(-2px);
 }
 
@@ -413,6 +414,16 @@ nav a.active {
 .button-secondary {
   border: 1px solid var(--accent-dark);
   color: var(--accent-dark);
+}
+
+.button:hover {
+  color: #e7d297;
+  transform: translateY(-2px);
+}
+
+.button-secondary:hover {
+  color: #e7d297;
+  transform: translateY(-2px);
 }
 
 /* author and work page */
@@ -1705,8 +1716,8 @@ footer {
 }
 
 .home-card-button:hover {
-  color: #fff;
-  transform: translateY(-1px);
+  color: #e7d297;
+  transform: translateY(-2px);
 }
 
 .home-card-actions {
@@ -1777,4 +1788,52 @@ footer {
   .digital-features .feature-image img {
     min-height: auto;
   }
+}
+
+
+/* Author & Work – editorial subsection titles */
+
+.editorial-title {
+  margin: 0 0 1rem;
+  font-family: "Bodoni Moda", Georgia, serif;
+  color: var(--accent-dark);
+  font-size: clamp(1.65rem, 2.7vw, 2.25rem);
+  line-height: 1.1;
+}
+
+.editorial-section-title {
+  margin: 0 0 2.2rem;
+  font-family: "Bodoni Moda", Georgia, serif;
+  color: var(--accent-dark);
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
+  line-height: 1.1;
+}
+
+
+/* More breathing room between the main sections */
+
+.macro-banner {
+  margin-top: 5rem;
+  margin-bottom: 3.5rem;
+}
+
+.dilemmi-intro {
+  margin-bottom: 4rem;
+}
+
+.dilemmi-choices {
+  margin-bottom: 4rem;
+}
+
+.books-section {
+  padding-top: 2.5rem;
+  padding-bottom: 4.5rem;
+}
+
+/* Extra spacing for the Editorial Criteria PDF button */
+
+.editorial-criteria-action {
+
+  margin-top: 2.5rem;
+
 }
