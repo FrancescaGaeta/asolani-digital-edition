@@ -2012,13 +2012,6 @@ footer {
 }
 
 
-/* Q and 1553 — principal states */
-
-.tradition-document-card--highlight {
-  background: rgba(221, 122, 115, 0.075);
-
-  border-color: rgba(187, 89, 85, 0.20);
-}
 
 
 /* =========================================================
@@ -2026,24 +2019,20 @@ footer {
    ========================================================= */
 
 .tradition-document-image {
-  width: 88px;
-  height: 112px;
+  width: 90px;
+  height: 100px;
 
   position: relative;
-
-  overflow: hidden;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 6px;
+  overflow: visible;
 
-  background: var(--paper-mid);
-
-  border: 1px solid rgba(139, 97, 72, 0.16);
-
-  box-shadow: 0 5px 12px rgba(72, 51, 36, 0.08);
+  background: transparent;
+  border: none;
+  border-radius: 0;
 }
 
 
@@ -2842,7 +2831,7 @@ footer {
 }
 
 .tradition-document-card {
-  min-height: 118px;
+  min-height: 145px;
 
   display: grid;
   grid-template-columns: 96px 1fr;
@@ -3392,4 +3381,34 @@ footer {
     height: 92px;
   }
 
+}
+
+
+/* =========================================================
+   FINAL FIX — STATE OF THE ART CARDS
+   ========================================================= */
+
+/* Tutte le card Manuscript + Printed hanno la stessa altezza */
+.tradition-document-card,
+.tradition-document-card--highlight {
+  height: 190px;
+  min-height: 190px;
+
+  background: rgba(247, 239, 223, 0.58);
+  border-color: rgba(139, 97, 72, 0.12);
+}
+
+/* Elimina definitivamente il rosa dalla terza Digital State card */
+.digital-state-card,
+.digital-state-card--gap {
+  background: rgba(255, 252, 247, 0.80);
+}
+
+/* Su mobile l'altezza torna automatica, così il testo non viene tagliato */
+@media (max-width: 700px) {
+  .tradition-document-card,
+  .tradition-document-card--highlight {
+    height: auto;
+    min-height: 145px;
+  }
 }
