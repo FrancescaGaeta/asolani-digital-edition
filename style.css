@@ -1852,3 +1852,1544 @@ footer {
 }
 
 
+/* =========================================================
+   SECTION II — STATE OF THE ART
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   GENERAL WIDTH
+   Keeps Section II aligned with the sections above/below
+   --------------------------------------------------------- */
+
+.state-of-art-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+/* =========================================================
+   MANUSCRIPT + PRINTED TRADITION
+   ========================================================= */
+
+.tradition-comparison {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto 4.5rem;
+
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+
+  align-items: stretch;
+}
+
+.tradition-comparison > .tradition-column {
+  width: 100%;
+  min-width: 0;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN COLUMNS
+   --------------------------------------------------------- */
+
+.tradition-column {
+  padding: 1.7rem;
+
+  background: rgba(255, 252, 247, 0.82);
+
+  border: 1px solid rgba(130, 98, 72, 0.14);
+  border-radius: 14px;
+
+  box-shadow: 0 10px 28px rgba(72, 51, 36, 0.06);
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ---------------------------------------------------------
+   COLUMN HEADINGS
+   --------------------------------------------------------- */
+
+.tradition-heading {
+  margin-bottom: 1rem;
+  padding-bottom: 0.9rem;
+
+  border-bottom: 1px solid rgba(120, 90, 70, 0.16);
+}
+
+.tradition-kicker {
+  margin: 0 0 0.25rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  font-size: 0.76rem;
+  line-height: 1.3;
+
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+
+  color: var(--ink-soft);
+}
+
+.tradition-heading h2 {
+  margin: 0;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  font-size: 1.85rem;
+  line-height: 1.1;
+
+  color: var(--accent-dark);
+}
+
+
+/* ---------------------------------------------------------
+   INTRODUCTION TO EACH TRADITION
+   --------------------------------------------------------- */
+
+.tradition-intro-text {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.88rem;
+  line-height: 1.58;
+
+  color: var(--ink);
+}
+
+
+/* =========================================================
+   DOCUMENT LIST
+   ========================================================= */
+
+.tradition-document-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.9rem;
+
+  flex: 1;
+}
+
+
+/* =========================================================
+   INDIVIDUAL MANUSCRIPT / PRINT CARD
+   ========================================================= */
+
+.tradition-document-card {
+  display: grid;
+
+  grid-template-columns: 92px minmax(0, 1fr);
+
+  gap: 1rem;
+  align-items: start;
+
+  padding: 0.9rem;
+
+  background: rgba(247, 239, 223, 0.55);
+
+  border: 1px solid rgba(139, 97, 72, 0.12);
+  border-radius: 10px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.tradition-document-card:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(187, 89, 85, 0.22);
+
+  box-shadow: 0 7px 18px rgba(72, 51, 36, 0.07);
+}
+
+
+/* Q and 1553 — principal states */
+
+.tradition-document-card--highlight {
+  background: rgba(221, 122, 115, 0.075);
+
+  border-color: rgba(187, 89, 85, 0.20);
+}
+
+
+/* =========================================================
+   MANUSCRIPT / BOOK IMAGE
+   ========================================================= */
+
+.tradition-document-image {
+  width: 88px;
+  height: 112px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  background: var(--paper-mid);
+
+  border: 1px solid rgba(139, 97, 72, 0.16);
+
+  box-shadow: 0 5px 12px rgba(72, 51, 36, 0.08);
+}
+
+
+.tradition-document-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  opacity: 0.78;
+
+  filter:
+    sepia(0.08)
+    contrast(0.96);
+}
+
+
+/* Printed books */
+
+.tradition-document-image--print img {
+  object-fit: contain;
+
+  padding: 0.2rem;
+
+  opacity: 0.88;
+
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================================
+   LETTER / YEAR OVER IMAGE
+   ========================================================= */
+
+.tradition-document-badge {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  min-width: 42px;
+
+  padding: 0.28rem 0.48rem;
+
+  text-align: center;
+
+  background: rgba(92, 64, 53, 0.88);
+
+  color: #fffaf8;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  font-size: 1.45rem;
+  line-height: 1;
+
+  border-radius: 3px;
+
+  box-shadow: 0 4px 10px rgba(60, 40, 30, 0.16);
+}
+
+
+/* Years need a wider badge */
+
+.tradition-document-badge--year {
+  min-width: 58px;
+
+  font-size: 0.98rem;
+  letter-spacing: 0.02em;
+}
+
+
+/* =========================================================
+   TEXT INSIDE DOCUMENT CARDS
+   ========================================================= */
+
+.tradition-document-copy {
+  min-width: 0;
+}
+
+
+.tradition-card-heading {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 0.75rem;
+
+  margin-bottom: 0.2rem;
+}
+
+
+.tradition-document-copy h3 {
+  margin: 0 0 0.12rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  font-size: 1.05rem;
+  line-height: 1.2;
+
+  color: var(--accent-dark);
+}
+
+
+/* Shelfmark / Dilemmi witness number */
+
+.tradition-shelfmark {
+  margin: 0 !important;
+
+  font-size: 0.76rem !important;
+  line-height: 1.35 !important;
+
+  color: var(--accent-brown) !important;
+}
+
+
+/* Library / holding institution */
+
+.tradition-library {
+  margin: 0.25rem 0 0.55rem !important;
+
+  font-size: 0.76rem !important;
+  line-height: 1.35 !important;
+
+  color: var(--muted) !important;
+}
+
+
+/* Main explanation */
+
+.tradition-description {
+  margin: 0 !important;
+
+  font-size: 0.82rem !important;
+  line-height: 1.48 !important;
+
+  color: var(--ink) !important;
+}
+
+
+/* Additional philological information */
+
+.tradition-note {
+  margin: 0.48rem 0 0 !important;
+
+  padding-top: 0.45rem;
+
+  border-top: 1px solid rgba(139, 97, 72, 0.12);
+
+  font-size: 0.76rem !important;
+  line-height: 1.45 !important;
+
+  color: var(--ink-soft) !important;
+}
+
+
+/* =========================================================
+   LINKS TO DIGITAL MANUSCRIPTS / EDITIONS
+   ========================================================= */
+
+.state-link {
+  display: inline-block;
+
+  margin-top: 0.55rem;
+
+  padding-bottom: 0.08rem;
+
+  font-size: 0.76rem;
+
+  text-decoration: none;
+
+  color: var(--accent-dark);
+
+  border-bottom: 1px solid rgba(187, 89, 85, 0.32);
+}
+
+
+.state-link:hover {
+  color: var(--accent-brown);
+
+  border-bottom-color: rgba(139, 97, 72, 0.55);
+}
+
+
+/* =========================================================
+   DIGITAL STATE OF THE ART
+   ========================================================= */
+
+/*
+   Slightly narrower than the page but aligned visually
+   with the content panels above and below.
+*/
+
+.digital-state-section {
+  max-width: 1180px;
+
+  margin: 0 auto 4.5rem;
+}
+
+
+.digital-state-intro {
+  max-width: 100%;
+
+  margin: 0 auto 1.6rem;
+
+  text-align: center;
+}
+
+
+.digital-state-intro h2 {
+  margin: 0 0 0.7rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  color: var(--accent-dark);
+
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 1.1;
+}
+
+
+.digital-state-intro p {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  font-size: 0.92rem;
+  line-height: 1.6;
+
+  color: var(--ink);
+}
+
+
+/* ---------------------------------------------------------
+   DIGITAL RESOURCES GRID
+   --------------------------------------------------------- */
+
+.digital-state-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 1.1rem;
+}
+
+
+/* ---------------------------------------------------------
+   DIGITAL RESOURCE CARD
+   --------------------------------------------------------- */
+
+.digital-state-card {
+  position: relative;
+
+  min-height: 205px;
+
+  padding: 1.45rem 1.25rem 1.25rem;
+
+  background: rgba(255, 252, 247, 0.82);
+
+  border: 1px solid rgba(130, 98, 72, 0.14);
+  border-radius: 12px;
+
+  box-shadow: 0 8px 22px rgba(72, 51, 36, 0.055);
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.digital-state-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 11px 25px rgba(72, 51, 36, 0.08);
+}
+
+
+/* =========================================================
+   NUMBER ICONS
+   Similar to the presentation
+   ========================================================= */
+
+.digital-state-number {
+  width: 38px;
+  height: 38px;
+
+  margin-bottom: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--accent) 0%,
+      var(--accent-dark) 100%
+    );
+
+  color: #fffaf8;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  font-size: 1rem;
+
+  box-shadow: 0 5px 12px rgba(187, 89, 85, 0.14);
+}
+
+
+.digital-state-card h3 {
+  margin: 0 0 0.45rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  color: var(--accent-dark);
+
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+
+.digital-state-card p {
+  margin: 0;
+
+  font-size: 0.82rem;
+  line-height: 1.5;
+
+  color: var(--ink);
+
+  flex: 1;
+}
+
+
+.digital-state-card .state-link {
+  margin-top: 0.8rem;
+  align-self: flex-start;
+}
+
+
+/* =========================================================
+   DIGITAL SCHOLARLY REPRESENTATION
+   ========================================================= */
+
+.digital-models-section {
+  max-width: 1180px;
+
+  margin: 0 auto 4.5rem;
+}
+
+
+.digital-models-heading {
+  max-width: 820px;
+
+  margin: 0 auto 2rem;
+
+  text-align: center;
+}
+
+
+.digital-models-heading h2 {
+  margin: 0 0 0.7rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  color: var(--accent-dark);
+
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+
+  line-height: 1.1;
+}
+
+
+.digital-models-heading p {
+  margin: 0;
+
+  font-size: 0.92rem;
+  line-height: 1.6;
+
+  color: var(--ink);
+}
+
+
+/* =========================================================
+   COMPUTER GRID
+   ========================================================= */
+
+.digital-models-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1.7rem;
+}
+
+
+/* =========================================================
+   COMPUTER
+   ========================================================= */
+
+.digital-computer {
+  max-width: 500px;
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* Screen */
+
+.digital-computer-screen {
+  position: relative;
+
+  min-height: 240px;
+
+  padding: 1.6rem 1.45rem;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 252, 247, 0.97),
+      rgba(247, 239, 230, 0.97)
+    );
+
+  border: 7px solid #6f5549;
+
+  border-radius: 13px 13px 8px 8px;
+
+  box-shadow:
+    0 10px 24px rgba(72, 51, 36, 0.10),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Tiny camera dot */
+
+.digital-computer-screen::before {
+  content: "";
+
+  position: absolute;
+
+  top: 5px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.52);
+}
+
+
+/* Computer neck */
+
+.digital-computer::before {
+  content: "";
+
+  display: block;
+
+  width: 70px;
+  height: 25px;
+
+  margin: 0 auto;
+
+  background:
+    linear-gradient(
+      180deg,
+      #8a6b5d,
+      #6f5549
+    );
+
+  transform: translateY(0);
+}
+
+
+/* Computer base */
+
+.digital-computer::after {
+  content: "";
+
+  display: block;
+
+  width: 145px;
+  height: 9px;
+
+  margin: 0 auto;
+
+  border-radius: 8px 8px 4px 4px;
+
+  background: #6f5549;
+
+  box-shadow: 0 5px 10px rgba(72, 51, 36, 0.10);
+}
+
+
+/* =========================================================
+   CONTENT INSIDE COMPUTER SCREEN
+   ========================================================= */
+
+.digital-computer-number {
+  width: 36px;
+  height: 36px;
+
+  margin: 0 auto 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--accent) 0%,
+      var(--accent-dark) 100%
+    );
+
+  color: #fffaf8;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  font-size: 0.95rem;
+}
+
+
+.digital-computer-screen h3 {
+  margin: 0 0 0.55rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  color: var(--accent-dark);
+
+  font-size: 1.18rem;
+  line-height: 1.2;
+}
+
+
+.digital-computer-screen p {
+  max-width: 390px;
+
+  margin: 0 auto;
+
+  font-size: 0.82rem;
+  line-height: 1.5;
+
+  color: var(--ink);
+}
+
+
+.digital-computer-screen .state-link {
+  margin-top: 0.8rem;
+}
+
+
+/* =========================================================
+   OPTIONAL TRANSITION / CONCLUSION BOX
+   ========================================================= */
+
+.state-transition {
+  max-width: 1180px;
+
+  margin: 0 auto 4rem;
+
+  padding: 1.6rem 1.8rem;
+
+  text-align: center;
+
+  background: rgba(247, 239, 223, 0.48);
+
+  border-top: 1px solid rgba(139, 97, 72, 0.14);
+  border-bottom: 1px solid rgba(139, 97, 72, 0.14);
+}
+
+
+.state-transition p {
+  max-width: 860px;
+
+  margin: 0 auto;
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+
+  color: var(--ink);
+}
+
+
+/* =========================================================
+   RESPONSIVE — SECTION II
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .digital-state-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 950px) {
+
+  .tradition-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .digital-models-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .digital-computer {
+    max-width: 560px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .state-of-art-section,
+  .tradition-comparison,
+  .digital-state-section,
+  .digital-models-section,
+  .state-transition {
+    width: 100%;
+  }
+
+  .digital-state-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .tradition-column {
+    padding: 1.25rem;
+  }
+
+  .tradition-heading h2 {
+    font-size: 1.55rem;
+  }
+
+  .tradition-document-card {
+    grid-template-columns: 76px minmax(0, 1fr);
+
+    gap: 0.8rem;
+
+    padding: 0.8rem;
+  }
+
+  .tradition-document-image {
+    width: 74px;
+    height: 98px;
+  }
+
+  .tradition-document-badge {
+    min-width: 36px;
+
+    font-size: 1.2rem;
+  }
+
+  .tradition-document-badge--year {
+    min-width: 52px;
+
+    font-size: 0.86rem;
+  }
+
+  .tradition-document-copy h3 {
+    font-size: 1rem;
+  }
+
+  .tradition-description {
+    font-size: 0.79rem !important;
+  }
+
+  .tradition-note {
+    font-size: 0.74rem !important;
+  }
+
+  .digital-state-card {
+    min-height: auto;
+  }
+
+  .digital-computer-screen {
+    min-height: 220px;
+
+    padding: 1.4rem 1rem;
+  }
+
+}
+
+/* =========================================================
+   SECTION II — STATE OF THE ART
+   ========================================================= */
+
+.state-intro {
+  max-width: 1180px;
+  margin: 0 auto 3rem;
+}
+
+
+/* =========================================================
+   MANUSCRIPT + PRINTED TRADITION
+   ========================================================= */
+
+.tradition-comparison {
+  max-width: 1180px;
+  margin: 0 auto 4.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.tradition-column {
+  padding: 1.8rem;
+
+  background: rgba(255, 252, 247, 0.82);
+  border: 1px solid rgba(130, 98, 72, 0.14);
+  border-radius: 14px;
+
+  box-shadow: 0 10px 28px rgba(72, 51, 36, 0.06);
+}
+
+.tradition-heading {
+  margin-bottom: 1rem;
+  padding-bottom: 0.9rem;
+
+  border-bottom: 1px solid rgba(120, 90, 70, 0.16);
+}
+
+.tradition-kicker {
+  margin: 0 0 0.2rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+
+  color: var(--ink-soft);
+}
+
+.tradition-heading h2 {
+  margin: 0;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 1.85rem;
+  line-height: 1.1;
+
+  color: var(--accent-dark);
+}
+
+.tradition-intro-text {
+  min-height: 92px;
+  margin: 0 0 1.5rem;
+
+  font-size: 0.9rem;
+  line-height: 1.55;
+
+  color: var(--ink);
+}
+
+
+/* =========================================================
+   DOCUMENT CARDS
+   Same structure for manuscripts and printed editions
+   ========================================================= */
+
+.tradition-document-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.tradition-document-card {
+  min-height: 118px;
+
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 1rem;
+  align-items: center;
+
+  padding: 0.85rem;
+
+  background: rgba(247, 239, 223, 0.58);
+  border: 1px solid rgba(139, 97, 72, 0.12);
+  border-radius: 10px;
+}
+
+.tradition-document-card--highlight {
+  background: rgba(221, 122, 115, 0.08);
+  border-color: rgba(187, 89, 85, 0.22);
+}
+
+
+/* image area */
+
+.tradition-document-image {
+  width: 90px;
+  height: 100px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--paper-light) 0%,
+      var(--paper-mid) 100%
+    );
+
+  border: 1px solid rgba(139, 97, 72, 0.16);
+}
+
+.tradition-document-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  opacity: 0.78;
+}
+
+.tradition-document-image--print img {
+  object-fit: contain;
+  padding: 0.3rem;
+
+  background: rgba(255,255,255,0.22);
+}
+
+
+/* letter / year over image */
+
+.tradition-document-badge {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  min-width: 42px;
+
+  padding: 0.25rem 0.45rem;
+
+  text-align: center;
+
+  background: rgba(92, 64, 53, 0.82);
+  color: #fffaf8;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1;
+
+  border-radius: 3px;
+
+  box-shadow: 0 4px 10px rgba(60, 40, 30, 0.15);
+}
+
+.tradition-document-badge--long {
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+}
+
+.tradition-document-badge--year {
+  font-size: 1rem;
+}
+
+
+/* placeholder if there is no image for 1530 */
+
+.tradition-document-placeholder {
+  background:
+    linear-gradient(
+      180deg,
+      #efe1c9 0%,
+      #ddc5a5 100%
+    );
+}
+
+.print-placeholder-symbol {
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 4rem;
+
+  color: rgba(92, 64, 53, 0.12);
+}
+
+
+/* card text */
+
+.tradition-document-copy h3 {
+  margin: 0 0 0.2rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 1.05rem;
+
+  color: var(--accent-dark);
+}
+
+.tradition-document-copy p {
+  margin: 0;
+
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
+.tradition-document-copy span,
+.tradition-document-copy small {
+  display: block;
+
+  margin-top: 0.2rem;
+
+  font-size: 0.78rem;
+  line-height: 1.4;
+
+  color: var(--ink-soft);
+}
+
+.state-link {
+  display: inline-block;
+
+  margin-top: 0.45rem;
+
+  font-size: 0.78rem;
+  text-decoration: none;
+
+  color: var(--accent-dark);
+
+  border-bottom: 1px solid rgba(187, 89, 85, 0.32);
+}
+
+
+/* =========================================================
+   DIGITAL STATE OF THE ART
+   narrower / aligned with surrounding sections
+   ========================================================= */
+
+.digital-state-section {
+  max-width: 1180px;
+  margin: 0 auto 4.5rem;
+}
+
+.digital-state-header {
+  max-width: 820px;
+  margin: 0 auto 2rem;
+
+  text-align: center;
+}
+
+.digital-state-header .editorial-section-title {
+  margin-bottom: 1rem;
+}
+
+.digital-state-lead {
+  max-width: 760px;
+  margin: 0 auto;
+
+  font-size: 0.94rem;
+  line-height: 1.6;
+
+  color: var(--ink-soft);
+}
+
+.digital-state-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 1rem;
+}
+
+
+/* slimmer cards */
+
+.digital-state-card {
+  min-height: 300px;
+
+  padding: 1.45rem 1.3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  background: rgba(255, 252, 247, 0.80);
+
+  border: 1px solid rgba(130, 98, 72, 0.14);
+  border-radius: 14px;
+
+  box-shadow: 0 10px 28px rgba(72, 51, 36, 0.06);
+}
+
+.digital-state-card--gap {
+  background: rgba(221, 122, 115, 0.07);
+}
+
+
+/* actual icon instead of roman numerals */
+
+.digital-state-icon {
+  width: 88px;
+  height: 88px;
+
+  margin-bottom: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--paper-light) 0%,
+      var(--paper-mid) 100%
+    );
+
+  border: 1px solid rgba(139, 97, 72, 0.20);
+}
+
+.digital-state-icon img {
+  width: 54px;
+  height: 54px;
+
+  object-fit: contain;
+
+  opacity: 0.78;
+}
+
+.digital-state-label {
+  margin: 0 0 0.25rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 0.75rem;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: var(--ink-soft);
+}
+
+.digital-state-card h3 {
+  margin: 0 0 0.65rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.15;
+
+  color: var(--accent-dark);
+}
+
+.digital-state-card > p:not(.digital-state-label) {
+  margin: 0;
+
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.digital-resource-links {
+  margin-top: auto;
+  padding-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 0.25rem;
+}
+
+.digital-resource-links a {
+  font-size: 0.79rem;
+
+  text-decoration: none;
+
+  color: var(--accent-dark);
+
+  border-bottom:
+    1px solid rgba(187, 89, 85, 0.28);
+}
+
+
+/* =========================================================
+   RELATED DIGITAL MODELS
+   computer appearance inspired by presentation
+   ========================================================= */
+
+.related-models-section {
+  max-width: 1180px;
+
+  margin: 0 auto 3.5rem;
+
+  padding: 2rem;
+
+  background: rgba(255, 252, 247, 0.80);
+
+  border: 1px solid rgba(130, 98, 72, 0.14);
+  border-radius: 14px;
+
+  box-shadow: 0 10px 28px rgba(72, 51, 36, 0.06);
+}
+
+.related-models-header {
+  max-width: 820px;
+
+  margin: 0 auto 2.5rem;
+
+  text-align: center;
+}
+
+.related-models-header p {
+  margin: 0.7rem auto 0;
+
+  max-width: 720px;
+
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.computer-models-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 4rem;
+
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.computer-model {
+  text-align: center;
+}
+
+
+/* monitor */
+
+.computer-monitor {
+  max-width: 280px;
+
+  margin: 0 auto;
+
+  padding: 10px;
+
+  background: #596067;
+
+  border-radius: 10px 10px 5px 5px;
+
+  box-shadow:
+    0 8px 18px rgba(70, 50, 40, 0.12);
+}
+
+.computer-screen {
+  aspect-ratio: 4 / 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f4ead7 0%,
+      #e8d5b8 100%
+    );
+
+  border: 1px solid rgba(90, 70, 55, 0.16);
+}
+
+.computer-project-name {
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  font-size: 1.25rem;
+
+  color: var(--accent-brown);
+
+  border-bottom:
+    1px solid rgba(139, 97, 72, 0.40);
+}
+
+
+/* computer stand */
+
+.computer-stand {
+  width: 54px;
+  height: 34px;
+
+  margin: 0 auto;
+
+  background:
+    linear-gradient(
+      180deg,
+      #a9aaab,
+      #d3d3d3
+    );
+
+  clip-path:
+    polygon(
+      35% 0,
+      65% 0,
+      78% 100%,
+      22% 100%
+    );
+}
+
+.computer-base {
+  width: 120px;
+  height: 12px;
+
+  margin: 0 auto 1.3rem;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      180deg,
+      #d8d8d8,
+      #aaa
+    );
+}
+
+
+/* text below monitors */
+
+.computer-model-copy {
+  max-width: 340px;
+
+  margin: 0 auto;
+}
+
+.computer-model-copy h3 {
+  margin: 0 0 0.5rem;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+
+  color: var(--accent-dark);
+
+  font-size: 1.25rem;
+}
+
+.computer-model-copy p {
+  margin: 0 0 1rem;
+
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.computer-model-copy .button-secondary {
+  margin-top: 0.4rem;
+}
+
+
+/* =========================================================
+   TRANSITION
+   ========================================================= */
+
+.state-transition {
+  max-width: 820px;
+
+  margin: 0 auto 1rem;
+
+  padding: 1.2rem 2rem;
+
+  text-align: center;
+
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+
+  color: var(--ink-soft);
+}
+
+.state-transition p {
+  margin: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .tradition-comparison {
+    grid-template-columns: 1fr !important;
+  }
+
+  .digital-state-grid,
+  .computer-models-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tradition-intro-text {
+    min-height: auto;
+  }
+
+  .computer-models-grid {
+    gap: 3rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .tradition-column,
+  .related-models-section {
+    padding: 1.3rem;
+  }
+
+  .tradition-document-card {
+    grid-template-columns: 82px 1fr;
+  }
+
+  .tradition-document-image {
+    width: 78px;
+    height: 92px;
+  }
+
+}
