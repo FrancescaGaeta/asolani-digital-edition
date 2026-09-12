@@ -3412,3 +3412,36 @@ footer {
     min-height: 145px;
   }
 }
+
+
+.computer-models-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1080px;
+  gap: 2rem;
+}
+
+.computer-models-grid--three .computer-monitor {
+  max-width: 250px;
+}
+
+.computer-models-grid--three .computer-model-copy {
+  max-width: 300px;
+}
+
+@media (max-width: 950px) {
+  .computer-models-grid--three {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+  }
+}
+
+
+.digital-state-icon {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.digital-state-icon i {
+  font-size: 2.3rem;
+  color: var(--accent-brown);
+}
