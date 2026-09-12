@@ -1470,14 +1470,6 @@ nav a.active {
   }
 }
 
-/* footer */
-footer {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 1.5rem 1.25rem 2.2rem;
-  text-align: center;
-  color: var(--muted);
-}
 
 .feature-block {
   display: grid;
@@ -3444,4 +3436,115 @@ footer {
 .digital-state-icon i {
   font-size: 2.3rem;
   color: var(--accent-brown);
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+  width: 100%;
+  margin: 5rem 0 0;
+  padding: 3rem 2rem;
+
+  box-sizing: border-box;
+
+  background: var(--bg-3);
+  border-top: 1px solid var(--line);
+
+  color: var(--ink-soft);
+}
+
+.footer-content {
+  max-width: 1180px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.footer-title {
+  margin: 0 0 0.8rem;
+
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  color: var(--ink);
+}
+
+.footer-description {
+  max-width: 680px;
+  margin: 0 auto 1.2rem;
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.footer-project-info {
+  margin: 0;
+
+  font-size: 0.82rem;
+  line-height: 1.7;
+
+  color: var(--muted);
+}
+
+.footer-separator {
+  margin: 0 0.35rem;
+  color: var(--paper-dark);
+}
+
+.footer-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.footer-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+
+  padding: 0.65rem 1rem;
+
+  border: 1px solid rgba(139, 97, 72, 0.28);
+  border-radius: 6px;
+
+  background: rgba(255, 252, 247, 0.48);
+
+  font-size: 0.82rem;
+  font-weight: 500;
+
+  color: var(--ink);
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-button:hover {
+  background: var(--paper-mid);
+  border-color: var(--accent-brown);
+  transform: translateY(-1px);
+}
+
+.footer-button i {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+  .site-footer {
+    padding: 2.5rem 1.4rem;
+  }
+
+  .footer-project-info {
+    max-width: 520px;
+    margin: 0 auto;
+  }
 }
