@@ -3773,3 +3773,8 @@ nav a.active {
   }
 
 }
+
+
+.viewer-toolbar {
+  display: none;
+}
