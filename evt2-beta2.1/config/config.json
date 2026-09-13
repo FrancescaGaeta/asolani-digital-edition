@@ -63,7 +63,7 @@
     ],
 
     "defaultEdition": "critical",
-    "showEditionLevelSelector": true,
+    "showEditionLevelSelector": false,
     "availableEditionLevel": [
         {
             "value": "critical",
