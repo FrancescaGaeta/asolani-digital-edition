@@ -44,31 +44,73 @@
   </section>
 
   <!-- SECTION I -->
-  <section class="macro-banner reveal reveal-1">
-    <div class="macro-banner-inner">
-      <span class="macro-banner-mini">Section I</span>
-      <h2>About the Text</h2>
-    </div>
-  </section>
+    <section class="macro-banner reveal reveal-1">
+      <div class="macro-banner-inner">
+        <span class="macro-banner-mini">Section I</span>
+        <h2>About the Text</h2>
+      </div>
+    </section>
 
-  <section class="digital-narrow reveal reveal-2">
-    <article class="aw-panel">
-      <p>
-        <strong>The Asolani Digital Edition project</strong> was developed as the final assignment for the Digital Scholarly Editing course. 
-        Its primary aim is to produce a digital version of <strong>Giorgio Dilemmi’s 1991 critical edition</strong> of Gli Asolani by Pietro Bembo.
-      </p>
-      <p>
-        The source edition presents a number of methodological challenges. 
-        Rather than establishing a single critical text accompanied by a unified apparatus, Dilemmi chooses to present the three main redactions separately, each with its own distinct critical apparatus. 
-        This editorial decision, while philologically rigorous, complicates the process of digital representation.
-      </p>
-      <p>The objective of this project has therefore been twofold: on the one hand, to preserve the original tripartite structure of the printed edition; on the other, to exploit the affordances of the digital medium in order to enable the simultaneous visualization and comparison of the three textual witnesses.
-      </p>
-      <p>  To provide an effective and comprehensive representation of Dilemmi’s work, two main objectives were defined: 
-        <li>To represent one text (1553 edition) with visualization of the variants Q and 1505 throught a critical apparatus.</li>
-        <li>Tripartite visualization, enabling a complete and simultaneus presentation of the three texts, each accompanied by its own independent apparatus.</p>
-    </article>
-  </section>
+    <section class="digital-narrow reveal reveal-2">
+      <article class="aw-panel">
+
+        <p>
+          <strong>The Asolani Digital Edition project</strong> was developed as the 
+          final project for the course <em>Digital Scholarly Editing: Theory, Methods 
+          and Practice</em>, within the Master's Degree in 
+          <em>Digital Humanities and Digital Knowledge (DHDK)</em> at the 
+          University of Bologna. <br>Its primary aim is to provide a digital 
+          representation of <strong>Giorgio Dilemmi’s 1991 critical edition</strong> 
+          of Pietro Bembo’s <em>Gli Asolani</em>.
+        </p>
+
+        <p>
+          Dilemmi’s critical edition remains a fundamental scholarly reference for 
+          the textual history of the <em>Asolani</em>, providing a rigorous 
+          reconstruction and analysis of its different textual states. Rather than 
+          establishing a single critical text accompanied by a unified apparatus, 
+          Dilemmi presents the three main redactions separately, each with its own 
+          critical apparatus.
+        </p>
+
+        <p>
+          While this structure effectively reflects the complex textual history of 
+          the work, the printed format inevitably makes the simultaneous consultation 
+          and comparison of the different textual states less immediate. Building 
+          directly on Dilemmi’s editorial work and philological analysis, the present 
+          digital edition does not seek to replace his model, but to 
+          <strong>enhance its accessibility and comparative potential</strong>. 
+          By bringing the different textual states into a shared digital environment, 
+          the project aims to make their correspondences and 
+          divergences easier to explore.
+        </p>
+
+        <p>
+          The project therefore combines two complementary modes of textual 
+          visualisation:
+        </p>
+
+        <ul>
+         <li>
+          a <strong>critical view</strong>, which adopts the 1553 edition as its 
+          reference text. This choice reflects the central position that this final 
+          textual state has acquired in the editorial tradition of the 
+          <em>Asolani</em>. The two other major textual states identified and 
+          independently represented by Dilemmi, <strong>Q</strong> and the 
+          <strong>1515 edition</strong> , are integrated into the critical apparatus. 
+          This digital reorganisation makes it possible to compare their variants 
+          directly against the 1553 text within a single reading environment;
+
+        </li>
+          <li>
+            a <strong>synoptic view</strong>, enabling the simultaneous comparison 
+            of the three main textual states, each accompanied by its own independent 
+            apparatus.
+          </li>
+        </ul>
+
+      </article>
+    </section>
 
   <!-- SECTION II -->
   <section class="macro-banner reveal reveal-1">
@@ -146,7 +188,7 @@
           <p>
            This section outlines the encoding principles adopted in the digital edition. The text is transcribed from Giorgio Dilemmi’s critical edition, preserving the linguistic and formal features of the 1553 redaction, which serves as the base text. 
             No normalization has been applied, ensuring a faithful reproduction of spelling, punctuation, typographical features, and all original symbols. Direct speech has also been consistently retained as in the source. 
-            In the critical view, variants from manuscript Q and the 1505 edition are aligned through a parallel segmentation approach, allowing direct comparison across the three witnesses.
+            In the critical view, variants from manuscript Q and the 1505 edition are aligned through a parallel segmentation approach, allowing direct comparison across the three main witnesses.
             While the synoptic view combines independent witness encoding with internal apparatuses and correspondence-based alignment, allowing both intra-textual variation and inter-textual comparison to be represented simultaneously.
 
           </p>
@@ -162,7 +204,8 @@
         <article class="aw-panel">
           <div class="panel-tag">PROFILEDESC</div>
           <p>
-            The <emp>profileDesc</emp> section provides contextual metadata about the linguistic and spatial dimensions of the text. The <emp>langUsage</emp> element specifies the languages used in the edition, distinguishing between Italian as the primary language of the text and English as the language of editorial documentation. The <emp>settingDesc</emp> element encodes the geographical setting through <emp>listPlace</emp>, where places are identified, named, and, when possible, linked to external authority identifiers.
+            The <em>profileDesc</em> section provides contextual metadata about the linguistic and spatial dimensions of the text. The <em>langUsage</em> element specifies the languages used in the edition, distinguishing between Italian as the primary language of the text and English as the language of editorial documentation. 
+            The <em>settingDesc</em> element encodes the geographical setting through <em>listPlace</em>, where places are identified, named, and, when possible, linked to external authority identifiers.
               This approach ensures a clear representation of the cultural and spatial framework in which the narrative unfolds, while enabling connections with external datasets.
           </p>
         </article>
@@ -177,10 +220,10 @@
         <article class="aw-panel">
           <div class="panel-tag">ProfileDesc</div>
           <p>
-            The <emp>profileDesc </emp>section also encodes the entities involved in the text, including characters and social groups, through the <emp>particDesc</emp> element. 
-              Individuals are listed within <emp>listPerson</emp>, where each <emp>person</emp> is uniquely identified and, when possible, linked to external authority files such as VIAF.
-                Each entry includes a standardized name (<emp>persName</emp>) and a brief descriptive note (<emp>note</emp>), allowing both identification and contextualization of the figures within the narrative. 
-                  Similarly, collective entities are encoded in <emp>listOrg,</emp> where organizations or families are described through <emp>orgName</emp> and explanatory notes. This structured representation supports both semantic clarity and interoperability.
+            The <em>profileDesc </em>section also encodes the entities involved in the text, including characters and social groups, through the <em>particDesc</em> element. 
+              Individuals are listed within <em>listPerson</em>, where each <em>person</em> is uniquely identified and, when possible, linked to external authority files such as VIAF.
+                Each entry includes a standardized name (<em>persName</em>) and a brief descriptive note (<em>note</em>), allowing both identification and contextualization of the figures within the narrative. 
+                  Similarly, collective entities are encoded in <em>listOrg,</em> where organizations or families are described through <em>orgName</em> and explanatory notes. This structured representation supports both semantic clarity and interoperability.
           </p>
         </article>
       </div>
@@ -205,12 +248,16 @@
   <section class="digital-narrow reveal reveal-2">
     <article class="aw-panel">
       <p>
-       The text has been encoded using a parallel segmentation approach in order to compare the three witnesses directly while preserving their individual structure. </p>
-       <p>The choice of parallel segmentation was motivated by the specific nature of the textual tradition of Gli Asolani and by the editorial structure of Giorgio Dilemmi’s
+       The text has been encoded using a parallel segmentation approach in order to compare the three main witnesses directly while preserving their individual structure. </p>
+       <p>The choice of parallel segmentation was motivated by the specific nature of the textual tradition of <em>Gli Asolani</em> and by the editorial structure of Giorgio Dilemmi’s
        critical edition. Since the project does not deal with a single text accompanied by a unified apparatus, but with three autonomous redactions
        that must be compared directly, a simple linear encoding would not have been sufficient. </p>
       <p> Parallel segmentation makes it possible to align corresponding passages across the 1553 redaction, the 1505 edition, and manuscript Q while preserving their individual textual integrity. 
-       The 1553 redaction functions as the base text and is generally encoded as the lemma, while the manuscript Q and the 1505 edition are recorded as parallel readings.</p>
+       The 1553 redaction functions as the base text and is generally encoded as the lemma, while the manuscript Q and the 1505 edition are recorded as parallel readings.<br>
+      <p>The encoding is structured through the TEI <em>app</em> element, which identifies each unit of textual variation. Within each apparatus entry, the 1553 redaction is encoded as the lemma (<em>lem</em>), 
+        since it functions as the reference text of the digital edition, while the corresponding passages from manuscript Q and the 1505 edition are encoded as readings (<em>rdg</em>). This hierarchy is an editorial and technical choice for organising the comparison and does not erase the autonomous status of the three textual stages established in Dilemmi’s critical edition.<br>
+       The <em>@wit</em> attribute is used to associate each reading with the witness in which it occurs. When two witnesses share the same reading, they are + grouped within a single <em>rdg</em> element and both are identified in the value of <em>@wit</em>, avoiding unnecessary duplication of identical textual material. 
+       Conversely, when a passage occurring in the reference text has no corresponding textual material in one of the other witnesses (in general in manuscript Q), an empty <em>rdg</em> element associated with that witness is used to represent the absence explicitly. In this way, both textual coincidence and absence remain formally represented within the same comparative structure.</p>
       <p>The segmentation was applied flexibly, not uniformly: where the witnesses diverge more significantly, the text has been divided into smaller units, so that correspondences and variants can be represented more precisely; where the alignment is clearer, broader segments have been maintained. This makes it possible to associate each portion of text with its variants while respecting the textual autonomy of each witness. The same method has also been applied to titles and to the poetic section, where the verses are encoded as corresponding units within the same comparative structure.
      </p>
      <div class="critical-image-stack">
@@ -248,13 +295,11 @@
   <section class="digital-narrow reveal reveal-2">
     <article class="aw-panel">
       <p>
-        In order to enable the simultaneous visualization of the three texts, each accompanied by its own apparatus, a synoptic view was adopted. This solution made it possible to preserve both the autonomy of each witness and their comparability within a shared digital environment</p>
-      <p>From an encoding perspective, the three witnesses were integrated into a single XML document, each structured as an independent textual unit. At the same time, they were interconnected through the use of correspondence attributes (@corresp), which establish links between corresponding portions of the text.</p>
+        In order to enable the simultaneous visualization of the three texts, each accompanied by its own apparatus, a synoptic view was adopted. This solution made it possible to preserve both the autonomy of each witness and their comparability within a shared digital environment.</p>
+      <p>From an encoding perspective, the three witnesses were integrated into a single XML document, each structured as an independent textual unit. At the same time, they were interconnected through the use of correspondence attributes (<em>@corresp</em>), which assigns them to a shared alignment identifier.</p>
       <p> The alignment strategy adopted in this case does not operate at the word level, but rather at the level of paragraphs. This choice reflects the primary objective of the synoptic visualization, which is not to provide a fine-grained collation, but to ensure a clear and effective tripartite representation of the textual tradition, allowing users to navigate and compare the three versions in parallel.</p>
-      <p>The encoding of the synoptic view also required careful consideration of the different nature of the apparatuses associated with each witness. In particular, Q is characterized by a genetic apparatus that records authorial revisions directly within the manuscript, including additions, deletions, and substitutions; as such, it does not involve comparison with other witnesses, but rather documents the internal writing process. </p>
-      <p>Similarly, the 1505 edition (T1) is accompanied by an apparatus derived from the autograph manuscript M, thus integrating variant readings that originate from a handwritten source. </p>
-      <p>By contrast, the 1553 edition (T16) presents an apparatus based on the 1530 printed redaction, reflecting a different stage in the transmission of the text. </p>
-      <p>As a result, the apparatuses were encoded according to distinct strategies, tailored to their specific philological function and to the nature of the sources they represent.
+      <p>The encoding also takes into account the different nature of the apparatus associated with each redaction. Although the <em>app</em> element is used throughout the three texts, its function varies according to the source represented. In <strong>Q</strong>, it encodes the <strong>genetic apparatus</strong> and records the internal writing process through elements such as <em>add</em>, <em>del</em>, and <em>subst</em>. In <strong>T1</strong>, <em>app</em> relates the text of the <strong>1505</strong> edition to readings from the autograph <strong>manuscript M </strong>, while in <strong>T16</strong> it records variants between the <strong>1553</strong> and <strong>1530</strong> printed editions through <em>lem</em> and <em>rdg.</em></p>
+      <p>The synoptic encoding therefore combines a common alignment strategy, based on <em>@corresp</em>, with different uses of the critical apparatus, adapted to the specific philological nature of each textual stage.</p>
     </p>
 
     <div class="synoptic-image-stack">
