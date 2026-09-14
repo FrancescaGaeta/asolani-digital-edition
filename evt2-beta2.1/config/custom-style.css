@@ -279,7 +279,7 @@ a[style*="background"] {
 [role="dialog"] [class*="sidebar"] *,
 [role="dialog"] [class*="menu"] *,
 [role="dialog"] [class*="index"] * {
-  color: #fff8f5 !important;
+  color: #bb5955 !important;
 }
 
 /* main text area of modal */
@@ -398,4 +398,12 @@ div + .lg {
 .globalMenu .viewModeMenu .mode-view:nth-child(3),
 .globalMenu .viewModeMenu .mode-view:nth-child(4) {
   display: none !important;
+}
+
+
+.persName,
+.placeName,
+.orgName {
+  display: inline !important;
+  white-space: normal !important;
 }
