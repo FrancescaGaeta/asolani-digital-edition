@@ -163,7 +163,7 @@
     "showInlineAnalogues": false,
     "showReadingExponent": true,
 
-    "toolHeatMap": true,
+    "toolHeatMap": false,
 
     "versions": [
         "T16",
@@ -238,7 +238,7 @@
         "en",
         "it"
     ],
-    "showObjectSelector": true,
+    "showObjectSelector": false,
 
     "tdhopViewerOptions": {
 
